@@ -12,3 +12,5 @@ MemoryCaptures/
 *.user
 *.pidb
 *.booproj
+.vscode/
+*.slnx

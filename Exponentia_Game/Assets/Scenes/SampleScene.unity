@@ -523,9 +523,9 @@ MonoBehaviour:
   TargetOffset: {x: 0, y: 0, z: 0}
   Damping: {x: 1, y: 1, z: 1}
   Lookahead:
-    Enabled: 0
-    Time: 0.25
-    Smoothing: 30
+    Enabled: 1
+    Time: 0.504
+    Smoothing: 4
     IgnoreY: 0
 --- !u!1 &519420028
 GameObject:

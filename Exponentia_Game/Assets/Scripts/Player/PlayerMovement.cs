@@ -69,11 +69,13 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 moveInput;
     private Gamepad activeGamepad;
+    private Vector2 lastMoveDirection = Vector2.right;
 
     public ControlScheme CurrentControlScheme { get; private set; } = ControlScheme.KeyboardMouse;
     public bool InteractPressedThisFrame { get; private set; }
     public bool AttackPressedThisFrame { get; private set; }
     public bool DodgePressedThisFrame { get; private set; }
+    public Vector2 LastMoveDirection => lastMoveDirection;
 
     public event System.Action OnInteractPressed;
     public event System.Action OnAttackPressed;
@@ -88,6 +90,7 @@ public class PlayerMovement : MonoBehaviour
     {
         UpdateControlScheme();
         moveInput = ReadMovementByCurrentScheme().normalized;
+        UpdateLastMoveDirection();
         ReadActionButtonsByCurrentScheme();
         EmitActionEvents();
 
@@ -102,6 +105,19 @@ public class PlayerMovement : MonoBehaviour
         if (rb != null)
         {
             rb.linearVelocity = moveInput * moveSpeed;
+        }
+    }
+
+    public void SetMoveSpeed(float newMoveSpeed)
+    {
+        moveSpeed = Mathf.Max(0f, newMoveSpeed);
+    }
+
+    private void UpdateLastMoveDirection()
+    {
+        if (moveInput.sqrMagnitude > 0.001f)
+        {
+            lastMoveDirection = moveInput;
         }
     }
 

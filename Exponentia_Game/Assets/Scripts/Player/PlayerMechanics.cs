@@ -17,12 +17,19 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
     [Header("Hasar Alma")]
     [SerializeField] private float hasarAlmaBeklemeSuresi = 0.2f;
 
+    [Header("Can Yazisi")]
+    [SerializeField] private Vector3 canYaziOffset = new Vector3(0f, 1.35f, 0f);
+    [SerializeField] private Color canYaziRengi = Color.green;
+    [SerializeField] private int canYaziFontBoyutu = 32;
+    [SerializeField] private float canYaziKarakterBoyutu = 0.22f;
+
     public float MevcutCan { get; private set; }
     public float MevcutMana { get; private set; }
     public float MevcutKalkan { get; private set; }
 
     private float sonrakiSaldiriZamani;
     private float sonrakiHasarAlmaZamani;
+    private TextMesh canTextMesh;
 
     public bool Yasiyor => MevcutCan > 0f;
 
@@ -50,6 +57,7 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
             playerMovement = GetComponent<PlayerMovement>();
         }
 
+        EnsureHealthText();
         MevcutCan = Mathf.Max(0f, playerStats != null ? playerStats.can : 0f);
         MevcutMana = Mathf.Max(0f, playerStats != null ? playerStats.mana : 0f);
         MevcutKalkan = Mathf.Max(0f, playerStats != null ? playerStats.kalkan : 0f);
@@ -84,6 +92,11 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
         }
     }
 
+    private void LateUpdate()
+    {
+        UpdateHealthTextTransform();
+    }
+
     public float TakeDamage(float amount)
     {
         if (!Yasiyor || amount <= 0f || Time.time < sonrakiHasarAlmaZamani)
@@ -112,7 +125,9 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
         }
 
         MevcutCan = Mathf.Max(0f, MevcutCan - uygulananHasar);
+        FloatingCombatText.Create(Mathf.CeilToInt(uygulananHasar).ToString(), transform.position + Vector3.up * 0.9f, Color.yellow);
         OnCanDegisti?.Invoke(MevcutCan, playerStats.can);
+        UpdateHealthText();
 
         if (!Yasiyor)
         {
@@ -187,6 +202,7 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
 
         MevcutCan = Mathf.Min(playerStats.can, MevcutCan + amount);
         OnCanDegisti?.Invoke(MevcutCan, playerStats.can);
+        UpdateHealthText();
     }
 
     public void GainXp(float amount)
@@ -294,6 +310,7 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
         OnCanDegisti?.Invoke(MevcutCan, playerStats.can);
         OnManaDegisti?.Invoke(MevcutMana, playerStats.mana);
         OnXpDegisti?.Invoke(playerStats.xp, playerStats.sonrakiLevelXp);
+        UpdateHealthText();
     }
 
     private static float NormalizePercent(float value)
@@ -335,5 +352,67 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
         Gizmos.color = Color.red;
         Vector2 merkez = (Vector2)transform.position + yon.normalized * saldiriMenzili;
         Gizmos.DrawWireSphere(merkez, saldiriYaricapi);
+    }
+
+    private void EnsureHealthText()
+    {
+        if (canTextMesh != null)
+        {
+            return;
+        }
+
+        Transform existingText = transform.Find("PlayerHealthText");
+        GameObject textObject;
+        if (existingText != null)
+        {
+            textObject = existingText.gameObject;
+        }
+        else
+        {
+            textObject = new GameObject("PlayerHealthText");
+            textObject.transform.SetParent(transform);
+            textObject.transform.localPosition = canYaziOffset;
+        }
+
+        canTextMesh = textObject.GetComponent<TextMesh>();
+        if (canTextMesh == null)
+        {
+            canTextMesh = textObject.AddComponent<TextMesh>();
+        }
+
+        canTextMesh.anchor = TextAnchor.MiddleCenter;
+        canTextMesh.alignment = TextAlignment.Center;
+        canTextMesh.fontSize = canYaziFontBoyutu;
+        canTextMesh.characterSize = canYaziKarakterBoyutu;
+        canTextMesh.color = canYaziRengi;
+
+        MeshRenderer textRenderer = canTextMesh.GetComponent<MeshRenderer>();
+        textRenderer.sortingOrder = 20;
+    }
+
+    private void UpdateHealthText()
+    {
+        if (canTextMesh == null)
+        {
+            return;
+        }
+
+        canTextMesh.text = Mathf.CeilToInt(MevcutCan).ToString();
+    }
+
+    private void UpdateHealthTextTransform()
+    {
+        if (canTextMesh == null)
+        {
+            return;
+        }
+
+        canTextMesh.transform.position = transform.position + canYaziOffset;
+
+        Camera activeCamera = Camera.main;
+        if (activeCamera != null)
+        {
+            canTextMesh.transform.rotation = activeCamera.transform.rotation;
+        }
     }
 }

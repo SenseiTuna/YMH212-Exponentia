@@ -1,18 +1,28 @@
+/*
+ * PROJ_NAME: Exponentia
+ * PROJ_ID: EXP-ROGUELITE-001
+ * VERSION: 0.3.0
+ * BUILD_DATE: 2026-04-29
+ * BUILD_TIME: 12:00
+ * DESCRIPTION: Handles manual projectile attacks driven by input.
+ */
+
+using Exponentia.Player;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerAttack : MonoBehaviour
 {
-    [Header("Referanslar")]
+    [Header("References")]
     [SerializeField] private PlayerStats playerStats;
     [SerializeField] private PlayerMechanics playerMechanics;
 
-    [Header("Lazer Saldirisi")]
-    [SerializeField] private float lazerManaMaliyeti = 10f;
-    [SerializeField] private float lazerYasamSuresi = 1.5f;
+    [Header("Laser Attack")]
+    [SerializeField] private float laserManaCost = 0f;
+    [SerializeField] private float laserLifetime = 1.5f;
     [SerializeField] private float spawnOffset = 0.6f;
 
-    private float sonrakiAtesZamani;
+    private float nextFireTime;
 
     private void Reset()
     {
@@ -45,12 +55,13 @@ public class PlayerAttack : MonoBehaviour
 
     private bool TryFireLaser()
     {
+        // Turkish: Saldırı yapmadan önce null/ölü/mana/cooldown kontrollerini tek noktada tamamlıyoruz.
         if (playerStats == null || playerMechanics == null || !playerMechanics.Yasiyor)
         {
             return false;
         }
 
-        if (Time.time < sonrakiAtesZamani)
+        if (Time.time < nextFireTime)
         {
             return false;
         }
@@ -71,19 +82,19 @@ public class PlayerAttack : MonoBehaviour
             return false;
         }
 
-        if (!playerMechanics.HarcaMana(lazerManaMaliyeti))
+        if (!playerMechanics.HarcaMana(laserManaCost))
         {
             return false;
         }
 
-        float atesAraligi = playerStats.saldiriHizi > 0f ? 1f / playerStats.saldiriHizi : 1f;
-        sonrakiAtesZamani = Time.time + atesAraligi;
+        float fireInterval = playerStats.AttackSpeed > 0f ? 1f / playerStats.AttackSpeed : 1f;
+        nextFireTime = Time.time + fireInterval;
 
         GameObject projectileObject = new GameObject("PlayerLaser");
         projectileObject.transform.position = transform.position + (Vector3)(direction.normalized * spawnOffset);
 
         PlayerProjectile projectile = projectileObject.AddComponent<PlayerProjectile>();
-        projectile.Initialize(playerMechanics, direction, playerStats.projectileHizi, lazerYasamSuresi);
+        projectile.Initialize(playerMechanics, direction, playerStats.ProjectileSpeed, laserLifetime);
         return true;
     }
 }

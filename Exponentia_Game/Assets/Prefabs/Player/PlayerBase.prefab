@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 5042919499841549475}
   - component: {fileID: 7558214801132853810}
   - component: {fileID: 3214891503290248852}
+  - component: {fileID: 6743210987654321012}
   m_Layer: 0
   m_Name: PlayerBase
   m_TagString: Player
@@ -293,6 +294,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   moveSpeed: 5
   gamepadMoveDeadzone: 0.12
+  useCentralInput: 1
+  inputReader: {fileID: 0}
   keyboardBindings:
     interact: 19
     attack: 1
@@ -319,9 +322,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAttack
   playerStats: {fileID: 0}
   playerMechanics: {fileID: 0}
+  playerMovement: {fileID: 8053774950672793964}
+  inputReader: {fileID: 0}
   laserManaCost: 0
   laserLifetime: 1.5
   spawnOffset: 0.6
+  gamepadAimDeadzone: 1
+  prioritizeControllerRightStick: 1
+  useCentralInput: 1
+  fallbackToMoveDirection: 1
 --- !u!114 &5042919499841549475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -391,3 +400,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 130329c766b77894a8e229b1557113c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Exponentia.Player.PlayerCharacterApplier
+--- !u!114 &6743210987654321012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b816593174e1f0d44a115ee6a92b9b46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAimIndicator
+  playerAttack: {fileID: 1575948987179740482}
+  playerMovement: {fileID: 8053774950672793964}
+  indicatorColor: {r: 1, g: 0.86, b: 0.2, a: 0.95}
+  indicatorStartOffset: 0.2
+  indicatorLength: 1.35
+  indicatorWidth: 0.06
+  sortingOrder: 30
+  showWhenIdle: 1
+  useMoveDirectionFallback: 1

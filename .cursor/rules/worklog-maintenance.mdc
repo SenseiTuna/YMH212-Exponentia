@@ -1,0 +1,18 @@
+---
+description: Keep project worklog updated after each meaningful change
+alwaysApply: true
+---
+
+# Worklog Maintenance Rule
+
+- Her anlamli kod degisikliginden sonra `docs/PROJECT_WORKLOG.md` dosyasina yeni kayit ekle.
+- Kayitlar kisa, acik ve tarih bazli olsun.
+- Her kayitta su alanlar bulunsun:
+  - Tarih
+  - Is Paketi
+  - Degisen Dosyalar
+  - Yapilanlar
+  - Dogrulama
+  - Not
+- Dogrulama alaninda varsa test sonucu veya komut cikti ozeti belirtilsin.
+- Kullanici ozellikle istemedikce gecmis kayitlar silinmesin; sadece yeni kayit eklensin.

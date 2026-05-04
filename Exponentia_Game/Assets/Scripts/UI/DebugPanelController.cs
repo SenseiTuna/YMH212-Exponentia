@@ -17,7 +17,7 @@ namespace Exponentia.UI
 
         [Header("Behavior")]
         [SerializeField] private KeyCode toggleKey = KeyCode.F3;
-        [SerializeField] private bool showOnStart;
+        [SerializeField] private bool showOnStart = true;
         [SerializeField] private float refreshInterval = 0.1f;
         [SerializeField] private Vector2 panelPosition = new Vector2(90f, -50f);
 
@@ -26,21 +26,31 @@ namespace Exponentia.UI
 
         private void Awake()
         {
+            Debug.Log("[DebugPanel] Awake called");
             ResolveReferences();
             FitPanelToScreen();
             SetPanelVisible(showOnStart);
+            Debug.Log($"[DebugPanel] Initialized. Panel visible: {IsPanelVisible()}");
         }
 
         private void Update()
         {
             if (Input.GetKeyDown(toggleKey))
             {
+                Debug.Log("[DebugPanel] F3 pressed, toggling panel");
                 SetPanelVisible(!IsPanelVisible());
+                Debug.Log($"[DebugPanel] Panel now visible: {IsPanelVisible()}");
             }
 
             if (Screen.width != lastScreenSize.x || Screen.height != lastScreenSize.y)
             {
                 FitPanelToScreen();
+            }
+
+            // Try to resolve references if they're missing (for scene transitions)
+            if (playerStats == null || playerMechanics == null || playerMovement == null)
+            {
+                ResolveReferences();
             }
 
             if (!IsPanelVisible())
@@ -84,8 +94,11 @@ namespace Exponentia.UI
 
             if (player == null)
             {
+                Debug.LogWarning("[DebugPanel] Could not find Player");
                 return;
             }
+
+            Debug.Log("[DebugPanel] Found player, resolving components");
 
             if (playerStats == null)
             {
@@ -296,12 +309,17 @@ namespace Exponentia.UI
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         private static void EnsureDebugPanel()
         {
+            Debug.Log("[DebugPanel] Bootstrap: EnsureDebugPanel called");
             if (Object.FindFirstObjectByType<DebugPanelController>() != null)
             {
+                Debug.Log("[DebugPanel] DebugPanelController already exists");
                 return;
             }
 
+            Debug.Log("[DebugPanel] Creating new DebugPanelController");
+
             GameObject root = new GameObject("DebugPanelController_Auto");
+            Object.DontDestroyOnLoad(root);
             root.AddComponent<DebugPanelController>();
         }
     }

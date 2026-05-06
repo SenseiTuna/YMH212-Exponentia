@@ -1,35 +1,45 @@
+/*
+ * PROJ_NAME: Exponentia
+ * PROJ_ID: EXP-ROGUELITE-001
+ * VERSION: 0.3.0
+ * BUILD_DATE: 2026-04-29
+ * BUILD_TIME: 12:00
+ * DESCRIPTION: Core player combat/resource mechanics.
+ */
+
 using System.Collections.Generic;
+using Exponentia.Player;
 using UnityEngine;
 
 public class PlayerMechanics : MonoBehaviour, IDamageable
 {
-    [Header("Referanslar")]
+    [Header("References")]
     [SerializeField] private PlayerStats playerStats;
     [SerializeField] private PlayerMovement playerMovement;
 
-    [Header("Saldiri")]
-    [SerializeField] private LayerMask saldiriKatmanlari = ~0;
-    [SerializeField] private float saldiriMenzili = 1.5f;
-    [SerializeField] private float saldiriYaricapi = 0.5f;
-    [SerializeField] private float temelSaldiriCarpani = 1f;
-    [SerializeField] private float temelSaldiriManaMaliyeti = 15f;
+    [Header("Attack")]
+    [SerializeField] private LayerMask attackLayers = ~0;
+    [SerializeField] private float attackRange = 1.5f;
+    [SerializeField] private float attackRadius = 0.5f;
+    [SerializeField] private float baseAttackMultiplier = 1f;
+    [SerializeField] private float baseAttackManaCost = 0f;
 
-    [Header("Hasar Alma")]
-    [SerializeField] private float hasarAlmaBeklemeSuresi = 0.2f;
+    [Header("Damage Intake")]
+    [SerializeField] private float damageCooldown = 0.2f;
 
-    [Header("Can Yazisi")]
-    [SerializeField] private Vector3 canYaziOffset = new Vector3(0f, 1.35f, 0f);
-    [SerializeField] private Color canYaziRengi = Color.green;
-    [SerializeField] private int canYaziFontBoyutu = 32;
-    [SerializeField] private float canYaziKarakterBoyutu = 0.22f;
+    [Header("Health Text")]
+    [SerializeField] private Vector3 healthTextOffset = new Vector3(0f, 1.35f, 0f);
+    [SerializeField] private Color healthTextColor = Color.green;
+    [SerializeField] private int healthTextFontSize = 32;
+    [SerializeField] private float healthTextCharacterSize = 0.22f;
 
     public float MevcutCan { get; private set; }
     public float MevcutMana { get; private set; }
     public float MevcutKalkan { get; private set; }
 
-    private float sonrakiSaldiriZamani;
-    private float sonrakiHasarAlmaZamani;
-    private TextMesh canTextMesh;
+    private float nextAttackTime;
+    private float nextDamageTime;
+    private TextMesh healthTextMesh;
 
     public bool Yasiyor => MevcutCan > 0f;
 
@@ -60,9 +70,9 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
         }
 
         EnsureHealthText();
-        MevcutCan = Mathf.Max(0f, playerStats != null ? playerStats.can : 0f);
-        MevcutMana = Mathf.Max(0f, playerStats != null ? playerStats.mana : 0f);
-        MevcutKalkan = Mathf.Max(0f, playerStats != null ? playerStats.kalkan : 0f);
+        MevcutCan = Mathf.Max(0f, playerStats != null ? playerStats.MaxHealth : 0f);
+        MevcutMana = Mathf.Max(0f, playerStats != null ? playerStats.Mana : 0f);
+        MevcutKalkan = Mathf.Max(0f, playerStats != null ? playerStats.Shield : 0f);
     }
 
     private void OnEnable()
@@ -77,11 +87,12 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
     {
         if (playerStats == null)
         {
-            Debug.LogError("PlayerMechanics icin PlayerStats referansi gerekli.", this);
+            Debug.LogError("PlayerMechanics requires PlayerStats reference.", this);
             enabled = false;
             return;
         }
 
+        SyncResourcesFromStats();
         ApplyStatsToComponents();
         RaiseResourceEvents();
     }
@@ -101,34 +112,33 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
 
     public float TakeDamage(float amount)
     {
-        if (!Yasiyor || amount <= 0f || Time.time < sonrakiHasarAlmaZamani || isInvulnerable)
+        if (!Yasiyor || amount <= 0f || Time.time < nextDamageTime || isInvulnerable)
         {
             return 0f;
         }
 
-        sonrakiHasarAlmaZamani = Time.time + hasarAlmaBeklemeSuresi;
-
-        float kalanHasar = amount;
+        nextDamageTime = Time.time + damageCooldown;
+        float remainingDamage = amount;
 
         if (MevcutKalkan > 0f)
         {
-            float emilenHasar = Mathf.Min(MevcutKalkan, kalanHasar);
-            MevcutKalkan -= emilenHasar;
-            kalanHasar -= emilenHasar;
+            float absorbedDamage = Mathf.Min(MevcutKalkan, remainingDamage);
+            MevcutKalkan -= absorbedDamage;
+            remainingDamage -= absorbedDamage;
         }
 
-        float savunmaSonrasiHasar = Mathf.Max(1f, kalanHasar - playerStats.savunma);
-        float uygulananHasar = kalanHasar > 0f ? savunmaSonrasiHasar : 0f;
+        float reducedByDefense = Mathf.Max(1f, remainingDamage - playerStats.Defense);
+        float appliedDamage = remainingDamage > 0f ? reducedByDefense : 0f;
 
-        if (uygulananHasar <= 0f)
+        if (appliedDamage <= 0f)
         {
-            OnCanDegisti?.Invoke(MevcutCan, playerStats.can);
+            OnCanDegisti?.Invoke(MevcutCan, playerStats.MaxHealth);
             return 0f;
         }
 
-        MevcutCan = Mathf.Max(0f, MevcutCan - uygulananHasar);
-        FloatingCombatText.Create(Mathf.CeilToInt(uygulananHasar).ToString(), transform.position + Vector3.up * 0.9f, Color.yellow);
-        OnCanDegisti?.Invoke(MevcutCan, playerStats.can);
+        MevcutCan = Mathf.Max(0f, MevcutCan - appliedDamage);
+        FloatingCombatText.Create(Mathf.CeilToInt(appliedDamage).ToString(), transform.position + Vector3.up * 0.9f, Color.yellow);
+        OnCanDegisti?.Invoke(MevcutCan, playerStats.MaxHealth);
         UpdateHealthText();
 
         if (!Yasiyor)
@@ -136,7 +146,7 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
             OnOldu?.Invoke();
         }
 
-        return uygulananHasar;
+        return appliedDamage;
     }
 
     public float DealDamage(GameObject target, float damageMultiplier = 1f)
@@ -152,10 +162,11 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
             return 0f;
         }
 
-        float totalDamage = Mathf.Max(0f, playerStats.hasar * damageMultiplier);
+        float totalDamage = Mathf.Max(0f, playerStats.Damage * damageMultiplier);
         // Try to detect enemy death for kill-based passives
         EnemyMechanics enemy = target.GetComponentInParent<EnemyMechanics>();
         bool wasAlive = enemy != null && enemy.IsAlive;
+
 
         float appliedDamage = damageable.TakeDamage(totalDamage);
 
@@ -173,7 +184,7 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
 
         if (appliedDamage > 0f)
         {
-            float lifeStealRatio = NormalizePercent(playerStats.canCalma);
+            float lifeStealRatio = NormalizePercent(playerStats.LifeSteal);
             if (lifeStealRatio > 0f)
             {
                 Heal(appliedDamage * lifeStealRatio);
@@ -219,7 +230,7 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
         }
 
         MevcutMana -= amount;
-        OnManaDegisti?.Invoke(MevcutMana, playerStats.mana);
+        OnManaDegisti?.Invoke(MevcutMana, playerStats.Mana);
         return true;
     }
 
@@ -230,8 +241,8 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
             return;
         }
 
-        MevcutMana = Mathf.Min(playerStats.mana, MevcutMana + amount);
-        OnManaDegisti?.Invoke(MevcutMana, playerStats.mana);
+        MevcutMana = Mathf.Min(playerStats.Mana, MevcutMana + amount);
+        OnManaDegisti?.Invoke(MevcutMana, playerStats.Mana);
     }
 
     public void Heal(float amount)
@@ -241,8 +252,8 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
             return;
         }
 
-        MevcutCan = Mathf.Min(playerStats.can, MevcutCan + amount);
-        OnCanDegisti?.Invoke(MevcutCan, playerStats.can);
+        MevcutCan = Mathf.Min(playerStats.MaxHealth, MevcutCan + amount);
+        OnCanDegisti?.Invoke(MevcutCan, playerStats.MaxHealth);
         UpdateHealthText();
     }
 
@@ -253,15 +264,15 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
             return;
         }
 
-        playerStats.xp += amount;
+        playerStats.Xp += amount;
 
-        while (playerStats.xp >= playerStats.sonrakiLevelXp)
+        while (playerStats.Xp >= playerStats.NextLevelXp)
         {
-            playerStats.xp -= playerStats.sonrakiLevelXp;
+            playerStats.Xp -= playerStats.NextLevelXp;
             LevelUp();
         }
 
-        OnXpDegisti?.Invoke(playerStats.xp, playerStats.sonrakiLevelXp);
+        OnXpDegisti?.Invoke(playerStats.Xp, playerStats.NextLevelXp);
     }
 
     public void KalkanYenile(float amount)
@@ -271,7 +282,7 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
             return;
         }
 
-        MevcutKalkan = Mathf.Min(playerStats.kalkan, MevcutKalkan + amount);
+        MevcutKalkan = Mathf.Min(playerStats.Shield, MevcutKalkan + amount);
     }
 
     private void HandleAttackPressed()
@@ -281,39 +292,39 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
 
     private bool TryBasicAttack()
     {
-        if (!Yasiyor || Time.time < sonrakiSaldiriZamani)
+        if (!Yasiyor || Time.time < nextAttackTime)
         {
             return false;
         }
 
-        if (!HarcaMana(temelSaldiriManaMaliyeti))
+        if (!HarcaMana(baseAttackManaCost))
         {
             return false;
         }
 
-        float saldiriAraligi = playerStats.saldiriHizi > 0f ? 1f / playerStats.saldiriHizi : 1f;
-        sonrakiSaldiriZamani = Time.time + saldiriAraligi;
+        float attackInterval = playerStats.AttackSpeed > 0f ? 1f / playerStats.AttackSpeed : 1f;
+        nextAttackTime = Time.time + attackInterval;
 
-        Vector2 saldiriYon = playerMovement != null ? playerMovement.LastMoveDirection : Vector2.right;
-        if (saldiriYon.sqrMagnitude <= 0.001f)
+        Vector2 attackDirection = playerMovement != null ? playerMovement.LastMoveDirection : Vector2.right;
+        if (attackDirection.sqrMagnitude <= 0.001f)
         {
-            saldiriYon = Vector2.right;
+            attackDirection = Vector2.right;
         }
 
-        Vector2 merkez = (Vector2)transform.position + saldiriYon.normalized * saldiriMenzili;
-        Collider2D[] hits = Physics2D.OverlapCircleAll(merkez, saldiriYaricapi, saldiriKatmanlari);
-        HashSet<IDamageable> vurulanHedefler = new HashSet<IDamageable>();
+        Vector2 center = (Vector2)transform.position + attackDirection.normalized * attackRange;
+        Collider2D[] hits = Physics2D.OverlapCircleAll(center, attackRadius, attackLayers);
+        HashSet<IDamageable> damagedTargets = new HashSet<IDamageable>();
 
         for (int i = 0; i < hits.Length; i++)
         {
             IDamageable damageable = FindDamageable(hits[i].gameObject);
-            if (damageable == null || ReferenceEquals(damageable, this) || vurulanHedefler.Contains(damageable))
+            if (damageable == null || ReferenceEquals(damageable, this) || damagedTargets.Contains(damageable))
             {
                 continue;
             }
 
-            vurulanHedefler.Add(damageable);
-            DealDamage(hits[i].gameObject, temelSaldiriCarpani);
+            damagedTargets.Add(damageable);
+            DealDamage(hits[i].gameObject, baseAttackMultiplier);
         }
 
         return true;
@@ -321,37 +332,51 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
 
     private void LevelUp()
     {
-        playerStats.level++;
-        playerStats.can += playerStats.levelBasinaCanArtisi;
-        playerStats.hasar += playerStats.levelBasinaHasarArtisi;
-        playerStats.mana += playerStats.levelBasinaManaArtisi;
-        playerStats.savunma += playerStats.levelBasinaSavunmaArtisi;
-        playerStats.kalkan += playerStats.levelBasinaKalkanArtisi;
-        playerStats.sonrakiLevelXp = Mathf.Max(1f, playerStats.sonrakiLevelXp * playerStats.levelXpCarpani);
+        playerStats.Level += 1;
+        playerStats.MaxHealth += playerStats.LevelUpMaxHealthBonus;
+        playerStats.Damage += playerStats.LevelUpDamageBonus;
+        playerStats.Mana += playerStats.LevelUpManaBonus;
+        playerStats.Defense += playerStats.LevelUpDefenseBonus;
+        playerStats.Shield += playerStats.LevelUpShieldBonus;
+        playerStats.NextLevelXp = Mathf.Max(1f, playerStats.NextLevelXp * playerStats.LevelXpMultiplier);
 
-        MevcutCan = playerStats.can;
-        MevcutMana = playerStats.mana;
-        MevcutKalkan = playerStats.kalkan;
+        MevcutCan = playerStats.MaxHealth;
+        MevcutMana = playerStats.Mana;
+        MevcutKalkan = playerStats.Shield;
 
         ApplyStatsToComponents();
         RaiseResourceEvents();
-        OnLevelAtlandi?.Invoke(playerStats.level);
+        OnLevelAtlandi?.Invoke(playerStats.Level);
     }
 
     private void ApplyStatsToComponents()
     {
         if (playerMovement != null)
         {
-            playerMovement.SetMoveSpeed(playerStats.hareketHizi);
+            // Turkish: Movement scripti korunur, sadece seçili karakter hızını dışarıdan enjekte ederiz.
+            playerMovement.SetMoveSpeed(playerStats.MoveSpeed);
         }
     }
 
     private void RaiseResourceEvents()
     {
-        OnCanDegisti?.Invoke(MevcutCan, playerStats.can);
-        OnManaDegisti?.Invoke(MevcutMana, playerStats.mana);
-        OnXpDegisti?.Invoke(playerStats.xp, playerStats.sonrakiLevelXp);
+        OnCanDegisti?.Invoke(MevcutCan, playerStats.MaxHealth);
+        OnManaDegisti?.Invoke(MevcutMana, playerStats.Mana);
+        OnXpDegisti?.Invoke(playerStats.Xp, playerStats.NextLevelXp);
         UpdateHealthText();
+    }
+
+    public void SyncResourcesFromStats()
+    {
+        if (playerStats == null)
+        {
+            return;
+        }
+
+        // Turkish: CharacterData uygulanınca runtime kaynaklarını PlayerStats ile tekrar hizalıyoruz.
+        MevcutCan = Mathf.Clamp(playerStats.CurrentHealth, 0f, playerStats.MaxHealth);
+        MevcutMana = Mathf.Max(0f, playerStats.Mana);
+        MevcutKalkan = Mathf.Max(0f, playerStats.Shield);
     }
 
     private static float NormalizePercent(float value)
@@ -381,23 +406,23 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
 
     private void OnDrawGizmosSelected()
     {
-        Vector2 yon = Application.isPlaying && playerMovement != null
+        Vector2 direction = Application.isPlaying && playerMovement != null
             ? playerMovement.LastMoveDirection
             : Vector2.right;
 
-        if (yon.sqrMagnitude <= 0.001f)
+        if (direction.sqrMagnitude <= 0.001f)
         {
-            yon = Vector2.right;
+            direction = Vector2.right;
         }
 
         Gizmos.color = Color.red;
-        Vector2 merkez = (Vector2)transform.position + yon.normalized * saldiriMenzili;
-        Gizmos.DrawWireSphere(merkez, saldiriYaricapi);
+        Vector2 center = (Vector2)transform.position + direction.normalized * attackRange;
+        Gizmos.DrawWireSphere(center, attackRadius);
     }
 
     private void EnsureHealthText()
     {
-        if (canTextMesh != null)
+        if (healthTextMesh != null)
         {
             return;
         }
@@ -412,48 +437,48 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
         {
             textObject = new GameObject("PlayerHealthText");
             textObject.transform.SetParent(transform);
-            textObject.transform.localPosition = canYaziOffset;
+            textObject.transform.localPosition = healthTextOffset;
         }
 
-        canTextMesh = textObject.GetComponent<TextMesh>();
-        if (canTextMesh == null)
+        healthTextMesh = textObject.GetComponent<TextMesh>();
+        if (healthTextMesh == null)
         {
-            canTextMesh = textObject.AddComponent<TextMesh>();
+            healthTextMesh = textObject.AddComponent<TextMesh>();
         }
 
-        canTextMesh.anchor = TextAnchor.MiddleCenter;
-        canTextMesh.alignment = TextAlignment.Center;
-        canTextMesh.fontSize = canYaziFontBoyutu;
-        canTextMesh.characterSize = canYaziKarakterBoyutu;
-        canTextMesh.color = canYaziRengi;
+        healthTextMesh.anchor = TextAnchor.MiddleCenter;
+        healthTextMesh.alignment = TextAlignment.Center;
+        healthTextMesh.fontSize = healthTextFontSize;
+        healthTextMesh.characterSize = healthTextCharacterSize;
+        healthTextMesh.color = healthTextColor;
 
-        MeshRenderer textRenderer = canTextMesh.GetComponent<MeshRenderer>();
+        MeshRenderer textRenderer = healthTextMesh.GetComponent<MeshRenderer>();
         textRenderer.sortingOrder = 20;
     }
 
     private void UpdateHealthText()
     {
-        if (canTextMesh == null)
+        if (healthTextMesh == null)
         {
             return;
         }
 
-        canTextMesh.text = Mathf.CeilToInt(MevcutCan).ToString();
+        healthTextMesh.text = Mathf.CeilToInt(MevcutCan).ToString();
     }
 
     private void UpdateHealthTextTransform()
     {
-        if (canTextMesh == null)
+        if (healthTextMesh == null)
         {
             return;
         }
 
-        canTextMesh.transform.position = transform.position + canYaziOffset;
+        healthTextMesh.transform.position = transform.position + healthTextOffset;
 
         Camera activeCamera = Camera.main;
         if (activeCamera != null)
         {
-            canTextMesh.transform.rotation = activeCamera.transform.rotation;
+            healthTextMesh.transform.rotation = activeCamera.transform.rotation;
         }
     }
 }

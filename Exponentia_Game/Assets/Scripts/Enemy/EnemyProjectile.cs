@@ -11,6 +11,15 @@ public class EnemyProjectile : MonoBehaviour
     private EnemyMechanics owner;
     private CircleCollider2D circleCollider;
     private SpriteRenderer spriteRenderer;
+    private bool useCurvedPath;
+    private bool useExplosion;
+    private bool hasExploded;
+    private float curveElapsedTime;
+    private float curveDuration;
+    private float explosionRadius;
+    private Vector2 curveStartPoint;
+    private Vector2 curveControlPoint;
+    private Vector2 curveEndPoint;
 
     private static Sprite cachedSprite;
     private static Material cachedSpriteMaterial;
@@ -28,6 +37,27 @@ public class EnemyProjectile : MonoBehaviour
         Destroy(gameObject, Mathf.Max(0.1f, lifeTime));
     }
 
+    public void ConfigureCurvedPath(Vector2 targetPosition, float travelDuration, float curveOffset, float aoeRadius)
+    {
+        curveStartPoint = transform.position;
+        curveEndPoint = targetPosition;
+        curveDuration = Mathf.Max(0.05f, travelDuration);
+        curveElapsedTime = 0f;
+        useCurvedPath = true;
+        useExplosion = aoeRadius > 0f;
+        explosionRadius = Mathf.Max(0f, aoeRadius);
+
+        Vector2 straightDirection = (curveEndPoint - curveStartPoint).normalized;
+        if (straightDirection.sqrMagnitude <= 0.001f)
+        {
+            straightDirection = Vector2.right;
+        }
+
+        Vector2 perpendicular = new Vector2(-straightDirection.y, straightDirection.x);
+        curveControlPoint = (curveStartPoint + curveEndPoint) * 0.5f + perpendicular * curveOffset;
+        transform.right = straightDirection;
+    }
+
     private void Awake()
     {
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
@@ -40,8 +70,16 @@ public class EnemyProjectile : MonoBehaviour
         circleCollider.radius = 0.5f;
 
         spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.sprite = GetSquareSprite();
-        spriteRenderer.material = GetSpriteMaterial();
+        if (spriteRenderer.sprite == null)
+        {
+            spriteRenderer.sprite = GetSquareSprite();
+        }
+
+        if (spriteRenderer.sharedMaterial == null)
+        {
+            spriteRenderer.material = GetSpriteMaterial();
+        }
+
         spriteRenderer.sortingOrder = 8;
 
         ApplyVisualState();
@@ -49,6 +87,12 @@ public class EnemyProjectile : MonoBehaviour
 
     private void Update()
     {
+        if (useCurvedPath)
+        {
+            UpdateCurvedPath();
+            return;
+        }
+
         transform.position += (Vector3)(velocity * Time.deltaTime);
     }
 
@@ -65,7 +109,66 @@ public class EnemyProjectile : MonoBehaviour
             return;
         }
 
+        if (useExplosion)
+        {
+            Explode();
+            return;
+        }
+
         damageable.TakeDamage(damage);
+        Destroy(gameObject);
+    }
+
+    private void UpdateCurvedPath()
+    {
+        curveElapsedTime += Time.deltaTime;
+        float t = Mathf.Clamp01(curveElapsedTime / curveDuration);
+
+        Vector2 firstLerp = Vector2.Lerp(curveStartPoint, curveControlPoint, t);
+        Vector2 secondLerp = Vector2.Lerp(curveControlPoint, curveEndPoint, t);
+        Vector2 bezierPoint = Vector2.Lerp(firstLerp, secondLerp, t);
+
+        Vector2 tangent = secondLerp - firstLerp;
+        if (tangent.sqrMagnitude > 0.001f)
+        {
+            transform.right = tangent.normalized;
+        }
+
+        transform.position = bezierPoint;
+
+        if (t >= 1f)
+        {
+            if (useExplosion)
+            {
+                Explode();
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+        }
+    }
+
+    private void Explode()
+    {
+        if (hasExploded)
+        {
+            return;
+        }
+
+        hasExploded = true;
+
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, explosionRadius);
+        for (int i = 0; i < hits.Length; i++)
+        {
+            IDamageable damageable = EnemyMechanics.FindDamageable(hits[i].gameObject);
+            if (damageable is PlayerMechanics)
+            {
+                damageable.TakeDamage(damage);
+                break;
+            }
+        }
+
         Destroy(gameObject);
     }
 

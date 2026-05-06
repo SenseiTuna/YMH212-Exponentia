@@ -52,9 +52,15 @@ public class StyxJellyfishEnemy : EnemyMechanics
             Vector2 direction = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle));
             Vector3 spawnPosition = transform.position + (Vector3)(direction * spawnRadius);
 
-            GameObject projectileObject = SpawnSquareProjectile("StyxRingShot", spawnPosition, direction);
-            EnemyProjectile projectile = projectileObject.AddComponent<EnemyProjectile>();
-            projectile.Initialize(this, direction, projectileSpeed, projectileDamage, projectileLifeTime, projectileColor, projectileSize);
+            SpawnEnemyProjectile(
+                "StyxRingShot",
+                spawnPosition,
+                direction,
+                projectileSpeed,
+                projectileDamage,
+                projectileLifeTime,
+                projectileColor,
+                projectileSize);
         }
     }
 }

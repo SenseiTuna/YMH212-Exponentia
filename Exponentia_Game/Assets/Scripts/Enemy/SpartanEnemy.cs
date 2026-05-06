@@ -1,31 +1,31 @@
 using UnityEngine;
 
-public class MermiteEnemy : EnemyMechanics
+public class SpartanEnemy : EnemyMechanics
 {
-    [Header("Mermite Attack")]
-    [SerializeField] private float shootRange = 6f;
-    [SerializeField] private float projectileSpeed = 3.2f;
+    [Header("Spartan Spear Throw")]
+    [SerializeField] private float shootRange = 8.5f;
+    [SerializeField] private float attackCooldown = 1.9f;
+    [SerializeField] private float projectileSpeed = 5.5f;
     [SerializeField] private float projectileDamage = 11f;
-    [SerializeField] private float projectileLifeTime = 4f;
+    [SerializeField] private float projectileLifeTime = 4.2f;
     [SerializeField] private float projectileSize = 0.26f;
-    [SerializeField] private float attackCooldown = 1.6f;
-    [SerializeField] private float shootOffset = 0.75f;
-    [SerializeField] private Color projectileColor = new Color(0.8f, 0.8f, 0.8f);
+    [SerializeField] private float projectileSpawnOffset = 0.9f;
+    [SerializeField] private Color projectileColor = new Color(0.8f, 0.8f, 0.72f);
 
     private float nextShootTime;
 
     private void Reset()
     {
         ApplyDefaultSetup(
-            "Mermite",
-            24f,
-            1.3f,
+            "Spartan",
+            44f,
+            1.2f,
             6f,
-            9f,
+            15f,
             true,
-            4.2f,
-            new Color(0.72f, 0.72f, 0.76f),
-            new Vector2(0.8f, 0.8f));
+            5.2f,
+            new Color(0.7f, 0.68f, 0.5f),
+            new Vector2(1f, 1f));
     }
 
     protected override void Update()
@@ -51,8 +51,8 @@ public class MermiteEnemy : EnemyMechanics
         nextShootTime = Time.time + attackCooldown;
 
         SpawnEnemyProjectile(
-            "MermiteStoneShot",
-            transform.position + (Vector3)(direction * shootOffset),
+            "SpartanSpear",
+            transform.position + (Vector3)(direction * projectileSpawnOffset),
             direction,
             projectileSpeed,
             projectileDamage,

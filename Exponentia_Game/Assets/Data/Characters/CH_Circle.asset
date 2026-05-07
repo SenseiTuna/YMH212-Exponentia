@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CH_Circle
   m_EditorClassIdentifier: Assembly-CSharp::Exponentia.Data.CharacterData
   characterId: CH_Circle
-  characterName: Circle Bro
+  characterName: Yuwarlak Dop
   description: unga bunga yuwarlak adamka
   gameplaySprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
   characterColor: {r: 1, g: 1, b: 1, a: 1}

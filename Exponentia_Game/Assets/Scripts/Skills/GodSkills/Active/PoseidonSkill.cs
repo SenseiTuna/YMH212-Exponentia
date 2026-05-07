@@ -58,7 +58,7 @@ public class PoseidonSkill : GodSkillBase
 
     private float SafeMultiplier(float absoluteDamage)
     {
-        float baseD = ownerStats != null && ownerStats.hasar > 0f ? ownerStats.hasar : 1f;
+        float baseD = ownerStats != null && ownerStats.Damage > 0f ? ownerStats.Damage : 1f;
         return absoluteDamage / baseD;
     }
 

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CH_Square
   m_EditorClassIdentifier: Assembly-CSharp::Exponentia.Data.CharacterData
   characterId: CH_Square
-  characterName: Square Man
+  characterName: Edgy Boi
   description: edgy boy
   gameplaySprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   characterColor: {r: 1, g: 1, b: 1, a: 1}
@@ -21,17 +21,21 @@ MonoBehaviour:
   icon: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   baseStats:
     maxHealth: 10
-    armor: 0
+    damage: 10
     moveSpeed: 1
+    attackSpeed: 1
+    projectileSpeed: 10
+    defense: 0
+    lifeSteal: 0
+    shield: 0
+    mana: 100
+    armor: 0
     knockbackResistance: 0
     isDashing: 0
     dashSpeed: 10
     dashDuration: 0.5
-    damage: 10
-    attackSpeed: 1
     fireRate: 0.5
     range: 8
-    projectileSpeed: 10
     projectileSize: 1
     projectileLifetime: 3
     critChance: 0.05

@@ -55,7 +55,7 @@ public class ZeusSkill : GodSkillBase
             Rigidbody2D rb = go.GetComponent<Rigidbody2D>();
             if (rb != null)
             {
-                rb.velocity = Vector2.zero;
+                rb.linearVelocity = Vector2.zero;
                 rb.AddForce(((Vector2)go.transform.position - center).normalized * 200f);
             }
 
@@ -67,14 +67,14 @@ public class ZeusSkill : GodSkillBase
 
     private float SafeMultiplier(float absoluteDamage)
     {
-        float baseD = ownerStats != null && ownerStats.hasar > 0f ? ownerStats.hasar : 1f;
+        float baseD = ownerStats != null && ownerStats.Damage > 0f ? ownerStats.Damage : 1f;
         return absoluteDamage / baseD;
     }
 
     private void Start()
     {
         if (ownerStats != null)
-            baseAttackSpeed = ownerStats.saldiriHizi;
+            baseAttackSpeed = ownerStats.AttackSpeed;
 
         if (owner != null)
         {
@@ -137,7 +137,7 @@ public class ZeusSkill : GodSkillBase
     private void UpdateAttackSpeed()
     {
         if (ownerStats == null) return;
-        ownerStats.saldiriHizi = baseAttackSpeed * (1f + currentKillStacks * killAttackSpeedPerStack);
+        ownerStats.AttackSpeed = baseAttackSpeed * (1f + currentKillStacks * killAttackSpeedPerStack);
     }
 
     private void HandleHealthChanged(float current, float max)

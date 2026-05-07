@@ -27,13 +27,13 @@ public class AresSkill : GodSkillBase
     {
         if (owner == null || ownerStats == null) return false;
 
-        float prevDamage = ownerStats.hasar;
-        float prevAttackSpeed = ownerStats.saldiriHizi;
-        float prevMove = ownerStats.hareketHizi;
+        float prevDamage = ownerStats.Damage;
+        float prevAttackSpeed = ownerStats.AttackSpeed;
+        float prevMove = ownerStats.MoveSpeed;
 
-        ownerStats.hasar = ownerStats.hasar * bonusDamageMultiplier;
-        ownerStats.saldiriHizi = ownerStats.saldiriHizi * bonusAttackSpeedMultiplier;
-        ownerStats.hareketHizi = ownerStats.hareketHizi * bonusMoveSpeedMultiplier;
+        ownerStats.Damage = ownerStats.Damage * bonusDamageMultiplier;
+        ownerStats.AttackSpeed = ownerStats.AttackSpeed * bonusAttackSpeedMultiplier;
+        ownerStats.MoveSpeed = ownerStats.MoveSpeed * bonusMoveSpeedMultiplier;
 
         StartCoroutine(EndBerserkAfter(berserkDuration, prevDamage, prevAttackSpeed, prevMove));
         return true;
@@ -43,9 +43,9 @@ public class AresSkill : GodSkillBase
     {
         yield return new WaitForSeconds(time);
         if (ownerStats == null) yield break;
-        ownerStats.hasar = prevD;
-        ownerStats.saldiriHizi = prevAS;
-        ownerStats.hareketHizi = prevMove;
+        ownerStats.Damage = prevD;
+        ownerStats.AttackSpeed = prevAS;
+        ownerStats.MoveSpeed = prevMove;
     }
 
     // Kanli Darbe: apply AoE and bleeding

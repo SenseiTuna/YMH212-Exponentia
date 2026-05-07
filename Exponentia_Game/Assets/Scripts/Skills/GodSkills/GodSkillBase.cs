@@ -1,4 +1,5 @@
 using UnityEngine;
+using Exponentia.Player;
 
 public abstract class GodSkillBase : MonoBehaviour
 {

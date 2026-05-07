@@ -30,8 +30,8 @@ public class AthenaSkill : GodSkillBase
         // temporary defense bonus
         if (ownerStats != null)
         {
-            float prev = ownerStats.savunma;
-            ownerStats.savunma += defenseBonus;
+            float prev = ownerStats.Defense;
+            ownerStats.Defense += defenseBonus;
             StartCoroutine(RestoreDefenseAfter(shieldDuration, prev));
         }
 
@@ -42,6 +42,6 @@ public class AthenaSkill : GodSkillBase
     {
         yield return new WaitForSeconds(dur);
         if (ownerStats != null)
-            ownerStats.savunma = prev;
+            ownerStats.Defense = prev;
     }
 }

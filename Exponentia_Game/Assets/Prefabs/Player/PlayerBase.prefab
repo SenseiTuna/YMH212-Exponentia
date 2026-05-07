@@ -293,7 +293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   moveSpeed: 5
-  gamepadMoveDeadzone: 0.12
+  gamepadMoveDeadzone: 0.3
   useCentralInput: 1
   inputReader: {fileID: 0}
   keyboardBindings:
@@ -327,7 +327,7 @@ MonoBehaviour:
   laserManaCost: 0
   laserLifetime: 1.5
   spawnOffset: 0.6
-  gamepadAimDeadzone: 1
+  gamepadAimDeadzone: 0.2
   prioritizeControllerRightStick: 1
   useCentralInput: 1
   fallbackToMoveDirection: 1

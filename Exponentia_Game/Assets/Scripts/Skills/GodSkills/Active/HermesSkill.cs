@@ -44,8 +44,8 @@ public class HermesSkill : GodSkillBase
         // apply haste (temporary attack speed increase)
         if (ownerStats != null)
         {
-            float prev = ownerStats.saldiriHizi;
-            ownerStats.saldiriHizi = prev * 1.25f;
+            float prev = ownerStats.AttackSpeed;
+            ownerStats.AttackSpeed = prev * 1.25f;
             StartCoroutine(RestoreAttackSpeedAfter(hasteDuration, prev));
         }
 
@@ -56,6 +56,6 @@ public class HermesSkill : GodSkillBase
     {
         yield return new WaitForSeconds(dur);
         if (ownerStats != null)
-            ownerStats.saldiriHizi = prev;
+            ownerStats.AttackSpeed = prev;
     }
 }

@@ -32,8 +32,10 @@ public class HadesSkill : GodSkillBase
         // Example active: temporary summon of shadows is complex; for now grant lifesteal buff briefly
         if (owner == null) return false;
 
-        float prev = ownerStats.canCalma;
-        ownerStats.canCalma += lifeStealRatio * 100f; // store as percent if >1
+        if (ownerStats == null) return false;
+
+        float prev = ownerStats.LifeSteal;
+        ownerStats.LifeSteal += lifeStealRatio * 100f; // store as percent if >1
         StartCoroutine(RemoveLifeStealAfter(4f, prev));
         return true;
     }
@@ -42,7 +44,7 @@ public class HadesSkill : GodSkillBase
     {
         yield return new WaitForSeconds(duration);
         if (ownerStats != null)
-            ownerStats.canCalma = previous;
+            ownerStats.LifeSteal = previous;
     }
 
     private void Start()

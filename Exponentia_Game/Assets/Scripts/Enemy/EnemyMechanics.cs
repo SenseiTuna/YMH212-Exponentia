@@ -246,7 +246,7 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
         TryDealTouchDamage(collision.gameObject);
     }
 
-    private void CachePlayerReferences()
+    protected void CachePlayerReferences()
     {
         playerMechanics = FindAnyObjectByType<PlayerMechanics>();
         playerTarget = playerMechanics != null ? playerMechanics.transform : null;

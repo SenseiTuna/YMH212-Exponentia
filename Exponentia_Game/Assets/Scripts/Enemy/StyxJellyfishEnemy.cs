@@ -32,13 +32,34 @@ public class StyxJellyfishEnemy : EnemyMechanics
     {
         base.Update();
 
-        if (!IsAlive || PlayerTarget == null || Time.time < nextRingTime)
+        // Ensure player reference is cached
+        if (PlayerTarget == null)
+        {
+            CachePlayerReferences();
+            return;
+        }
+
+        if (!IsAlive || Time.time < nextRingTime)
         {
             return;
         }
 
         nextRingTime = Time.time + ringCooldown;
         FireRing();
+    }
+
+    private void CachePlayerReferences()
+    {
+        if (playerMechanics != null && playerMechanics.gameObject != null)
+        {
+            return;
+        }
+
+        playerMechanics = FindAnyObjectByType<PlayerMechanics>();
+        if (playerMechanics != null)
+        {
+            playerTarget = playerMechanics.transform;
+        }
     }
 
     private void FireRing()

@@ -30,8 +30,19 @@ public class HarpyEnemy : EnemyMechanics
             new Vector2(0.8f, 0.8f));
     }
 
+    protected override void Awake()
+    {
+        base.Awake();
+    }
+
     protected override void Update()
     {
+        // Force cache player reference before any checks
+        if (PlayerTarget == null)
+        {
+            CachePlayerReferences();
+        }
+
         if (!IsAlive || PlayerTarget == null)
         {
             return;
@@ -44,7 +55,6 @@ public class HarpyEnemy : EnemyMechanics
             {
                 isDashing = false;
             }
-
             return;
         }
 
@@ -56,7 +66,6 @@ public class HarpyEnemy : EnemyMechanics
                 isDashing = true;
                 dashEndTime = Time.time + dashDuration;
             }
-
             return;
         }
 

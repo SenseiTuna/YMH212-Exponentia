@@ -1,4 +1,5 @@
 using UnityEngine;
+using Pathfinding;
 
 [RequireComponent(typeof(Collider2D))]
 public class EnemyMechanics : MonoBehaviour, IDamageable
@@ -39,6 +40,9 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
     private Transform bodyVisual;
     private SpriteRenderer bodyRenderer;
     private TextMesh canTextMesh;
+    
+    // A* Referansı
+    protected IAstarAI aiAgent;
 
     private static Sprite cachedSquareSprite;
     private static Material cachedSpriteMaterial;
@@ -56,6 +60,8 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
         CachePlayerReferences();
         EnsurePlaceholderBody();
         EnsureHealthText();
+        
+        aiAgent = GetComponent<IAstarAI>();
 
         maxCan = Mathf.Max(1f, maxCan);
         mevcutCan = maxCan;
@@ -130,6 +136,16 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
         if (playerTarget == null)
         {
             CachePlayerReferences();
+            return;
+        }
+
+        if (aiAgent != null)
+        {
+            aiAgent.destination = playerTarget.position;
+            aiAgent.maxSpeed = moveSpeed;
+            // A* kendi hareket kodunu çalistirdigi icin transform pozisyonunu manuel ellemeyebiliriz.
+            // Sadece mesafe kontrolü (stopDistance) yapmak istersen:
+            aiAgent.isStopped = (GetDistanceToPlayer() <= stopDistance);
             return;
         }
 

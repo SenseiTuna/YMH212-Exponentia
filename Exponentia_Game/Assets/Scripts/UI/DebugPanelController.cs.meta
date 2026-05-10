@@ -1,16 +1,2 @@
 fileFormatVersion: 2
 guid: 693e033eac9db4458a47ddd1821aaa12
-MonoImporter:
-  externalObjects: {}
-  serializedVersion: 2
-  defaultReferences:
-  - panelRoot: {fileID: 2913247188878387274, guid: fa1efbb468775d84680355d954b1037f, type: 3}
-  - debugText: {instanceID: 0}
-  - playerStats: {instanceID: 0}
-  - playerMechanics: {instanceID: 0}
-  - playerMovement: {instanceID: 0}
-  executionOrder: 0
-  icon: {instanceID: 0}
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 

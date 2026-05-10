@@ -255,7 +255,7 @@ namespace Exponentia.UI
 
         public bool IsPanelVisible()
         {
-            return panelRoot == null || panelRoot.activeSelf;
+            return panelRoot != null && panelRoot.activeSelf;
         }
 
         public void RefreshDebugText()

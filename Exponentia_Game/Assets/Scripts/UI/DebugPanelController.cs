@@ -186,7 +186,7 @@ namespace Exponentia.UI
             rect.offsetMax = new Vector2(-10f, -8f);
 
             Text text = textObject.AddComponent<Text>();
-            text.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+            text.font = Resources.GetBuiltinResource<Font>("Arial.ttf");
             text.fontSize = 16;
             text.alignment = TextAnchor.UpperLeft;
             text.color = Color.white;

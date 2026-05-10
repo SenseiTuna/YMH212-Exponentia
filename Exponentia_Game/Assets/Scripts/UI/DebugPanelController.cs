@@ -14,6 +14,7 @@ namespace Exponentia.UI
         [SerializeField] private PlayerStats playerStats;
         [SerializeField] private PlayerMechanics playerMechanics;
         [SerializeField] private PlayerMovement playerMovement;
+        [SerializeField] private Font debugFont;
 
         [Header("Behavior")]
         [SerializeField] private KeyCode toggleKey = KeyCode.F3;
@@ -26,20 +27,16 @@ namespace Exponentia.UI
 
         private void Awake()
         {
-            Debug.Log("[DebugPanel] Awake called");
             ResolveReferences();
             FitPanelToScreen();
             SetPanelVisible(showOnStart);
-            Debug.Log($"[DebugPanel] Initialized. Panel visible: {IsPanelVisible()}");
         }
 
         private void Update()
         {
             if (Input.GetKeyDown(toggleKey))
             {
-                Debug.Log("[DebugPanel] F3 pressed, toggling panel");
                 SetPanelVisible(!IsPanelVisible());
-                Debug.Log($"[DebugPanel] Panel now visible: {IsPanelVisible()}");
             }
 
             if (Screen.width != lastScreenSize.x || Screen.height != lastScreenSize.y)
@@ -81,7 +78,15 @@ namespace Exponentia.UI
 
             if (debugText == null)
             {
-                debugText = GetComponentInChildren<Text>(true);
+                if (panelRoot != null)
+                {
+                    debugText = panelRoot.GetComponentInChildren<Text>(true);
+                }
+
+                if (debugText == null)
+                {
+                    debugText = GetComponentInChildren<Text>(true);
+                }
             }
 
             EnsureRuntimeUiIfMissing();
@@ -94,11 +99,8 @@ namespace Exponentia.UI
 
             if (player == null)
             {
-                Debug.LogWarning("[DebugPanel] Could not find Player");
                 return;
             }
-
-            Debug.Log("[DebugPanel] Found player, resolving components");
 
             if (playerStats == null)
             {
@@ -137,11 +139,11 @@ namespace Exponentia.UI
             if (debugText == null && panelRoot != null)
             {
                 debugText = panelRoot.GetComponentInChildren<Text>(true);
+            }
 
-                if (debugText == null)
-                {
-                    debugText = CreateDebugText(panelRoot.transform);
-                }
+            if (debugText == null && panelRoot != null)
+            {
+                debugText = CreateDebugText(panelRoot.transform, ResolveDebugFont());
             }
         }
 
@@ -179,7 +181,7 @@ namespace Exponentia.UI
             return panel;
         }
 
-        private static Text CreateDebugText(Transform parent)
+        private static Text CreateDebugText(Transform parent, Font fallbackFont)
         {
             GameObject textObject = new GameObject("DebugText");
             textObject.transform.SetParent(parent, false);
@@ -191,7 +193,7 @@ namespace Exponentia.UI
             rect.offsetMax = new Vector2(-10f, -8f);
 
             Text text = textObject.AddComponent<Text>();
-            text.font = Resources.GetBuiltinResource<Font>("Arial.ttf");
+            text.font = fallbackFont != null ? fallbackFont : Resources.GetBuiltinResource<Font>("Arial.ttf");
             text.fontSize = 16;
             text.alignment = TextAnchor.UpperLeft;
             text.color = Color.white;
@@ -202,8 +204,24 @@ namespace Exponentia.UI
             return text;
         }
 
+        private Font ResolveDebugFont()
+        {
+            if (debugFont != null)
+            {
+                return debugFont;
+            }
+
+            debugFont = Resources.GetBuiltinResource<Font>("Arial.ttf");
+            return debugFont;
+        }
+
         public void SetPanelVisible(bool isVisible)
         {
+            if (panelRoot == null || debugText == null)
+            {
+                EnsureRuntimeUiIfMissing();
+            }
+
             if (panelRoot != null)
             {
                 panelRoot.SetActive(isVisible);
@@ -314,14 +332,15 @@ namespace Exponentia.UI
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         private static void EnsureDebugPanel()
         {
-            Debug.Log("[DebugPanel] Bootstrap: EnsureDebugPanel called");
-            if (Object.FindFirstObjectByType<DebugPanelController>() != null)
+            if (!Application.isEditor && !Debug.isDebugBuild)
             {
-                Debug.Log("[DebugPanel] DebugPanelController already exists");
                 return;
             }
 
-            Debug.Log("[DebugPanel] Creating new DebugPanelController");
+            if (Object.FindFirstObjectByType<DebugPanelController>() != null)
+            {
+                return;
+            }
 
             GameObject root = new GameObject("DebugPanelController_Auto");
             Object.DontDestroyOnLoad(root);

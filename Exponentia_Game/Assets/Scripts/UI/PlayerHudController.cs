@@ -23,6 +23,7 @@ namespace Exponentia.UI
         [Header("Defaults")]
         [SerializeField] private string activeSkillName = "Healing Area";
         [SerializeField] private string activeWeaponName = "Laser";
+        private PlayerMechanics subscribedMechanics;
 
         private void Awake()
         {
@@ -32,31 +33,33 @@ namespace Exponentia.UI
 
         private void OnEnable()
         {
-            if (playerMechanics == null)
-            {
-                return;
-            }
-
-            playerMechanics.OnCanDegisti += HandleHealthChanged;
-            playerMechanics.OnManaDegisti += HandleManaChanged;
-            playerMechanics.OnXpDegisti += HandleXpChanged;
+            TryResolveAndSubscribe();
         }
 
         private void Start()
         {
-            RefreshAll();
+            TryResolveAndSubscribe();
+        }
+
+        private void Update()
+        {
+            if (subscribedMechanics == null || playerStats == null)
+            {
+                TryResolveAndSubscribe();
+            }
         }
 
         private void OnDisable()
         {
-            if (playerMechanics == null)
+            if (subscribedMechanics == null)
             {
                 return;
             }
 
-            playerMechanics.OnCanDegisti -= HandleHealthChanged;
-            playerMechanics.OnManaDegisti -= HandleManaChanged;
-            playerMechanics.OnXpDegisti -= HandleXpChanged;
+            subscribedMechanics.OnCanDegisti -= HandleHealthChanged;
+            subscribedMechanics.OnManaDegisti -= HandleManaChanged;
+            subscribedMechanics.OnXpDegisti -= HandleXpChanged;
+            subscribedMechanics = null;
         }
 
         public void RefreshAll()
@@ -104,6 +107,33 @@ namespace Exponentia.UI
             {
                 playerAttack = player.GetComponent<PlayerAttack>();
             }
+        }
+
+        private void TryResolveAndSubscribe()
+        {
+            ResolvePlayerReferences();
+
+            if (playerMechanics == null)
+            {
+                return;
+            }
+
+            if (subscribedMechanics != playerMechanics)
+            {
+                if (subscribedMechanics != null)
+                {
+                    subscribedMechanics.OnCanDegisti -= HandleHealthChanged;
+                    subscribedMechanics.OnManaDegisti -= HandleManaChanged;
+                    subscribedMechanics.OnXpDegisti -= HandleXpChanged;
+                }
+
+                subscribedMechanics = playerMechanics;
+                subscribedMechanics.OnCanDegisti += HandleHealthChanged;
+                subscribedMechanics.OnManaDegisti += HandleManaChanged;
+                subscribedMechanics.OnXpDegisti += HandleXpChanged;
+            }
+
+            RefreshAll();
         }
 
         private void TryAutoBindUiElements()

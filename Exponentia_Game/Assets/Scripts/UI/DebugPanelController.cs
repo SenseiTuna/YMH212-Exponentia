@@ -136,7 +136,12 @@ namespace Exponentia.UI
 
             if (debugText == null && panelRoot != null)
             {
-                debugText = CreateDebugText(panelRoot.transform);
+                debugText = panelRoot.GetComponentInChildren<Text>(true);
+
+                if (debugText == null)
+                {
+                    debugText = CreateDebugText(panelRoot.transform);
+                }
             }
         }
 

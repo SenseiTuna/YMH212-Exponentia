@@ -23,7 +23,9 @@ namespace Exponentia.UI
         [Header("Defaults")]
         [SerializeField] private string activeSkillName = "Healing Area";
         [SerializeField] private string activeWeaponName = "Laser";
+        [SerializeField] private float referenceRetryInterval = 0.5f;
         private PlayerMechanics subscribedMechanics;
+        private float referenceRetryElapsed;
 
         private void Awake()
         {
@@ -45,7 +47,12 @@ namespace Exponentia.UI
         {
             if (subscribedMechanics == null || playerStats == null)
             {
-                TryResolveAndSubscribe();
+                referenceRetryElapsed += Time.unscaledDeltaTime;
+                if (referenceRetryElapsed >= Mathf.Max(0.1f, referenceRetryInterval))
+                {
+                    referenceRetryElapsed = 0f;
+                    TryResolveAndSubscribe();
+                }
             }
         }
 
@@ -134,6 +141,7 @@ namespace Exponentia.UI
             }
 
             RefreshAll();
+            referenceRetryElapsed = 0f;
         }
 
         private void TryAutoBindUiElements()

@@ -1,4 +1,5 @@
 using UnityEngine;
+using Pathfinding;
 
 [RequireComponent(typeof(Collider2D))]
 public class EnemyMechanics : MonoBehaviour, IDamageable
@@ -22,6 +23,9 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
     [SerializeField] protected Vector2 placeholderScale = Vector2.one;
     [SerializeField] protected int sortingOrder = 5;
 
+    [Header("Projectile Template")]
+    [SerializeField] protected EnemyProjectile enemyProjectilePrefab;
+
     [Header("Can Yazisi")]
     [SerializeField] protected Vector3 yaziOffset = new Vector3(0f, 1.1f, 0f);
     [SerializeField] protected int yaziFontBoyutu = 32;
@@ -36,6 +40,9 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
     private Transform bodyVisual;
     private SpriteRenderer bodyRenderer;
     private TextMesh canTextMesh;
+    
+    // A* Referansı
+    protected IAstarAI aiAgent;
 
     private static Sprite cachedSquareSprite;
     private static Material cachedSpriteMaterial;
@@ -53,6 +60,8 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
         CachePlayerReferences();
         EnsurePlaceholderBody();
         EnsureHealthText();
+        
+        aiAgent = GetComponent<IAstarAI>();
 
         maxCan = Mathf.Max(1f, maxCan);
         mevcutCan = maxCan;
@@ -130,6 +139,16 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
             return;
         }
 
+        if (aiAgent != null)
+        {
+            aiAgent.destination = playerTarget.position;
+            aiAgent.maxSpeed = moveSpeed;
+            // A* kendi hareket kodunu çalistirdigi icin transform pozisyonunu manuel ellemeyebiliriz.
+            // Sadece mesafe kontrolü (stopDistance) yapmak istersen:
+            aiAgent.isStopped = (GetDistanceToPlayer() <= stopDistance);
+            return;
+        }
+
         Vector2 direction = GetDirectionToPlayer();
         float distance = Vector2.Distance(transform.position, playerTarget.position);
         if (distance <= stopDistance || direction.sqrMagnitude <= 0.001f)
@@ -182,12 +201,33 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
         damageable.TakeDamage(touchDamage);
     }
 
-    protected GameObject SpawnSquareProjectile(string projectileName, Vector3 startPosition, Vector2 direction)
+    protected EnemyProjectile SpawnEnemyProjectile(
+        string projectileName,
+        Vector3 startPosition,
+        Vector2 direction,
+        float speed,
+        float projectileDamage,
+        float lifeTime,
+        Color color,
+        float size)
     {
-        GameObject projectileObject = new GameObject(projectileName);
-        projectileObject.transform.position = startPosition;
-        projectileObject.transform.rotation = Quaternion.identity;
-        return projectileObject;
+        EnemyProjectile projectileInstance;
+
+        if (enemyProjectilePrefab != null)
+        {
+            projectileInstance = Instantiate(enemyProjectilePrefab, startPosition, Quaternion.identity);
+            projectileInstance.gameObject.name = projectileName;
+        }
+        else
+        {
+            GameObject projectileObject = new GameObject(projectileName);
+            projectileObject.transform.position = startPosition;
+            projectileObject.transform.rotation = Quaternion.identity;
+            projectileInstance = projectileObject.AddComponent<EnemyProjectile>();
+        }
+
+        projectileInstance.Initialize(this, direction, speed, projectileDamage, lifeTime, color, size);
+        return projectileInstance;
     }
 
     protected void ApplyDefaultSetup(
@@ -222,7 +262,7 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
         TryDealTouchDamage(collision.gameObject);
     }
 
-    private void CachePlayerReferences()
+    protected void CachePlayerReferences()
     {
         playerMechanics = FindAnyObjectByType<PlayerMechanics>();
         playerTarget = playerMechanics != null ? playerMechanics.transform : null;

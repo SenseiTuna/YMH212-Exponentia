@@ -50,8 +50,14 @@ public class MermiteEnemy : EnemyMechanics
 
         nextShootTime = Time.time + attackCooldown;
 
-        GameObject projectileObject = SpawnSquareProjectile("MermiteStoneShot", transform.position + (Vector3)(direction * shootOffset), direction);
-        EnemyProjectile projectile = projectileObject.AddComponent<EnemyProjectile>();
-        projectile.Initialize(this, direction, projectileSpeed, projectileDamage, projectileLifeTime, projectileColor, projectileSize);
+        SpawnEnemyProjectile(
+            "MermiteStoneShot",
+            transform.position + (Vector3)(direction * shootOffset),
+            direction,
+            projectileSpeed,
+            projectileDamage,
+            projectileLifeTime,
+            projectileColor,
+            projectileSize);
     }
 }

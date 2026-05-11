@@ -48,6 +48,8 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
     public event System.Action<int> OnLevelAtlandi;
     public event System.Action<float, float> OnXpDegisti;
     public event System.Action OnOldu;
+    public event System.Action<GameObject, float> OnDealtDamage;
+    public event System.Action<GameObject> OnEnemyKilled;
 
     private void Reset()
     {
@@ -110,7 +112,7 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
 
     public float TakeDamage(float amount)
     {
-        if (!Yasiyor || amount <= 0f || Time.time < nextDamageTime)
+        if (!Yasiyor || amount <= 0f || Time.time < nextDamageTime || isInvulnerable)
         {
             return 0f;
         }
@@ -161,7 +163,24 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
         }
 
         float totalDamage = Mathf.Max(0f, playerStats.Damage * damageMultiplier);
+        // Try to detect enemy death for kill-based passives
+        EnemyMechanics enemy = target.GetComponentInParent<EnemyMechanics>();
+        bool wasAlive = enemy != null && enemy.IsAlive;
+
+
         float appliedDamage = damageable.TakeDamage(totalDamage);
+
+        // Notify subscribers that damage was dealt
+        if (appliedDamage > 0f)
+        {
+            OnDealtDamage?.Invoke(target, appliedDamage);
+        }
+
+        // If we tracked an enemy and it died as a result, emit kill event
+        if (enemy != null && wasAlive && !enemy.IsAlive)
+        {
+            OnEnemyKilled?.Invoke(target);
+        }
 
         if (appliedDamage > 0f)
         {
@@ -173,6 +192,29 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
         }
 
         return appliedDamage;
+    }
+
+    private bool isInvulnerable = false;
+
+    public void SetTemporaryInvulnerable(float duration)
+    {
+        if (duration <= 0f)
+            return;
+
+        if (isInvulnerable)
+        {
+            StopCoroutine("InvulRoutine");
+        }
+
+        StartCoroutine("InvulRoutine", duration);
+    }
+
+    private System.Collections.IEnumerator InvulRoutine(object arg)
+    {
+        float duration = (float)arg;
+        isInvulnerable = true;
+        yield return new WaitForSeconds(duration);
+        isInvulnerable = false;
     }
 
     public bool HarcaMana(float amount)

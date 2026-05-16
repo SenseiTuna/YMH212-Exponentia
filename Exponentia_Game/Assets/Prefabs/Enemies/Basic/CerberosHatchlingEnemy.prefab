@@ -163,6 +163,11 @@ MonoBehaviour:
   useChaseMovement: 1
   stopDistance: 3.8
   touchDamageCooldown: 0.5
+  checkStuck: 1
+  stuckCheckInterval: 0.5
+  minMoveDistance: 0.05
+  unstuckPushForce: 2
+  unstuckDuration: 0.3
   placeholderColor: {r: 0.65, g: 0.4, b: 0.25, a: 1}
   placeholderScale: {x: 0.95, y: 0.95}
   sortingOrder: 5

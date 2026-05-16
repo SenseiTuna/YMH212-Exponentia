@@ -7,6 +7,7 @@ public abstract class GodSkillBase : MonoBehaviour
     [SerializeField] private string skillName = "New God Skill";
     [SerializeField] [TextArea] private string skillDescription = "";
     [SerializeField] private GodSkillType godSkillType = GodSkillType.None;
+    [SerializeField] private Sprite skillIcon; // Sol altta arayüzde göstereceğimiz ikon
 
     [Header("Skill Progression")]
     [SerializeField] private bool isUnlocked;
@@ -25,6 +26,7 @@ public abstract class GodSkillBase : MonoBehaviour
     public string SkillName => skillName;
     public string SkillDescription => skillDescription;
     public GodSkillType SkillType => godSkillType;
+    public Sprite SkillIcon => skillIcon;
     public bool IsUnlocked => isUnlocked;
     public int SkillLevel => skillLevel;
     public float ManaCost => manaCost;
@@ -39,6 +41,9 @@ public abstract class GodSkillBase : MonoBehaviour
     protected virtual void Awake()
     {
         CacheOwnerReferences();
+
+        // Eğer isUnlocked tikini Inspector'da kapalı unuttuysan diye garantilemek için başlangıçta otomatik açıyoruz:
+        isUnlocked = true; 
     }
 
     public void SetUnlocked(bool unlocked)
@@ -73,6 +78,7 @@ public abstract class GodSkillBase : MonoBehaviour
             return false;
         }
 
+        // Mana düşme denemesi
         if (!owner.HarcaMana(manaCost))
         {
             return false;
@@ -85,6 +91,7 @@ public abstract class GodSkillBase : MonoBehaviour
             return false;
         }
 
+        // Skill basarili kullanildi, cooldown baslat
         nextUseTime = Time.time + cooldown;
         return true;
     }

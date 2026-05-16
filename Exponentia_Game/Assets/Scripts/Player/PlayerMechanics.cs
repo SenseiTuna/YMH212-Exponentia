@@ -226,6 +226,7 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
 
         if (MevcutMana < amount)
         {
+            Debug.LogWarning("Insufficient Mana to cast skill! Required: " + amount + " Current: " + MevcutMana);
             return false;
         }
 

@@ -33,14 +33,20 @@ public class ZeusSkill : GodSkillBase
 
     protected override bool ActivateSkill()
     {
-        // Primary lightning strike in front of player
         if (owner == null) return false;
 
-        Vector2 dir = Vector2.right;
-        PlayerMovement pm = owner.GetComponent<PlayerMovement>();
-        if (pm != null) dir = pm.LastMoveDirection;
+        Vector2 center = (Vector2)owner.transform.position;
 
-        Vector2 center = (Vector2)owner.transform.position + dir.normalized * 2.5f;
+        // Fare (Mouse) pozisyonunu almak için
+        if (Camera.main != null && UnityEngine.InputSystem.Mouse.current != null)
+        {
+            Vector2 mouseScreenPos = UnityEngine.InputSystem.Mouse.current.position.ReadValue();
+            center = Camera.main.ScreenToWorldPoint(mouseScreenPos);
+        }
+
+        // Mouse'un olduğu yerde patlayan görsel bir efekt yaratabiliriz (şimdilik debug)
+        Debug.Log("Zeus Skilli kullanıldı! Patlama noktası: " + center);
+
         Collider2D[] hits = Physics2D.OverlapCircleAll(center, chainRadius);
 
         int chained = 0;

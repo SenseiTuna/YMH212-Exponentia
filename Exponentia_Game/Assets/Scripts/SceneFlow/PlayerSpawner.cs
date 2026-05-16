@@ -62,6 +62,12 @@ namespace Exponentia.SceneFlow
             Quaternion spawnRotation = spawnPoint != null ? spawnPoint.rotation : Quaternion.identity;
             SpawnedPlayer = Instantiate(playerBasePrefab, spawnPosition, spawnRotation);
 
+            // Turkish: Prefab kok pasifse Awake calismadan ApplyCharacter cagrilir; referanslar null kalir.
+            if (SpawnedPlayer != null && !SpawnedPlayer.activeSelf)
+            {
+                SpawnedPlayer.SetActive(true);
+            }
+
             PlayerCharacterApplier applier = SpawnedPlayer.GetComponent<PlayerCharacterApplier>();
             if (applier == null)
             {

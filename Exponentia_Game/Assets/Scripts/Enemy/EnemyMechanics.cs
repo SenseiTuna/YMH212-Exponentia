@@ -18,6 +18,13 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
     [SerializeField] protected float stopDistance = 0.2f;
     [SerializeField] protected float touchDamageCooldown = 0.5f;
 
+    [Header("Takılma Kurtarma (Stuck Detection)")]
+    [SerializeField] protected bool checkStuck = true;
+    [SerializeField] protected float stuckCheckInterval = 0.5f;
+    [SerializeField] protected float minMoveDistance = 0.05f;
+    [SerializeField] protected float unstuckPushForce = 2f;
+    [SerializeField] protected float unstuckDuration = 0.3f;
+
     [Header("Placeholder Gorunus")]
     [SerializeField] protected Color placeholderColor = Color.gray;
     [SerializeField] protected Vector2 placeholderScale = Vector2.one;
@@ -44,6 +51,13 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
     // A* Referansı
     protected IAstarAI aiAgent;
 
+    // Takılma Kurtarma Durumları
+    private Vector3 lastTickPosition;
+    private float stuckCheckTimer;
+    private bool isUnstucking = false;
+    private float unstuckTimer = 0f;
+    protected Rigidbody2D rb2d;
+
     private static Sprite cachedSquareSprite;
     private static Material cachedSpriteMaterial;
 
@@ -62,6 +76,9 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
         EnsureHealthText();
         
         aiAgent = GetComponent<IAstarAI>();
+        rb2d = GetComponent<Rigidbody2D>();
+        
+        lastTickPosition = transform.position;
 
         maxCan = Mathf.Max(1f, maxCan);
         mevcutCan = maxCan;
@@ -139,13 +156,53 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
             return;
         }
 
+        if (isUnstucking)
+        {
+            unstuckTimer -= Time.deltaTime;
+            if (unstuckTimer <= 0f)
+            {
+                isUnstucking = false;
+                if (aiAgent != null) aiAgent.isStopped = false;
+            }
+            return; // Kurtarma devam ediyorken normal hareketi devredışı bırak
+        }
+
         if (aiAgent != null)
         {
             aiAgent.destination = playerTarget.position;
             aiAgent.maxSpeed = moveSpeed;
-            // A* kendi hareket kodunu çalistirdigi icin transform pozisyonunu manuel ellemeyebiliriz.
-            // Sadece mesafe kontrolü (stopDistance) yapmak istersen:
             aiAgent.isStopped = (GetDistanceToPlayer() <= stopDistance);
+
+            if (checkStuck && !aiAgent.isStopped)
+            {
+                stuckCheckTimer += Time.deltaTime;
+                if (stuckCheckTimer >= stuckCheckInterval)
+                {
+                    float distMoved = Vector3.Distance(transform.position, lastTickPosition);
+                    if (distMoved < minMoveDistance)
+                    {
+                        // Takılma tespit edildi, geri tepme işlemini başlat
+                        isUnstucking = true;
+                        unstuckTimer = unstuckDuration;
+                        aiAgent.isStopped = true;
+
+                        Vector2 pushDir = (transform.position - playerTarget.position).normalized;
+                        if (rb2d != null)
+                        {
+                            rb2d.linearVelocity = Vector2.zero;
+                            rb2d.AddForce(pushDir * unstuckPushForce, ForceMode2D.Impulse);
+                        }
+                        else
+                        {
+                            transform.position += (Vector3)(pushDir * (unstuckPushForce * 0.1f));
+                        }
+                    }
+                    
+                    lastTickPosition = transform.position;
+                    stuckCheckTimer = 0f;
+                }
+            }
+
             return;
         }
 

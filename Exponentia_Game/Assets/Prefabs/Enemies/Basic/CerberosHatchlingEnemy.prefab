@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 178597863991689247}
   - component: {fileID: 3464615059817585418}
   - component: {fileID: 1918627781608117052}
+  - component: {fileID: -7943306072540520619}
   m_Layer: 0
   m_Name: CerberosHatchlingEnemy
   m_TagString: Enemy
@@ -87,12 +88,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: -2888630109960712390, guid: 6a3c2d5262e13144598f2e1b4533379d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3.0833333, y: 2.2291667}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -134,9 +135,9 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 2.8958333, y: 2.4375}
+    newSize: {x: 3.0833333, y: 2.2291667}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -163,6 +164,12 @@ MonoBehaviour:
   useChaseMovement: 1
   stopDistance: 3.8
   touchDamageCooldown: 0.5
+  checkStuck: 1
+  stuckCheckInterval: 0.5
+  minMoveDistance: 0.05
+  unstuckPushForce: 2
+  unstuckDuration: 0.3
+  usePlaceholderVisuals: 0
   placeholderColor: {r: 0.65, g: 0.4, b: 0.25, a: 1}
   placeholderScale: {x: 0.95, y: 0.95}
   sortingOrder: 5
@@ -171,6 +178,8 @@ MonoBehaviour:
   yaziFontBoyutu: 32
   yaziKarakterBoyutu: 0.22
   yaziRengi: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  fallbackDeathDespawnDelay: 0.85
+  deathNormalizedDestroyPoint: 0.92
   shootRange: 6
   attackCooldown: 1.8
   projectileSpeed: 4
@@ -206,7 +215,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &3464615059817585418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -277,6 +286,28 @@ MonoBehaviour:
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
   constrainInsideGraph: 0
+--- !u!95 &-7943306072540520619
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2840102763805653436}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 79b2d1c68ca5b9847a09ba58d20f83da, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3951180460848650700
 GameObject:
   m_ObjectHideFlags: 0

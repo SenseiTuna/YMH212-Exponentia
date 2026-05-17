@@ -106,6 +106,7 @@ GameObject:
   - component: {fileID: 3122504079916617445}
   - component: {fileID: 2630534020842791018}
   - component: {fileID: 859922950448853112}
+  - component: {fileID: 5976061296302122015}
   m_Layer: 0
   m_Name: PetrifiedRatEnemy
   m_TagString: Enemy
@@ -178,7 +179,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: -1611250993660875571, guid: 45ea2459c895b6e4f9c4ca3c797fc39d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -226,7 +227,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.95, y: 1.2}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -254,6 +255,12 @@ MonoBehaviour:
   useChaseMovement: 1
   stopDistance: 0.1
   touchDamageCooldown: 0.5
+  checkStuck: 1
+  stuckCheckInterval: 0.5
+  minMoveDistance: 0.05
+  unstuckPushForce: 2
+  unstuckDuration: 0.3
+  usePlaceholderVisuals: 0
   placeholderColor: {r: 0.45, g: 0.45, b: 0.45, a: 1}
   placeholderScale: {x: 0.55, y: 0.55}
   sortingOrder: 5
@@ -262,6 +269,8 @@ MonoBehaviour:
   yaziFontBoyutu: 32
   yaziKarakterBoyutu: 0.22
   yaziRengi: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  fallbackDeathDespawnDelay: 0.85
+  deathNormalizedDestroyPoint: 0.92
 --- !u!50 &3122504079916617445
 Rigidbody2D:
   serializedVersion: 5
@@ -288,7 +297,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &2630534020842791018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -359,3 +368,25 @@ MonoBehaviour:
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
   constrainInsideGraph: 0
+--- !u!95 &5976061296302122015
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8471153682682595013}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a4bb888a52c6e7745884fd329025fd65, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

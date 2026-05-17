@@ -21,6 +21,10 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private PlayerMovement playerMovement;
     [SerializeField] private PlayerInputReader inputReader;
 
+    [Header("Skill System")]
+    [SerializeField] private GodSkillBase equippedSkill; // Inspector'dan degisebilecek aktif skill
+    [SerializeField] private UnityEngine.UI.Image skillIconUI; // UI ustunde gosterilecek resim
+
     [Header("Laser Attack")]
     [SerializeField] private float laserManaCost = 0f;
     [SerializeField] private float laserLifetime = 1.5f;
@@ -44,37 +48,50 @@ public class PlayerAttack : MonoBehaviour
     private void Awake()
     {
         if (playerStats == null)
-        {
             playerStats = GetComponent<PlayerStats>();
-        }
 
         if (playerMechanics == null)
-        {
             playerMechanics = GetComponent<PlayerMechanics>();
-        }
 
         if (playerMovement == null)
-        {
             playerMovement = GetComponent<PlayerMovement>();
-        }
 
         if (inputReader == null)
         {
             inputReader = GetComponent<PlayerInputReader>();
             if (inputReader == null && useCentralInput)
             {
-                // Turkish: Player prefabinde Reader yoksa runtime'da olusturup attack baglantisini garanti ediyoruz.
                 inputReader = gameObject.AddComponent<PlayerInputReader>();
+            }
+        }
+
+        // OTOMATİK SKİLL BULMA (Eğer inspector üzerinden boş bırakıldıysa)
+        if (equippedSkill == null)
+        {
+            equippedSkill = GetComponentInChildren<GodSkillBase>(); 
+        }
+
+        // OTOMATİK ARAYÜZ BULMA (Eğer inspector üzerinden boş bırakıldıysa)
+        if (skillIconUI == null)
+        {
+            GameObject uiObj = GameObject.Find("SkillIconUI");
+            if (uiObj != null)
+            {
+                skillIconUI = uiObj.GetComponent<UnityEngine.UI.Image>();
             }
         }
     }
 
     private void Update()
     {
+        UpdateSkillUI();
+
         if (TryResolveAttackDirection(out Vector2 resolvedDirection))
         {
             lastAimDirection = resolvedDirection.normalized;
         }
+
+        HandleSkillInput();
 
         if (!IsAttackInputHeld())
         {
@@ -82,6 +99,70 @@ public class PlayerAttack : MonoBehaviour
         }
 
         TryFireLaser();
+    }
+
+    private void HandleSkillInput()
+    {
+        bool useSkill = false;
+        
+        // Skill1 tusu (Gamepad/Touch) veya direkt Space tusu
+        if (inputReader != null && inputReader.ConsumeSkill1PressedThisFrame())
+        {
+            useSkill = true;
+        }
+        else if (Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame)
+        {
+            useSkill = true;
+        }
+
+        if (useSkill && equippedSkill != null)
+        {
+            if (equippedSkill.CanActivate())
+            {
+                equippedSkill.TryActivate();
+            }
+        }
+    }
+
+    private void UpdateSkillUI()
+    {
+        if (skillIconUI == null)
+        {
+            // Tembel arama (Lazy Find): Eğer UI sistemi Player'dan daha sonra oluşuyorsa Update içinde tekrar arıyoruz.
+            GameObject uiObj = GameObject.Find("SkillIconUI");
+            if (uiObj != null)
+            {
+                skillIconUI = uiObj.GetComponent<UnityEngine.UI.Image>();
+            }
+
+            if (skillIconUI == null) return;
+        }
+
+        // Eğer hala otomatik skill bulmadıysa burada tekrar deneyelim
+        if (equippedSkill == null)
+        {
+            equippedSkill = GetComponentInChildren<GodSkillBase>(); 
+        }
+
+        if (equippedSkill != null && equippedSkill.SkillIcon != null)
+        {
+            skillIconUI.enabled = true;
+            skillIconUI.sprite = equippedSkill.SkillIcon;
+
+            // Bekleme (Cooldown) veya mana yetersizse ikon rengini yarim (gri/transparan) yap
+            if (!equippedSkill.CanActivate())
+            {
+                skillIconUI.color = new Color(0.5f, 0.5f, 0.5f, 0.5f);
+            }
+            else
+            {
+                skillIconUI.color = Color.white;
+            }
+        }
+        else
+        {
+            skillIconUI.enabled = false;
+        }
     }
 
     private bool TryFireLaser()

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3012648696767180928}
   - component: {fileID: 5661352103140688261}
   - component: {fileID: 4049421138944716549}
+  - component: {fileID: 4253808435126724280}
   m_Layer: 0
   m_Name: SatyrEnemy
   m_TagString: Enemy
@@ -87,7 +88,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 3187590041339329258, guid: 94d1a6681a28b404c8705d539743992a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -135,7 +136,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.45, y: 2.84}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -163,6 +164,12 @@ MonoBehaviour:
   useChaseMovement: 1
   stopDistance: 4.8
   touchDamageCooldown: 0.5
+  checkStuck: 1
+  stuckCheckInterval: 0.5
+  minMoveDistance: 0.05
+  unstuckPushForce: 2
+  unstuckDuration: 0.3
+  usePlaceholderVisuals: 0
   placeholderColor: {r: 0.7, g: 0.52, b: 0.32, a: 1}
   placeholderScale: {x: 0.95, y: 0.95}
   sortingOrder: 5
@@ -171,6 +178,8 @@ MonoBehaviour:
   yaziFontBoyutu: 32
   yaziKarakterBoyutu: 0.22
   yaziRengi: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  fallbackDeathDespawnDelay: 0.85
+  deathNormalizedDestroyPoint: 0.92
   shootRange: 7
   attackCooldown: 2.2
   projectileSpeed: 4.2
@@ -207,7 +216,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &5661352103140688261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,6 +287,28 @@ MonoBehaviour:
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
   constrainInsideGraph: 0
+--- !u!95 &4253808435126724280
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2869999148286637730}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ab20838856f791d47bd33dd112c4387f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6370144120473578031
 GameObject:
   m_ObjectHideFlags: 0

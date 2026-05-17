@@ -106,6 +106,7 @@ GameObject:
   - component: {fileID: 9026426927098790634}
   - component: {fileID: 8352870381491707169}
   - component: {fileID: 7211464246868849348}
+  - component: {fileID: 7798993676784576444}
   m_Layer: 0
   m_Name: MermiteEnemy
   m_TagString: Enemy
@@ -259,6 +260,7 @@ MonoBehaviour:
   minMoveDistance: 0.05
   unstuckPushForce: 2
   unstuckDuration: 0.3
+  usePlaceholderVisuals: 0
   placeholderColor: {r: 0.72, g: 0.72, b: 0.76, a: 1}
   placeholderScale: {x: 0.8, y: 0.8}
   sortingOrder: 5
@@ -267,6 +269,8 @@ MonoBehaviour:
   yaziFontBoyutu: 32
   yaziKarakterBoyutu: 0.22
   yaziRengi: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  fallbackDeathDespawnDelay: 0.85
+  deathNormalizedDestroyPoint: 0.92
   shootRange: 6
   projectileSpeed: 3.2
   projectileDamage: 11
@@ -301,7 +305,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &8352870381491707169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -372,3 +376,25 @@ MonoBehaviour:
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
   constrainInsideGraph: 0
+--- !u!95 &7798993676784576444
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9071415067890113666}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a2fc91e3c2ed39040ba5d706ebbe0c76, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

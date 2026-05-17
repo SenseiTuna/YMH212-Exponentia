@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 770358374659389787}
   - component: {fileID: 793270525437943179}
   - component: {fileID: 6567183880086125632}
+  - component: {fileID: 198431328034276952}
   m_Layer: 0
   m_Name: SpartanEnemy
   m_TagString: Enemy
@@ -168,6 +169,7 @@ MonoBehaviour:
   minMoveDistance: 0.05
   unstuckPushForce: 2
   unstuckDuration: 0.3
+  usePlaceholderVisuals: 0
   placeholderColor: {r: 0.7, g: 0.68, b: 0.5, a: 1}
   placeholderScale: {x: 1, y: 1}
   sortingOrder: 5
@@ -176,6 +178,8 @@ MonoBehaviour:
   yaziFontBoyutu: 32
   yaziKarakterBoyutu: 0.22
   yaziRengi: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  fallbackDeathDespawnDelay: 0.85
+  deathNormalizedDestroyPoint: 0.92
   shootRange: 8.5
   attackCooldown: 1.9
   projectileSpeed: 5.5
@@ -210,7 +214,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &793270525437943179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,6 +285,28 @@ MonoBehaviour:
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
   constrainInsideGraph: 0
+--- !u!95 &198431328034276952
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580660533432690214}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5977607232346855999
 GameObject:
   m_ObjectHideFlags: 0

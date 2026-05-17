@@ -106,6 +106,7 @@ GameObject:
   - component: {fileID: 6546264250012463185}
   - component: {fileID: 6695298604264833222}
   - component: {fileID: 2172719505803353933}
+  - component: {fileID: 1504076988312039869}
   m_Layer: 0
   m_Name: StyxJellyfishEnemy
   m_TagString: Enemy
@@ -259,6 +260,7 @@ MonoBehaviour:
   minMoveDistance: 0.05
   unstuckPushForce: 2
   unstuckDuration: 0.3
+  usePlaceholderVisuals: 0
   placeholderColor: {r: 0.45, g: 0.9, b: 0.95, a: 1}
   placeholderScale: {x: 0.9, y: 0.9}
   sortingOrder: 5
@@ -267,6 +269,8 @@ MonoBehaviour:
   yaziFontBoyutu: 32
   yaziKarakterBoyutu: 0.22
   yaziRengi: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  fallbackDeathDespawnDelay: 0.85
+  deathNormalizedDestroyPoint: 0.92
   ringCooldown: 3
   projectileCount: 8
   projectileSpeed: 2.8
@@ -301,7 +305,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &6695298604264833222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -372,3 +376,25 @@ MonoBehaviour:
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
   constrainInsideGraph: 0
+--- !u!95 &1504076988312039869
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5740021848417697751}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 775264a2c503e834686b537a6839a098, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

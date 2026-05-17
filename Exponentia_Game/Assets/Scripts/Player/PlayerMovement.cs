@@ -82,6 +82,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveInput;
     private Gamepad activeGamepad;
     private Vector2 lastMoveDirection = Vector2.right;
+    private Vector2 queuedExternalVelocity;
+    private Vector2 queuedExternalDisplacement;
 
     public ControlScheme CurrentControlScheme { get; private set; } = ControlScheme.KeyboardMouse;
     public bool InteractPressedThisFrame { get; private set; }
@@ -110,7 +112,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (rb == null)
         {
-            transform.Translate(moveInput * moveSpeed * Time.deltaTime);
+            Vector2 totalVelocity = (moveInput * moveSpeed) + queuedExternalVelocity;
+            transform.Translate(totalVelocity * Time.deltaTime);
+            transform.Translate(queuedExternalDisplacement);
+            queuedExternalVelocity = Vector2.zero;
+            queuedExternalDisplacement = Vector2.zero;
         }
     }
 
@@ -118,13 +124,26 @@ public class PlayerMovement : MonoBehaviour
     {
         if (rb != null)
         {
-            rb.linearVelocity = moveInput * moveSpeed;
+            rb.linearVelocity = (moveInput * moveSpeed) + queuedExternalVelocity;
+            rb.position += queuedExternalDisplacement;
+            queuedExternalVelocity = Vector2.zero;
+            queuedExternalDisplacement = Vector2.zero;
         }
     }
 
     public void SetMoveSpeed(float newMoveSpeed)
     {
         moveSpeed = Mathf.Max(0f, newMoveSpeed);
+    }
+
+    public void ApplyExternalVelocity(Vector2 velocity)
+    {
+        queuedExternalVelocity += velocity;
+    }
+
+    public void ApplyExternalDisplacement(Vector2 displacement)
+    {
+        queuedExternalDisplacement += displacement;
     }
 
     private void ResolveInputReaderIfNeeded()

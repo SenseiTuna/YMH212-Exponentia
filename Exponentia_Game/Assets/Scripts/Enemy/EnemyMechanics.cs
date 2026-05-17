@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using Pathfinding;
 
@@ -25,10 +26,15 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
     [SerializeField] protected float unstuckPushForce = 2f;
     [SerializeField] protected float unstuckDuration = 0.3f;
 
-    [Header("Placeholder Gorunus")]
+    [Header("Görünüm ve Animasyon")]
+    [SerializeField] protected bool usePlaceholderVisuals = false; // Gerçek assetleri kullanacaksanız bunu kapatın
     [SerializeField] protected Color placeholderColor = Color.gray;
     [SerializeField] protected Vector2 placeholderScale = Vector2.one;
     [SerializeField] protected int sortingOrder = 5;
+
+    protected Animator animator;
+    protected SpriteRenderer mainSpriteRenderer;
+    private bool isFacingRight = true;
 
     [Header("Projectile Template")]
     [SerializeField] protected EnemyProjectile enemyProjectilePrefab;
@@ -38,6 +44,10 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
     [SerializeField] protected int yaziFontBoyutu = 32;
     [SerializeField] protected float yaziKarakterBoyutu = 0.22f;
     [SerializeField] protected Color yaziRengi = Color.yellow;
+
+    [Header("Olum Akisi")]
+    [SerializeField] protected float fallbackDeathDespawnDelay = 0.85f;
+    [SerializeField] [Range(0.1f, 0.98f)] protected float deathNormalizedDestroyPoint = 0.92f;
 
     protected float mevcutCan;
     protected Transform playerTarget;
@@ -57,6 +67,8 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
     private bool isUnstucking = false;
     private float unstuckTimer = 0f;
     protected Rigidbody2D rb2d;
+    protected bool isDying;
+    private Coroutine deathRoutine;
 
     private static Sprite cachedSquareSprite;
     private static Material cachedSpriteMaterial;
@@ -72,18 +84,42 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
         EnsureEnemyTag();
         RenameGameObject();
         CachePlayerReferences();
-        EnsurePlaceholderBody();
+        
+        animator = GetComponentInChildren<Animator>();
+        mainSpriteRenderer = GetComponentInChildren<SpriteRenderer>();
+
+        if (usePlaceholderVisuals && animator == null)
+        {
+            EnsurePlaceholderBody();
+        }
+
         EnsureHealthText();
         
         aiAgent = GetComponent<IAstarAI>();
         rb2d = GetComponent<Rigidbody2D>();
+        
+        // ZORUNLU KILIT (Awake'te bir kere yapilir): 
+        // AILerp veya AIPath kullaniyorsa rotasyonu bozmasini tamamen engelliyoruz!
+        if (aiAgent is Pathfinding.AIBase pathAgent)
+        {
+            pathAgent.updateRotation = false; 
+            pathAgent.enableRotation = false;
+        }
+
+        if (rb2d != null)
+        {
+            rb2d.freezeRotation = true; // Fiziksel donmeyi engelle
+        }
         
         lastTickPosition = transform.position;
 
         maxCan = Mathf.Max(1f, maxCan);
         mevcutCan = maxCan;
 
-        ApplyVisuals();
+        if (usePlaceholderVisuals && animator == null)
+        {
+            ApplyVisuals();
+        }
         UpdateHealthText();
     }
 
@@ -102,14 +138,85 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
 
     protected virtual void Update()
     {
+        if (!IsAlive || isDying)
+        {
+            return;
+        }
+
         if (useChaseMovement)
         {
             MoveTowardsPlayer();
+        }
+
+        UpdateAnimator();
+    }
+
+    protected virtual void UpdateAnimator()
+    {
+        if (animator == null) return;
+
+        if (isDying)
+        {
+            animator.SetBool("isWalking", false);
+            return;
+        }
+
+        // 1. Hareket Halinde mi?
+        Vector2 velocity = Vector2.zero;
+        if (aiAgent != null)
+        {
+            velocity = aiAgent.velocity;
+        }
+        else if (rb2d != null)
+        {
+            velocity = rb2d.linearVelocity;
+        }
+
+        bool isMoving = velocity.sqrMagnitude > 0.01f || (isUnstucking);
+        animator.SetBool("isWalking", isMoving);
+
+        // 2. Yön Dönüşü (FlipX)
+        // Eğer bir velocity varsa velocity yönüne, yoksa playera doğru baksın
+        Vector2 lookDirection = GetDirectionToPlayer();
+        if (velocity.sqrMagnitude > 0.1f)
+        {
+            lookDirection = velocity.normalized;
+        }
+
+        if (lookDirection.x > 0 && !isFacingRight)
+        {
+            Flip();
+        }
+        else if (lookDirection.x < 0 && isFacingRight)
+        {
+            Flip();
+        }
+    }
+
+    protected virtual void Flip()
+    {
+        isFacingRight = !isFacingRight;
+        
+        if (mainSpriteRenderer != null)
+        {
+            mainSpriteRenderer.flipX = !isFacingRight; // Sprite sola bakıyorsa flipX = true
+        }
+        else
+        {
+            // Bazı prefablar transform Scale ile dönebilir (Eğer SpriteRenderer merkezde değilse)
+            Vector3 scaler = transform.localScale;
+            scaler.x *= -1;
+            transform.localScale = scaler;
         }
     }
 
     protected virtual void LateUpdate()
     {
+        if (isDying)
+        {
+            return;
+        }
+
         UpdateHealthTextTransform();
     }
 
@@ -133,8 +240,47 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
         return appliedDamage;
     }
 
+    public virtual void Heal(float amount)
+    {
+        if (!IsAlive || amount <= 0f)
+        {
+            return;
+        }
+
+        mevcutCan = Mathf.Min(maxCan, mevcutCan + amount);
+        FloatingCombatText.Create(Mathf.CeilToInt(amount).ToString(), transform.position + Vector3.up * 0.75f, Color.green);
+        UpdateHealthText();
+    }
+
+    public void ApplyTemporaryMoveSpeedMultiplier(float multiplier, float duration)
+    {
+        if (!IsAlive || multiplier <= 0f || duration <= 0f)
+        {
+            return;
+        }
+
+        StartCoroutine(TemporaryMoveSpeedRoutine(multiplier, duration));
+    }
+
+    public void ApplyTemporaryTouchDamageMultiplier(float multiplier, float duration)
+    {
+        if (!IsAlive || multiplier <= 0f || duration <= 0f)
+        {
+            return;
+        }
+
+        StartCoroutine(TemporaryTouchDamageRoutine(multiplier, duration));
+    }
+
     protected virtual void Die()
     {
+        if (isDying)
+        {
+            return;
+        }
+
+        isDying = true;
+
         if (playerMechanics != null && xpReward > 0f)
         {
             playerMechanics.GainXp(xpReward);
@@ -145,11 +291,45 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
             Destroy(canTextMesh.gameObject);
         }
 
-        Destroy(gameObject);
+        // Animasyon varsa oynatıp bekleyeceğiz, yoksa anında yok et
+        if (animator != null)
+        {
+            animator.ResetTrigger("Attack");
+            animator.SetBool("isWalking", false); // Kesinlikle yürümeyi durdur ki animasyon bug'a girmesin
+            animator.SetTrigger("Die");
+            
+            // Fizikleri kapat ki ölürken itilmesin veya hasar vurmasin
+            if (rb2d != null)
+            {
+                rb2d.linearVelocity = Vector2.zero;
+                rb2d.angularVelocity = 0f;
+                rb2d.simulated = false;
+            }
+            Collider2D coll = GetComponent<Collider2D>();
+            if (coll != null) coll.enabled = false;
+            
+            StopAgentMovementCompletely();
+
+            if (deathRoutine != null)
+            {
+                StopCoroutine(deathRoutine);
+            }
+
+            deathRoutine = StartCoroutine(DestroyAfterDeathAnimation());
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     protected virtual void MoveTowardsPlayer()
     {
+        if (isDying)
+        {
+            return;
+        }
+
         if (playerTarget == null)
         {
             CachePlayerReferences();
@@ -238,6 +418,11 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
 
     protected void TryDealTouchDamage(GameObject other)
     {
+        if (isDying)
+        {
+            return;
+        }
+
         if (Time.time < nextTouchDamageTime)
         {
             return;
@@ -256,6 +441,12 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
 
         nextTouchDamageTime = Time.time + touchDamageCooldown;
         damageable.TakeDamage(touchDamage);
+        
+        // Hasar verdiyse "Attack" animasyonunu tetikle
+        if (animator != null)
+        {
+            animator.SetTrigger("Attack");
+        }
     }
 
     protected EnemyProjectile SpawnEnemyProjectile(
@@ -323,6 +514,109 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
     {
         playerMechanics = FindAnyObjectByType<PlayerMechanics>();
         playerTarget = playerMechanics != null ? playerMechanics.transform : null;
+    }
+
+    protected virtual void StopAgentMovementCompletely()
+    {
+        if (aiAgent != null)
+        {
+            aiAgent.isStopped = true;
+        }
+
+        if (aiAgent is AIBase pathAgent)
+        {
+            pathAgent.canMove = false;
+            pathAgent.canSearch = false;
+        }
+    }
+
+    protected virtual void RestoreAgentMovement()
+    {
+        if (isDying)
+        {
+            return;
+        }
+
+        if (aiAgent != null)
+        {
+            aiAgent.isStopped = false;
+        }
+
+        if (aiAgent is AIBase pathAgent)
+        {
+            pathAgent.canMove = true;
+            pathAgent.canSearch = true;
+        }
+    }
+
+    private IEnumerator DestroyAfterDeathAnimation()
+    {
+        float failSafeTime = Time.time + Mathf.Max(0.1f, fallbackDeathDespawnDelay);
+        bool enteredDeathState = false;
+
+        while (Time.time < failSafeTime)
+        {
+            if (animator == null)
+            {
+                break;
+            }
+
+            AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+            bool isDeathStateNow = IsDeathState(stateInfo);
+
+            if (isDeathStateNow)
+            {
+                enteredDeathState = true;
+
+                if (stateInfo.normalizedTime >= deathNormalizedDestroyPoint)
+                {
+                    break;
+                }
+            }
+            else if (enteredDeathState)
+            {
+                break;
+            }
+
+            yield return null;
+        }
+
+        Destroy(gameObject);
+    }
+
+    private static bool IsDeathState(AnimatorStateInfo stateInfo)
+    {
+        return
+            stateInfo.IsName("death") ||
+            stateInfo.IsName("Death") ||
+            stateInfo.IsName("Base Layer.death") ||
+            stateInfo.IsName("Base Layer.Death") ||
+            stateInfo.shortNameHash == Animator.StringToHash("death") ||
+            stateInfo.shortNameHash == Animator.StringToHash("Death");
+    }
+
+    private IEnumerator TemporaryMoveSpeedRoutine(float multiplier, float duration)
+    {
+        float previous = moveSpeed;
+        moveSpeed *= multiplier;
+        yield return new WaitForSeconds(duration);
+
+        if (!isDying)
+        {
+            moveSpeed = previous;
+        }
+    }
+
+    private IEnumerator TemporaryTouchDamageRoutine(float multiplier, float duration)
+    {
+        float previous = touchDamage;
+        touchDamage *= multiplier;
+        yield return new WaitForSeconds(duration);
+
+        if (!isDying)
+        {
+            touchDamage = previous;
+        }
     }
 
     private void EnsureEnemyTag()

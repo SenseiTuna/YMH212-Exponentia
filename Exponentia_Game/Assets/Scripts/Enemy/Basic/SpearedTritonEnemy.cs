@@ -35,6 +35,11 @@ public class SpearedTritonEnemy : EnemyMechanics
 
     protected override void Update()
     {
+        if (PlayerTarget == null)
+        {
+            CachePlayerReferences();
+        }
+
         if (!IsAlive || PlayerTarget == null)
         {
             return;
@@ -42,12 +47,15 @@ public class SpearedTritonEnemy : EnemyMechanics
 
         if (isDashing)
         {
+            StopAgentMovementCompletely();
+
             transform.position += (Vector3)(dashDirection * dashSpeed * Time.deltaTime);
             TryDashImpact();
 
             if (Time.time >= dashEndTime)
             {
                 isDashing = false;
+                RestoreAgentMovement();
             }
 
             return;
@@ -55,6 +63,8 @@ public class SpearedTritonEnemy : EnemyMechanics
 
         if (isCharging)
         {
+            StopAgentMovementCompletely();
+
             if (Time.time >= chargeEndTime)
             {
                 isCharging = false;
@@ -66,6 +76,7 @@ public class SpearedTritonEnemy : EnemyMechanics
             return;
         }
 
+        RestoreAgentMovement();
         base.Update();
 
         if (Time.time < nextChargeTime || GetDistanceToPlayer() > chargeTriggerRange)
@@ -80,6 +91,8 @@ public class SpearedTritonEnemy : EnemyMechanics
         }
 
         isCharging = true;
+        if (animator != null) { animator.SetTrigger("Attack"); }
+        StopAgentMovementCompletely();
         chargeEndTime = Time.time + chargeWindup;
         nextChargeTime = Time.time + dashCooldown;
     }

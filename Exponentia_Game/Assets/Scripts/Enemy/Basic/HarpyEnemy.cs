@@ -54,6 +54,7 @@ public class HarpyEnemy : EnemyMechanics
             if (Time.time >= dashEndTime)
             {
                 isDashing = false;
+                if (aiAgent != null) { aiAgent.isStopped = false; }
             }
             return;
         }
@@ -83,6 +84,8 @@ public class HarpyEnemy : EnemyMechanics
         }
 
         isWindingUp = true;
+        if (animator != null) { animator.SetTrigger("Attack"); }
+        if (aiAgent != null) { aiAgent.isStopped = true; } // Dash boyunca pathfinding'i durdur
         windupEndTime = Time.time + dashWindup;
         nextDashTime = Time.time + dashCooldown;
     }

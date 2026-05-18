@@ -356,12 +356,6 @@ namespace Exponentia.InventorySystem
                     break;
             }
 
-            if (!applied && reward.linkedItemDefinition != null && IsItemGrantType(reward.rewardType))
-            {
-                // Duplicate item fallback: if item cannot be granted again, try stat fallback from reward fields.
-                applied = ApplyStatReward(reward);
-            }
-
             if (!applied)
             {
                 return false;
@@ -607,14 +601,6 @@ namespace Exponentia.InventorySystem
             }
 
             return false;
-        }
-
-        private static bool IsItemGrantType(RewardType rewardType)
-        {
-            return rewardType == RewardType.GiveWeapon
-                   || rewardType == RewardType.GiveSkill
-                   || rewardType == RewardType.GivePassiveItem
-                   || rewardType == RewardType.GiveActiveItem;
         }
 
         private void RaiseInventoryChanged()

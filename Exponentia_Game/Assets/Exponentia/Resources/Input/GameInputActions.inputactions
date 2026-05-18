@@ -364,7 +364,7 @@
                                       {
                                           "name":  "",
                                           "id":  "9a2a125b-26c6-4bf9-9fe8-096183995bcc",
-                                          "path":  "\u003cKeyboard\u003e/f",
+                                          "path":  "\u003cKeyboard\u003e/e",
                                           "interactions":  "",
                                           "processors":  "",
                                           "groups":  "Keyboard\u0026Mouse",
@@ -376,6 +376,17 @@
                                           "name":  "",
                                           "id":  "a0a4517d-c568-4031-834d-65629bb31f8b",
                                           "path":  "\u003cGamepad\u003e/buttonSouth",
+                                          "interactions":  "",
+                                          "processors":  "",
+                                          "groups":  "Gamepad",
+                                          "action":  "Interact",
+                                          "isComposite":  false,
+                                          "isPartOfComposite":  false
+                                      },
+                                      {
+                                          "name":  "",
+                                          "id":  "3c3fd46b-2dc1-4a2e-b056-011f06861239",
+                                          "path":  "\u003cGamepad\u003e/buttonNorth",
                                           "interactions":  "",
                                           "processors":  "",
                                           "groups":  "Gamepad",

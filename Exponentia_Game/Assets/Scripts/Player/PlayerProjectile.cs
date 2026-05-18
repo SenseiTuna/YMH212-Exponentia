@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Rendering;
+using System.Collections.Generic;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(CircleCollider2D))]
 public class PlayerProjectile : MonoBehaviour
@@ -13,6 +14,9 @@ public class PlayerProjectile : MonoBehaviour
     private PlayerMechanics owner;
     private Vector2 velocity;
     private float lifeTime;
+    private float damageMultiplier = 1f;
+    private int remainingPierce;
+    private readonly HashSet<Collider2D> alreadyHit = new HashSet<Collider2D>();
     private SpriteRenderer spriteRenderer;
     private TrailRenderer trailRenderer;
 
@@ -21,9 +25,22 @@ public class PlayerProjectile : MonoBehaviour
 
     public void Initialize(PlayerMechanics projectileOwner, Vector2 direction, float speed, float projectileLifeTime)
     {
+        Initialize(projectileOwner, direction, speed, projectileLifeTime, 1f, 0);
+    }
+
+    public void Initialize(
+        PlayerMechanics projectileOwner,
+        Vector2 direction,
+        float speed,
+        float projectileLifeTime,
+        float damageMultiplier,
+        int pierceCount)
+    {
         owner = projectileOwner;
         velocity = direction.normalized * Mathf.Max(0f, speed);
         lifeTime = Mathf.Max(0.05f, projectileLifeTime);
+        this.damageMultiplier = Mathf.Max(0f, damageMultiplier);
+        remainingPierce = Mathf.Max(0, pierceCount);
 
         transform.right = direction.sqrMagnitude > 0.001f ? direction.normalized : Vector2.right;
         Destroy(gameObject, lifeTime);
@@ -83,7 +100,20 @@ public class PlayerProjectile : MonoBehaviour
             return;
         }
 
-        owner.DealDamage(other.gameObject);
+        if (alreadyHit.Contains(other))
+        {
+            return;
+        }
+
+        alreadyHit.Add(other);
+        owner.DealDamage(other.gameObject, damageMultiplier);
+
+        if (remainingPierce > 0)
+        {
+            remainingPierce -= 1;
+            return;
+        }
+
         Destroy(gameObject);
     }
 

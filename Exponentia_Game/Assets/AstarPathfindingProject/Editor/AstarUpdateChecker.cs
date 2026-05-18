@@ -218,14 +218,14 @@ namespace Pathfinding {
 						   "&graphCount=" + (script != null ? script.data.graphs.Count(g => g != null) : 0) +
 						   "&unityversion="+Application.unityVersion +
 						   "&branch="+AstarPath.Branch;
-
-#if UNITY_2018_1_OR_NEWER
-			updateCheckDownload = UnityWebRequest.Get(query);
-			updateCheckDownload.SendWebRequest();
-#else
-			updateCheckDownload = new WWW(query);
-#endif
-			lastUpdateCheck = System.DateTime.UtcNow;
+	// Burası ne işe yarıyor bilmiyorum ama güncelleme kontrolü yaparken kullanılıyor gibi görünüyor. Belki de A* Pathfinding Pro'nun hangi sürümünün yüklü olduğunu kontrol etmek için kullanılıyordur. Bu URL'ye bir istek gönderiliyor ve sunucudan gelen yanıt işleniyor gibi görünüyor.
+// #if UNITY_2018_1_OR_NEWER
+// 			updateCheckDownload = UnityWebRequest.Get(query);
+// 			updateCheckDownload.SendWebRequest();
+// #else
+// 			updateCheckDownload = new WWW(query);
+// #endif
+// 			lastUpdateCheck = System.DateTime.UtcNow;
 		}
 
 		/// <summary>Handles the data from the update page</summary>

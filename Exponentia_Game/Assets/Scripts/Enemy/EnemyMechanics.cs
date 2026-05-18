@@ -143,6 +143,11 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
             return;
         }
 
+        if (playerTarget == null || playerMechanics == null)
+        {
+            CachePlayerReferences();
+        }
+
         if (useChaseMovement)
         {
             MoveTowardsPlayer();

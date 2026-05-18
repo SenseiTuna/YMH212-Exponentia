@@ -8,6 +8,7 @@
  */
 
 using Exponentia.InputSystem;
+using Exponentia.InventorySystem;
 using Exponentia.Player;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -20,10 +21,15 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private PlayerMechanics playerMechanics;
     [SerializeField] private PlayerMovement playerMovement;
     [SerializeField] private PlayerInputReader inputReader;
+    [SerializeField] private PlayerStatController statController;
 
     [Header("Skill System")]
     [SerializeField] private GodSkillBase equippedSkill; // Inspector'dan degisebilecek aktif skill
     [SerializeField] private UnityEngine.UI.Image skillIconUI; // UI ustunde gosterilecek resim
+
+    [Header("Weapon System")]
+    [SerializeField] private WeaponDefinition equippedWeaponDefinition;
+    [SerializeField] private float defaultDamageMultiplier = 1f;
 
     [Header("Laser Attack")]
     [SerializeField] private float laserManaCost = 0f;
@@ -43,6 +49,7 @@ public class PlayerAttack : MonoBehaviour
         playerMechanics = GetComponent<PlayerMechanics>();
         playerMovement = GetComponent<PlayerMovement>();
         inputReader = GetComponent<PlayerInputReader>();
+        statController = GetComponent<PlayerStatController>();
     }
 
     private void Awake()
@@ -65,6 +72,11 @@ public class PlayerAttack : MonoBehaviour
             }
         }
 
+        if (statController == null)
+        {
+            statController = GetComponent<PlayerStatController>();
+        }
+
         // OTOMATİK SKİLL BULMA (Eğer inspector üzerinden boş bırakıldıysa)
         if (equippedSkill == null)
         {
@@ -79,6 +91,11 @@ public class PlayerAttack : MonoBehaviour
             {
                 skillIconUI = uiObj.GetComponent<UnityEngine.UI.Image>();
             }
+        }
+
+        if (equippedWeaponDefinition != null)
+        {
+            ApplyWeaponDefinition(equippedWeaponDefinition);
         }
     }
 
@@ -188,15 +205,48 @@ public class PlayerAttack : MonoBehaviour
             return false;
         }
 
-        float fireInterval = playerStats.AttackSpeed > 0f ? 1f / playerStats.AttackSpeed : 1f;
+        float fireRate = ResolveFireRate();
+        float fireInterval = fireRate > 0f ? 1f / fireRate : 1f;
         nextFireTime = Time.time + fireInterval;
 
-        GameObject projectileObject = new GameObject("PlayerLaser");
-        projectileObject.transform.position = transform.position + (Vector3)(direction.normalized * spawnOffset);
+        int projectileCount = ResolveProjectileCount();
+        float spreadAngle = equippedWeaponDefinition != null ? Mathf.Max(0f, equippedWeaponDefinition.spreadAngle) : 0f;
+        float projectileSpeed = ResolveProjectileSpeed();
+        float projectileLifetime = ResolveProjectileLifetime();
+        int pierceCount = equippedWeaponDefinition != null ? Mathf.Max(0, equippedWeaponDefinition.pierceCount) : 0;
+        float damageMultiplier = ResolveDamageMultiplier();
 
-        PlayerProjectile projectile = projectileObject.AddComponent<PlayerProjectile>();
-        projectile.Initialize(playerMechanics, direction, playerStats.ProjectileSpeed, laserLifetime);
+        if (projectileCount <= 1)
+        {
+            SpawnProjectile(direction, projectileSpeed, projectileLifetime, damageMultiplier, pierceCount);
+            return true;
+        }
+
+        float startAngle = -spreadAngle * 0.5f;
+        float step = projectileCount > 1 ? spreadAngle / (projectileCount - 1) : 0f;
+        for (int i = 0; i < projectileCount; i++)
+        {
+            float angle = startAngle + (step * i);
+            Vector2 spreadDirection = Quaternion.Euler(0f, 0f, angle) * direction.normalized;
+            SpawnProjectile(spreadDirection, projectileSpeed, projectileLifetime, damageMultiplier, pierceCount);
+        }
+
         return true;
+    }
+
+    public void ApplyWeaponDefinition(WeaponDefinition weapon)
+    {
+        equippedWeaponDefinition = weapon;
+    }
+
+    public string GetCurrentWeaponDisplayName()
+    {
+        return equippedWeaponDefinition != null ? equippedWeaponDefinition.displayName : "Laser";
+    }
+
+    public float GetEquippedSkillRemainingCooldown()
+    {
+        return equippedSkill != null ? equippedSkill.RemainingCooldown : 0f;
     }
 
     public bool TryGetAimDirection(out Vector2 direction)
@@ -353,5 +403,75 @@ public class PlayerAttack : MonoBehaviour
 
         direction = mouseDirection.normalized;
         return true;
+    }
+
+    private void SpawnProjectile(Vector2 direction, float speed, float lifeTime, float damageMultiplier, int pierceCount)
+    {
+        GameObject projectileObject;
+
+        if (equippedWeaponDefinition != null && equippedWeaponDefinition.projectilePrefab != null)
+        {
+            projectileObject = Instantiate(
+                equippedWeaponDefinition.projectilePrefab,
+                transform.position + (Vector3)(direction.normalized * spawnOffset),
+                Quaternion.identity);
+        }
+        else
+        {
+            projectileObject = new GameObject("PlayerLaser");
+            projectileObject.transform.position = transform.position + (Vector3)(direction.normalized * spawnOffset);
+        }
+
+        PlayerProjectile projectile = projectileObject.GetComponent<PlayerProjectile>();
+        if (projectile == null)
+        {
+            projectile = projectileObject.AddComponent<PlayerProjectile>();
+        }
+
+        projectile.Initialize(playerMechanics, direction, speed, lifeTime, damageMultiplier, pierceCount);
+    }
+
+    private float ResolveFireRate()
+    {
+        float weaponFireRate = equippedWeaponDefinition != null ? Mathf.Max(0.01f, equippedWeaponDefinition.fireRate) : 1f;
+        float statFireRate = playerStats != null ? Mathf.Max(0.01f, playerStats.AttackSpeed) : 1f;
+        return weaponFireRate * statFireRate;
+    }
+
+    private int ResolveProjectileCount()
+    {
+        int weaponCount = equippedWeaponDefinition != null ? Mathf.Max(1, equippedWeaponDefinition.projectileCount) : 1;
+        int bonusCount = statController != null ? Mathf.Max(1, statController.ProjectileCount) : 1;
+        return Mathf.Max(1, weaponCount * bonusCount);
+    }
+
+    private float ResolveProjectileSpeed()
+    {
+        if (equippedWeaponDefinition != null && equippedWeaponDefinition.projectileSpeed > 0f)
+        {
+            return equippedWeaponDefinition.projectileSpeed;
+        }
+
+        return playerStats != null ? Mathf.Max(0f, playerStats.ProjectileSpeed) : 0f;
+    }
+
+    private float ResolveProjectileLifetime()
+    {
+        if (equippedWeaponDefinition != null && equippedWeaponDefinition.projectileLifetime > 0f)
+        {
+            return equippedWeaponDefinition.projectileLifetime;
+        }
+
+        return laserLifetime;
+    }
+
+    private float ResolveDamageMultiplier()
+    {
+        if (equippedWeaponDefinition == null)
+        {
+            return Mathf.Max(0f, defaultDamageMultiplier);
+        }
+
+        return Mathf.Max(0f, equippedWeaponDefinition.damage);
     }
 }

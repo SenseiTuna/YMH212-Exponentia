@@ -1,5 +1,15 @@
+/*
+ * PROJ_NAME: Exponentia
+ * PROJ_ID: EXP-ROGUELITE-001
+ * VERSION: 0.5.0
+ * BUILD_DATE: 2026-05-01
+ * BUILD_TIME: 18:45
+ * DESCRIPTION: Player locomotion and action event gateway with central input support.
+ */
+
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Exponentia.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -41,6 +51,8 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float gamepadMoveDeadzone = 0.1f;
+    [SerializeField] private bool useCentralInput = true;
+    [SerializeField] private PlayerInputReader inputReader;
 
     [Header("Keyboard Bindings")]
     [SerializeField] private KeyboardBindings keyboardBindings = new KeyboardBindings
@@ -69,11 +81,15 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 moveInput;
     private Gamepad activeGamepad;
+    private Vector2 lastMoveDirection = Vector2.right;
+    private Vector2 queuedExternalVelocity;
+    private Vector2 queuedExternalDisplacement;
 
     public ControlScheme CurrentControlScheme { get; private set; } = ControlScheme.KeyboardMouse;
     public bool InteractPressedThisFrame { get; private set; }
     public bool AttackPressedThisFrame { get; private set; }
     public bool DodgePressedThisFrame { get; private set; }
+    public Vector2 LastMoveDirection => lastMoveDirection;
 
     public event System.Action OnInteractPressed;
     public event System.Action OnAttackPressed;
@@ -82,18 +98,25 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        ResolveInputReaderIfNeeded();
     }
 
     private void Update()
     {
+        ResolveInputReaderIfNeeded();
         UpdateControlScheme();
-        moveInput = ReadMovementByCurrentScheme().normalized;
-        ReadActionButtonsByCurrentScheme();
+        moveInput = ReadMovementInput().normalized;
+        UpdateLastMoveDirection();
+        ReadActionButtons();
         EmitActionEvents();
 
         if (rb == null)
         {
-            transform.Translate(moveInput * moveSpeed * Time.deltaTime);
+            Vector2 totalVelocity = (moveInput * moveSpeed) + queuedExternalVelocity;
+            transform.Translate(totalVelocity * Time.deltaTime);
+            transform.Translate(queuedExternalDisplacement);
+            queuedExternalVelocity = Vector2.zero;
+            queuedExternalDisplacement = Vector2.zero;
         }
     }
 
@@ -101,14 +124,124 @@ public class PlayerMovement : MonoBehaviour
     {
         if (rb != null)
         {
-            rb.linearVelocity = moveInput * moveSpeed;
+            rb.linearVelocity = (moveInput * moveSpeed) + queuedExternalVelocity;
+            rb.position += queuedExternalDisplacement;
+            queuedExternalVelocity = Vector2.zero;
+            queuedExternalDisplacement = Vector2.zero;
+        }
+    }
+
+    public void SetMoveSpeed(float newMoveSpeed)
+    {
+        moveSpeed = Mathf.Max(0f, newMoveSpeed);
+    }
+
+    public void ApplyExternalVelocity(Vector2 velocity)
+    {
+        queuedExternalVelocity += velocity;
+    }
+
+    public void ApplyExternalDisplacement(Vector2 displacement)
+    {
+        queuedExternalDisplacement += displacement;
+    }
+
+    private void ResolveInputReaderIfNeeded()
+    {
+        if (inputReader != null)
+        {
+            return;
+        }
+
+        inputReader = GetComponent<PlayerInputReader>();
+        if (inputReader == null && useCentralInput)
+        {
+            // Turkish: Prefab'da yoksa runtime'da ekleyerek merkezi input gecisini kirilmadan aciyoruz.
+            inputReader = gameObject.AddComponent<PlayerInputReader>();
+        }
+    }
+
+    private bool ShouldUseCentralInput()
+    {
+        return useCentralInput && inputReader != null;
+    }
+
+    private Vector2 ReadMovementInput()
+    {
+        if (ShouldUseCentralInput())
+        {
+            // Turkish: Hareket verisini merkezi input katmanindan cekiyoruz.
+            return inputReader.MoveValue;
+        }
+
+        return ReadMovementByCurrentScheme();
+    }
+
+    private void ReadActionButtons()
+    {
+        if (ShouldUseCentralInput())
+        {
+            ReadActionButtonsFromCentralInput();
+            return;
+        }
+
+        ReadActionButtonsByCurrentScheme();
+    }
+
+    private void ReadActionButtonsFromCentralInput()
+    {
+        // Turkish: Tek-frame aksiyonlari consume ederek eventlerin bir karede tek kez tetiklenmesini garanti ediyoruz.
+        InteractPressedThisFrame = inputReader.ConsumeInteractPressedThisFrame();
+        AttackPressedThisFrame = inputReader.ConsumeAttackPressedThisFrame();
+        DodgePressedThisFrame = inputReader.ConsumeDashPressedThisFrame();
+    }
+
+    private void UpdateLastMoveDirection()
+    {
+        if (moveInput.sqrMagnitude > 0.001f)
+        {
+            lastMoveDirection = moveInput;
         }
     }
 
     private void UpdateControlScheme()
     {
+        if (ShouldUseCentralInput())
+        {
+            UpdateControlSchemeFromInputDevices();
+            return;
+        }
+
+        UpdateControlSchemeLegacy();
+    }
+
+    private void UpdateControlSchemeLegacy()
+    {
         // Keyboard oncekiklendigi surece gamepad stick drift'i klavyeye gecisi engellemez.
         if (IsKeyboardInputActive())
+        {
+            CurrentControlScheme = ControlScheme.KeyboardMouse;
+            return;
+        }
+
+        Gamepad recentlyUsedPad = GetRecentlyUsedGamepad();
+        if (recentlyUsedPad != null)
+        {
+            activeGamepad = recentlyUsedPad;
+            CurrentControlScheme = DetectGamepadScheme(recentlyUsedPad);
+            return;
+        }
+
+        if (activeGamepad != null)
+        {
+            CurrentControlScheme = DetectGamepadScheme(activeGamepad);
+        }
+    }
+
+    private void UpdateControlSchemeFromInputDevices()
+    {
+        // Turkish: Input asset kullansak da aktif cihazi cihaz sinifina bakarak anlik tespit ediyoruz.
+        if (Keyboard.current != null && Keyboard.current.anyKey.isPressed)
         {
             CurrentControlScheme = ControlScheme.KeyboardMouse;
             return;
@@ -261,14 +394,22 @@ public class PlayerMovement : MonoBehaviour
             if (pad == null)
                 continue;
 
-            Vector2 move = pad.leftStick.ReadValue();
-            bool usedStick = move.sqrMagnitude > gamepadMoveDeadzone * gamepadMoveDeadzone;
+            Vector2 leftStick = pad.leftStick.ReadValue();
+            Vector2 rightStick = pad.rightStick.ReadValue();
+            float deadzoneSqr = gamepadMoveDeadzone * gamepadMoveDeadzone;
+            bool usedStick =
+                leftStick.sqrMagnitude > deadzoneSqr ||
+                rightStick.sqrMagnitude > deadzoneSqr;
             bool usedButtons =
                 pad.buttonSouth.wasPressedThisFrame ||
                 pad.buttonNorth.wasPressedThisFrame ||
                 pad.buttonWest.wasPressedThisFrame ||
                 pad.buttonEast.wasPressedThisFrame ||
-                pad.startButton.wasPressedThisFrame;
+                pad.startButton.wasPressedThisFrame ||
+                pad.leftShoulder.wasPressedThisFrame ||
+                pad.rightShoulder.wasPressedThisFrame ||
+                pad.leftTrigger.wasPressedThisFrame ||
+                pad.rightTrigger.wasPressedThisFrame;
 
             if (usedStick || usedButtons)
                 return pad;

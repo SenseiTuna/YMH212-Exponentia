@@ -1,0 +1,224 @@
+using UnityEngine;
+
+[RequireComponent(typeof(Rigidbody2D), typeof(CircleCollider2D), typeof(SpriteRenderer))]
+public class EnemyProjectile : MonoBehaviour
+{
+    [SerializeField] private Color projectileColor = new Color(1f, 0.45f, 0.2f);
+    [SerializeField] private float projectileSize = 0.22f;
+
+    private Vector2 velocity;
+    private float damage;
+    private EnemyMechanics owner;
+    private CircleCollider2D circleCollider;
+    private SpriteRenderer spriteRenderer;
+    private bool useCurvedPath;
+    private bool useExplosion;
+    private bool hasExploded;
+    private float curveElapsedTime;
+    private float curveDuration;
+    private float explosionRadius;
+    private Vector2 curveStartPoint;
+    private Vector2 curveControlPoint;
+    private Vector2 curveEndPoint;
+
+    private static Sprite cachedSprite;
+    private static Material cachedSpriteMaterial;
+
+    public void Initialize(EnemyMechanics projectileOwner, Vector2 direction, float speed, float projectileDamage, float lifeTime, Color color, float size)
+    {
+        owner = projectileOwner;
+        velocity = direction.normalized * Mathf.Max(0f, speed);
+        damage = Mathf.Max(0f, projectileDamage);
+        projectileColor = color;
+        projectileSize = Mathf.Max(0.05f, size);
+
+        transform.right = direction.sqrMagnitude > 0.001f ? direction.normalized : Vector2.right;
+        ApplyVisualState();
+        Destroy(gameObject, Mathf.Max(0.1f, lifeTime));
+    }
+
+    public void ConfigureCurvedPath(Vector2 targetPosition, float travelDuration, float curveOffset, float aoeRadius)
+    {
+        curveStartPoint = transform.position;
+        curveEndPoint = targetPosition;
+        curveDuration = Mathf.Max(0.05f, travelDuration);
+        curveElapsedTime = 0f;
+        useCurvedPath = true;
+        useExplosion = aoeRadius > 0f;
+        explosionRadius = Mathf.Max(0f, aoeRadius);
+
+        Vector2 straightDirection = (curveEndPoint - curveStartPoint).normalized;
+        if (straightDirection.sqrMagnitude <= 0.001f)
+        {
+            straightDirection = Vector2.right;
+        }
+
+        Vector2 perpendicular = new Vector2(-straightDirection.y, straightDirection.x);
+        curveControlPoint = (curveStartPoint + curveEndPoint) * 0.5f + perpendicular * curveOffset;
+        transform.right = straightDirection;
+    }
+
+    private void Awake()
+    {
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        rb.gravityScale = 0f;
+        rb.bodyType = RigidbodyType2D.Kinematic;
+        rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+
+        circleCollider = GetComponent<CircleCollider2D>();
+        circleCollider.isTrigger = true;
+        circleCollider.radius = 0.5f;
+
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        if (spriteRenderer.sprite == null)
+        {
+            spriteRenderer.sprite = GetSquareSprite();
+        }
+
+        if (spriteRenderer.sharedMaterial == null)
+        {
+            spriteRenderer.material = GetSpriteMaterial();
+        }
+
+        spriteRenderer.sortingOrder = 8;
+
+        ApplyVisualState();
+    }
+
+    private void Update()
+    {
+        if (useCurvedPath)
+        {
+            UpdateCurvedPath();
+            return;
+        }
+
+        transform.position += (Vector3)(velocity * Time.deltaTime);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (owner == null)
+        {
+            return;
+        }
+
+        IDamageable damageable = EnemyMechanics.FindDamageable(other.gameObject);
+        if (!(damageable is PlayerMechanics))
+        {
+            return;
+        }
+
+        if (useExplosion)
+        {
+            Explode();
+            return;
+        }
+
+        damageable.TakeDamage(damage);
+        Destroy(gameObject);
+    }
+
+    private void UpdateCurvedPath()
+    {
+        curveElapsedTime += Time.deltaTime;
+        float t = Mathf.Clamp01(curveElapsedTime / curveDuration);
+
+        Vector2 firstLerp = Vector2.Lerp(curveStartPoint, curveControlPoint, t);
+        Vector2 secondLerp = Vector2.Lerp(curveControlPoint, curveEndPoint, t);
+        Vector2 bezierPoint = Vector2.Lerp(firstLerp, secondLerp, t);
+
+        Vector2 tangent = secondLerp - firstLerp;
+        if (tangent.sqrMagnitude > 0.001f)
+        {
+            transform.right = tangent.normalized;
+        }
+
+        transform.position = bezierPoint;
+
+        if (t >= 1f)
+        {
+            if (useExplosion)
+            {
+                Explode();
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+        }
+    }
+
+    private void Explode()
+    {
+        if (hasExploded)
+        {
+            return;
+        }
+
+        hasExploded = true;
+
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, explosionRadius);
+        for (int i = 0; i < hits.Length; i++)
+        {
+            IDamageable damageable = EnemyMechanics.FindDamageable(hits[i].gameObject);
+            if (damageable is PlayerMechanics)
+            {
+                damageable.TakeDamage(damage);
+                break;
+            }
+        }
+
+        Destroy(gameObject);
+    }
+
+    private static Sprite GetSquareSprite()
+    {
+        if (cachedSprite == null)
+        {
+            cachedSprite = Sprite.Create(
+                Texture2D.whiteTexture,
+                new Rect(0f, 0f, Texture2D.whiteTexture.width, Texture2D.whiteTexture.height),
+                new Vector2(0.5f, 0.5f),
+                100f);
+        }
+
+        return cachedSprite;
+    }
+
+    private static Material GetSpriteMaterial()
+    {
+        if (cachedSpriteMaterial != null)
+        {
+            return cachedSpriteMaterial;
+        }
+
+        Shader spriteShader = Shader.Find("Universal Render Pipeline/2D/Sprite-Unlit-Default");
+        if (spriteShader == null)
+        {
+            spriteShader = Shader.Find("Sprites/Default");
+        }
+
+        if (spriteShader != null)
+        {
+            cachedSpriteMaterial = new Material(spriteShader);
+        }
+
+        return cachedSpriteMaterial;
+    }
+
+    private void ApplyVisualState()
+    {
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.color = projectileColor;
+        }
+
+        if (circleCollider != null)
+        {
+            circleCollider.radius = projectileSize * 0.5f;
+        }
+
+        transform.localScale = Vector3.one * projectileSize;
+    }
+}

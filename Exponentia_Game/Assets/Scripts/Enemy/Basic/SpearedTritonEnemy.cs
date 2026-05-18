@@ -110,7 +110,19 @@ public class SpearedTritonEnemy : EnemyMechanics
             IDamageable damageable = FindDamageable(hits[i].gameObject);
             if (damageable is PlayerMechanics)
             {
-                damageable.TakeDamage(dashDamage);
+                PlayerMechanics player = damageable as PlayerMechanics;
+                Vector2 direction = player != null
+                    ? ((Vector2)player.transform.position - (Vector2)transform.position).normalized
+                    : dashDirection.normalized;
+                DamageInfo info = new DamageInfo(dashDamage, transform.position, direction, gameObject);
+                if (player != null)
+                {
+                    player.TakeDamage(info);
+                }
+                else
+                {
+                    damageable.TakeDamage(dashDamage);
+                }
                 dashHitApplied = true;
                 break;
             }

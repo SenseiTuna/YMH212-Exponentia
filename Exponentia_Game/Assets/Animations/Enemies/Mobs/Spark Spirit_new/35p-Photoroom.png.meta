@@ -1,0 +1,972 @@
+fileFormatVersion: 2
+guid: 30e03a95874fd0c42be79cc2ef066ae8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7295629646148841148
+    second: 35p-Photoroom_0
+  - first:
+      213: -5159528842361206697
+    second: 35p-Photoroom_1
+  - first:
+      213: 5622122612150601247
+    second: 35p-Photoroom_2
+  - first:
+      213: 8434521771685640670
+    second: 35p-Photoroom_3
+  - first:
+      213: -8701758280627137
+    second: 35p-Photoroom_4
+  - first:
+      213: 5792280966671302593
+    second: 35p-Photoroom_5
+  - first:
+      213: -3618597384830915521
+    second: 35p-Photoroom_6
+  - first:
+      213: -3587331224308451084
+    second: 35p-Photoroom_7
+  - first:
+      213: 259691299717801495
+    second: 35p-Photoroom_8
+  - first:
+      213: -7348487545185947533
+    second: 35p-Photoroom_9
+  - first:
+      213: -770385460743035640
+    second: 35p-Photoroom_10
+  - first:
+      213: -3791878018448410847
+    second: 35p-Photoroom_11
+  - first:
+      213: -1700862361237556654
+    second: 35p-Photoroom_12
+  - first:
+      213: 4077160706660086285
+    second: 35p-Photoroom_13
+  - first:
+      213: -1859680077472563413
+    second: 35p-Photoroom_14
+  - first:
+      213: 6707697932653351562
+    second: 35p-Photoroom_15
+  - first:
+      213: 6581380069138221550
+    second: 35p-Photoroom_16
+  - first:
+      213: -3918026997724153911
+    second: 35p-Photoroom_17
+  - first:
+      213: 6427736592655942365
+    second: 35p-Photoroom_18
+  - first:
+      213: -3235223161849227278
+    second: 35p-Photoroom_19
+  - first:
+      213: 6647500606623294851
+    second: 35p-Photoroom_20
+  - first:
+      213: -4646402779797501511
+    second: 35p-Photoroom_21
+  - first:
+      213: 8722792330566732796
+    second: 35p-Photoroom_22
+  - first:
+      213: -3239374580408289250
+    second: 35p-Photoroom_23
+  - first:
+      213: 2019024364726714395
+    second: 35p-Photoroom_24
+  - first:
+      213: -6622843164028125831
+    second: 35p-Photoroom_25
+  - first:
+      213: -2076200168683536344
+    second: 35p-Photoroom_26
+  - first:
+      213: 8554536164657180756
+    second: 35p-Photoroom_27
+  - first:
+      213: -6549673702965297880
+    second: 35p-Photoroom_28
+  - first:
+      213: -3987503153395507441
+    second: 35p-Photoroom_29
+  - first:
+      213: -1360340220851646646
+    second: 35p-Photoroom_30
+  - first:
+      213: 3278652031775280110
+    second: 35p-Photoroom_31
+  - first:
+      213: 7040598126456729840
+    second: 35p-Photoroom_32
+  - first:
+      213: 1038158109108718325
+    second: 35p-Photoroom_33
+  - first:
+      213: -5009501822934991640
+    second: 35p-Photoroom_34
+  - first:
+      213: -7956636498938561401
+    second: 35p-Photoroom_35
+  - first:
+      213: 8936813192651896994
+    second: 35p-Photoroom_36
+  - first:
+      213: 3963646946218248146
+    second: 35p-Photoroom_37
+  - first:
+      213: -4248757319905015938
+    second: 35p-Photoroom_38
+  - first:
+      213: 9191691776898939700
+    second: 35p-Photoroom_39
+  - first:
+      213: 1301105382354972179
+    second: 35p-Photoroom_40
+  - first:
+      213: -2936027070366287776
+    second: 35p-Photoroom_41
+  - first:
+      213: 7815072107404672811
+    second: 35p-Photoroom_42
+  - first:
+      213: 5503014712069466620
+    second: 35p-Photoroom_43
+  - first:
+      213: 3304693854632421127
+    second: 35p-Photoroom_44
+  - first:
+      213: -7182990148560156061
+    second: 35p-Photoroom_45
+  - first:
+      213: 5419527820563821035
+    second: 35p-Photoroom_46
+  - first:
+      213: -4616667030249132577
+    second: 35p-Photoroom_47
+  - first:
+      213: -2516058023625544005
+    second: 35p-Photoroom_48
+  - first:
+      213: -2828067659209394006
+    second: 35p-Photoroom_49
+  - first:
+      213: 3464811075663656916
+    second: 35p-Photoroom_50
+  - first:
+      213: -4119236005707065339
+    second: 35p-Photoroom_51
+  - first:
+      213: -5662667497838065696
+    second: 35p-Photoroom_52
+  - first:
+      213: 6213600735364095030
+    second: 35p-Photoroom_53
+  - first:
+      213: 8844407092815372521
+    second: 35p-Photoroom_54
+  - first:
+      213: 466686169262380072
+    second: 35p-Photoroom_55
+  - first:
+      213: -6384092536024934175
+    second: 35p-Photoroom_56
+  - first:
+      213: 6476883032751711371
+    second: 35p-Photoroom_57
+  - first:
+      213: 1582300300348354753
+    second: 35p-Photoroom_58
+  - first:
+      213: -9105938401090940565
+    second: 35p-Photoroom_59
+  - first:
+      213: 4482204274580514231
+    second: 35p-Photoroom_60
+  - first:
+      213: -9213744073269231254
+    second: 35p-Photoroom_61
+  - first:
+      213: 5713141703987479809
+    second: 35p-Photoroom_62
+  - first:
+      213: 7307319151943947056
+    second: 35p-Photoroom_63
+  - first:
+      213: -4405801094990636890
+    second: 35p-Photoroom_64
+  - first:
+      213: -8798833163254947523
+    second: 35p-Photoroom_65
+  - first:
+      213: -6051740846978002228
+    second: 35p-Photoroom_66
+  - first:
+      213: 3441347100286218189
+    second: 35p-Photoroom_67
+  - first:
+      213: -7752788190552582464
+    second: 35p-Photoroom_68
+  - first:
+      213: -7500853328448782782
+    second: 35p-Photoroom_69
+  - first:
+      213: -4292352007008297810
+    second: 35p-Photoroom_70
+  - first:
+      213: -9186827606764141779
+    second: 35p-Photoroom_71
+  - first:
+      213: 3101869735108433431
+    second: 35p-Photoroom_72
+  - first:
+      213: -1523609696761938180
+    second: 35p-Photoroom_73
+  - first:
+      213: -94853050584288440
+    second: 35p-Photoroom_74
+  - first:
+      213: -6189071716795868705
+    second: 35p-Photoroom_75
+  - first:
+      213: 8504855037412804484
+    second: 35p-Photoroom_76
+  - first:
+      213: 6522732400451169598
+    second: 35p-Photoroom_77
+  - first:
+      213: 4410657213140321440
+    second: 35p-Photoroom_78
+  - first:
+      213: 8468248979691585870
+    second: 35p-Photoroom_79
+  - first:
+      213: -702210098126826412
+    second: 35p-Photoroom_80
+  - first:
+      213: -5974730054243586554
+    second: 35p-Photoroom_81
+  - first:
+      213: 1942868616346233955
+    second: 35p-Photoroom_82
+  - first:
+      213: 8820561707196303140
+    second: 35p-Photoroom_83
+  - first:
+      213: -2091377725906011203
+    second: 35p-Photoroom_84
+  - first:
+      213: -435079429177605029
+    second: 35p-Photoroom_85
+  - first:
+      213: 9040117416334172336
+    second: 35p-Photoroom_86
+  - first:
+      213: 1094103104353566656
+    second: 35p-Photoroom_87
+  - first:
+      213: 3361891721355077907
+    second: 35p-Photoroom_88
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: idle6
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 1622
+        width: 258
+        height: 276
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7588daeaadba568b0800000000000000
+      internalID: -5159528842361206697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 1619
+        width: 258
+        height: 304
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f168dec7abac50e40800000000000000
+      internalID: 5622122612150601247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle2
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 1623
+        width: 258
+        height: 305
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3c03c40cc511eff0800000000000000
+      internalID: -8701758280627137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle3
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 1621
+        width: 258
+        height: 293
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3ceef3c9d828cdc0800000000000000
+      internalID: -3618597384830915521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle4
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 1625
+        width: 258
+        height: 305
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71660f67cdb9a9300800000000000000
+      internalID: 259691299717801495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle5
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 1625
+        width: 258
+        height: 303
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8052940518a0f45f0800000000000000
+      internalID: -770385460743035640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1188
+        width: 323
+        height: 246
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b10056466f3050c10800000000000000
+      internalID: 2019024364726714395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move2
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 1188
+        width: 323
+        height: 247
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97dbafc4b3fe614a0800000000000000
+      internalID: -6622843164028125831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move3
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 1188
+        width: 323
+        height: 234
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 820030f52fadf23e0800000000000000
+      internalID: -2076200168683536344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move4
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 1191
+        width: 323
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 450bf906151d7b670800000000000000
+      internalID: 8554536164657180756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move5
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 1188
+        width: 323
+        height: 235
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82d39040872ea15a0800000000000000
+      internalID: -6549673702965297880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: move6
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 1188
+        width: 323
+        height: 201
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0f5c19320b89a8c0800000000000000
+      internalID: -3987503153395507441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack3
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 639
+        width: 321
+        height: 342
+      alignment: 9
+      pivot: {x: 0.5, y: 0.107869335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e77883a7ab16905c0800000000000000
+      internalID: -4248757319905015938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 673
+        width: 321
+        height: 263
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43bb0fea8f27f8f70800000000000000
+      internalID: 9191691776898939700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack2
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 673
+        width: 321
+        height: 280
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31eed92a3747e0210800000000000000
+      internalID: 1301105382354972179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack6
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 674
+        width: 321
+        height: 269
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70728c04d81acdd20800000000000000
+      internalID: 3304693854632421127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack4
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 657
+        width: 321
+        height: 244
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbe2783ee8a251dd0800000000000000
+      internalID: -2516058023625544005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack5
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 657
+        width: 321
+        height: 228
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa8bd0c927fa0c8d0800000000000000
+      internalID: -2828067659209394006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death1
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 129
+        width: 338
+        height: 307
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b84abe26dc282e950800000000000000
+      internalID: 6476883032751711371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death2
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 140
+        width: 338
+        height: 307
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c0f1426db575f510800000000000000
+      internalID: 1582300300348354753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death3
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 167
+        width: 226
+        height: 235
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eacd55b67908e64c0800000000000000
+      internalID: -4292352007008297810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death4
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 152
+        width: 157
+        height: 124
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e41c4109493458570800000000000000
+      internalID: 8468248979691585870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1f0761b3b23cda34dac6d93873eb9eea
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      35p-Photoroom_0: 7295629646148841148
+      35p-Photoroom_11: -3791878018448410847
+      35p-Photoroom_12: -1700862361237556654
+      35p-Photoroom_13: 4077160706660086285
+      35p-Photoroom_14: -1859680077472563413
+      35p-Photoroom_15: 6707697932653351562
+      35p-Photoroom_16: 6581380069138221550
+      35p-Photoroom_17: -3918026997724153911
+      35p-Photoroom_18: 6427736592655942365
+      35p-Photoroom_19: -3235223161849227278
+      35p-Photoroom_20: 6647500606623294851
+      35p-Photoroom_21: -4646402779797501511
+      35p-Photoroom_22: 8722792330566732796
+      35p-Photoroom_23: -3239374580408289250
+      35p-Photoroom_3: 8434521771685640670
+      35p-Photoroom_30: -1360340220851646646
+      35p-Photoroom_31: 3278652031775280110
+      35p-Photoroom_32: 7040598126456729840
+      35p-Photoroom_33: 1038158109108718325
+      35p-Photoroom_34: -5009501822934991640
+      35p-Photoroom_35: -7956636498938561401
+      35p-Photoroom_36: 8936813192651896994
+      35p-Photoroom_37: 3963646946218248146
+      35p-Photoroom_41: -2936027070366287776
+      35p-Photoroom_42: 7815072107404672811
+      35p-Photoroom_43: 5503014712069466620
+      35p-Photoroom_45: -7182990148560156061
+      35p-Photoroom_46: 5419527820563821035
+      35p-Photoroom_47: -4616667030249132577
+      35p-Photoroom_5: 5792280966671302593
+      35p-Photoroom_50: 3464811075663656916
+      35p-Photoroom_51: -4119236005707065339
+      35p-Photoroom_52: -5662667497838065696
+      35p-Photoroom_53: 6213600735364095030
+      35p-Photoroom_54: 8844407092815372521
+      35p-Photoroom_55: 466686169262380072
+      35p-Photoroom_56: -6384092536024934175
+      35p-Photoroom_59: -9105938401090940565
+      35p-Photoroom_60: 4482204274580514231
+      35p-Photoroom_61: -9213744073269231254
+      35p-Photoroom_62: 5713141703987479809
+      35p-Photoroom_63: 7307319151943947056
+      35p-Photoroom_64: -4405801094990636890
+      35p-Photoroom_65: -8798833163254947523
+      35p-Photoroom_66: -6051740846978002228
+      35p-Photoroom_67: 3441347100286218189
+      35p-Photoroom_68: -7752788190552582464
+      35p-Photoroom_69: -7500853328448782782
+      35p-Photoroom_7: -3587331224308451084
+      35p-Photoroom_71: -9186827606764141779
+      35p-Photoroom_72: 3101869735108433431
+      35p-Photoroom_73: -1523609696761938180
+      35p-Photoroom_74: -94853050584288440
+      35p-Photoroom_75: -6189071716795868705
+      35p-Photoroom_76: 8504855037412804484
+      35p-Photoroom_77: 6522732400451169598
+      35p-Photoroom_78: 4410657213140321440
+      35p-Photoroom_80: -702210098126826412
+      35p-Photoroom_81: -5974730054243586554
+      35p-Photoroom_82: 1942868616346233955
+      35p-Photoroom_83: 8820561707196303140
+      35p-Photoroom_84: -2091377725906011203
+      35p-Photoroom_85: -435079429177605029
+      35p-Photoroom_86: 9040117416334172336
+      35p-Photoroom_87: 1094103104353566656
+      35p-Photoroom_88: 3361891721355077907
+      35p-Photoroom_9: -7348487545185947533
+      attack1: 9191691776898939700
+      attack2: 1301105382354972179
+      attack3: -4248757319905015938
+      attack4: -2516058023625544005
+      attack5: -2828067659209394006
+      attack6: 3304693854632421127
+      death1: 6476883032751711371
+      death2: 1582300300348354753
+      death3: -4292352007008297810
+      death4: 8468248979691585870
+      idle1: 5622122612150601247
+      idle2: -8701758280627137
+      idle3: -3618597384830915521
+      idle4: 259691299717801495
+      idle5: -770385460743035640
+      idle6: -5159528842361206697
+      move1: 2019024364726714395
+      move2: -6622843164028125831
+      move3: -2076200168683536344
+      move4: 8554536164657180756
+      move5: -6549673702965297880
+      move6: -3987503153395507441
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

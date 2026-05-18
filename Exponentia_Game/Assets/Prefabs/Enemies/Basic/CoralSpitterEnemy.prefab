@@ -277,8 +277,10 @@ MonoBehaviour:
   projectileDamage: 9
   projectileLifeTime: 4
   projectileSize: 0.28
-  projectileSpawnOffset: 0.6
+  centerSpawnOffset: 0.72
+  sideSpawnOffset: 0.34
   sideOffset: 0.28
+  sideSpreadAngle: 18
   projectileColor: {r: 0.35, g: 0.8, b: 0.55, a: 1}
 --- !u!50 &3336136868545767668
 Rigidbody2D:
@@ -387,7 +389,7 @@ Animator:
   m_GameObject: {fileID: 8533752835152168689}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b8148b1449d1c4b42a34f6f8c924e419, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

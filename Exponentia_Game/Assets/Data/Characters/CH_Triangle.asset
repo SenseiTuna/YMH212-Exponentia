@@ -15,23 +15,27 @@ MonoBehaviour:
   characterId: CH_Triangle
   characterName: 180 Yes Scope
   description: "Evrenin Temel Yap\u0131 Ta\u015F\u0131"
-  gameplaySprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  gameplaySprite: {fileID: 9202433172172592140, guid: 95b6efd9134b71445aee1c2c0185c271, type: 3}
   characterColor: {r: 1, g: 1, b: 1, a: 1}
   portrait: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   icon: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   baseStats:
     maxHealth: 100
-    armor: 0
+    damage: 10
     moveSpeed: 5
+    attackSpeed: 1
+    projectileSpeed: 10
+    defense: 0
+    lifeSteal: 0
+    shield: 0
+    mana: 100
+    armor: 0
     knockbackResistance: 0
     isDashing: 0
     dashSpeed: 10
     dashDuration: 0.5
-    damage: 10
-    attackSpeed: 1
     fireRate: 0.5
     range: 8
-    projectileSpeed: 10
     projectileSize: 1
     projectileLifetime: 3
     critChance: 0.05

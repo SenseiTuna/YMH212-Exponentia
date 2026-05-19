@@ -149,7 +149,19 @@ public class ArkePrismProjectile : MonoBehaviour
                     IDamageable damageable = EnemyMechanics.FindDamageable(target);
                     if (damageable is PlayerMechanics)
                     {
-                        damageable.TakeDamage(damage);
+                        PlayerMechanics player = damageable as PlayerMechanics;
+                        Vector2 direction = player != null
+                            ? ((Vector2)player.transform.position - (Vector2)transform.position).normalized
+                            : Vector2.zero;
+                        DamageInfo info = new DamageInfo(damage, transform.position, direction, owner != null ? owner.gameObject : gameObject);
+                        if (player != null)
+                        {
+                            player.TakeDamage(info);
+                        }
+                        else
+                        {
+                            damageable.TakeDamage(damage);
+                        }
                     }
                 }
                 break;

@@ -271,6 +271,9 @@ MonoBehaviour:
   yaziRengi: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   fallbackDeathDespawnDelay: 0.85
   deathNormalizedDestroyPoint: 0.92
+  combatFeedback: {fileID: 0}
+  autoAddFeedbackComponents: 1
+  disableKnockback: 0
   hazardDamagePerTick: 5
   hazardTickCooldown: 0.45
   hazardDuration: 3
@@ -383,7 +386,7 @@ Animator:
   m_GameObject: {fileID: 6531028019332706304}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f8c196fd41703994892d331f087453fd, type: 2}
+  m_Controller: {fileID: 9100000, guid: ce54ac15b10c5e9439eddfeedf6d3e98, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

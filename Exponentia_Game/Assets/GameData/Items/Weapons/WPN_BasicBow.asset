@@ -24,7 +24,7 @@ MonoBehaviour:
   fireRate: 100
   projectilePrefab: {fileID: 0}
   projectileSpeed: 20
-  projectileLifetime: 0.1
+  projectileLifetime: 0.5
   projectileCount: 10
   spreadAngle: 360
   pierceCount: 0

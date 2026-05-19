@@ -49,6 +49,11 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
     [SerializeField] protected float fallbackDeathDespawnDelay = 0.85f;
     [SerializeField] [Range(0.1f, 0.98f)] protected float deathNormalizedDestroyPoint = 0.92f;
 
+    [Header("Hit Feedback")]
+    [SerializeField] protected CombatFeedbackController combatFeedback;
+    [SerializeField] protected bool autoAddFeedbackComponents = true;
+    [SerializeField] protected bool disableKnockback = false;
+
     protected float mevcutCan;
     protected Transform playerTarget;
     protected PlayerMechanics playerMechanics;
@@ -69,6 +74,8 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
     protected Rigidbody2D rb2d;
     protected bool isDying;
     private Coroutine deathRoutine;
+    private DamageFlashFeedback damageFlashFeedback;
+    private KnockbackReceiver2D knockbackReceiver;
 
     private static Sprite cachedSquareSprite;
     private static Material cachedSpriteMaterial;
@@ -97,6 +104,31 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
         
         aiAgent = GetComponent<IAstarAI>();
         rb2d = GetComponent<Rigidbody2D>();
+
+        if (combatFeedback == null)
+        {
+            combatFeedback = FindFirstObjectByType<CombatFeedbackController>();
+        }
+
+        if (autoAddFeedbackComponents)
+        {
+            damageFlashFeedback = GetComponent<DamageFlashFeedback>();
+            if (damageFlashFeedback == null)
+            {
+                damageFlashFeedback = gameObject.AddComponent<DamageFlashFeedback>();
+            }
+
+            knockbackReceiver = GetComponent<KnockbackReceiver2D>();
+            if (knockbackReceiver == null)
+            {
+                knockbackReceiver = gameObject.AddComponent<KnockbackReceiver2D>();
+            }
+        }
+        else
+        {
+            damageFlashFeedback = GetComponent<DamageFlashFeedback>();
+            knockbackReceiver = GetComponent<KnockbackReceiver2D>();
+        }
         
         // ZORUNLU KILIT (Awake'te bir kere yapilir): 
         // AILerp veya AIPath kullaniyorsa rotasyonu bozmasini tamamen engelliyoruz!
@@ -141,6 +173,11 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
         if (!IsAlive || isDying)
         {
             return;
+        }
+
+        if (playerTarget == null || playerMechanics == null)
+        {
+            CachePlayerReferences();
         }
 
         if (useChaseMovement)
@@ -222,15 +259,38 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
 
     public virtual float TakeDamage(float amount)
     {
-        if (!IsAlive || amount <= 0f)
+        DamageInfo info = new DamageInfo(amount, transform.position, Vector2.zero, null, false, 0f);
+        return TakeDamage(info);
+    }
+
+    public virtual float TakeDamage(DamageInfo damageInfo)
+    {
+        if (!IsAlive || damageInfo.amount <= 0f)
         {
             return 0f;
         }
 
-        float appliedDamage = Mathf.Min(mevcutCan, amount);
+        float appliedDamage = Mathf.Min(mevcutCan, damageInfo.amount);
         mevcutCan -= appliedDamage;
         FloatingCombatText.Create(Mathf.CeilToInt(appliedDamage).ToString(), transform.position + Vector3.up * 0.75f, Color.red);
         UpdateHealthText();
+
+        bool isLethalHit = mevcutCan <= 0f;
+
+        DamageInfo resolved = damageInfo;
+        if (resolved.hitDirection.sqrMagnitude <= 0.001f && resolved.source != null)
+        {
+            resolved.hitDirection = ((Vector2)transform.position - (Vector2)resolved.source.transform.position).normalized;
+        }
+
+        if (combatFeedback != null)
+        {
+            combatFeedback.OnEnemyDamaged(this, resolved, isLethalHit, disableKnockback);
+        }
+        else if (damageFlashFeedback != null)
+        {
+            damageFlashFeedback.Flash(new Color(1f, 0.35f, 0.35f, 1f), 0.08f);
+        }
 
         if (!IsAlive)
         {
@@ -440,7 +500,23 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
         }
 
         nextTouchDamageTime = Time.time + touchDamageCooldown;
-        damageable.TakeDamage(touchDamage);
+        Vector2 direction = ((Vector2)other.transform.position - (Vector2)transform.position).normalized;
+        DamageInfo info = new DamageInfo(
+            touchDamage,
+            transform.position,
+            direction,
+            gameObject,
+            false,
+            0f);
+
+        if (damageable is PlayerMechanics player)
+        {
+            player.TakeDamage(info);
+        }
+        else
+        {
+            damageable.TakeDamage(touchDamage);
+        }
         
         // Hasar verdiyse "Attack" animasyonunu tetikle
         if (animator != null)

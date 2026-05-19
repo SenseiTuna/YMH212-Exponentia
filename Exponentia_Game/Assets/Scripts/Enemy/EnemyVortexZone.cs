@@ -91,7 +91,8 @@ public class EnemyVortexZone : MonoBehaviour
         if (Time.time >= nextTickTime)
         {
             nextTickTime = Time.time + tickInterval;
-            player.TakeDamage(tickDamage);
+            DamageInfo info = new DamageInfo(tickDamage, transform.position, -pullDirection, gameObject, false, 0f);
+            player.TakeDamage(info);
         }
     }
 

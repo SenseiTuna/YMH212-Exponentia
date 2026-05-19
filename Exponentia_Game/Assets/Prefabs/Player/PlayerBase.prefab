@@ -201,15 +201,15 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 0}
-  m_Color: {r: 0.10371137, g: 1, b: 0, a: 1}
+  m_Sprite: {fileID: 1630519669529170824, guid: 95b6efd9134b71445aee1c2c0185c271, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.23, y: 1.51}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
 --- !u!50 &2300376608390944534
 Rigidbody2D:
@@ -275,9 +275,9 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1.23, y: 1.51}
+    newSize: {x: 1.23, y: 1.51}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -362,6 +362,13 @@ MonoBehaviour:
   baseAttackMultiplier: 1
   baseAttackManaCost: 0
   damageCooldown: 0.2
+  invulnerabilityDuration: 0.75
+  flashInterval: 0.08
+  flashDuringIFrames: 1
+  damageFlashColor: {r: 1, g: 0, b: 0, a: 1}
+  damageFlashDuration: 0.12
+  combatFeedback: {fileID: 0}
+  autoAddFeedbackComponents: 1
   healthTextOffset: {x: 0, y: 1.35, z: 0}
   healthTextColor: {r: 0, g: 1, b: 0, a: 1}
   healthTextFontSize: 32

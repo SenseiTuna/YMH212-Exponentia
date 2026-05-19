@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 770358374659389787}
   - component: {fileID: 793270525437943179}
   - component: {fileID: 6567183880086125632}
-  - component: {fileID: 198431328034276952}
+  - component: {fileID: -6717582388751958523}
   m_Layer: 0
   m_Name: SpartanEnemy
   m_TagString: Enemy
@@ -180,6 +180,9 @@ MonoBehaviour:
   yaziRengi: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   fallbackDeathDespawnDelay: 0.85
   deathNormalizedDestroyPoint: 0.92
+  combatFeedback: {fileID: 0}
+  autoAddFeedbackComponents: 1
+  disableKnockback: 0
   shootRange: 8.5
   attackCooldown: 1.9
   projectileSpeed: 5.5
@@ -285,7 +288,7 @@ MonoBehaviour:
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
   constrainInsideGraph: 0
---- !u!95 &198431328034276952
+--- !u!95 &-6717582388751958523
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -295,7 +298,7 @@ Animator:
   m_GameObject: {fileID: 1580660533432690214}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0ccba7bc63fa4d34bbb568036ccd0caa, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

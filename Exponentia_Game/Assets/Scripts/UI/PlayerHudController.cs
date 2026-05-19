@@ -13,6 +13,7 @@ namespace Exponentia.UI
 
         [Header("HUD Elements")]
         [SerializeField] private Slider healthSlider;
+        [SerializeField] private Image healthFillImage;
         [SerializeField] private Slider manaSlider;
         [SerializeField] private Text healthText;
         [SerializeField] private Text manaText;
@@ -189,6 +190,11 @@ namespace Exponentia.UI
                 healthSlider.minValue = 0f;
                 healthSlider.maxValue = Mathf.Max(1f, max);
                 healthSlider.value = Mathf.Clamp(current, 0f, healthSlider.maxValue);
+            }
+
+            if (healthFillImage != null)
+            {
+                healthFillImage.fillAmount = Mathf.Clamp01(current / Mathf.Max(1f, max));
             }
 
             if (healthText != null)

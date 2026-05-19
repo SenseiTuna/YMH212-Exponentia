@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1743d9c243b8784fa7c856acbab6ba6, type: 3}
+  m_Name: WPN_BasicBow
+  m_EditorClassIdentifier: Assembly-CSharp::Exponentia.InventorySystem.WeaponDefinition
+  itemId: weapon.basic_bow
+  displayName: Basic Bow
+  description: Balanced starter bow.
+  icon: {fileID: 0}
+  rarity: 0
+  category: 0
+  canStack: 0
+  maxStacks: 1
+  damage: 100
+  fireRate: 100
+  projectilePrefab: {fileID: 0}
+  projectileSpeed: 20
+  projectileLifetime: 0.5
+  projectileCount: 10
+  spreadAngle: 360
+  pierceCount: 0
+  areaRadius: 0
+  knockback: 0

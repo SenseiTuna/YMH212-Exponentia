@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6684bd8a8f36482458be74c84bccab22, type: 3}
+  m_Name: RP_Default
+  m_EditorClassIdentifier: Assembly-CSharp::Exponentia.InventorySystem.RewardPool
+  defaultRewards:
+  - reward: {fileID: 11400000, guid: ed2eda5cdc9d22845b362ebea94d807e, type: 2}
+    weight: 1
+  - reward: {fileID: 11400000, guid: 30bbb9a12ae630b4f9e1fe5bec5a1c88, type: 2}
+    weight: 1
+  - reward: {fileID: 11400000, guid: 448e543537c76034f8a34828f6f820a8, type: 2}
+    weight: 1
+  - reward: {fileID: 11400000, guid: c9bd67c3229dbf847a6b095aae9e2d3d, type: 2}
+    weight: 1
+  - reward: {fileID: 11400000, guid: 3c155f7d6e325a14c9b89bbf78fff842, type: 2}
+    weight: 0.35
+  contextBuckets: []
+  rarityWeights:
+  - rarity: 0
+    weight: 55
+  - rarity: 1
+    weight: 25
+  - rarity: 2
+    weight: 12
+  - rarity: 3
+    weight: 5
+  - rarity: 4
+    weight: 2
+  - rarity: 5
+    weight: 0.9
+  - rarity: 6
+    weight: 0.1

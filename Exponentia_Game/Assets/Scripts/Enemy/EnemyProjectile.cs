@@ -115,7 +115,16 @@ public class EnemyProjectile : MonoBehaviour
             return;
         }
 
-        damageable.TakeDamage(damage);
+        if (damageable is PlayerMechanics player)
+        {
+            Vector2 direction = ((Vector2)player.transform.position - (Vector2)transform.position).normalized;
+            DamageInfo info = new DamageInfo(damage, transform.position, direction, owner != null ? owner.gameObject : gameObject);
+            player.TakeDamage(info);
+        }
+        else
+        {
+            damageable.TakeDamage(damage);
+        }
         Destroy(gameObject);
     }
 
@@ -164,7 +173,19 @@ public class EnemyProjectile : MonoBehaviour
             IDamageable damageable = EnemyMechanics.FindDamageable(hits[i].gameObject);
             if (damageable is PlayerMechanics)
             {
-                damageable.TakeDamage(damage);
+                PlayerMechanics player = damageable as PlayerMechanics;
+                Vector2 direction = player != null
+                    ? ((Vector2)player.transform.position - (Vector2)transform.position).normalized
+                    : Vector2.zero;
+                DamageInfo info = new DamageInfo(damage, transform.position, direction, owner != null ? owner.gameObject : gameObject);
+                if (player != null)
+                {
+                    player.TakeDamage(info);
+                }
+                else
+                {
+                    damageable.TakeDamage(damage);
+                }
                 break;
             }
         }

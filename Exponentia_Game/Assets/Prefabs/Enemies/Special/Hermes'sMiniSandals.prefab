@@ -299,6 +299,9 @@ MonoBehaviour:
   yaziRengi: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   fallbackDeathDespawnDelay: 0.85
   deathNormalizedDestroyPoint: 0.92
+  combatFeedback: {fileID: 0}
+  autoAddFeedbackComponents: 1
+  disableKnockback: 0
   dashTriggerRange: 5
   dashSpeed: 10
   dashDuration: 0.45

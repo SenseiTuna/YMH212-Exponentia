@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8331504df8bd8a94f98552ce3a51f9cb, type: 3}
-  m_Name: SKL_ZeusBolt
+  m_Name: SKL_Hermes
   m_EditorClassIdentifier: Assembly-CSharp::Exponentia.InventorySystem.SkillDefinition
-  itemId: skill.zeus_bolt
-  displayName: Zeus Bolt
-  description: A focused lightning burst on activation.
+  itemId: skill.hermes
+  displayName: Hermes
+  description: 
   icon: {fileID: 0}
   rarity: 2
   category: 1
@@ -22,7 +22,7 @@ MonoBehaviour:
   maxStacks: 1
   cooldown: 8
   duration: 0.2
-  linkedGodSkillType: 1
-  skillEffectType: 1
+  linkedGodSkillType: 5
+  skillEffectType: 0
   visualEffectPrefab: {fileID: 0}
   audioClip: {fileID: 0}

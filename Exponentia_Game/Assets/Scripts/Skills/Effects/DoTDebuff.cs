@@ -7,6 +7,7 @@ public class DoTDebuff : MonoBehaviour
     private IDamageable target;
     private float damagePerSecond;
     private float duration;
+    private const float TickInterval = 0.25f;
 
     public void Initialize(IDamageable targetDamageable, float dps, float totalDuration)
     {
@@ -23,10 +24,15 @@ public class DoTDebuff : MonoBehaviour
         {
             if (target != null)
             {
-                target.TakeDamage(damagePerSecond * Time.deltaTime);
+                float remaining = end - Time.time;
+                float tickDuration = Mathf.Min(TickInterval, remaining);
+                if (tickDuration > 0f)
+                {
+                    target.TakeDamage(damagePerSecond * tickDuration);
+                }
             }
 
-            yield return null;
+            yield return new WaitForSeconds(TickInterval);
         }
 
         Destroy(this);

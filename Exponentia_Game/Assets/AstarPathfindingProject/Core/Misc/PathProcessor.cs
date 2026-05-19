@@ -404,8 +404,6 @@ namespace Pathfinding {
 			if (e is ThreadControlQueue.QueueTerminationException)
 #endif
 			{
-				if (astar.logPathResults == PathLog.Heavy)
-					Debug.LogWarning("Shutting down pathfinding thread #" + pathHandler.threadID);
 				return;
 			}
 			Debug.LogException(e);

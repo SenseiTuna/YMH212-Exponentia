@@ -105,6 +105,8 @@ namespace Exponentia.InventorySystem
             {
                 SetActiveItem(activeItem);
             }
+
+            SyncEquippedSkillToPlayerAttack();
         }
 
         private void Update()
@@ -195,12 +197,27 @@ namespace Exponentia.InventorySystem
                 equippedSkill = skill;
             }
 
+            SyncEquippedSkillToPlayerAttack();
+
             if (verboseLogs)
             {
                 Debug.Log($"Inventory: Added skill '{skill.displayName}'.", this);
             }
 
             OnSkillAdded?.Invoke(skill);
+            RaiseInventoryChanged();
+            return true;
+        }
+
+        public bool EquipSkill(SkillDefinition skill)
+        {
+            if (skill == null || !ContainsSkill(skill.itemId))
+            {
+                return false;
+            }
+
+            equippedSkill = skill;
+            SyncEquippedSkillToPlayerAttack();
             RaiseInventoryChanged();
             return true;
         }
@@ -606,6 +623,16 @@ namespace Exponentia.InventorySystem
         private void RaiseInventoryChanged()
         {
             OnInventoryChanged?.Invoke();
+        }
+
+        private void SyncEquippedSkillToPlayerAttack()
+        {
+            if (playerAttack == null || equippedSkill == null)
+            {
+                return;
+            }
+
+            playerAttack.TryEquipSkillByDefinition(equippedSkill);
         }
     }
 }

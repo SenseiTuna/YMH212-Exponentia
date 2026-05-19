@@ -9,6 +9,9 @@ namespace Exponentia.InventorySystem
         [Min(0f)] public float cooldown = 6f;
         [Min(0f)] public float duration = 1.5f;
 
+        [Header("Runtime Binding")]
+        public GodSkillType linkedGodSkillType = GodSkillType.None;
+
         [Header("Skill Effect")]
         public SkillEffectType skillEffectType = SkillEffectType.Custom;
         public GameObject visualEffectPrefab;

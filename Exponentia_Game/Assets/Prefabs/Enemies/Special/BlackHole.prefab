@@ -299,8 +299,11 @@ MonoBehaviour:
   yaziRengi: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   fallbackDeathDespawnDelay: 0.85
   deathNormalizedDestroyPoint: 0.92
+  combatFeedback: {fileID: 0}
+  autoAddFeedbackComponents: 1
+  disableKnockback: 0
   pullRadius: 8
-  pullStrength: 3.5
+  pullStrength: 0.3
   centerDamage: 8
   centerDamageRadius: 1.3
   centerDamageCooldown: 0.45

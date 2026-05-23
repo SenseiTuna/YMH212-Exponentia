@@ -36,6 +36,13 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
     public float MevcutCan { get; private set; }
     public float MevcutMana { get; private set; }
     public float MevcutKalkan { get; private set; }
+    public float MevcutLaserMana { get; private set; }
+    public float MaxLaserMana { get; private set; } = 100f;
+    [SerializeField] private float laserManaRegenRate = 15f;
+
+    [Header("Kill Resource Bonus")]
+    [SerializeField] private int killsNeededForSkillMana = 5;
+    private int currentKillCountForMana = 0;
 
     private float nextAttackTime;
     private float nextDamageTime;
@@ -45,6 +52,7 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
 
     public event System.Action<float, float> OnCanDegisti;
     public event System.Action<float, float> OnManaDegisti;
+    public event System.Action<float, float> OnLaserManaDegisti;
     public event System.Action<int> OnLevelAtlandi;
     public event System.Action<float, float> OnXpDegisti;
     public event System.Action OnOldu;
@@ -73,6 +81,7 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
         MevcutCan = Mathf.Max(0f, playerStats != null ? playerStats.MaxHealth : 0f);
         MevcutMana = Mathf.Max(0f, playerStats != null ? playerStats.Mana : 0f);
         MevcutKalkan = Mathf.Max(0f, playerStats != null ? playerStats.Shield : 0f);
+        MevcutLaserMana = MaxLaserMana;
     }
 
     private void OnEnable()
@@ -81,6 +90,8 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
         {
             playerMovement.OnAttackPressed += HandleAttackPressed;
         }
+
+        OnEnemyKilled += HandleEnemyKilledForMana;
     }
 
     private void Start()
@@ -102,6 +113,17 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
         if (playerMovement != null)
         {
             playerMovement.OnAttackPressed -= HandleAttackPressed;
+        }
+
+        OnEnemyKilled -= HandleEnemyKilledForMana;
+    }
+
+    private void Update()
+    {
+        if (MevcutLaserMana < MaxLaserMana)
+        {
+            MevcutLaserMana = Mathf.Min(MaxLaserMana, MevcutLaserMana + laserManaRegenRate * Time.deltaTime);
+            OnLaserManaDegisti?.Invoke(MevcutLaserMana, MaxLaserMana);
         }
     }
 
@@ -235,6 +257,23 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
         return true;
     }
 
+    public bool HarcaLaserMana(float amount)
+    {
+        if (amount <= 0f)
+        {
+            return true;
+        }
+
+        if (MevcutLaserMana < amount)
+        {
+            return false;
+        }
+
+        MevcutLaserMana -= amount;
+        OnLaserManaDegisti?.Invoke(MevcutLaserMana, MaxLaserMana);
+        return true;
+    }
+
     public void ManaYenile(float amount)
     {
         if (amount <= 0f)
@@ -363,6 +402,7 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
     {
         OnCanDegisti?.Invoke(MevcutCan, playerStats.MaxHealth);
         OnManaDegisti?.Invoke(MevcutMana, playerStats.Mana);
+        OnLaserManaDegisti?.Invoke(MevcutLaserMana, MaxLaserMana);
         OnXpDegisti?.Invoke(playerStats.Xp, playerStats.NextLevelXp);
         UpdateHealthText();
     }
@@ -378,6 +418,7 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
         MevcutCan = Mathf.Clamp(playerStats.CurrentHealth, 0f, playerStats.MaxHealth);
         MevcutMana = Mathf.Max(0f, playerStats.Mana);
         MevcutKalkan = Mathf.Max(0f, playerStats.Shield);
+        MevcutLaserMana = MaxLaserMana;
     }
 
     private static float NormalizePercent(float value)
@@ -480,6 +521,26 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
         if (activeCamera != null)
         {
             healthTextMesh.transform.rotation = activeCamera.transform.rotation;
+        }
+    }
+
+    private void HandleEnemyKilledForMana(GameObject enemy)
+    {
+        currentKillCountForMana++;
+        if (currentKillCountForMana >= killsNeededForSkillMana)
+        {
+            currentKillCountForMana = 0;
+
+            float manaToRestore = 30f; // Default fallback (Zeus cost)
+            PlayerAttack attackComp = GetComponent<PlayerAttack>();
+            if (attackComp != null && attackComp.EquippedSkill != null)
+            {
+                manaToRestore = attackComp.EquippedSkill.ManaCost;
+            }
+
+            ManaYenile(manaToRestore);
+            FloatingCombatText.Create("+Skill Mana!", transform.position + Vector3.up * 1.5f, Color.cyan);
+            Debug.Log($"Düşman öldürme ödülü! {killsNeededForSkillMana} düşman öldü, 1 skillik mana ({manaToRestore}) kazanıldı!");
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿/*
+/*
  * PROJ_NAME: Exponentia
  * PROJ_ID: EXP-ROGUELITE-001
  * VERSION: 0.5.0
@@ -24,6 +24,8 @@ public class PlayerAttack : MonoBehaviour
     [Header("Skill System")]
     [SerializeField] private GodSkillBase equippedSkill; // Inspector'dan degisebilecek aktif skill
     [SerializeField] private UnityEngine.UI.Image skillIconUI; // UI ustunde gosterilecek resim
+
+    public GodSkillBase EquippedSkill => equippedSkill;
 
     [Header("Laser Attack")]
     [SerializeField] private float laserManaCost = 0f;
@@ -183,7 +185,7 @@ public class PlayerAttack : MonoBehaviour
             return false;
         }
 
-        if (!playerMechanics.HarcaMana(laserManaCost))
+        if (!playerMechanics.HarcaLaserMana(laserManaCost))
         {
             return false;
         }

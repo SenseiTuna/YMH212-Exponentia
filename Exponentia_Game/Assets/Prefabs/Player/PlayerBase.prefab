@@ -327,7 +327,7 @@ MonoBehaviour:
   inputReader: {fileID: 0}
   equippedSkill: {fileID: 0}
   skillIconUI: {fileID: 0}
-  laserManaCost: 0
+  laserManaCost: 10
   laserLifetime: 1.5
   spawnOffset: 0.6
   gamepadAimDeadzone: 0.2
@@ -360,6 +360,8 @@ MonoBehaviour:
   healthTextColor: {r: 0, g: 1, b: 0, a: 1}
   healthTextFontSize: 32
   healthTextCharacterSize: 0.22
+  laserManaRegenRate: 15
+  killsNeededForSkillMana: 5
 --- !u!114 &7558214801132853810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -443,7 +445,7 @@ MonoBehaviour:
   isUnlocked: 1
   skillLevel: 1
   maxSkillLevel: 5
-  manaCost: 0
+  manaCost: 30
   cooldown: 0
   lightningDamage: 30
   chainRadius: 3
@@ -452,4 +454,4 @@ MonoBehaviour:
   killAttackSpeedPerStack: 0.15
   maxKillStacks: 5
   killStackDuration: 4
-  wrathCooldown: 10
+  wrathCooldown: 5

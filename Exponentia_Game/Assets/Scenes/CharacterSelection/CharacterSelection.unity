@@ -313,6 +313,15 @@ MonoBehaviour:
   selectButton: {fileID: 2010449069}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
   selectedColor: {r: 1, g: 0.92, b: 0.55, a: 1}
+  animateScaleOnSelect: 1
+  selectedScaleMultiplier: 1.04
+  useOutlineIndicator: 1
+  outlineSelectedColor: {r: 1, g: 0.85, b: 0.2, a: 1}
+  outlineDistance: {x: 4, y: 4}
+  pulseOutline: 1
+  pulseSpeed: 6
+  pulseAlphaMin: 0.35
+  pulseAlphaMax: 1
 --- !u!224 &295983785
 RectTransform:
   m_ObjectHideFlags: 0
@@ -537,6 +546,8 @@ MonoBehaviour:
   - {fileID: 295983784}
   dungeonSceneName: SampleScene
   loadSceneImmediately: 1
+  selectFirstSlotOnStart: 1
+  syncSelectionFromEventSystem: 1
 --- !u!4 &363074112
 Transform:
   m_ObjectHideFlags: 0
@@ -698,6 +709,15 @@ MonoBehaviour:
   selectButton: {fileID: 2023024918}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
   selectedColor: {r: 1, g: 0.92, b: 0.55, a: 1}
+  animateScaleOnSelect: 1
+  selectedScaleMultiplier: 1.04
+  useOutlineIndicator: 1
+  outlineSelectedColor: {r: 1, g: 0.85, b: 0.2, a: 1}
+  outlineDistance: {x: 4, y: 4}
+  pulseOutline: 1
+  pulseSpeed: 6
+  pulseAlphaMin: 0.35
+  pulseAlphaMax: 1
 --- !u!1 &415487196
 GameObject:
   m_ObjectHideFlags: 0
@@ -1968,6 +1988,15 @@ MonoBehaviour:
   selectButton: {fileID: 527506090}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
   selectedColor: {r: 1, g: 0.92, b: 0.55, a: 1}
+  animateScaleOnSelect: 1
+  selectedScaleMultiplier: 1.04
+  useOutlineIndicator: 1
+  outlineSelectedColor: {r: 1, g: 0.85, b: 0.2, a: 1}
+  outlineDistance: {x: 4, y: 4}
+  pulseOutline: 1
+  pulseSpeed: 6
+  pulseAlphaMin: 0.35
+  pulseAlphaMax: 1
 --- !u!114 &1370478198
 MonoBehaviour:
   m_ObjectHideFlags: 0

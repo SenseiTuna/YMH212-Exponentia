@@ -1,0 +1,286 @@
+fileFormatVersion: 2
+guid: a462557767c6eaf459f98fb29e3466b5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 367227177234537652
+    second: arkhe_projectile_fullpower_0
+  - first:
+      213: 6327226115470680412
+    second: arkhe_projectile_fullpower_1
+  - first:
+      213: 7225943778196005154
+    second: arkhe_projectile_fullpower_2
+  - first:
+      213: -6638331475879421881
+    second: arkhe_projectile_fullpower_3
+  - first:
+      213: 4913694297686314722
+    second: arkhe_projectile_fullpower_4
+  - first:
+      213: -7300507263839136399
+    second: arkhe_projectile_fullpower_5
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: arkhe_projectile_fullpower_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 686
+        width: 392
+        height: 568
+      alignment: 9
+      pivot: {x: 0.84961236, y: 0.25694415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bc1fea0c27a81500800000000000000
+      internalID: 367227177234537652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_projectile_fullpower_1
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 686
+        width: 364
+        height: 306
+      alignment: 9
+      pivot: {x: 0.83497924, y: 0.4753013}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c51643201a2dec750800000000000000
+      internalID: 6327226115470680412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_projectile_fullpower_2
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 686
+        width: 411
+        height: 568
+      alignment: 9
+      pivot: {x: 0.7427322, y: 0.2578312}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2212152e495b74460800000000000000
+      internalID: 7225943778196005154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_projectile_fullpower_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 393
+        height: 582
+      alignment: 9
+      pivot: {x: 0.84872276, y: 0.72422326}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74899eea1b8efd3a0800000000000000
+      internalID: -6638331475879421881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_projectile_fullpower_4
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 274
+        width: 363
+        height: 308
+      alignment: 9
+      pivot: {x: 0.8400662, y: 0.47709766}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ee847c0ee2f03440800000000000000
+      internalID: 4913694297686314722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_projectile_fullpower_5
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 0
+        width: 411
+        height: 582
+      alignment: 9
+      pivot: {x: 0.74395794, y: 0.7259547}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17595b2c2536faa90800000000000000
+      internalID: -7300507263839136399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 49224b18c7bc1b7499ec2a550dc2321f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      arkhe_projectile_fullpower_0: 367227177234537652
+      arkhe_projectile_fullpower_1: 6327226115470680412
+      arkhe_projectile_fullpower_2: 7225943778196005154
+      arkhe_projectile_fullpower_3: -6638331475879421881
+      arkhe_projectile_fullpower_4: 4913694297686314722
+      arkhe_projectile_fullpower_5: -7300507263839136399
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

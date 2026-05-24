@@ -26,7 +26,7 @@ public class EnemyProjectile : MonoBehaviour
     private static Sprite cachedSprite;
     private static Material cachedSpriteMaterial;
 
-    public void Initialize(EnemyMechanics projectileOwner, Vector2 direction, float speed, float projectileDamage, float lifeTime, Color color, float size)
+    public void Initialize(EnemyMechanics projectileOwner, Vector2 direction, float speed, float projectileDamage, float lifeTime, Color color, float size, Sprite visualSprite = null)
     {
         owner = projectileOwner;
         velocity = direction.normalized * Mathf.Max(0f, speed);
@@ -35,6 +35,10 @@ public class EnemyProjectile : MonoBehaviour
         projectileSize = Mathf.Max(0.05f, size);
 
         transform.right = direction.sqrMagnitude > 0.001f ? direction.normalized : Vector2.right;
+        if (visualSprite != null && spriteRenderer != null)
+        {
+            spriteRenderer.sprite = visualSprite;
+        }
         ApplyVisualState();
         Destroy(gameObject, Mathf.Max(0.1f, lifeTime));
     }

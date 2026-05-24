@@ -9,7 +9,7 @@ public class SparkingSpriteEnemy : EnemyMechanics
     [SerializeField] private float hazardRadius = 1f;
     [SerializeField] private Color hazardColor = new Color(1f, 0.5f, 0.1f, 0.65f);
 
-    private void Reset()
+    protected override void Reset()
     {
         ApplyDefaultSetup(
             "Sparking Sprite",

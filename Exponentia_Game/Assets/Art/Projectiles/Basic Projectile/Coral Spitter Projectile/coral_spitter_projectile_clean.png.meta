@@ -1,0 +1,332 @@
+fileFormatVersion: 2
+guid: d4f85bb66f467354a82be26df53ed2fa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4581467242636133933
+    second: coral_spitter_projectile_clean_0
+  - first:
+      213: 4436115577013523511
+    second: coral_spitter_projectile_clean_1
+  - first:
+      213: -2312069220141226837
+    second: coral_spitter_projectile_clean_2
+  - first:
+      213: -3647279729323729435
+    second: coral_spitter_projectile_clean_3
+  - first:
+      213: -1305681413533849588
+    second: coral_spitter_projectile_clean_4
+  - first:
+      213: 348611596863899939
+    second: coral_spitter_projectile_clean_5
+  - first:
+      213: 3201586209716614971
+    second: coral_spitter_projectile_clean_6
+  - first:
+      213: 5953228941459947541
+    second: coral_spitter_projectile_clean_7
+  - first:
+      213: 2225713157054817699
+    second: coral_spitter_projectile_clean_8
+  - first:
+      213: -5559863992188232767
+    second: coral_spitter_projectile_clean_9
+  - first:
+      213: 4670572116956515307
+    second: coral_spitter_projectile_clean_10
+  - first:
+      213: -6522331752225562596
+    second: coral_spitter_projectile_clean_11
+  - first:
+      213: 1065060833017020799
+    second: coral_spitter_projectile_clean_12
+  - first:
+      213: -5508284648666387636
+    second: coral_spitter_projectile_clean_13
+  - first:
+      213: 1171178871156547832
+    second: coral_spitter_projectile_clean_14
+  - first:
+      213: 1547865553830484214
+    second: coral_spitter_projectile_clean_15
+  - first:
+      213: -3945319479728670698
+    second: coral_spitter_projectile_clean_16
+  - first:
+      213: -4708363851689828007
+    second: coral_spitter_projectile_clean_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: coral_spitter_projectile_clean_0
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 662
+        width: 262
+        height: 167
+      alignment: 9
+      pivot: {x: 0.5102382, y: 0.37953523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d9b59401db5b60c0800000000000000
+      internalID: -4581467242636133933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coral_spitter_projectile_clean_1
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 659
+        width: 317
+        height: 149
+      alignment: 9
+      pivot: {x: 0.5902579, y: 0.4279908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba42e5d4b41e9efd0800000000000000
+      internalID: -2312069220141226837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coral_spitter_projectile_clean_2
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 658
+        width: 395
+        height: 162
+      alignment: 9
+      pivot: {x: 0.63341206, y: 0.3978942}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c082c741ca941ede0800000000000000
+      internalID: -1305681413533849588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coral_spitter_projectile_clean_3
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 181
+        width: 398
+        height: 159
+      alignment: 9
+      pivot: {x: 0.6698126, y: 0.45693153}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32987ab766486d400800000000000000
+      internalID: 348611596863899939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coral_spitter_projectile_clean_4
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 182
+        width: 422
+        height: 157
+      alignment: 9
+      pivot: {x: 0.6947259, y: 0.4506937}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b37b2fbe1b15e6c20800000000000000
+      internalID: 3201586209716614971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coral_spitter_projectile_clean_5
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 183
+        width: 453
+        height: 164
+      alignment: 9
+      pivot: {x: 0.68402946, y: 0.42012033}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5108b424e2e1e9250800000000000000
+      internalID: 5953228941459947541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0f8fef9e10f8d564498c9466cae854f9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      coral_spitter_projectile_clean_0: -4581467242636133933
+      coral_spitter_projectile_clean_1: -2312069220141226837
+      coral_spitter_projectile_clean_10: 4670572116956515307
+      coral_spitter_projectile_clean_11: -6522331752225562596
+      coral_spitter_projectile_clean_12: 1065060833017020799
+      coral_spitter_projectile_clean_13: -5508284648666387636
+      coral_spitter_projectile_clean_14: 1171178871156547832
+      coral_spitter_projectile_clean_15: 1547865553830484214
+      coral_spitter_projectile_clean_16: -3945319479728670698
+      coral_spitter_projectile_clean_17: -4708363851689828007
+      coral_spitter_projectile_clean_2: -1305681413533849588
+      coral_spitter_projectile_clean_3: 348611596863899939
+      coral_spitter_projectile_clean_4: 3201586209716614971
+      coral_spitter_projectile_clean_5: 5953228941459947541
+      coral_spitter_projectile_clean_8: 2225713157054817699
+      coral_spitter_projectile_clean_9: -5559863992188232767
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

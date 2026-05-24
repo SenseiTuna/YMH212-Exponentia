@@ -19,7 +19,7 @@ public class SpearedTritonEnemy : EnemyMechanics
     private Vector2 dashDirection;
     private bool dashHitApplied;
 
-    private void Reset()
+    protected override void Reset()
     {
         ApplyDefaultSetup(
             "Speared Triton",

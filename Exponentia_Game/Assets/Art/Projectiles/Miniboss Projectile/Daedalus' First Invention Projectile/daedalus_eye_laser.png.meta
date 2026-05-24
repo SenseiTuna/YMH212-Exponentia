@@ -1,0 +1,293 @@
+fileFormatVersion: 2
+guid: 5256424fe7c8ae64bacf47fcc8d377f0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1212751554039222040
+    second: daedalus_eye_laser_0
+  - first:
+      213: -7047364871678919535
+    second: daedalus_eye_laser_1
+  - first:
+      213: 5975071898871666393
+    second: daedalus_eye_laser_2
+  - first:
+      213: 1165545001673022287
+    second: daedalus_eye_laser_3
+  - first:
+      213: -1431925706133602873
+    second: daedalus_eye_laser_4
+  - first:
+      213: 8589794899954243887
+    second: daedalus_eye_laser_5
+  - first:
+      213: -7173426353299766100
+    second: daedalus_eye_laser_6
+  - first:
+      213: 6679268742573321337
+    second: daedalus_eye_laser_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: daedalus_eye_laser_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 999
+        width: 600
+        height: 255
+      alignment: 9
+      pivot: {x: 0.09253666, y: 0.12547104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81f8f4bec1f84d010800000000000000
+      internalID: 1212751554039222040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daedalus_eye_laser_1
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 995
+        width: 596
+        height: 259
+      alignment: 9
+      pivot: {x: 0.04081603, y: 0.13900745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19cf20ddcfab23e90800000000000000
+      internalID: -7047364871678919535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daedalus_eye_laser_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 582
+        width: 568
+        height: 68
+      alignment: 9
+      pivot: {x: 0.04385298, y: 0.4685552}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d61aa71c38bbe250800000000000000
+      internalID: 5975071898871666393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daedalus_eye_laser_3
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 581
+        width: 568
+        height: 70
+      alignment: 9
+      pivot: {x: 0.042702794, y: 0.4758754}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f291c3963f4153770800000000000000
+      internalID: 8589794899954243887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daedalus_eye_laser_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 600
+        height: 235
+      alignment: 9
+      pivot: {x: 0.094447374, y: 0.83955646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca44425fcbed27c90800000000000000
+      internalID: -7173426353299766100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daedalus_eye_laser_5
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 0
+        width: 597
+        height: 238
+      alignment: 9
+      pivot: {x: 0.04323017, y: 0.8318762}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97ce378788781bc50800000000000000
+      internalID: 6679268742573321337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 12d6985c1b2221e4880e3fc47538c5b1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      daedalus_eye_laser_0: 1212751554039222040
+      daedalus_eye_laser_1: -7047364871678919535
+      daedalus_eye_laser_2: 5975071898871666393
+      daedalus_eye_laser_3: 8589794899954243887
+      daedalus_eye_laser_4: -7173426353299766100
+      daedalus_eye_laser_5: 6679268742573321337
+      daedalus_eye_laser_8: 829961329
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

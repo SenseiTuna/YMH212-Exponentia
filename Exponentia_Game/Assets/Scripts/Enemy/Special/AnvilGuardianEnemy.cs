@@ -22,7 +22,7 @@ public class AnvilGuardianEnemy : EnemyMechanics
 
     private float nextHammerTime;
 
-    private void Reset()
+    protected override void Reset()
     {
         ApplyDefaultSetup(
             "Anvil Guardian",

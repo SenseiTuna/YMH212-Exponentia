@@ -15,7 +15,7 @@ public class CerberosHatchlingEnemy : EnemyMechanics
 
     private float nextShootTime;
 
-    private void Reset()
+    protected override void Reset()
     {
         ApplyDefaultSetup(
             "Cerberos Hatchling",

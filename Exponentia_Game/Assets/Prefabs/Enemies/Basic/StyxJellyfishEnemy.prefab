@@ -264,7 +264,7 @@ MonoBehaviour:
   placeholderColor: {r: 0.45, g: 0.9, b: 0.95, a: 1}
   placeholderScale: {x: 0.9, y: 0.9}
   sortingOrder: 5
-  enemyProjectilePrefab: {fileID: 7947579937356454847, guid: f6f9af9cce8214ac29b49154d133cce7, type: 3}
+  enemyProjectilePrefab: {fileID: 7947579937356454847, guid: 2630f3ea7fa1f2445a000659cd39dbce, type: 3}
   yaziOffset: {x: 0, y: 1.1, z: 0}
   yaziFontBoyutu: 32
   yaziKarakterBoyutu: 0.22

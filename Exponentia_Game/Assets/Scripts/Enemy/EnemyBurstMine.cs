@@ -66,6 +66,19 @@ public class EnemyBurstMine : MonoBehaviour
         transform.localScale = Vector3.one * 0.3f;
     }
 
+    public void ApplyVisualSprite(Sprite visualSprite)
+    {
+        if (spriteRenderer == null)
+        {
+            return;
+        }
+
+        if (visualSprite != null)
+        {
+            spriteRenderer.sprite = visualSprite;
+        }
+    }
+
     private void Update()
     {
         elapsedTime += Time.deltaTime;

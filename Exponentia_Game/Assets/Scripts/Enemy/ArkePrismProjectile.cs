@@ -40,7 +40,8 @@ public class ArkePrismProjectile : MonoBehaviour
         float duration,
         PrismEffect prismEffect,
         Color color,
-        float size)
+        float size,
+        Sprite visualSprite = null)
     {
         owner = projectileOwner;
         velocity = direction.normalized * Mathf.Max(0f, speed);
@@ -56,6 +57,10 @@ public class ArkePrismProjectile : MonoBehaviour
         transform.localScale = Vector3.one * Mathf.Max(0.08f, size);
 
         SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        if (visualSprite != null)
+        {
+            sr.sprite = visualSprite;
+        }
         sr.color = projectileColor;
     }
 

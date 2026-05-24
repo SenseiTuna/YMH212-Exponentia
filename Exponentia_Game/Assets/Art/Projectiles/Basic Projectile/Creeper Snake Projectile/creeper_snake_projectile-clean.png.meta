@@ -1,0 +1,334 @@
+fileFormatVersion: 2
+guid: 254a8af27d603044292fcdc5364ffb04
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2613814561461959832
+    second: creeper_snake_projectile-clean_0
+  - first:
+      213: -4497492611694836631
+    second: creeper_snake_projectile-clean_1
+  - first:
+      213: 3760021871662007642
+    second: creeper_snake_projectile-clean_2
+  - first:
+      213: -4451829041730597130
+    second: creeper_snake_projectile-clean_3
+  - first:
+      213: -2795614057412226219
+    second: creeper_snake_projectile-clean_4
+  - first:
+      213: 2550130968408802299
+    second: creeper_snake_projectile-clean_5
+  - first:
+      213: 6300172012337043974
+    second: creeper_snake_projectile-clean_6
+  - first:
+      213: -1284677796236322095
+    second: creeper_snake_projectile-clean_7
+  - first:
+      213: 6006199149147932451
+    second: creeper_snake_projectile-clean_8
+  - first:
+      213: 4784389530359471165
+    second: creeper_snake_projectile-clean_9
+  - first:
+      213: -5945146742933415988
+    second: creeper_snake_projectile-clean_10
+  - first:
+      213: -3017003503801746156
+    second: creeper_snake_projectile-clean_11
+  - first:
+      213: 3804014850461610715
+    second: creeper_snake_projectile-clean_12
+  - first:
+      213: -1227920474486147188
+    second: creeper_snake_projectile-clean_13
+  - first:
+      213: -2075673670130558312
+    second: creeper_snake_projectile-clean_14
+  - first:
+      213: 4251030901828193833
+    second: creeper_snake_projectile-clean_15
+  - first:
+      213: 8756081810562584356
+    second: creeper_snake_projectile-clean_16
+  - first:
+      213: -7232626566552411285
+    second: creeper_snake_projectile-clean_17
+  - first:
+      213: 6872051655867408972
+    second: creeper_snake_projectile-clean_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: creeper_snake_projectile-clean_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 661
+        width: 414
+        height: 192
+      alignment: 9
+      pivot: {x: 0.85279286, y: 0.42737865}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8630153418dd9bbd0800000000000000
+      internalID: -2613814561461959832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creeper_snake_projectile-clean_1
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 651
+        width: 388
+        height: 182
+      alignment: 9
+      pivot: {x: 0.84139574, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5531bda93dbf339d0800000000000000
+      internalID: -2795614057412226219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creeper_snake_projectile-clean_2
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 649
+        width: 431
+        height: 187
+      alignment: 9
+      pivot: {x: 0.80776757, y: 0.48415598}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60a1533c015be6750800000000000000
+      internalID: 6300172012337043974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creeper_snake_projectile-clean_3
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 153
+        width: 429
+        height: 182
+      alignment: 9
+      pivot: {x: 0.86727476, y: 0.5038083}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd2331a1a539ac430800000000000000
+      internalID: 3804014850461610715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creeper_snake_projectile-clean_4
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 155
+        width: 413
+        height: 178
+      alignment: 9
+      pivot: {x: 0.85904104, y: 0.49853876}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c87f2d195dc85fee0800000000000000
+      internalID: -1227920474486147188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: creeper_snake_projectile-clean_5
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 148
+        width: 457
+        height: 183
+      alignment: 9
+      pivot: {x: 0.8212709, y: 0.50767684}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92e8da01512befa30800000000000000
+      internalID: 4251030901828193833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c9a6212df0b99c743a37fa7ba0836831
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      creeper_snake_projectile-clean_0: -2613814561461959832
+      creeper_snake_projectile-clean_1: -2795614057412226219
+      creeper_snake_projectile-clean_10: -5945146742933415988
+      creeper_snake_projectile-clean_11: -3017003503801746156
+      creeper_snake_projectile-clean_14: -2075673670130558312
+      creeper_snake_projectile-clean_16: 8756081810562584356
+      creeper_snake_projectile-clean_17: -7232626566552411285
+      creeper_snake_projectile-clean_18: 6872051655867408972
+      creeper_snake_projectile-clean_2: 6300172012337043974
+      creeper_snake_projectile-clean_3: 3804014850461610715
+      creeper_snake_projectile-clean_4: -1227920474486147188
+      creeper_snake_projectile-clean_5: 4251030901828193833
+      creeper_snake_projectile-clean_7: -1284677796236322095
+      creeper_snake_projectile-clean_8: 6006199149147932451
+      creeper_snake_projectile-clean_9: 4784389530359471165
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

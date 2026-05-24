@@ -109,7 +109,19 @@ public class EnemyHazardArea : MonoBehaviour
         IDamageable damageable = EnemyMechanics.FindDamageable(other.gameObject);
         if (damageable is PlayerMechanics)
         {
-            damageable.TakeDamage(tickDamage);
+            PlayerMechanics player = damageable as PlayerMechanics;
+            Vector2 direction = player != null
+                ? ((Vector2)player.transform.position - (Vector2)transform.position).normalized
+                : Vector2.zero;
+            DamageInfo info = new DamageInfo(tickDamage, transform.position, direction, gameObject, false, 0f);
+            if (player != null)
+            {
+                player.TakeDamage(info);
+            }
+            else
+            {
+                damageable.TakeDamage(tickDamage);
+            }
             nextTickTime = Time.time + tickCooldown;
         }
     }

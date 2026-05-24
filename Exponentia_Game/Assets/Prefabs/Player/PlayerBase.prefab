@@ -126,6 +126,9 @@ GameObject:
   - component: {fileID: 3214891503290248852}
   - component: {fileID: 6743210987654321012}
   - component: {fileID: -8229712424665165490}
+  - component: {fileID: 2453811820116149079}
+  - component: {fileID: -3715116439228494856}
+  - component: {fileID: 3270152759459399765}
   m_Layer: 0
   m_Name: PlayerBase
   m_TagString: Player
@@ -198,15 +201,15 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 0}
-  m_Color: {r: 0.10371137, g: 1, b: 0, a: 1}
+  m_Sprite: {fileID: 1630519669529170824, guid: 95b6efd9134b71445aee1c2c0185c271, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.23, y: 1.51}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
 --- !u!50 &2300376608390944534
 Rigidbody2D:
@@ -272,9 +275,9 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1.23, y: 1.51}
+    newSize: {x: 1.23, y: 1.51}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -325,8 +328,11 @@ MonoBehaviour:
   playerMechanics: {fileID: 0}
   playerMovement: {fileID: 8053774950672793964}
   inputReader: {fileID: 0}
+  statController: {fileID: 0}
   equippedSkill: {fileID: 0}
   skillIconUI: {fileID: 0}
+  equippedWeaponDefinition: {fileID: 0}
+  defaultDamageMultiplier: 1
   laserManaCost: 10
   laserLifetime: 1.5
   spawnOffset: 0.6
@@ -356,6 +362,13 @@ MonoBehaviour:
   baseAttackMultiplier: 1
   baseAttackManaCost: 0
   damageCooldown: 0.2
+  invulnerabilityDuration: 0.75
+  flashInterval: 0.08
+  flashDuringIFrames: 1
+  damageFlashColor: {r: 1, g: 0, b: 0, a: 1}
+  damageFlashDuration: 0.12
+  combatFeedback: {fileID: 0}
+  autoAddFeedbackComponents: 1
   healthTextOffset: {x: 0, y: 1.35, z: 0}
   healthTextColor: {r: 0, g: 1, b: 0, a: 1}
   healthTextFontSize: 32
@@ -455,3 +468,75 @@ MonoBehaviour:
   maxKillStacks: 5
   killStackDuration: 4
   wrathCooldown: 5
+--- !u!114 &2453811820116149079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9719d8662b7b304282ec43910244586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteractor
+  playerMovement: {fileID: 8053774950672793964}
+  interactableLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  interactRadius: 1.25
+  interactOffset: {x: 0, y: 0}
+  drawGizmos: 1
+--- !u!114 &-3715116439228494856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b246cbf3c60a0e4b8bd68a9578e9781, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Exponentia.InventorySystem.PlayerStatController
+  playerStats: {fileID: 7558214801132853810}
+  playerMechanics: {fileID: 5042919499841549475}
+  playerMovement: {fileID: 8053774950672793964}
+  preserveHealthPercentOnMaxHealthChange: 0
+  healToNewMaxWhenMaxHealthIncreases: 0
+  runtimeCooldownReduction: 0
+  runtimeProjectileCount: 1
+  runtimeCritChance: 0
+  runtimeArmor: 0
+  verboseLogs: 0
+  runtimeModifiers: []
+--- !u!114 &3270152759459399765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc3b20af039d2e4f8b7bca922906f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Exponentia.InventorySystem.PlayerInventory
+  statController: {fileID: -3715116439228494856}
+  playerMechanics: {fileID: 5042919499841549475}
+  playerAttack: {fileID: 1575948987179740482}
+  voidCorruptionManager: {fileID: 0}
+  activeWeapon: {fileID: 0}
+  equippedSkill: {fileID: 0}
+  activeItem: {fileID: 0}
+  weaponInventory: []
+  skillInventory: []
+  passiveInventory: []
+  rewardHistory: []
+  allowKeyboardActiveItemTest: 1
+  activeItemTestKey: 113
+  activeItemDamageMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  activeItemAreaRadius: 2.5
+  verboseLogs: 1

@@ -56,7 +56,9 @@ public class CreeperSnakeEnemy : EnemyMechanics
 
         if (distanceToPlayer <= whipRange && PlayerMechanics != null)
         {
-            PlayerMechanics.TakeDamage(whipDamage);
+            Vector2 direction = ((Vector2)PlayerMechanics.transform.position - (Vector2)transform.position).normalized;
+            DamageInfo info = new DamageInfo(whipDamage, transform.position, direction, gameObject);
+            PlayerMechanics.TakeDamage(info);
         }
 
         FireSideProjectiles(directionToPlayer);

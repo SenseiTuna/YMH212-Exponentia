@@ -26,6 +26,15 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
 
     [Header("Damage Intake")]
     [SerializeField] private float damageCooldown = 0.2f;
+    [SerializeField] private float invulnerabilityDuration = 0.75f;
+    [SerializeField] private float flashInterval = 0.08f;
+    [SerializeField] private bool flashDuringIFrames = true;
+    [SerializeField] private Color damageFlashColor = Color.red;
+    [SerializeField] private float damageFlashDuration = 0.12f;
+
+    [Header("Damage Feel")]
+    [SerializeField] private CombatFeedbackController combatFeedback;
+    [SerializeField] private bool autoAddFeedbackComponents = true;
 
     [Header("Health Text")]
     [SerializeField] private Vector3 healthTextOffset = new Vector3(0f, 1.35f, 0f);
@@ -46,16 +55,24 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
 
     private float nextAttackTime;
     private float nextDamageTime;
+    private float invulnerabilityEndTime;
     private TextMesh healthTextMesh;
+    private DamageFlashFeedback damageFlashFeedback;
+    private KnockbackReceiver2D knockbackReceiver;
+    private Coroutine invulRoutine;
 
     public bool Yasiyor => MevcutCan > 0f;
+    public bool IsInvulnerable => isInvulnerable || Time.time < invulnerabilityEndTime;
 
     public event System.Action<float, float> OnCanDegisti;
+    public event System.Action<float, float> OnDamaged;
     public event System.Action<float, float> OnManaDegisti;
     public event System.Action<float, float> OnLaserManaDegisti;
     public event System.Action<int> OnLevelAtlandi;
     public event System.Action<float, float> OnXpDegisti;
     public event System.Action OnOldu;
+    public event System.Action OnInvulnerabilityStarted;
+    public event System.Action OnInvulnerabilityEnded;
     public event System.Action<GameObject, float> OnDealtDamage;
     public event System.Action<GameObject> OnEnemyKilled;
 
@@ -75,6 +92,31 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
         if (playerMovement == null)
         {
             playerMovement = GetComponent<PlayerMovement>();
+        }
+
+        if (combatFeedback == null)
+        {
+            combatFeedback = FindFirstObjectByType<CombatFeedbackController>();
+        }
+
+        if (autoAddFeedbackComponents)
+        {
+            damageFlashFeedback = GetComponent<DamageFlashFeedback>();
+            if (damageFlashFeedback == null)
+            {
+                damageFlashFeedback = gameObject.AddComponent<DamageFlashFeedback>();
+            }
+
+            knockbackReceiver = GetComponent<KnockbackReceiver2D>();
+            if (knockbackReceiver == null)
+            {
+                knockbackReceiver = gameObject.AddComponent<KnockbackReceiver2D>();
+            }
+        }
+        else
+        {
+            damageFlashFeedback = GetComponent<DamageFlashFeedback>();
+            knockbackReceiver = GetComponent<KnockbackReceiver2D>();
         }
 
         EnsureHealthText();
@@ -134,13 +176,29 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
 
     public float TakeDamage(float amount)
     {
-        if (!Yasiyor || amount <= 0f || Time.time < nextDamageTime || isInvulnerable)
+        DamageInfo info = new DamageInfo(amount, transform.position, Vector2.zero, null, false, 0f);
+        return TakeDamage(info);
+    }
+
+    public float TakeDamage(int amount)
+    {
+        return TakeDamage((float)amount);
+    }
+
+    public float TakeDamage(DamageInfo damageInfo)
+    {
+        if (!Yasiyor || damageInfo.amount <= 0f)
         {
             return 0f;
         }
 
-        nextDamageTime = Time.time + damageCooldown;
-        float remainingDamage = amount;
+        if (!damageInfo.ignoreInvulnerability && !CanTakeDamage())
+        {
+            return 0f;
+        }
+
+        nextDamageTime = Time.time + Mathf.Max(0f, damageCooldown);
+        float remainingDamage = damageInfo.amount;
 
         if (MevcutKalkan > 0f)
         {
@@ -161,7 +219,48 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
         MevcutCan = Mathf.Max(0f, MevcutCan - appliedDamage);
         FloatingCombatText.Create(Mathf.CeilToInt(appliedDamage).ToString(), transform.position + Vector3.up * 0.9f, Color.yellow);
         OnCanDegisti?.Invoke(MevcutCan, playerStats.MaxHealth);
+        OnDamaged?.Invoke(appliedDamage, MevcutCan);
         UpdateHealthText();
+
+        DamageInfo resolvedInfo = damageInfo;
+        if (resolvedInfo.hitDirection.sqrMagnitude <= 0.001f && resolvedInfo.source != null)
+        {
+            resolvedInfo.hitDirection = ((Vector2)transform.position - (Vector2)resolvedInfo.source.transform.position).normalized;
+        }
+
+        if (combatFeedback != null)
+        {
+            combatFeedback.OnPlayerDamaged(
+                this,
+                resolvedInfo,
+                invulnerabilityDuration,
+                flashDuringIFrames,
+                Mathf.Max(0.01f, flashInterval),
+                damageFlashColor,
+                damageFlashDuration);
+        }
+        else
+        {
+            if (damageFlashFeedback != null)
+            {
+                damageFlashFeedback.Flash(damageFlashColor, damageFlashDuration);
+                if (flashDuringIFrames && invulnerabilityDuration > 0f)
+                {
+                    damageFlashFeedback.StartBlink(damageFlashColor, invulnerabilityDuration, Mathf.Max(0.01f, flashInterval));
+                }
+            }
+
+            if (knockbackReceiver != null && resolvedInfo.hitDirection.sqrMagnitude > 0.001f)
+            {
+                float force = resolvedInfo.knockbackForce > 0f ? resolvedInfo.knockbackForce : 4f;
+                knockbackReceiver.ApplyKnockback(resolvedInfo.hitDirection, force, 0.12f);
+            }
+        }
+
+        if (!damageInfo.ignoreInvulnerability)
+        {
+            StartInvulnerability();
+        }
 
         if (!Yasiyor)
         {
@@ -189,8 +288,23 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
         EnemyMechanics enemy = target.GetComponentInParent<EnemyMechanics>();
         bool wasAlive = enemy != null && enemy.IsAlive;
 
-
-        float appliedDamage = damageable.TakeDamage(totalDamage);
+        float appliedDamage;
+        if (enemy != null)
+        {
+            Vector2 direction = ((Vector2)enemy.transform.position - (Vector2)transform.position).normalized;
+            DamageInfo info = new DamageInfo(
+                totalDamage,
+                enemy.transform.position,
+                direction,
+                gameObject,
+                false,
+                0f);
+            appliedDamage = enemy.TakeDamage(info);
+        }
+        else
+        {
+            appliedDamage = damageable.TakeDamage(totalDamage);
+        }
 
         // Notify subscribers that damage was dealt
         if (appliedDamage > 0f)
@@ -218,25 +332,62 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
 
     private bool isInvulnerable = false;
 
+    public bool CanTakeDamage()
+    {
+        return Yasiyor && !IsInvulnerable && Time.time >= nextDamageTime;
+    }
+
+    public void StartInvulnerability()
+    {
+        StartInvulnerability(invulnerabilityDuration);
+    }
+
+    public void StartInvulnerability(float duration)
+    {
+        float safeDuration = Mathf.Max(0f, duration);
+        if (safeDuration <= 0f)
+        {
+            return;
+        }
+
+        if (invulRoutine != null)
+        {
+            StopCoroutine(invulRoutine);
+        }
+
+        invulRoutine = StartCoroutine(InvulRoutine(safeDuration));
+    }
+
     public void SetTemporaryInvulnerable(float duration)
     {
         if (duration <= 0f)
             return;
 
-        if (isInvulnerable)
-        {
-            StopCoroutine("InvulRoutine");
-        }
-
-        StartCoroutine("InvulRoutine", duration);
+        StartInvulnerability(duration);
     }
 
-    private System.Collections.IEnumerator InvulRoutine(object arg)
+    private System.Collections.IEnumerator InvulRoutine(float duration)
     {
-        float duration = (float)arg;
         isInvulnerable = true;
+        invulnerabilityEndTime = Time.time + duration;
+        OnInvulnerabilityStarted?.Invoke();
+
+        if (flashDuringIFrames && damageFlashFeedback != null && combatFeedback == null)
+        {
+            damageFlashFeedback.StartBlink(damageFlashColor, duration, Mathf.Max(0.01f, flashInterval));
+        }
+
         yield return new WaitForSeconds(duration);
+
         isInvulnerable = false;
+        invulnerabilityEndTime = 0f;
+        if (damageFlashFeedback != null)
+        {
+            damageFlashFeedback.StopBlinkAndRestore();
+        }
+
+        OnInvulnerabilityEnded?.Invoke();
+        invulRoutine = null;
     }
 
     public bool HarcaMana(float amount)

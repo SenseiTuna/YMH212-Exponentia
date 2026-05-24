@@ -71,7 +71,9 @@ public class BlackHoleEnemy : EnemyMechanics
         if (distanceToPlayer <= centerDamageRadius && Time.time >= nextCenterDamageTime && PlayerMechanics != null)
         {
             nextCenterDamageTime = Time.time + centerDamageCooldown;
-            PlayerMechanics.TakeDamage(centerDamage);
+            Vector2 direction = ((Vector2)PlayerMechanics.transform.position - (Vector2)transform.position).normalized;
+            DamageInfo info = new DamageInfo(centerDamage, transform.position, direction, gameObject);
+            PlayerMechanics.TakeDamage(info);
         }
     }
 
@@ -83,6 +85,16 @@ public class BlackHoleEnemy : EnemyMechanics
         }
 
         return base.TakeDamage(amount);
+    }
+
+    public override float TakeDamage(DamageInfo damageInfo)
+    {
+        if (invulnerableWhileOthersLive && HasOtherLivingEnemies())
+        {
+            return 0f;
+        }
+
+        return base.TakeDamage(damageInfo);
     }
 
     private void ApplyPullToPlayer(Vector2 pullDirection)

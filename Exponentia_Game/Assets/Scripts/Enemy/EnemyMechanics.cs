@@ -164,6 +164,11 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
 
     protected virtual void OnValidate()
     {
+        if (!Application.isPlaying)
+        {
+            return;
+        }
+
         EnsurePlaceholderBody();
         ApplyVisuals();
     }
@@ -489,7 +494,7 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
         }
 
         IDamageable damageable = FindDamageable(other);
-        if (damageable == null || damageable == this)
+        if (damageable == null || ReferenceEquals(damageable, this))
         {
             return;
         }
@@ -533,7 +538,8 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
         float projectileDamage,
         float lifeTime,
         Color color,
-        float size)
+        float size,
+        Sprite visualSprite = null)
     {
         EnemyProjectile projectileInstance;
 
@@ -550,7 +556,7 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
             projectileInstance = projectileObject.AddComponent<EnemyProjectile>();
         }
 
-        projectileInstance.Initialize(this, direction, speed, projectileDamage, lifeTime, color, size);
+        projectileInstance.Initialize(this, direction, speed, projectileDamage, lifeTime, color, size, visualSprite);
         return projectileInstance;
     }
 
@@ -586,7 +592,7 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
         TryDealTouchDamage(collision.gameObject);
     }
 
-    protected void CachePlayerReferences()
+    protected virtual void CachePlayerReferences()
     {
         playerMechanics = FindAnyObjectByType<PlayerMechanics>();
         playerTarget = playerMechanics != null ? playerMechanics.transform : null;

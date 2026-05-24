@@ -24,7 +24,7 @@ public class BlackHoleEnemy : EnemyMechanics
         base.Awake();
     }
 
-    private void Reset()
+    protected override void Reset()
     {
         ApplyDefaultSetup(
             "Black Hole",

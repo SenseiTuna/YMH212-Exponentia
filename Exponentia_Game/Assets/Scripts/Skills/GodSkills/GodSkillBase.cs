@@ -41,9 +41,6 @@ public abstract class GodSkillBase : MonoBehaviour
     protected virtual void Awake()
     {
         CacheOwnerReferences();
-
-        // Eğer isUnlocked tikini Inspector'da kapalı unuttuysan diye garantilemek için başlangıçta otomatik açıyoruz:
-        isUnlocked = true; 
     }
 
     public void SetUnlocked(bool unlocked)

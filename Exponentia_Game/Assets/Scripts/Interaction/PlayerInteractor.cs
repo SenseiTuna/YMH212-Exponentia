@@ -85,7 +85,13 @@ public sealed class PlayerInteractor : MonoBehaviour
     private IInteractable FindNearestInteractable()
     {
         Vector2 center = (Vector2)transform.position + interactOffset;
-        int count = Physics2D.OverlapCircleNonAlloc(center, interactRadius, hitsBuffer, interactableLayers);
+        ContactFilter2D contactFilter = new ContactFilter2D
+        {
+            useLayerMask = true,
+            layerMask = interactableLayers,
+            useTriggers = true
+        };
+        int count = Physics2D.OverlapCircle(center, interactRadius, contactFilter, hitsBuffer);
 
         float bestDistance = float.MaxValue;
         IInteractable bestTarget = null;

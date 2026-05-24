@@ -49,6 +49,10 @@ public class HermesSkill : GodSkillBase
             StartCoroutine(RestoreAttackSpeedAfter(hasteDuration, prev));
         }
 
+        Debug.Log(
+            $"Hermes skilli kullanildi. Baslangic={start}, Bitis={end}, DashMesafesi={dashDistance:0.##}, " +
+            $"HasteSure={hasteDuration:0.##}sn, CooldownReduction={cooldownReductionRatio:0.##}");
+
         return true;
     }
 

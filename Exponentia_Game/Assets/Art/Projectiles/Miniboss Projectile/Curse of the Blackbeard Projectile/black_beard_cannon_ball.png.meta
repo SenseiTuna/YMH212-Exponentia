@@ -1,0 +1,308 @@
+fileFormatVersion: 2
+guid: ed3cd10a9fa664b4eb495350c34f244e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6049965757482729694
+    second: black_beard_cannon_ball_0
+  - first:
+      213: -6563422661812986009
+    second: black_beard_cannon_ball_1
+  - first:
+      213: -5608925452086954109
+    second: black_beard_cannon_ball_2
+  - first:
+      213: 625319488690520083
+    second: black_beard_cannon_ball_3
+  - first:
+      213: -4686429943341143590
+    second: black_beard_cannon_ball_4
+  - first:
+      213: -1024020135308506311
+    second: black_beard_cannon_ball_5
+  - first:
+      213: 7268052699194763098
+    second: black_beard_cannon_ball_6
+  - first:
+      213: -6271102635138568612
+    second: black_beard_cannon_ball_7
+  - first:
+      213: 9142097084045104331
+    second: black_beard_cannon_ball_8
+  - first:
+      213: -7569067850132691034
+    second: black_beard_cannon_ball_9
+  - first:
+      213: 2745069956459246758
+    second: black_beard_cannon_ball_10
+  - first:
+      213: -4443020606803199632
+    second: black_beard_cannon_ball_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: black_beard_cannon_ball_0
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 867
+        width: 236
+        height: 165
+      alignment: 9
+      pivot: {x: 0.61993074, y: 0.7258219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed009066dcbc5f350800000000000000
+      internalID: 6049965757482729694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_beard_cannon_ball_1
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 867
+        width: 298
+        height: 163
+      alignment: 9
+      pivot: {x: 0.68747604, y: 0.74074847}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76f53e31dd90ae4a0800000000000000
+      internalID: -6563422661812986009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_beard_cannon_ball_2
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 867
+        width: 370
+        height: 169
+      alignment: 9
+      pivot: {x: 0.6951248, y: 0.7144259}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 310078a03c49da800800000000000000
+      internalID: 625319488690520083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_beard_cannon_ball_3
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 236
+        width: 343
+        height: 194
+      alignment: 9
+      pivot: {x: 0.726043, y: 0.6740712}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a7e20894e445f690800000000000000
+      internalID: -7569067850132691034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_beard_cannon_ball_4
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 244
+        width: 330
+        height: 223
+      alignment: 9
+      pivot: {x: 0.71040833, y: 0.5546259}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a4b956d492781620800000000000000
+      internalID: 2745069956459246758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_beard_cannon_ball_5
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 142
+        width: 369
+        height: 373
+      alignment: 9
+      pivot: {x: 0.4910925, y: 0.6101515}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057aef2ae70fcd04ca5ce4b50775afa4
+      internalID: -4686429943341143590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c32debbdbca61f74aaac316921f4178f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      black_beard_cannon_ball_0: 6049965757482729694
+      black_beard_cannon_ball_1: -6563422661812986009
+      black_beard_cannon_ball_11: -4443020606803199632
+      black_beard_cannon_ball_2: 625319488690520083
+      black_beard_cannon_ball_3: -7569067850132691034
+      black_beard_cannon_ball_4: 2745069956459246758
+      black_beard_cannon_ball_5: -4686429943341143590
+      black_beard_cannon_ball_6: 7268052699194763098
+      black_beard_cannon_ball_7: -6271102635138568612
+      black_beard_cannon_ball_8: 9142097084045104331
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

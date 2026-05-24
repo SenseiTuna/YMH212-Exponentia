@@ -22,6 +22,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private PlayerMovement playerMovement;
     [SerializeField] private PlayerInputReader inputReader;
     [SerializeField] private PlayerStatController statController;
+    [SerializeField] private PlayerInventory playerInventory;
 
     [Header("Skill System")]
     [SerializeField] private GodSkillBase equippedSkill; // Inspector'dan degisebilecek aktif skill
@@ -50,6 +51,7 @@ public class PlayerAttack : MonoBehaviour
         playerMovement = GetComponent<PlayerMovement>();
         inputReader = GetComponent<PlayerInputReader>();
         statController = GetComponent<PlayerStatController>();
+        playerInventory = GetComponent<PlayerInventory>();
     }
 
     private void Awake()
@@ -77,10 +79,9 @@ public class PlayerAttack : MonoBehaviour
             statController = GetComponent<PlayerStatController>();
         }
 
-        // OTOMATİK SKİLL BULMA (Eğer inspector üzerinden boş bırakıldıysa)
-        if (equippedSkill == null)
+        if (playerInventory == null)
         {
-            equippedSkill = GetComponentInChildren<GodSkillBase>(); 
+            playerInventory = GetComponent<PlayerInventory>();
         }
 
         // OTOMATİK ARAYÜZ BULMA (Eğer inspector üzerinden boş bırakıldıysa)
@@ -99,8 +100,18 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        ResolveEquippedSkillSource();
+    }
+
     private void Update()
     {
+        if (equippedSkill == null)
+        {
+            ResolveEquippedSkillSource();
+        }
+
         UpdateSkillUI();
 
         if (TryResolveAttackDirection(out Vector2 resolvedDirection))
@@ -153,12 +164,6 @@ public class PlayerAttack : MonoBehaviour
             }
 
             if (skillIconUI == null) return;
-        }
-
-        // Eğer hala otomatik skill bulmadıysa burada tekrar deneyelim
-        if (equippedSkill == null)
-        {
-            equippedSkill = GetComponentInChildren<GodSkillBase>(); 
         }
 
         if (equippedSkill != null && equippedSkill.SkillIcon != null)
@@ -239,6 +244,66 @@ public class PlayerAttack : MonoBehaviour
         equippedWeaponDefinition = weapon;
     }
 
+    public void SetEquippedSkill(GodSkillBase skill)
+    {
+        if (equippedSkill == skill)
+        {
+            return;
+        }
+
+        equippedSkill = skill;
+    }
+
+    public bool TryEquipSkillByDefinition(SkillDefinition skillDefinition)
+    {
+        if (skillDefinition == null)
+        {
+            return false;
+        }
+
+        GodSkillBase[] availableSkills = GetComponents<GodSkillBase>();
+        if (availableSkills == null || availableSkills.Length == 0)
+        {
+            return false;
+        }
+
+        GodSkillBase matchedSkill = null;
+
+        if (skillDefinition.linkedGodSkillType != GodSkillType.None)
+        {
+            for (int i = 0; i < availableSkills.Length; i++)
+            {
+                if (availableSkills[i] != null && availableSkills[i].SkillType == skillDefinition.linkedGodSkillType)
+                {
+                    matchedSkill = availableSkills[i];
+                    break;
+                }
+            }
+        }
+
+        if (matchedSkill == null)
+        {
+            for (int i = 0; i < availableSkills.Length; i++)
+            {
+                GodSkillBase candidate = availableSkills[i];
+                if (candidate != null && MatchesSkillDefinition(candidate, skillDefinition))
+                {
+                    matchedSkill = candidate;
+                    break;
+                }
+            }
+        }
+
+        if (matchedSkill == null)
+        {
+            return false;
+        }
+
+        UpdateSkillUnlockStates(availableSkills, matchedSkill);
+        SetEquippedSkill(matchedSkill);
+        return true;
+    }
+
     public string GetCurrentWeaponDisplayName()
     {
         return equippedWeaponDefinition != null ? equippedWeaponDefinition.displayName : "Laser";
@@ -269,6 +334,72 @@ public class PlayerAttack : MonoBehaviour
         }
 
         return Mouse.current != null && Mouse.current.leftButton.isPressed;
+    }
+
+    private static bool MatchesSkillDefinition(GodSkillBase candidate, SkillDefinition skillDefinition)
+    {
+        string candidateName = NormalizeSkillText(candidate.SkillName);
+        string candidateType = NormalizeSkillText(candidate.SkillType.ToString());
+        string definitionName = NormalizeSkillText(skillDefinition.displayName);
+        string definitionId = NormalizeSkillText(skillDefinition.itemId);
+
+        return
+            (!string.IsNullOrEmpty(definitionName) &&
+             (definitionName.Contains(candidateName) || candidateName.Contains(definitionName) ||
+              definitionName.Contains(candidateType) || candidateType.Contains(definitionName))) ||
+            (!string.IsNullOrEmpty(definitionId) &&
+             (definitionId.Contains(candidateName) || definitionId.Contains(candidateType)));
+    }
+
+    private static string NormalizeSkillText(string value)
+    {
+        if (string.IsNullOrWhiteSpace(value))
+        {
+            return string.Empty;
+        }
+
+        return value.Replace(" ", string.Empty).Replace("_", string.Empty).ToLowerInvariant();
+    }
+
+    private static void UpdateSkillUnlockStates(GodSkillBase[] availableSkills, GodSkillBase activeSkill)
+    {
+        if (availableSkills == null)
+        {
+            return;
+        }
+
+        for (int i = 0; i < availableSkills.Length; i++)
+        {
+            if (availableSkills[i] != null)
+            {
+                availableSkills[i].SetUnlocked(availableSkills[i] == activeSkill);
+            }
+        }
+    }
+
+    private void ResolveEquippedSkillSource()
+    {
+        if (playerInventory != null && playerInventory.EquippedSkill != null)
+        {
+            if (TryEquipSkillByDefinition(playerInventory.EquippedSkill))
+            {
+                return;
+            }
+        }
+
+        if (equippedSkill == null)
+        {
+            equippedSkill = GetComponent<ZeusSkill>();
+            if (equippedSkill == null)
+            {
+                equippedSkill = GetComponent<GodSkillBase>();
+            }
+
+            if (equippedSkill != null)
+            {
+                UpdateSkillUnlockStates(GetComponents<GodSkillBase>(), equippedSkill);
+            }
+        }
     }
 
     private bool TryResolveAttackDirection(out Vector2 direction)

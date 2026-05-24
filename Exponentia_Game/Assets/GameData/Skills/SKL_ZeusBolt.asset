@@ -22,6 +22,7 @@ MonoBehaviour:
   maxStacks: 1
   cooldown: 8
   duration: 0.2
+  linkedGodSkillType: 1
   skillEffectType: 1
   visualEffectPrefab: {fileID: 0}
   audioClip: {fileID: 0}

@@ -1,0 +1,457 @@
+fileFormatVersion: 2
+guid: 43a9bd2fb762d254c98302b65ebc62ca
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5277637780996586748
+    second: cerberos_hatchling_projectile_0
+  - first:
+      213: 39948400666134552
+    second: cerberos_hatchling_projectile_1
+  - first:
+      213: 1471132781714651252
+    second: cerberos_hatchling_projectile_2
+  - first:
+      213: 784556742332418775
+    second: cerberos_hatchling_projectile_3
+  - first:
+      213: -7448674773549276573
+    second: cerberos_hatchling_projectile_4
+  - first:
+      213: 6136084460425566018
+    second: cerberos_hatchling_projectile_5
+  - first:
+      213: 4568757004083170670
+    second: cerberos_hatchling_projectile_6
+  - first:
+      213: -2973740472143877402
+    second: cerberos_hatchling_projectile_7
+  - first:
+      213: -1481057647444400185
+    second: cerberos_hatchling_projectile_8
+  - first:
+      213: -7041997943472769059
+    second: cerberos_hatchling_projectile_9
+  - first:
+      213: -8592327742666182815
+    second: cerberos_hatchling_projectile_10
+  - first:
+      213: -8370497236207847163
+    second: cerberos_hatchling_projectile_11
+  - first:
+      213: -2846105507416350701
+    second: cerberos_hatchling_projectile_12
+  - first:
+      213: -2230300087025137303
+    second: cerberos_hatchling_projectile_13
+  - first:
+      213: -8136101584975631854
+    second: cerberos_hatchling_projectile_14
+  - first:
+      213: -8041931773512872621
+    second: cerberos_hatchling_projectile_15
+  - first:
+      213: -5393184422675577493
+    second: cerberos_hatchling_projectile_16
+  - first:
+      213: -5843518224377154151
+    second: cerberos_hatchling_projectile_17
+  - first:
+      213: -7013915397392810025
+    second: cerberos_hatchling_projectile_18
+  - first:
+      213: 1523238198587680374
+    second: cerberos_hatchling_projectile_19
+  - first:
+      213: 6427653651054691614
+    second: cerberos_hatchling_projectile_20
+  - first:
+      213: 4392629640837349439
+    second: cerberos_hatchling_projectile_21
+  - first:
+      213: 8914103223978858027
+    second: cerberos_hatchling_projectile_22
+  - first:
+      213: 8809862589288725374
+    second: cerberos_hatchling_projectile_23
+  - first:
+      213: -2165840111622389758
+    second: cerberos_hatchling_projectile_24
+  - first:
+      213: 2142934981118082570
+    second: cerberos_hatchling_projectile_25
+  - first:
+      213: -6803340434161232406
+    second: cerberos_hatchling_projectile_26
+  - first:
+      213: -2800736180425198122
+    second: cerberos_hatchling_projectile_27
+  - first:
+      213: -2114958650940772343
+    second: cerberos_hatchling_projectile_28
+  - first:
+      213: 5897275207873071088
+    second: cerberos_hatchling_projectile_29
+  - first:
+      213: -7935587182357288662
+    second: cerberos_hatchling_projectile_30
+  - first:
+      213: 582034467070934197
+    second: cerberos_hatchling_projectile_31
+  - first:
+      213: 1631271986778986626
+    second: cerberos_hatchling_projectile_32
+  - first:
+      213: 1092433547905756734
+    second: cerberos_hatchling_projectile_33
+  - first:
+      213: 3926647364588368908
+    second: cerberos_hatchling_projectile_34
+  - first:
+      213: -1752458645420870576
+    second: cerberos_hatchling_projectile_35
+  - first:
+      213: -5018527307213436676
+    second: cerberos_hatchling_projectile_36
+  - first:
+      213: -2273073093475023565
+    second: cerberos_hatchling_projectile_37
+  - first:
+      213: -1179851767510857618
+    second: cerberos_hatchling_projectile_38
+  - first:
+      213: 9101340317857097230
+    second: cerberos_hatchling_projectile_39
+  - first:
+      213: -2476602546995658355
+    second: cerberos_hatchling_projectile_40
+  - first:
+      213: 2503306013005701164
+    second: cerberos_hatchling_projectile_41
+  - first:
+      213: 8712548317243289984
+    second: cerberos_hatchling_projectile_42
+  - first:
+      213: 6563986144889831218
+    second: cerberos_hatchling_projectile_43
+  - first:
+      213: -1811216032475054076
+    second: cerberos_hatchling_projectile_44
+  - first:
+      213: 3399812423868205988
+    second: cerberos_hatchling_projectile_45
+  - first:
+      213: -515000817643397703
+    second: cerberos_hatchling_projectile_46
+  - first:
+      213: 1579583080194490504
+    second: cerberos_hatchling_projectile_47
+  - first:
+      213: 7771603252168589798
+    second: cerberos_hatchling_projectile_48
+  - first:
+      213: 2285631621917834053
+    second: cerberos_hatchling_projectile_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cerberos_hatchling_projectile_0
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 610
+        width: 239
+        height: 223
+      alignment: 9
+      pivot: {x: 0.41575432, y: 0.50123656}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 403848a766012c6b0800000000000000
+      internalID: -5277637780996586748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cerberos_hatchling_projectile_2
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 590
+        width: 370
+        height: 275
+      alignment: 9
+      pivot: {x: 0.2151895, y: 0.40054378}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 247d57f6e40c72550800000000000000
+      internalID: 6136084460425566018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cerberos_hatchling_projectile_1
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 600
+        width: 310
+        height: 236
+      alignment: 9
+      pivot: {x: 0.25443274, y: 0.46493813}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ea69afcbc62bb6d0800000000000000
+      internalID: -2973740472143877402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cerberos_hatchling_projectile_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 168
+        width: 383
+        height: 291
+      alignment: 9
+      pivot: {x: 0.22458695, y: 0.4133947}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d5fb286849c129d0800000000000000
+      internalID: -2800736180425198122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cerberos_hatchling_projectile_5
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 171
+        width: 463
+        height: 286
+      alignment: 9
+      pivot: {x: 0.19191667, y: 0.3849531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d810f78ea1751add0800000000000000
+      internalID: -2476602546995658355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cerberos_hatchling_projectile_4
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 176
+        width: 406
+        height: 283
+      alignment: 9
+      pivot: {x: 0.19290988, y: 0.391543}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 081b6b1988039e870800000000000000
+      internalID: 8712548317243289984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b440098fdae7b19409a7b039f06c928d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      cerberos_hatchling_projectile_0: -5277637780996586748
+      cerberos_hatchling_projectile_1: -2973740472143877402
+      cerberos_hatchling_projectile_10: -8592327742666182815
+      cerberos_hatchling_projectile_11: -8370497236207847163
+      cerberos_hatchling_projectile_12: -2846105507416350701
+      cerberos_hatchling_projectile_13: -2230300087025137303
+      cerberos_hatchling_projectile_14: -8136101584975631854
+      cerberos_hatchling_projectile_15: -8041931773512872621
+      cerberos_hatchling_projectile_16: -5393184422675577493
+      cerberos_hatchling_projectile_17: -5843518224377154151
+      cerberos_hatchling_projectile_18: -7013915397392810025
+      cerberos_hatchling_projectile_19: 1523238198587680374
+      cerberos_hatchling_projectile_2: 6136084460425566018
+      cerberos_hatchling_projectile_20: 6427653651054691614
+      cerberos_hatchling_projectile_21: 4392629640837349439
+      cerberos_hatchling_projectile_22: 8914103223978858027
+      cerberos_hatchling_projectile_24: -2165840111622389758
+      cerberos_hatchling_projectile_25: 2142934981118082570
+      cerberos_hatchling_projectile_26: -6803340434161232406
+      cerberos_hatchling_projectile_28: -2114958650940772343
+      cerberos_hatchling_projectile_29: 5897275207873071088
+      cerberos_hatchling_projectile_3: -2800736180425198122
+      cerberos_hatchling_projectile_30: -7935587182357288662
+      cerberos_hatchling_projectile_31: 582034467070934197
+      cerberos_hatchling_projectile_32: 1631271986778986626
+      cerberos_hatchling_projectile_33: 1092433547905756734
+      cerberos_hatchling_projectile_34: 3926647364588368908
+      cerberos_hatchling_projectile_35: -1752458645420870576
+      cerberos_hatchling_projectile_36: -5018527307213436676
+      cerberos_hatchling_projectile_37: -2273073093475023565
+      cerberos_hatchling_projectile_38: -1179851767510857618
+      cerberos_hatchling_projectile_39: 9101340317857097230
+      cerberos_hatchling_projectile_4: 8712548317243289984
+      cerberos_hatchling_projectile_41: 2503306013005701164
+      cerberos_hatchling_projectile_43: 6563986144889831218
+      cerberos_hatchling_projectile_44: -1811216032475054076
+      cerberos_hatchling_projectile_45: 3399812423868205988
+      cerberos_hatchling_projectile_46: -515000817643397703
+      cerberos_hatchling_projectile_47: 1579583080194490504
+      cerberos_hatchling_projectile_48: 7771603252168589798
+      cerberos_hatchling_projectile_49: 2285631621917834053
+      cerberos_hatchling_projectile_5: -2476602546995658355
+      cerberos_hatchling_projectile_6: 4568757004083170670
+      cerberos_hatchling_projectile_8: -1481057647444400185
+      cerberos_hatchling_projectile_9: -7041997943472769059
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

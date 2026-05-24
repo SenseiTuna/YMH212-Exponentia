@@ -13,6 +13,7 @@ public class ArkePrismProjectile : MonoBehaviour
     }
 
     private EnemyMechanics owner;
+    private PlayerMechanics reflectedByPlayer;
     private Vector2 velocity;
     private float damage;
     private float lifeTime;
@@ -23,6 +24,7 @@ public class ArkePrismProjectile : MonoBehaviour
     private bool resolved;
     private float elapsedTime;
     private bool resolvesOnExpiry;
+    private bool reflectedToEnemies;
     private const float CollisionArmDelay = 0.08f;
 
     private static Sprite cachedSprite;
@@ -38,7 +40,8 @@ public class ArkePrismProjectile : MonoBehaviour
         float duration,
         PrismEffect prismEffect,
         Color color,
-        float size)
+        float size,
+        Sprite visualSprite = null)
     {
         owner = projectileOwner;
         velocity = direction.normalized * Mathf.Max(0f, speed);
@@ -54,6 +57,10 @@ public class ArkePrismProjectile : MonoBehaviour
         transform.localScale = Vector3.one * Mathf.Max(0.08f, size);
 
         SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        if (visualSprite != null)
+        {
+            sr.sprite = visualSprite;
+        }
         sr.color = projectileColor;
     }
 
@@ -94,6 +101,25 @@ public class ArkePrismProjectile : MonoBehaviour
             return;
         }
 
+        if (reflectedToEnemies)
+        {
+            EnemyMechanics enemy = other.GetComponentInParent<EnemyMechanics>();
+            if (enemy == null)
+            {
+                return;
+            }
+
+            DamageInfo info = new DamageInfo(
+                damage,
+                transform.position,
+                ((Vector2)enemy.transform.position - (Vector2)transform.position).normalized,
+                reflectedByPlayer != null ? reflectedByPlayer.gameObject : gameObject);
+            enemy.TakeDamage(info);
+            resolved = true;
+            Destroy(gameObject);
+            return;
+        }
+
         if (elapsedTime < CollisionArmDelay)
         {
             return;
@@ -113,6 +139,13 @@ public class ArkePrismProjectile : MonoBehaviour
         {
             IDamageable damageable = EnemyMechanics.FindDamageable(other.gameObject);
             if (!(damageable is PlayerMechanics))
+            {
+                return;
+            }
+
+            PlayerMechanics player = damageable as PlayerMechanics;
+            AthenaSkill athenaSkill = player != null ? player.GetComponent<AthenaSkill>() : null;
+            if (athenaSkill != null && athenaSkill.TryReflectProjectile(player, this))
             {
                 return;
             }
@@ -168,6 +201,28 @@ public class ArkePrismProjectile : MonoBehaviour
         }
 
         Destroy(gameObject);
+    }
+
+    public void Reflect(PlayerMechanics reflector, float speedMultiplier, float damageMultiplier)
+    {
+        if (effect != PrismEffect.Damage)
+        {
+            return;
+        }
+
+        reflectedByPlayer = reflector;
+        reflectedToEnemies = true;
+        owner = null;
+        damage = Mathf.Max(0f, damage * Mathf.Max(0f, damageMultiplier));
+        velocity = -velocity.normalized * (velocity.magnitude * Mathf.Max(0.01f, speedMultiplier));
+        transform.right = velocity.sqrMagnitude > 0.001f ? velocity.normalized : Vector2.right;
+        projectileColor = Color.cyan;
+
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        if (sr != null)
+        {
+            sr.color = projectileColor;
+        }
     }
 
     private void AffectEnemies(float heal, float moveBuff, float touchBuff)

@@ -35,6 +35,10 @@ public class AresSkill : GodSkillBase
         ownerStats.AttackSpeed = ownerStats.AttackSpeed * bonusAttackSpeedMultiplier;
         ownerStats.MoveSpeed = ownerStats.MoveSpeed * bonusMoveSpeedMultiplier;
 
+        Debug.Log(
+            $"Ares skilli kullanildi. Sure={berserkDuration:0.##}sn, " +
+            $"Damage x{bonusDamageMultiplier:0.##}, AttackSpeed x{bonusAttackSpeedMultiplier:0.##}, MoveSpeed x{bonusMoveSpeedMultiplier:0.##}");
+
         StartCoroutine(EndBerserkAfter(berserkDuration, prevDamage, prevAttackSpeed, prevMove));
         return true;
     }
@@ -54,11 +58,13 @@ public class AresSkill : GodSkillBase
         if (owner == null) return;
         Vector2 origin = owner.transform.position;
         Collider2D[] hits = Physics2D.OverlapCircleAll(origin, 2f);
+        int affectedTargets = 0;
         for (int i = 0; i < hits.Length; i++)
         {
             GameObject go = hits[i].gameObject;
             if (go == null || go == owner.gameObject) continue;
             owner.DealDamage(go, 1.8f);
+            affectedTargets++;
             IDamageable d = go.GetComponentInParent<IDamageable>();
             if (d != null)
             {
@@ -66,5 +72,9 @@ public class AresSkill : GodSkillBase
                 dot.Initialize(d, bleedDps, bleedDuration);
             }
         }
+
+        Debug.Log(
+            $"Ares Bloody Smash tetiklendi. Merkez={origin}, HedefSayisi={affectedTargets}, " +
+            $"Bleed={bleedDps:0.##}/sn x {bleedDuration:0.##}sn");
     }
 }

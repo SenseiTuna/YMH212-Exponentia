@@ -48,7 +48,6 @@ namespace Pathfinding {
 				}
 				catch (System.FormatException) {
 					lastUpdateCheck = System.DateTime.UtcNow;
-					Debug.LogWarning("Invalid DateTime string encountered when loading from preferences");
 				}
 				return _lastUpdateCheck;
 			}
@@ -161,9 +160,6 @@ namespace Pathfinding {
 		static bool CheckForUpdates () {
 			if (updateCheckDownload != null && updateCheckDownload.isDone) {
 				if (!string.IsNullOrEmpty(updateCheckDownload.error)) {
-					Debug.LogWarning("There was an error checking for updates to the A* Pathfinding Project\n" +
-						"The error might disappear if you switch build target from Webplayer to Standalone because of the webplayer security emulation\nError: " +
-						updateCheckDownload.error);
 					updateCheckDownload = null;
 					return false;
 				}
@@ -263,14 +259,12 @@ namespace Pathfinding {
 
 			try {
 				latestVersion = new System.Version(astarServerData["VERSION:branch"]);
-			} catch (System.Exception ex) {
-				Debug.LogWarning("Could not parse version\n"+ex);
+			} catch (System.Exception) {
 			}
 
 			try {
 				latestBetaVersion = new System.Version(astarServerData["VERSION:beta"]);
-			} catch (System.Exception ex) {
-				Debug.LogWarning("Could not parse version\n"+ex);
+			} catch (System.Exception) {
 			}
 		}
 

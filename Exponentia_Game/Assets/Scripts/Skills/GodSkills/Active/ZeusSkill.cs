@@ -44,9 +44,6 @@ public class ZeusSkill : GodSkillBase
             center = Camera.main.ScreenToWorldPoint(mouseScreenPos);
         }
 
-        // Mouse'un olduğu yerde patlayan görsel bir efekt yaratabiliriz (şimdilik debug)
-        Debug.Log("Zeus Skilli kullanıldı! Patlama noktası: " + center);
-
         Collider2D[] hits = Physics2D.OverlapCircleAll(center, chainRadius);
 
         int chained = 0;
@@ -67,6 +64,10 @@ public class ZeusSkill : GodSkillBase
 
             chained++;
         }
+
+        Debug.Log(
+            $"Zeus skilli kullanildi. PatlamaNoktasi={center}, Radius={chainRadius:0.##}, " +
+            $"Damage={lightningDamage:0.##}, ZincirlenenHedef={chained}/{maxChainCount}");
 
         return true;
     }
@@ -100,6 +101,11 @@ public class ZeusSkill : GodSkillBase
 
     private void HandleEnemyKilled(GameObject enemy)
     {
+        if (!IsUnlocked)
+        {
+            return;
+        }
+
         AddKillStack();
     }
 
@@ -109,12 +115,14 @@ public class ZeusSkill : GodSkillBase
         {
             // refresh latest expiry
             stackExpiry.Add(Time.time + killStackDuration);
+            Debug.Log($"Zeus pasifi stack yeniledi. Stack={currentKillStacks}/{maxKillStacks}, Sure={killStackDuration:0.##}sn");
             return;
         }
 
         currentKillStacks++;
         stackExpiry.Add(Time.time + killStackDuration);
         UpdateAttackSpeed();
+        Debug.Log($"Zeus pasifi stack kazandi. Stack={currentKillStacks}/{maxKillStacks}, Sure={killStackDuration:0.##}sn");
 
         if (!stackRoutineRunning)
             StartCoroutine(StackDecayRoutine());
@@ -148,6 +156,11 @@ public class ZeusSkill : GodSkillBase
 
     private void HandleHealthChanged(float current, float max)
     {
+        if (!IsUnlocked)
+        {
+            return;
+        }
+
         if (owner == null) return;
         float ratio = max > 0f ? current / max : 1f;
         if (Time.time - lastWrathTime < wrathCooldown) return;
@@ -164,13 +177,16 @@ public class ZeusSkill : GodSkillBase
         if (owner == null) return;
         float radius = 4f;
         Collider2D[] hits = Physics2D.OverlapCircleAll(owner.transform.position, radius);
+        int affectedTargets = 0;
         for (int i = 0; i < hits.Length; i++)
         {
             GameObject go = hits[i].gameObject;
             if (go == null || go == owner.gameObject) continue;
             owner.DealDamage(go, SafeMultiplier(lightningDamage * 0.6f));
+            affectedTargets++;
         }
 
         owner.SetTemporaryInvulnerable(2f);
+        Debug.Log($"Zeus wrath tetiklendi. Radius={radius:0.##}, HedefSayisi={affectedTargets}, Invuln=2sn");
     }
 }

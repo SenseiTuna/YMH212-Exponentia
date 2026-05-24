@@ -36,6 +36,7 @@ public class HadesSkill : GodSkillBase
 
         float prev = ownerStats.LifeSteal;
         ownerStats.LifeSteal += lifeStealRatio * 100f; // store as percent if >1
+        Debug.Log($"Hades skilli kullanildi. LifeStealBonus=%{lifeStealRatio * 100f:0.##}, Sure=4sn");
         StartCoroutine(RemoveLifeStealAfter(4f, prev));
         return true;
     }
@@ -67,6 +68,11 @@ public class HadesSkill : GodSkillBase
 
     private void HandleDealtDamage(GameObject target, float applied)
     {
+        if (!IsUnlocked)
+        {
+            return;
+        }
+
         // Apply DoT to the damaged target
         IDamageable dmg = target.GetComponentInParent<IDamageable>();
         if (dmg == null) return;
@@ -76,16 +82,23 @@ public class HadesSkill : GodSkillBase
         {
             DoTDebuff dot = target.AddComponent<DoTDebuff>();
             dot.Initialize(dmg, dotDps, dotDuration);
+            Debug.Log($"Hades pasifi DOT uyguladi. Hedef={target.name}, DPS={dotDps:0.##}, Sure={dotDuration:0.##}sn");
         }
     }
 
     private void HandleEnemyKilled(GameObject enemy)
     {
+        if (!IsUnlocked)
+        {
+            return;
+        }
+
         collectedSouls += soulsPerKill;
         // convert souls to shield immediately
         if (owner != null)
         {
             owner.KalkanYenile(collectedSouls * soulToShield);
+            Debug.Log($"Hades pasifi ruh topladi. Hedef={enemy.name}, Ruh={collectedSouls}, KazanilanKalkan={collectedSouls * soulToShield:0.##}");
             collectedSouls = 0;
         }
     }

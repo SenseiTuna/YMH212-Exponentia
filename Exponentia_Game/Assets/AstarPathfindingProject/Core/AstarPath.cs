@@ -831,10 +831,6 @@ public class AstarPath : VersionedMonoBehaviour {
 
 			if (logPathResults == PathLog.InGame) {
 				inGameDebugPath = debug;
-			} else if (path.error) {
-				Debug.LogWarning(debug);
-			} else {
-				Debug.Log(debug);
 			}
 		}
 	}
@@ -1378,9 +1374,6 @@ public class AstarPath : VersionedMonoBehaviour {
 		// Don't do anything when not in play mode
 		if (!Application.isPlaying) return;
 
-		if (logPathResults == PathLog.Heavy)
-			Debug.Log("+++ AstarPath Component Destroyed - Cleaning Up Pathfinding Data +++");
-
 		if (active != this) return;
 
 		// Block until the pathfinding threads have
@@ -1396,31 +1389,17 @@ public class AstarPath : VersionedMonoBehaviour {
 		// This will cause all pathfinding threads to exit (if any exist)
 		pathProcessor.queue.TerminateReceivers();
 
-		if (logPathResults == PathLog.Heavy)
-			Debug.Log("Processing Possible Work Items");
-
 		// Stop the graph update thread (if it is running)
 		graphUpdates.DisableMultithreading();
 
 		// Try to join pathfinding threads
 		pathProcessor.JoinThreads();
 
-		if (logPathResults == PathLog.Heavy)
-			Debug.Log("Returning Paths");
-
-
 		// Return all paths
 		pathReturnQueue.ReturnPaths(false);
 
-		if (logPathResults == PathLog.Heavy)
-			Debug.Log("Destroying Graphs");
-
-
 		// Clean up graph data
 		data.OnDestroy();
-
-		if (logPathResults == PathLog.Heavy)
-			Debug.Log("Cleaning up variables");
 
 		// Clear variables up, static variables are good to clean up, otherwise the next scene might get weird data
 
@@ -1780,9 +1759,6 @@ public class AstarPath : VersionedMonoBehaviour {
 
 		System.GC.Collect();
 
-		if (logPathResults != PathLog.None && logPathResults != PathLog.OnlyErrors) {
-			Debug.Log("Scanning - Process took "+(lastScanTime*1000).ToString("0")+" ms to complete");
-		}
 	}
 
 	IEnumerable<Progress> ScanGraph (NavGraph graph) {

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PetrifiedRatEnemy : EnemyMechanics
 {
-    private void Reset()
+    protected override void Reset()
     {
         ApplyDefaultSetup(
             "Petrified Rat",

@@ -9,11 +9,13 @@ public class EnemyProjectile : MonoBehaviour
     private Vector2 velocity;
     private float damage;
     private EnemyMechanics owner;
+    private PlayerMechanics reflectedByPlayer;
     private CircleCollider2D circleCollider;
     private SpriteRenderer spriteRenderer;
     private bool useCurvedPath;
     private bool useExplosion;
     private bool hasExploded;
+    private bool reflectedToEnemies;
     private float curveElapsedTime;
     private float curveDuration;
     private float explosionRadius;
@@ -24,7 +26,7 @@ public class EnemyProjectile : MonoBehaviour
     private static Sprite cachedSprite;
     private static Material cachedSpriteMaterial;
 
-    public void Initialize(EnemyMechanics projectileOwner, Vector2 direction, float speed, float projectileDamage, float lifeTime, Color color, float size)
+    public void Initialize(EnemyMechanics projectileOwner, Vector2 direction, float speed, float projectileDamage, float lifeTime, Color color, float size, Sprite visualSprite = null)
     {
         owner = projectileOwner;
         velocity = direction.normalized * Mathf.Max(0f, speed);
@@ -33,6 +35,10 @@ public class EnemyProjectile : MonoBehaviour
         projectileSize = Mathf.Max(0.05f, size);
 
         transform.right = direction.sqrMagnitude > 0.001f ? direction.normalized : Vector2.right;
+        if (visualSprite != null && spriteRenderer != null)
+        {
+            spriteRenderer.sprite = visualSprite;
+        }
         ApplyVisualState();
         Destroy(gameObject, Mathf.Max(0.1f, lifeTime));
     }
@@ -98,6 +104,24 @@ public class EnemyProjectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (reflectedToEnemies)
+        {
+            EnemyMechanics enemy = other.GetComponentInParent<EnemyMechanics>();
+            if (enemy == null)
+            {
+                return;
+            }
+
+            DamageInfo info = new DamageInfo(
+                damage,
+                transform.position,
+                ((Vector2)enemy.transform.position - (Vector2)transform.position).normalized,
+                reflectedByPlayer != null ? reflectedByPlayer.gameObject : gameObject);
+            enemy.TakeDamage(info);
+            Destroy(gameObject);
+            return;
+        }
+
         if (owner == null)
         {
             return;
@@ -117,6 +141,12 @@ public class EnemyProjectile : MonoBehaviour
 
         if (damageable is PlayerMechanics player)
         {
+            AthenaSkill athenaSkill = player.GetComponent<AthenaSkill>();
+            if (athenaSkill != null && athenaSkill.TryReflectProjectile(player, this))
+            {
+                return;
+            }
+
             Vector2 direction = ((Vector2)player.transform.position - (Vector2)transform.position).normalized;
             DamageInfo info = new DamageInfo(damage, transform.position, direction, owner != null ? owner.gameObject : gameObject);
             player.TakeDamage(info);
@@ -126,6 +156,24 @@ public class EnemyProjectile : MonoBehaviour
             damageable.TakeDamage(damage);
         }
         Destroy(gameObject);
+    }
+
+    public void Reflect(PlayerMechanics reflector, float speedMultiplier, float damageMultiplier)
+    {
+        reflectedByPlayer = reflector;
+        reflectedToEnemies = true;
+        owner = null;
+        useCurvedPath = false;
+        useExplosion = false;
+        hasExploded = false;
+        damage = Mathf.Max(0f, damage * Mathf.Max(0f, damageMultiplier));
+
+        Vector2 direction = velocity.sqrMagnitude > 0.001f ? -velocity.normalized : -(Vector2)transform.right;
+        float reflectedSpeed = velocity.magnitude * Mathf.Max(0.01f, speedMultiplier);
+        velocity = direction.normalized * reflectedSpeed;
+        transform.right = velocity.sqrMagnitude > 0.001f ? velocity.normalized : Vector2.right;
+        projectileColor = Color.cyan;
+        ApplyVisualState();
     }
 
     private void UpdateCurvedPath()

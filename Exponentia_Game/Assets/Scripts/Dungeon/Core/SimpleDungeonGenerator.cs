@@ -63,8 +63,8 @@ public class SimpleDungeonGenerator : MonoBehaviour
         }
     }
 
-    private List<DebugPlacedRoom> _placedRooms = new List<DebugPlacedRoom>();
-    private List<RoomConnection> _roomConnections = new List<RoomConnection>();
+    [SerializeField] private List<DebugPlacedRoom> _placedRooms = new List<DebugPlacedRoom>();
+    [SerializeField] private List<RoomConnection> _roomConnections = new List<RoomConnection>();
     private Transform _connectionsRoot;
     private Transform _doorMarkersRoot;
     private int _corridorCounter;
@@ -237,6 +237,12 @@ public class SimpleDungeonGenerator : MonoBehaviour
         if (mapManager != null)
         {
             mapManager.ResetDiscovery();
+        }
+
+        UiMinimap uiMinimap = FindAnyObjectByType<UiMinimap>();
+        if (uiMinimap != null)
+        {
+            uiMinimap.ResetDiscovery();
         }
 
         Debug.Log("Debug dungeon üretildi. Yerleşen oda sayısı: " + _placedRooms.Count);

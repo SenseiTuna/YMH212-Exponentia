@@ -25,10 +25,27 @@ public class DungeonMapManager : MonoBehaviour
     [SerializeField] private Color currentRoomHighlightColor = Color.yellow;
     [SerializeField] private bool pulseCurrentRoom = true;
     [SerializeField] private float pulseSpeed = 4.0f;
+    [Header("Dünya Alanı Savaş Sisi (World Space Fog of War)")]
+    [Tooltip("Dünya alanında gerçek odaların üstünü siyah kaplayacak sis sistemi aktif olsun mu?")]
+    [SerializeField] private bool useWorldSpaceFog = true;
+    [Tooltip("Sis katmanının çizim sırası (Sorting Order - Her şeyin üstünde olması için yüksek olmalıdır).")]
+    [SerializeField] private int fogSortingOrder = 100;
+    [Tooltip("Henüz keşfedilmemiş odaların üstündeki sisin opaklığı (0: şeffaf, 1: simsiyah).")]
+    [SerializeField] [Range(0f, 1f)] private float unvisitedFogOpacity = 1.0f;
+    [Tooltip("Bağlantılı (komşu) odaların üstündeki sisin opaklığı.")]
+    [SerializeField] [Range(0f, 1f)] private float connectedFogOpacity = 0.55f;
+    [Tooltip("Sisin açılma/kapanma geçiş hızı.")]
+    [SerializeField] private float fogTransitionSpeed = 3.0f;
 
     private HashSet<string> _visitedRoomIds = new HashSet<string>();
     private string _currentRoomId = "";
     private HashSet<string> _connectedRoomIds = new HashSet<string>();
+    private Dictionary<Vector2Int, SpriteRenderer> _worldFogRenderers = new Dictionary<Vector2Int, SpriteRenderer>();
+    private Sprite _fogSprite;
+
+    public event System.Action<string> OnRoomEntered;
+    public string CurrentRoomId => _currentRoomId;
+    public HashSet<string> VisitedRoomIds => _visitedRoomIds;
 
     private void Awake()
     {
@@ -64,6 +81,12 @@ public class DungeonMapManager : MonoBehaviour
         {
             ApplyCurrentRoomPulse();
         }
+
+        // Dünya alanı savaş sisini pürüzsüzce güncelle (Yumuşak açılma/kapanma)
+        if (useWorldSpaceFog)
+        {
+            UpdateWorldFogVisuals();
+        }
     }
 
     private void DetectPlayerRoom()
@@ -97,6 +120,7 @@ public class DungeonMapManager : MonoBehaviour
             }
 
             UpdateMapVisuals();
+            OnRoomEntered?.Invoke(newRoomId);
         }
     }
 
@@ -207,6 +231,122 @@ public class DungeonMapManager : MonoBehaviour
         return new Color(0.85f, 0.25f, 0.25f, 1f); // Combat Room Color (Default)
     }
 
+    /// <summary>
+    /// Dünya alanındaki odaların üstüne siyah fiziksel sis bloklarını yerleştirir.
+    /// </summary>
+    private void InitializeWorldFog()
+    {
+        if (visibleGrid == null || visibleGrid.Grid == null) return;
+
+        // Eski sis objelerini temizle
+        Transform oldFogRoot = transform.Find("WorldSpaceFogRoot");
+        if (oldFogRoot != null)
+        {
+            Destroy(oldFogRoot.gameObject);
+        }
+
+        GameObject fogRootObj = new GameObject("WorldSpaceFogRoot");
+        fogRootObj.transform.SetParent(transform, false);
+        Transform fogRoot = fogRootObj.transform;
+
+        _worldFogRenderers.Clear();
+
+        // Tüm işgal edilmiş (occupied) hücreler için siyah sis sprite'ı oluştur
+        for (int x = 0; x < visibleGrid.Width; x++)
+        {
+            for (int y = 0; y < visibleGrid.Height; y++)
+            {
+                Vector2Int coord = new Vector2Int(x, y);
+                var cell = visibleGrid.Grid.GetCell(coord);
+                if (cell != null && cell.IsOccupied)
+                {
+                    GameObject fogTile = new GameObject($"Fog_{x}_{y}");
+                    fogTile.transform.SetParent(fogRoot, false);
+                    fogTile.transform.position = visibleGrid.MacroToWorld(coord);
+                    
+                    // Grid hücresi boyutunda ölçekle
+                    float cellSize = visibleGrid.CellWorldSize;
+                    fogTile.transform.localScale = new Vector3(cellSize * 1.05f, cellSize * 1.05f, 1f); // Boşluk kalmaması için hafif büyük
+
+                    SpriteRenderer sr = fogTile.AddComponent<SpriteRenderer>();
+                    sr.sprite = GetFogSprite();
+                    sr.color = new Color(0f, 0f, 0f, unvisitedFogOpacity);
+                    sr.sortingOrder = fogSortingOrder;
+
+                    _worldFogRenderers.Add(coord, sr);
+                }
+            }
+        }
+    }
+
+    /// <summary>
+    /// Dünya alanındaki sisin açılış/kapanış geçişlerini pürüzsüzce günceller.
+    /// </summary>
+    private void UpdateWorldFogVisuals()
+    {
+        if (visibleGrid == null || visibleGrid.Grid == null) return;
+
+        // Eğer henüz sis oluşturulmadıysa kurulumu yap
+        if (_worldFogRenderers.Count == 0)
+        {
+            InitializeWorldFog();
+        }
+
+        foreach (var kvp in _worldFogRenderers)
+        {
+            Vector2Int coord = kvp.Key;
+            SpriteRenderer sr = kvp.Value;
+            if (sr == null) continue;
+
+            var cell = visibleGrid.Grid.GetCell(coord);
+            if (cell == null || !cell.IsOccupied) continue;
+
+            string roomId = cell.RoomId;
+            float targetOpacity = unvisitedFogOpacity;
+
+            // 1. Oyuncunun İçinde Bulunduğu Oda (Sis Tamamen Kalkar)
+            if (roomId == _currentRoomId)
+            {
+                targetOpacity = 0f;
+            }
+            // 2. Keşfedilmiş/Ziyaret Edilmiş Odalar (Sis Tamamen Kalkar)
+            else if (_visitedRoomIds.Contains(roomId))
+            {
+                targetOpacity = 0f;
+            }
+            // 3. Bağlantılı/Görünen Komşu Odalar (Yarı Şeffaf Sis)
+            else if (_connectedRoomIds.Contains(roomId))
+            {
+                targetOpacity = connectedFogOpacity;
+            }
+            // 4. Keşfedilmemiş/Uzak Odalar (Karanlık Sis)
+            else
+            {
+                targetOpacity = unvisitedFogOpacity;
+            }
+
+            // Sisin rengini hedeflenen opaklığa doğru pürüzsüzce yumuşat (Lerp)
+            Color c = sr.color;
+            c.a = Mathf.MoveTowards(c.a, targetOpacity, Time.deltaTime * fogTransitionSpeed);
+            sr.color = c;
+
+            // Performansı korumak için sis tamamen açıldığında renderer bileşenini kapat
+            sr.enabled = (c.a > 0.01f);
+        }
+    }
+
+    private Sprite GetFogSprite()
+    {
+        if (_fogSprite != null) return _fogSprite;
+        Texture2D tex = new Texture2D(2, 2);
+        for (int x = 0; x < 2; x++)
+            for (int y = 0; y < 2; y++)
+                tex.SetPixel(x, y, Color.white);
+        tex.Apply();
+        _fogSprite = Sprite.Create(tex, new Rect(0, 0, 2, 2), new Vector2(0.5f, 0.5f), 2f);
+        return _fogSprite;
+    }
+
     [ContextMenu("Reset Map Discovery")]
     public void ResetDiscovery()
     {
@@ -216,5 +356,10 @@ public class DungeonMapManager : MonoBehaviour
         _visitedRoomIds.Add("START_00");
         UpdateConnectedRooms();
         UpdateMapVisuals();
+
+        if (useWorldSpaceFog)
+        {
+            InitializeWorldFog();
+        }
     }
 }

@@ -41,6 +41,10 @@ public class ManualRoomCombatTrigger : MonoBehaviour
     private bool _isCombatActive = false;
     private float _levelLoadTime;
 
+    // Dış sistemler için savaş akış olayları (Oda adını gönderir)
+    public event System.Action<string> OnRoomEntered;
+    public event System.Action<string> OnRoomCleared;
+
     private void Awake()
     {
         // Çarpışma alanının tetikleyici olduğundan emin olalım
@@ -108,6 +112,9 @@ public class ManualRoomCombatTrigger : MonoBehaviour
     {
         _hasTriggered = true;
         _isCombatActive = true;
+
+        // Giriş olayını tetikle
+        OnRoomEntered?.Invoke(gameObject.name);
 
         int spawnCount = spawnPoints != null ? spawnPoints.Count : 0;
         int prefabCount = enemyPrefabs != null ? enemyPrefabs.Count : 0;
@@ -206,6 +213,9 @@ public class ManualRoomCombatTrigger : MonoBehaviour
     {
         _isCombatActive = false;
         Debug.Log("[ManualCombatTrigger] Tüm düşmanlar yenildi! Kapılar açılıyor ve ödül veriliyor.");
+
+        // Temizleme olayını tetikle
+        OnRoomCleared?.Invoke(gameObject.name);
 
         // 1. Kapıların Kilidini Aç
         foreach (var door in doors)

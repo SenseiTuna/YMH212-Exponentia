@@ -49,6 +49,10 @@ public class DungeonRoomCombatManager : MonoBehaviour
     private Sprite _proceduralLaserSprite;
     private GameObject _gatesRootInstance;
 
+    // Dış sistemler için savaş akış olayları
+    public event System.Action<string> OnRoomEntered;
+    public event System.Action<string> OnRoomCleared;
+
     private void Awake()
     {
         // 1. Önce bu objenin üzerinde ara
@@ -134,6 +138,9 @@ public class DungeonRoomCombatManager : MonoBehaviour
 
         DebugPlacedRoom room = dungeonGenerator.PlacedRooms.Find(r => r.RoomId == roomId);
         if (room == null) return;
+
+        // Savaş alanı giriş olayını tetikle
+        OnRoomEntered?.Invoke(roomId);
 
         // Odada doğacak düşman prefab'lerini belirle
         List<GameObject> prefabsToUse = basicEnemyPrefabs;
@@ -351,6 +358,9 @@ public class DungeonRoomCombatManager : MonoBehaviour
         _clearedRoomIds.Add(_activeCombatRoomId);
 
         Debug.Log($"[CombatManager] Oda başarıyla temizlendi! Kapılar açılıyor ve ödül veriliyor: {_activeCombatRoomId}");
+
+        // Oda temizlenme olayını tetikle
+        OnRoomCleared?.Invoke(_activeCombatRoomId);
 
         // 1. Kapıları Yok Et veya Kilidini Aç
         foreach (var gate in _activeLaserGates)

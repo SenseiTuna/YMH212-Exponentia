@@ -29,6 +29,8 @@ public class DungeonRoomCombatManager : MonoBehaviour
     [Header("Ödül Ayarları")]
     [Tooltip("Oda temizlendiğinde ortada belirecek ödül prefableri (silah/item vs.).")]
     [SerializeField] private List<GameObject> rewardPrefabs = new List<GameObject>();
+    [Tooltip("Kalıcı 3'lü seçim ödül sistemini tetikleyecek spawner.")]
+    [SerializeField] private Exponentia.Dungeon.DungeonRewardSpawner rewardSpawner;
 
     [Header("Kapı / Lazer Ayarları")]
     [Tooltip("Kullanılacak özel Kapı Prefab'i (DungeonDoor scriptine sahip olmalı). Boş bırakılırsa dinamik lazer kapısı kullanılır.")]
@@ -80,6 +82,15 @@ public class DungeonRoomCombatManager : MonoBehaviour
             visibleGrid = FindAnyObjectByType<VisibleMacroGrid>();
         if (mapManager == null)
             mapManager = FindAnyObjectByType<DungeonMapManager>();
+
+        if (rewardSpawner == null)
+            rewardSpawner = GetComponent<Exponentia.Dungeon.DungeonRewardSpawner>();
+        if (rewardSpawner == null)
+            rewardSpawner = GetComponentInChildren<Exponentia.Dungeon.DungeonRewardSpawner>();
+        if (rewardSpawner == null)
+            rewardSpawner = FindAnyObjectByType<Exponentia.Dungeon.DungeonRewardSpawner>();
+        if (rewardSpawner == null)
+            rewardSpawner = gameObject.AddComponent<Exponentia.Dungeon.DungeonRewardSpawner>();
 
         CreateProceduralLaserSprite();
     }
@@ -374,8 +385,6 @@ public class DungeonRoomCombatManager : MonoBehaviour
 
     private void SpawnClearReward(string roomId)
     {
-        if (rewardPrefabs.Count == 0) return;
-
         if (dungeonGenerator == null || visibleGrid == null) return;
 
         DebugPlacedRoom room = dungeonGenerator.PlacedRooms.Find(r => r.RoomId == roomId);
@@ -385,15 +394,23 @@ public class DungeonRoomCombatManager : MonoBehaviour
         Vector2 centerMacro = room.GetCenterMacro();
         Vector3 spawnWorldPos = visibleGrid.MacroPointToWorld(centerMacro, -0.1f);
 
-        // Rastgele bir ödül prefabı seç ve doğur
-        GameObject rewardPrefab = rewardPrefabs[Random.Range(0, rewardPrefabs.Count)];
-        if (rewardPrefab != null)
+        // Eğer 3'lü seçim ödül spawner'ı atanmışsa, onu tetikle
+        if (rewardSpawner != null)
         {
-            GameObject spawnedReward = Instantiate(rewardPrefab, spawnWorldPos, Quaternion.identity);
-            
-            // Ödülü görsel olarak canlandırmak için ufak bir doğuş zıplaması ekleyebiliriz
-            spawnedReward.transform.localScale = Vector3.zero;
-            LeanTweenScale(spawnedReward, Vector3.one, 0.45f);
+            rewardSpawner.SpawnRewardChoices(spawnWorldPos);
+        }
+        else if (rewardPrefabs.Count > 0)
+        {
+            // Rastgele bir ödül prefabı seç ve doğur
+            GameObject rewardPrefab = rewardPrefabs[Random.Range(0, rewardPrefabs.Count)];
+            if (rewardPrefab != null)
+            {
+                GameObject spawnedReward = Instantiate(rewardPrefab, spawnWorldPos, Quaternion.identity);
+                
+                // Ödülü görsel olarak canlandırmak için ufak bir doğuş zıplaması ekleyebiliriz
+                spawnedReward.transform.localScale = Vector3.zero;
+                LeanTweenScale(spawnedReward, Vector3.one, 0.45f);
+            }
         }
     }
 

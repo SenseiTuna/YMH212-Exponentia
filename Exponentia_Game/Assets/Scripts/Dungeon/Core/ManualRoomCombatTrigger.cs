@@ -25,10 +25,12 @@ public class ManualRoomCombatTrigger : MonoBehaviour
     [SerializeField] private List<Transform> spawnPoints = new List<Transform>();
 
     [Header("Ödül Ayarları")]
-    [Tooltip("Oda temizlendiğinde verilecek ödül prefab'i.")]
+    [Tooltip("Oda temizlendiğinde verilecek tekli ödül prefab'i (Seçim sistemi yoksa kullanılır).")]
     [SerializeField] private GameObject rewardPrefab;
     [Tooltip("Ödülün doğacağı konum (Boş bırakırsanız otomatik oluşturulacaktır).")]
     [SerializeField] private Transform rewardSpawnPoint;
+    [Tooltip("Kalıcı 3'lü seçim ödül sistemini tetikleyecek spawner (Atanmazsa yerel objeden otomatik aranır).")]
+    [SerializeField] private Exponentia.Dungeon.DungeonRewardSpawner rewardSpawner;
 
     [Header("Tetikleme Ayarları")]
     [Tooltip("Oyun başladıktan sonra yanlış tetiklemeleri önlemek için beklenecek süre (saniye).")]
@@ -46,6 +48,20 @@ public class ManualRoomCombatTrigger : MonoBehaviour
         if (col != null)
         {
             col.isTrigger = true;
+        }
+
+        // Seçim ödülü spawner'ını otomatik bulmaya çalış
+        if (rewardSpawner == null)
+        {
+            rewardSpawner = GetComponent<Exponentia.Dungeon.DungeonRewardSpawner>();
+        }
+        if (rewardSpawner == null)
+        {
+            rewardSpawner = GetComponentInChildren<Exponentia.Dungeon.DungeonRewardSpawner>();
+        }
+        if (rewardSpawner == null)
+        {
+            rewardSpawner = gameObject.AddComponent<Exponentia.Dungeon.DungeonRewardSpawner>();
         }
 
         // Eğer Inspector'da spawn noktaları listede var ama içi "None (null)" ise veya tamamen boşsa runtime'da otomatik kur
@@ -77,8 +93,12 @@ public class ManualRoomCombatTrigger : MonoBehaviour
         // Oyunun ilk anlarındaki yüklenme çakışmalarını önle
         if (Time.time - _levelLoadTime < activationDelay) return;
 
-        // Sadece oyuncu girdiğinde savaşı tetikle
-        if (other.CompareTag("Player"))
+        // Oyuncu kontrolü (Collider, attachedRigidbody veya root tag'i "Player" ise kabul et - Süper Güvenli)
+        bool isPlayer = other.CompareTag("Player") || 
+                        (other.attachedRigidbody != null && other.attachedRigidbody.CompareTag("Player")) || 
+                        other.transform.root.CompareTag("Player");
+
+        if (isPlayer)
         {
             StartCombat();
         }
@@ -196,8 +216,12 @@ public class ManualRoomCombatTrigger : MonoBehaviour
             }
         }
 
-        // 2. Ödülü Doğur (Yumuşak zıplama efektiyle)
-        if (rewardPrefab != null && rewardSpawnPoint != null)
+        // 2. Ödülü Doğur (Seçim spawner'ı varsa 3'lü seçim doğurur, yoksa tekil prefab doğurur)
+        if (rewardSpawner != null && rewardSpawnPoint != null)
+        {
+            rewardSpawner.SpawnRewardChoices(rewardSpawnPoint.position);
+        }
+        else if (rewardPrefab != null && rewardSpawnPoint != null)
         {
             GameObject reward = Instantiate(rewardPrefab, rewardSpawnPoint.position, rewardSpawnPoint.rotation);
             reward.transform.localScale = Vector3.zero;

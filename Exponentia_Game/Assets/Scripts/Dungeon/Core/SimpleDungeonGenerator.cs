@@ -131,6 +131,7 @@ public class SimpleDungeonGenerator : MonoBehaviour
         {
             bool isTreasure = roomTypeQueue[i];
 
+            // ENTEGRASYON NOTU: Hazine odaları "TREASURE_" önekiyle üretilir; buraya gelecekte kalıcı fiziksel ödül spawner veya satıcı NPC yerleştirilebilir.
             string roomId = isTreasure
                 ? $"TREASURE_{placedTreasureCount:00}"
                 : $"COMBAT_{placedCombatCount:00}";
@@ -202,6 +203,7 @@ public class SimpleDungeonGenerator : MonoBehaviour
             usedCombatParentsForTreasure
         );
 
+        // ENTEGRASYON NOTU: Boss odası "BOSS_" önekiyle üretilir; buraya gelecekte kat geçiş portalı veya boss canavarı yerleştirilmelidir.
         bool bossPlaced = TryPlaceAdjacentToAnyParent(
             bossParentCandidates,
             "BOSS_00",

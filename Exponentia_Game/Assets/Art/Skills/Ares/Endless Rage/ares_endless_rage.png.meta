@@ -1,0 +1,375 @@
+fileFormatVersion: 2
+guid: afd25fb1f6cf12b4f9a16f017cc898a1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5759727872582391025
+    second: ares_endless_rage_0
+  - first:
+      213: 4475888467661121780
+    second: ares_endless_rage_1
+  - first:
+      213: -5216159020762670355
+    second: ares_endless_rage_2
+  - first:
+      213: -1421471385723692556
+    second: ares_endless_rage_3
+  - first:
+      213: -652672162914690416
+    second: ares_endless_rage_4
+  - first:
+      213: 3767220069146416665
+    second: ares_endless_rage_5
+  - first:
+      213: -5973303044796803950
+    second: ares_endless_rage_6
+  - first:
+      213: 1304626265240171034
+    second: ares_endless_rage_7
+  - first:
+      213: -5549320511242909931
+    second: ares_endless_rage_8
+  - first:
+      213: 6169837337291099874
+    second: ares_endless_rage_9
+  - first:
+      213: -5742501958900250744
+    second: ares_endless_rage_10
+  - first:
+      213: 5985657863636603828
+    second: ares_endless_rage_11
+  - first:
+      213: 7840754728524702482
+    second: ares_endless_rage_12
+  - first:
+      213: -3592801429430179635
+    second: ares_endless_rage_13
+  - first:
+      213: -1170093537140212100
+    second: ares_endless_rage_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ares_endless_rage_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 587
+        width: 302
+        height: 300
+      alignment: 9
+      pivot: {x: 0.7346737, y: 0.24670511}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0b6fc724065110b0800000000000000
+      internalID: -5759727872582391025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ares_endless_rage_1
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 532
+        width: 263
+        height: 260
+      alignment: 9
+      pivot: {x: 0.48072287, y: 0.49654588}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f86539d8dc8d1e30800000000000000
+      internalID: 4475888467661121780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ares_endless_rage_2
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 501
+        width: 318
+        height: 323
+      alignment: 9
+      pivot: {x: 0.5302827, y: 0.49652344}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f99e835e4be54ce0800000000000000
+      internalID: -1421471385723692556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ares_endless_rage_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 489
+        width: 394
+        height: 398
+      alignment: 9
+      pivot: {x: 0.43787056, y: 0.43260983}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09a1fa6302e31f6f0800000000000000
+      internalID: -652672162914690416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ares_endless_rage_7
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 0
+        width: 442
+        height: 454
+      alignment: 9
+      pivot: {x: 0.48944947, y: 0.4987161}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88704c9b4e88e40b0800000000000000
+      internalID: -5742501958900250744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ares_endless_rage_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 406
+        height: 431
+      alignment: 9
+      pivot: {x: 0.54664624, y: 0.49912012}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b355151d14511350800000000000000
+      internalID: 5985657863636603828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ares_endless_rage_5
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 25
+        width: 384
+        height: 406
+      alignment: 9
+      pivot: {x: 0.500181, y: 0.46975437}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc86c4aa22ec32ec0800000000000000
+      internalID: -3592801429430179635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ares_endless_rage_6
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 27
+        width: 380
+        height: 403
+      alignment: 9
+      pivot: {x: 0.5009068, y: 0.4648426}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7ef6cc902ef2cfe0800000000000000
+      internalID: -1170093537140212100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 74849285abd86b64dae0979861d57793
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ares_endless_rage_0: -5759727872582391025
+      ares_endless_rage_1: 4475888467661121780
+      ares_endless_rage_12: 7840754728524702482
+      ares_endless_rage_2: -1421471385723692556
+      ares_endless_rage_3: -652672162914690416
+      ares_endless_rage_4: 5985657863636603828
+      ares_endless_rage_5: -3592801429430179635
+      ares_endless_rage_6: -1170093537140212100
+      ares_endless_rage_7: -5742501958900250744
+      ares_endless_rage_8: -5549320511242909931
+      ares_endless_rage_9: 6169837337291099874
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

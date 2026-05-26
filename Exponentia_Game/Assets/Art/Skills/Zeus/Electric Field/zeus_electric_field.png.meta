@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: 0eb724697beeb4f40b4b66c449fbfe40
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -555780859607091066
+    second: zeus_electric_field_0
+  - first:
+      213: 7674402503173506218
+    second: zeus_electric_field_1
+  - first:
+      213: 4291285722725959455
+    second: zeus_electric_field_2
+  - first:
+      213: 4586051793154008831
+    second: zeus_electric_field_3
+  - first:
+      213: -6429940194474268176
+    second: zeus_electric_field_4
+  - first:
+      213: -840873660693976064
+    second: zeus_electric_field_5
+  - first:
+      213: -1972618229811306501
+    second: zeus_electric_field_6
+  - first:
+      213: 4227034196452367392
+    second: zeus_electric_field_7
+  - first:
+      213: -2808701120327230438
+    second: zeus_electric_field_8
+  - first:
+      213: -3452571616514026909
+    second: zeus_electric_field_9
+  - first:
+      213: 9134611177647175707
+    second: zeus_electric_field_10
+  - first:
+      213: 2565073268553494042
+    second: zeus_electric_field_11
+  - first:
+      213: -6146279811586408540
+    second: zeus_electric_field_12
+  - first:
+      213: 7573159086521622632
+    second: zeus_electric_field_13
+  - first:
+      213: 6630715380246605805
+    second: zeus_electric_field_14
+  - first:
+      213: -7370349301417422715
+    second: zeus_electric_field_15
+  - first:
+      213: -7985019212701356417
+    second: zeus_electric_field_16
+  - first:
+      213: 3890884975862538305
+    second: zeus_electric_field_17
+  - first:
+      213: 97875813589586035
+    second: zeus_electric_field_18
+  - first:
+      213: 966002277892519164
+    second: zeus_electric_field_19
+  - first:
+      213: 1977192975901167729
+    second: zeus_electric_field_20
+  - first:
+      213: 7350530613997104180
+    second: zeus_electric_field_21
+  - first:
+      213: 7105379647574780408
+    second: zeus_electric_field_22
+  - first:
+      213: -1740095610470653313
+    second: zeus_electric_field_23
+  - first:
+      213: 7141776783410925625
+    second: zeus_electric_field_24
+  - first:
+      213: -8575926475030509382
+    second: zeus_electric_field_25
+  - first:
+      213: 3855151776207232895
+    second: zeus_electric_field_26
+  - first:
+      213: -3942244799791235725
+    second: zeus_electric_field_27
+  - first:
+      213: 671605962371374655
+    second: zeus_electric_field_28
+  - first:
+      213: 8562378612832668375
+    second: zeus_electric_field_29
+  - first:
+      213: 9190224500661840503
+    second: zeus_electric_field_30
+  - first:
+      213: 997060025048299684
+    second: zeus_electric_field_31
+  - first:
+      213: -73723014340079476
+    second: zeus_electric_field_32
+  - first:
+      213: 3114268118882804682
+    second: zeus_electric_field_33
+  - first:
+      213: 1516869032261649279
+    second: zeus_electric_field_34
+  - first:
+      213: -3130719776856311536
+    second: zeus_electric_field_35
+  - first:
+      213: -3069200040897614472
+    second: zeus_electric_field_36
+  - first:
+      213: 585574133495880335
+    second: zeus_electric_field_37
+  - first:
+      213: 6364538019711058700
+    second: zeus_electric_field_38
+  - first:
+      213: 4454111277569321409
+    second: zeus_electric_field_39
+  - first:
+      213: -7712421725351022071
+    second: zeus_electric_field_40
+  - first:
+      213: 2292227757679255574
+    second: zeus_electric_field_41
+  - first:
+      213: -6181666653639743324
+    second: zeus_electric_field_42
+  - first:
+      213: -3036577308491604089
+    second: zeus_electric_field_43
+  - first:
+      213: 6540564891229371478
+    second: zeus_electric_field_44
+  - first:
+      213: 280525338604608869
+    second: zeus_electric_field_45
+  - first:
+      213: 7097008072018123822
+    second: zeus_electric_field_46
+  - first:
+      213: 5724127211906603469
+    second: zeus_electric_field_47
+  - first:
+      213: -7097496161841285075
+    second: zeus_electric_field_48
+  - first:
+      213: -9208611751293821849
+    second: zeus_electric_field_49
+  - first:
+      213: -4580945999664892947
+    second: zeus_electric_field_50
+  - first:
+      213: -552588586402679871
+    second: zeus_electric_field_51
+  - first:
+      213: 169678673896394532
+    second: zeus_electric_field_52
+  - first:
+      213: 7392602459837826201
+    second: zeus_electric_field_53
+  - first:
+      213: 6332601356281089771
+    second: zeus_electric_field_54
+  - first:
+      213: -8892147244772608235
+    second: zeus_electric_field_55
+  - first:
+      213: 5490730679560193115
+    second: zeus_electric_field_56
+  - first:
+      213: 4323599928953171722
+    second: zeus_electric_field_57
+  - first:
+      213: -4766842931499753756
+    second: zeus_electric_field_58
+  - first:
+      213: -8502167444568450987
+    second: zeus_electric_field_59
+  - first:
+      213: -1422738889423243281
+    second: zeus_electric_field_60
+  - first:
+      213: 4919613956761855237
+    second: zeus_electric_field_61
+  - first:
+      213: -7867539230141986996
+    second: zeus_electric_field_62
+  - first:
+      213: 2548217437758242877
+    second: zeus_electric_field_63
+  - first:
+      213: -3022851059502902542
+    second: zeus_electric_field_64
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: zeus_electric_field_2
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 689
+        width: 290
+        height: 301
+      alignment: 9
+      pivot: {x: 0.49563873, y: 0.4867941}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00c6a595cdd9454f0800000000000000
+      internalID: -840873660693976064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zeus_electric_field_3
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 681
+        width: 314
+        height: 337
+      alignment: 9
+      pivot: {x: 0.48069152, y: 0.457542}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bff13aedb2adf94e0800000000000000
+      internalID: -1972618229811306501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zeus_electric_field_1
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 710
+        width: 290
+        height: 282
+      alignment: 9
+      pivot: {x: 0.5330416, y: 0.45100695}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58057723c5247b990800000000000000
+      internalID: -7370349301417422715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zeus_electric_field_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 714
+        width: 257
+        height: 268
+      alignment: 9
+      pivot: {x: 0.50941914, y: 0.45935354}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3e1e208016025900800000000000000
+      internalID: 671605962371374655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zeus_electric_field_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 303
+        width: 301
+        height: 311
+      alignment: 9
+      pivot: {x: 0.51742834, y: 0.4878176}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5173cd8813fb89480800000000000000
+      internalID: -8892147244772608235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zeus_electric_field_5
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 298
+        width: 309
+        height: 320
+      alignment: 9
+      pivot: {x: 0.49508914, y: 0.48916072}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b544680467ef23c40800000000000000
+      internalID: 5490730679560193115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zeus_electric_field_6
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 297
+        width: 306
+        height: 322
+      alignment: 9
+      pivot: {x: 0.49675676, y: 0.49075365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0f682c5a33800c30800000000000000
+      internalID: 4323599928953171722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zeus_electric_field_7
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 296
+        width: 311
+        height: 308
+      alignment: 9
+      pivot: {x: 0.48246074, y: 0.5059029}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe73bcf948a614ce0800000000000000
+      internalID: -1422738889423243281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 751a528f51ca5c54ab846c3a13ec2f9f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      zeus_electric_field_0: 671605962371374655
+      zeus_electric_field_1: -7370349301417422715
+      zeus_electric_field_10: 9134611177647175707
+      zeus_electric_field_12: -6146279811586408540
+      zeus_electric_field_13: 7573159086521622632
+      zeus_electric_field_14: 6630715380246605805
+      zeus_electric_field_16: -7985019212701356417
+      zeus_electric_field_17: 3890884975862538305
+      zeus_electric_field_18: 97875813589586035
+      zeus_electric_field_19: 966002277892519164
+      zeus_electric_field_2: -840873660693976064
+      zeus_electric_field_20: 1977192975901167729
+      zeus_electric_field_21: 7350530613997104180
+      zeus_electric_field_22: 7105379647574780408
+      zeus_electric_field_23: -1740095610470653313
+      zeus_electric_field_24: 7141776783410925625
+      zeus_electric_field_25: -8575926475030509382
+      zeus_electric_field_26: 3855151776207232895
+      zeus_electric_field_27: -3942244799791235725
+      zeus_electric_field_29: 8562378612832668375
+      zeus_electric_field_3: -1972618229811306501
+      zeus_electric_field_30: 9190224500661840503
+      zeus_electric_field_31: 997060025048299684
+      zeus_electric_field_32: -73723014340079476
+      zeus_electric_field_33: 3114268118882804682
+      zeus_electric_field_34: 1516869032261649279
+      zeus_electric_field_35: -3130719776856311536
+      zeus_electric_field_36: -3069200040897614472
+      zeus_electric_field_37: 585574133495880335
+      zeus_electric_field_38: 6364538019711058700
+      zeus_electric_field_39: 4454111277569321409
+      zeus_electric_field_4: -8892147244772608235
+      zeus_electric_field_40: -7712421725351022071
+      zeus_electric_field_41: 2292227757679255574
+      zeus_electric_field_42: -6181666653639743324
+      zeus_electric_field_43: -3036577308491604089
+      zeus_electric_field_44: 6540564891229371478
+      zeus_electric_field_45: 280525338604608869
+      zeus_electric_field_46: 7097008072018123822
+      zeus_electric_field_47: 5724127211906603469
+      zeus_electric_field_48: -7097496161841285075
+      zeus_electric_field_49: -9208611751293821849
+      zeus_electric_field_5: 5490730679560193115
+      zeus_electric_field_50: -4580945999664892947
+      zeus_electric_field_51: -552588586402679871
+      zeus_electric_field_52: 169678673896394532
+      zeus_electric_field_53: 7392602459837826201
+      zeus_electric_field_54: 6332601356281089771
+      zeus_electric_field_58: -4766842931499753756
+      zeus_electric_field_59: -8502167444568450987
+      zeus_electric_field_6: 4323599928953171722
+      zeus_electric_field_61: 4919613956761855237
+      zeus_electric_field_62: -7867539230141986996
+      zeus_electric_field_63: 2548217437758242877
+      zeus_electric_field_64: -3022851059502902542
+      zeus_electric_field_7: -1422738889423243281
+      zeus_electric_field_8: -2808701120327230438
+      zeus_electric_field_9: -3452571616514026909
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

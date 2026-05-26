@@ -192,10 +192,9 @@ namespace Exponentia.InventorySystem
             }
 
             skillInventory.Add(skill);
-            if (equippedSkill == null)
-            {
-                equippedSkill = skill;
-            }
+
+            // Yeni gelen skill, aktif skill slotunu her zaman devralir.
+            equippedSkill = skill;
 
             SyncEquippedSkillToPlayerAttack();
 

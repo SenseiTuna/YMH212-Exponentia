@@ -1,0 +1,330 @@
+fileFormatVersion: 2
+guid: 08e6c8cfcc11d564fb007c37339b0cf4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1882633355028981427
+    second: zeus_wrath_of_the_zeus_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: zeus_wrath_of_the_zeus_0
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 875
+        width: 140
+        height: 150
+      alignment: 9
+      pivot: {x: 0.50707245, y: 0.4559969}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b6edc0df05702a10800000000000000
+      internalID: 1882633355028981427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zeus_wrath_of_the_zeus_1
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 798
+        width: 284
+        height: 292
+      alignment: 9
+      pivot: {x: 0.5105781, y: 0.4978109}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f8459f2e535a03458ccc5fadaf4db1c
+      internalID: -1418063924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zeus_wrath_of_the_zeus_2
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 767
+        width: 306
+        height: 343
+      alignment: 9
+      pivot: {x: 0.50053537, y: 0.5181677}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f63ff572acea3648a0082c6e7e91383
+      internalID: -747852564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zeus_wrath_of_the_zeus_3
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 763
+        width: 312
+        height: 367
+      alignment: 9
+      pivot: {x: 0.49604172, y: 0.488704}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02f26e6bb53916446b41b78c0a38db86
+      internalID: 221756373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zeus_wrath_of_the_zeus_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 146
+        width: 309
+        height: 367
+      alignment: 9
+      pivot: {x: 0.49913093, y: 0.48780537}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b1f2b7930b1ac4f9109a4f862df0a6
+      internalID: -559889955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zeus_wrath_of_the_zeus_5
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 148
+        width: 305
+        height: 340
+      alignment: 9
+      pivot: {x: 0.50073975, y: 0.51574904}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e73470f7131e4c4f92288884a1efcee
+      internalID: 1657646138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zeus_wrath_of_the_zeus_6
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 185
+        width: 266
+        height: 287
+      alignment: 9
+      pivot: {x: 0.49052808, y: 0.48737764}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a80e0c45ae184404885bbdc31bc4a46a
+      internalID: 797831921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zeus_wrath_of_the_zeus_7
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 179
+        width: 284
+        height: 306
+      alignment: 9
+      pivot: {x: 0.51314235, y: 0.4757441}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38974001cf22f43488eaf03e339014ae
+      internalID: -594390120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ca825d1cf90a2d14dbc5d2b741517b98
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      zeus_wrath_of_the_zeus_0: 1882633355028981427
+      zeus_wrath_of_the_zeus_1: -1418063924
+      zeus_wrath_of_the_zeus_2: -747852564
+      zeus_wrath_of_the_zeus_3: 221756373
+      zeus_wrath_of_the_zeus_4: -559889955
+      zeus_wrath_of_the_zeus_5: 1657646138
+      zeus_wrath_of_the_zeus_6: 797831921
+      zeus_wrath_of_the_zeus_7: -594390120
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

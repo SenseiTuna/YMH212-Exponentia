@@ -1,0 +1,423 @@
+fileFormatVersion: 2
+guid: 4594d2cb5d68ae446b6c2b70945d38fd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -536417198943391865
+    second: poseidon_tsunami_wave_0
+  - first:
+      213: 2210407610964953406
+    second: poseidon_tsunami_wave_1
+  - first:
+      213: 6754057779887271019
+    second: poseidon_tsunami_wave_2
+  - first:
+      213: 5870414837901306742
+    second: poseidon_tsunami_wave_3
+  - first:
+      213: -4777740409514448850
+    second: poseidon_tsunami_wave_4
+  - first:
+      213: 8946319231108374951
+    second: poseidon_tsunami_wave_5
+  - first:
+      213: -1051041339352976097
+    second: poseidon_tsunami_wave_6
+  - first:
+      213: 5069003296141123486
+    second: poseidon_tsunami_wave_7
+  - first:
+      213: 3968032324386165037
+    second: poseidon_tsunami_wave_8
+  - first:
+      213: 3210450380142051025
+    second: poseidon_tsunami_wave_9
+  - first:
+      213: 942023242477509204
+    second: poseidon_tsunami_wave_10
+  - first:
+      213: -4744063964779716113
+    second: poseidon_tsunami_wave_11
+  - first:
+      213: 6619149228002677857
+    second: poseidon_tsunami_wave_12
+  - first:
+      213: -7389064678540342050
+    second: poseidon_tsunami_wave_13
+  - first:
+      213: -1114142074939151829
+    second: poseidon_tsunami_wave_14
+  - first:
+      213: 128313221489639262
+    second: poseidon_tsunami_wave_15
+  - first:
+      213: -8578326730812486644
+    second: poseidon_tsunami_wave_16
+  - first:
+      213: 8344819832615828310
+    second: poseidon_tsunami_wave_17
+  - first:
+      213: 2314984633813721614
+    second: poseidon_tsunami_wave_18
+  - first:
+      213: 4999813364244296741
+    second: poseidon_tsunami_wave_19
+  - first:
+      213: 7349504624063709510
+    second: poseidon_tsunami_wave_20
+  - first:
+      213: 2308113596648460745
+    second: poseidon_tsunami_wave_21
+  - first:
+      213: -6590217245567456442
+    second: poseidon_tsunami_wave_22
+  - first:
+      213: 7632292469903840168
+    second: poseidon_tsunami_wave_23
+  - first:
+      213: -991019215213488017
+    second: poseidon_tsunami_wave_24
+  - first:
+      213: -1314932745067960461
+    second: poseidon_tsunami_wave_25
+  - first:
+      213: 7370828709080684734
+    second: poseidon_tsunami_wave_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: poseidon_tsunami_wave_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 730
+        width: 218
+        height: 313
+      alignment: 9
+      pivot: {x: 0.53934526, y: 0.075106196}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78fa19d46634e88f0800000000000000
+      internalID: -536417198943391865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poseidon_tsunami_wave_1
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 722
+        width: 220
+        height: 337
+      alignment: 9
+      pivot: {x: 0.49271628, y: 0.07854971}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e39c26cc202fcae10800000000000000
+      internalID: 2210407610964953406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poseidon_tsunami_wave_2
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 698
+        width: 288
+        height: 380
+      alignment: 9
+      pivot: {x: 0.5057036, y: 0.12670176}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6ce4aa24cb3bbd50800000000000000
+      internalID: 6754057779887271019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poseidon_tsunami_wave_3
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 688
+        width: 324
+        height: 566
+      alignment: 9
+      pivot: {x: 0.49792743, y: 0.09846696}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e28acdd396e02bdb0800000000000000
+      internalID: -4777740409514448850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poseidon_tsunami_wave_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 305
+        height: 541
+      alignment: 9
+      pivot: {x: 0.5093199, y: 0.38440898}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe1e29b85f2b92eb0800000000000000
+      internalID: -4744063964779716113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poseidon_tsunami_wave_5
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 108
+        width: 318
+        height: 512
+      alignment: 9
+      pivot: {x: 0.4948742, y: 0.11371368}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16496623721fbdb50800000000000000
+      internalID: 6619149228002677857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poseidon_tsunami_wave_6
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 111
+        width: 290
+        height: 414
+      alignment: 9
+      pivot: {x: 0.4907044, y: 0.20188929}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2a6fe19fa5c980f0800000000000000
+      internalID: -1114142074939151829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poseidon_tsunami_wave_7
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 100
+        width: 280
+        height: 392
+      alignment: 9
+      pivot: {x: 0.5259282, y: 0.2407188}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65b73bdcc61cec370800000000000000
+      internalID: 8344819832615828310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1be6f2dd01f99b5488bfa212f7910f7f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      poseidon_tsunami_wave_0: -536417198943391865
+      poseidon_tsunami_wave_1: 2210407610964953406
+      poseidon_tsunami_wave_10: 942023242477509204
+      poseidon_tsunami_wave_13: -7389064678540342050
+      poseidon_tsunami_wave_15: 128313221489639262
+      poseidon_tsunami_wave_16: -8578326730812486644
+      poseidon_tsunami_wave_18: 2314984633813721614
+      poseidon_tsunami_wave_19: 4999813364244296741
+      poseidon_tsunami_wave_2: 6754057779887271019
+      poseidon_tsunami_wave_20: 7349504624063709510
+      poseidon_tsunami_wave_21: 2308113596648460745
+      poseidon_tsunami_wave_22: -6590217245567456442
+      poseidon_tsunami_wave_23: 7632292469903840168
+      poseidon_tsunami_wave_24: -991019215213488017
+      poseidon_tsunami_wave_25: -1314932745067960461
+      poseidon_tsunami_wave_26: 7370828709080684734
+      poseidon_tsunami_wave_3: -4777740409514448850
+      poseidon_tsunami_wave_4: -4744063964779716113
+      poseidon_tsunami_wave_5: 6619149228002677857
+      poseidon_tsunami_wave_6: -1114142074939151829
+      poseidon_tsunami_wave_7: 8344819832615828310
+      poseidon_tsunami_wave_8: 3968032324386165037
+      poseidon_tsunami_wave_9: 3210450380142051025
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

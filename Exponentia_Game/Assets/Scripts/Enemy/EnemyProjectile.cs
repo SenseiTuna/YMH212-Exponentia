@@ -16,6 +16,8 @@ public class EnemyProjectile : MonoBehaviour
     private bool useExplosion;
     private bool hasExploded;
     private bool reflectedToEnemies;
+    private float timeShiftSpeedMultiplier = 1f;
+    private Coroutine timeShiftSpeedRoutine;
     private float curveElapsedTime;
     private float curveDuration;
     private float explosionRadius;
@@ -99,7 +101,7 @@ public class EnemyProjectile : MonoBehaviour
             return;
         }
 
-        transform.position += (Vector3)(velocity * Time.deltaTime);
+        transform.position += (Vector3)(velocity * timeShiftSpeedMultiplier * Time.deltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -176,9 +178,24 @@ public class EnemyProjectile : MonoBehaviour
         ApplyVisualState();
     }
 
+    public void ApplyTimeShiftSpeedMultiplier(float multiplier, float duration)
+    {
+        if (multiplier <= 0f || duration <= 0f)
+        {
+            return;
+        }
+
+        if (timeShiftSpeedRoutine != null)
+        {
+            StopCoroutine(timeShiftSpeedRoutine);
+        }
+
+        timeShiftSpeedRoutine = StartCoroutine(TimeShiftSpeedRoutine(multiplier, duration));
+    }
+
     private void UpdateCurvedPath()
     {
-        curveElapsedTime += Time.deltaTime;
+        curveElapsedTime += Time.deltaTime * timeShiftSpeedMultiplier;
         float t = Mathf.Clamp01(curveElapsedTime / curveDuration);
 
         Vector2 firstLerp = Vector2.Lerp(curveStartPoint, curveControlPoint, t);
@@ -289,5 +306,13 @@ public class EnemyProjectile : MonoBehaviour
         }
 
         transform.localScale = Vector3.one * projectileSize;
+    }
+
+    private System.Collections.IEnumerator TimeShiftSpeedRoutine(float multiplier, float duration)
+    {
+        timeShiftSpeedMultiplier = Mathf.Clamp01(multiplier);
+        yield return new WaitForSeconds(Mathf.Max(0.05f, duration));
+        timeShiftSpeedMultiplier = 1f;
+        timeShiftSpeedRoutine = null;
     }
 }

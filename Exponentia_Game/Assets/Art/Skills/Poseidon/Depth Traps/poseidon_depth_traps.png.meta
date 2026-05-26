@@ -1,0 +1,618 @@
+fileFormatVersion: 2
+guid: ca171776882ed304e9611d6d16dddc19
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 28685236626963374
+    second: poseidon_depth_traps_0
+  - first:
+      213: -4895550792738767024
+    second: poseidon_depth_traps_1
+  - first:
+      213: 6211112712061175584
+    second: poseidon_depth_traps_2
+  - first:
+      213: -7767480264691786381
+    second: poseidon_depth_traps_3
+  - first:
+      213: 8006171507589955536
+    second: poseidon_depth_traps_4
+  - first:
+      213: 3630713807612923371
+    second: poseidon_depth_traps_5
+  - first:
+      213: -4407913472243020033
+    second: poseidon_depth_traps_6
+  - first:
+      213: -5116892527777650195
+    second: poseidon_depth_traps_7
+  - first:
+      213: -681128207298633496
+    second: poseidon_depth_traps_8
+  - first:
+      213: 6223021801141694098
+    second: poseidon_depth_traps_9
+  - first:
+      213: 5041623518477911884
+    second: poseidon_depth_traps_10
+  - first:
+      213: 4637432931209801159
+    second: poseidon_depth_traps_11
+  - first:
+      213: -2869447282095801357
+    second: poseidon_depth_traps_12
+  - first:
+      213: -1463480609260131626
+    second: poseidon_depth_traps_13
+  - first:
+      213: -4607401298821283437
+    second: poseidon_depth_traps_14
+  - first:
+      213: 1856062313070500142
+    second: poseidon_depth_traps_15
+  - first:
+      213: -2511082646265719637
+    second: poseidon_depth_traps_16
+  - first:
+      213: -4771701175885844586
+    second: poseidon_depth_traps_17
+  - first:
+      213: -3304706690648839001
+    second: poseidon_depth_traps_18
+  - first:
+      213: -5332169896117986162
+    second: poseidon_depth_traps_19
+  - first:
+      213: 2838612143566449263
+    second: poseidon_depth_traps_20
+  - first:
+      213: -3360436825127172881
+    second: poseidon_depth_traps_21
+  - first:
+      213: 5518726264619486565
+    second: poseidon_depth_traps_22
+  - first:
+      213: -7256879892148761073
+    second: poseidon_depth_traps_23
+  - first:
+      213: -4288775352055654754
+    second: poseidon_depth_traps_24
+  - first:
+      213: 8662539969025669758
+    second: poseidon_depth_traps_25
+  - first:
+      213: 7519365131318824550
+    second: poseidon_depth_traps_26
+  - first:
+      213: 7164380297955741665
+    second: poseidon_depth_traps_27
+  - first:
+      213: 5641476843284154681
+    second: poseidon_depth_traps_28
+  - first:
+      213: -3733797012387469488
+    second: poseidon_depth_traps_29
+  - first:
+      213: -5260878222170870582
+    second: poseidon_depth_traps_30
+  - first:
+      213: -83769042629913028
+    second: poseidon_depth_traps_31
+  - first:
+      213: -887447187638647030
+    second: poseidon_depth_traps_32
+  - first:
+      213: 5537937152287537532
+    second: poseidon_depth_traps_33
+  - first:
+      213: -7546016563863455745
+    second: poseidon_depth_traps_34
+  - first:
+      213: -8317473398707903119
+    second: poseidon_depth_traps_35
+  - first:
+      213: -512056898851807196
+    second: poseidon_depth_traps_36
+  - first:
+      213: 2795672048295516718
+    second: poseidon_depth_traps_37
+  - first:
+      213: 7975075423571018488
+    second: poseidon_depth_traps_38
+  - first:
+      213: -6332012612934848993
+    second: poseidon_depth_traps_39
+  - first:
+      213: 5186149873116413197
+    second: poseidon_depth_traps_40
+  - first:
+      213: 2099545529274504173
+    second: poseidon_depth_traps_41
+  - first:
+      213: 2844288995733869259
+    second: poseidon_depth_traps_42
+  - first:
+      213: -1330552802512282894
+    second: poseidon_depth_traps_43
+  - first:
+      213: -7248208107517087150
+    second: poseidon_depth_traps_44
+  - first:
+      213: -6649464778556951473
+    second: poseidon_depth_traps_45
+  - first:
+      213: -793864484442491879
+    second: poseidon_depth_traps_46
+  - first:
+      213: 7084974809754592251
+    second: poseidon_depth_traps_47
+  - first:
+      213: -5384728855122161540
+    second: poseidon_depth_traps_48
+  - first:
+      213: 9155228543803986343
+    second: poseidon_depth_traps_49
+  - first:
+      213: -2154279649416068
+    second: poseidon_depth_traps_50
+  - first:
+      213: -3762953711008158587
+    second: poseidon_depth_traps_51
+  - first:
+      213: -3157365265823764018
+    second: poseidon_depth_traps_52
+  - first:
+      213: 8360471276978048396
+    second: poseidon_depth_traps_53
+  - first:
+      213: -7278092186810698048
+    second: poseidon_depth_traps_54
+  - first:
+      213: 7551886377088991242
+    second: poseidon_depth_traps_55
+  - first:
+      213: -6120805772867250010
+    second: poseidon_depth_traps_56
+  - first:
+      213: 8576289161839425353
+    second: poseidon_depth_traps_57
+  - first:
+      213: -709984849633056335
+    second: poseidon_depth_traps_58
+  - first:
+      213: -29740655822701954
+    second: poseidon_depth_traps_59
+  - first:
+      213: -8473451605410152424
+    second: poseidon_depth_traps_60
+  - first:
+      213: -8820316456935033087
+    second: poseidon_depth_traps_61
+  - first:
+      213: -8129150712578003339
+    second: poseidon_depth_traps_62
+  - first:
+      213: -8081391423403552742
+    second: poseidon_depth_traps_63
+  - first:
+      213: -5379650201469377773
+    second: poseidon_depth_traps_64
+  - first:
+      213: 5450195787357448610
+    second: poseidon_depth_traps_65
+  - first:
+      213: -4478139223559869003
+    second: poseidon_depth_traps_66
+  - first:
+      213: 7035193673758320792
+    second: poseidon_depth_traps_67
+  - first:
+      213: -2683210366523428889
+    second: poseidon_depth_traps_68
+  - first:
+      213: -1665071644622336460
+    second: poseidon_depth_traps_69
+  - first:
+      213: -6687884085123064295
+    second: poseidon_depth_traps_70
+  - first:
+      213: -13048330071843003
+    second: poseidon_depth_traps_71
+  - first:
+      213: 1791698427968571054
+    second: poseidon_depth_traps_72
+  - first:
+      213: 1326383347369636012
+    second: poseidon_depth_traps_73
+  - first:
+      213: 4385654603787993197
+    second: poseidon_depth_traps_74
+  - first:
+      213: 2696792285065828428
+    second: poseidon_depth_traps_75
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: poseidon_depth_traps_2
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 540
+        width: 358
+        height: 217
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5407206}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05f7ce2ed728f0cb0800000000000000
+      internalID: -4895550792738767024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poseidon_depth_traps_3
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 536
+        width: 372
+        height: 235
+      alignment: 9
+      pivot: {x: 0.49773744, y: 0.5196962}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37d50376add543490800000000000000
+      internalID: -7767480264691786381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poseidon_depth_traps_1
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 553
+        width: 337
+        height: 204
+      alignment: 9
+      pivot: {x: 0.50462276, y: 0.52672863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bedcfdfb8f2e26230800000000000000
+      internalID: 3630713807612923371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poseidon_depth_traps_0
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 573
+        width: 273
+        height: 165
+      alignment: 9
+      pivot: {x: 0.49364674, y: 0.53573775}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c47812ed0e177f540800000000000000
+      internalID: 5041623518477911884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poseidon_depth_traps_6
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 61
+        width: 434
+        height: 349
+      alignment: 9
+      pivot: {x: 0.49612188, y: 0.46021274}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de39a26f885132d10800000000000000
+      internalID: 2099545529274504173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poseidon_depth_traps_5
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 74
+        width: 410
+        height: 288
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5058442}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fada53964de88de0800000000000000
+      internalID: -1330552802512282894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poseidon_depth_traps_4
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 80
+        width: 397
+        height: 261
+      alignment: 9
+      pivot: {x: 0.5063593, y: 0.5096732}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf3630a3d03e25260800000000000000
+      internalID: 7084974809754592251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poseidon_depth_traps_7
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 0
+        width: 433
+        height: 367
+      alignment: 9
+      pivot: {x: 0.47376192, y: 0.6112144}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7cefbea1b858fff0800000000000000
+      internalID: -2154279649416068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 02346fa255a87f8498dc01410190b85f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      poseidon_depth_traps_0: 5041623518477911884
+      poseidon_depth_traps_1: 3630713807612923371
+      poseidon_depth_traps_11: 4637432931209801159
+      poseidon_depth_traps_12: -2869447282095801357
+      poseidon_depth_traps_13: -1463480609260131626
+      poseidon_depth_traps_14: -4607401298821283437
+      poseidon_depth_traps_15: 1856062313070500142
+      poseidon_depth_traps_16: -2511082646265719637
+      poseidon_depth_traps_17: -4771701175885844586
+      poseidon_depth_traps_18: -3304706690648839001
+      poseidon_depth_traps_19: -5332169896117986162
+      poseidon_depth_traps_2: -4895550792738767024
+      poseidon_depth_traps_20: 2838612143566449263
+      poseidon_depth_traps_21: -3360436825127172881
+      poseidon_depth_traps_22: 5518726264619486565
+      poseidon_depth_traps_23: -7256879892148761073
+      poseidon_depth_traps_24: -4288775352055654754
+      poseidon_depth_traps_25: 8662539969025669758
+      poseidon_depth_traps_26: 7519365131318824550
+      poseidon_depth_traps_27: 7164380297955741665
+      poseidon_depth_traps_28: 5641476843284154681
+      poseidon_depth_traps_29: -3733797012387469488
+      poseidon_depth_traps_3: -7767480264691786381
+      poseidon_depth_traps_30: -5260878222170870582
+      poseidon_depth_traps_31: -83769042629913028
+      poseidon_depth_traps_32: -887447187638647030
+      poseidon_depth_traps_33: 5537937152287537532
+      poseidon_depth_traps_34: -7546016563863455745
+      poseidon_depth_traps_35: -8317473398707903119
+      poseidon_depth_traps_36: -512056898851807196
+      poseidon_depth_traps_37: 2795672048295516718
+      poseidon_depth_traps_38: 7975075423571018488
+      poseidon_depth_traps_39: -6332012612934848993
+      poseidon_depth_traps_4: 7084974809754592251
+      poseidon_depth_traps_40: 5186149873116413197
+      poseidon_depth_traps_42: 2844288995733869259
+      poseidon_depth_traps_44: -7248208107517087150
+      poseidon_depth_traps_45: -6649464778556951473
+      poseidon_depth_traps_46: -793864484442491879
+      poseidon_depth_traps_48: -5384728855122161540
+      poseidon_depth_traps_49: 9155228543803986343
+      poseidon_depth_traps_5: -1330552802512282894
+      poseidon_depth_traps_51: -3762953711008158587
+      poseidon_depth_traps_52: -3157365265823764018
+      poseidon_depth_traps_53: 8360471276978048396
+      poseidon_depth_traps_54: -7278092186810698048
+      poseidon_depth_traps_55: 7551886377088991242
+      poseidon_depth_traps_56: -6120805772867250010
+      poseidon_depth_traps_57: 8576289161839425353
+      poseidon_depth_traps_58: -709984849633056335
+      poseidon_depth_traps_59: -29740655822701954
+      poseidon_depth_traps_6: 2099545529274504173
+      poseidon_depth_traps_60: -8473451605410152424
+      poseidon_depth_traps_61: -8820316456935033087
+      poseidon_depth_traps_62: -8129150712578003339
+      poseidon_depth_traps_63: -8081391423403552742
+      poseidon_depth_traps_64: -5379650201469377773
+      poseidon_depth_traps_65: 5450195787357448610
+      poseidon_depth_traps_66: -4478139223559869003
+      poseidon_depth_traps_67: 7035193673758320792
+      poseidon_depth_traps_68: -2683210366523428889
+      poseidon_depth_traps_69: -1665071644622336460
+      poseidon_depth_traps_7: -2154279649416068
+      poseidon_depth_traps_70: -6687884085123064295
+      poseidon_depth_traps_71: -13048330071843003
+      poseidon_depth_traps_72: 1791698427968571054
+      poseidon_depth_traps_73: 1326383347369636012
+      poseidon_depth_traps_74: 4385654603787993197
+      poseidon_depth_traps_75: 2696792285065828428
+      poseidon_depth_traps_8: -681128207298633496
+      poseidon_depth_traps_9: 6223021801141694098
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

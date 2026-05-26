@@ -554,10 +554,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95be78963494843f7a5549bbdbb3591f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZeusSkill
-  skillName: Zeus
-  skillDescription: Gokyuzunden cagrilan yildirim temelli aktif skill.
+  skillName: Zeus Lightning Strike
+  skillDescription: Gokyuzunden cagrilan hizli bir yildirim vurusu.
   godSkillType: 1
-  skillIcon: {fileID: 7091687155753810841, guid: 23213466e6c6746a39df99ae707dba80, type: 3}
+  skillIcon: {fileID: -674937221467695307, guid: 9265c881aa19a444da3cf4eec1e60e0b, type: 3}
   isUnlocked: 1
   skillLevel: 1
   maxSkillLevel: 5
@@ -566,7 +566,12 @@ MonoBehaviour:
   lightningDamage: 30
   chainRadius: 3
   maxChainCount: 3
-  stunDuration: 0.6
+  lightningStrikeController: {fileID: 9100000, guid: 42d478f30d6256e4b9b553898f101ab2, type: 2}
+  lightningStrikeFirstFrame: {fileID: -674937221467695307, guid: 9265c881aa19a444da3cf4eec1e60e0b, type: 3}
+  animationLifetime: 0.85
+  animationOffset: {x: 0, y: 2.6}
+  animationScale: 1.6
+  animationSortingOrder: 500
   killAttackSpeedPerStack: 0.15
   maxKillStacks: 5
   killStackDuration: 4

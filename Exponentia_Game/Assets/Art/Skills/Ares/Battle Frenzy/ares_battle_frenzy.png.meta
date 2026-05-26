@@ -1,0 +1,372 @@
+fileFormatVersion: 2
+guid: 7205abd35167e7b4ca2cfd2da838eaf5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1523605821346445152
+    second: ares_battle_frenzy_0
+  - first:
+      213: 6737327724149631147
+    second: ares_battle_frenzy_1
+  - first:
+      213: -4507568714882878580
+    second: ares_battle_frenzy_2
+  - first:
+      213: -6043017002503533336
+    second: ares_battle_frenzy_3
+  - first:
+      213: -8980650682235038562
+    second: ares_battle_frenzy_4
+  - first:
+      213: 1836051549901037324
+    second: ares_battle_frenzy_5
+  - first:
+      213: 6238671355121652578
+    second: ares_battle_frenzy_6
+  - first:
+      213: -5700874930839425770
+    second: ares_battle_frenzy_7
+  - first:
+      213: 4669153923281295002
+    second: ares_battle_frenzy_8
+  - first:
+      213: -2491745180432424807
+    second: ares_battle_frenzy_9
+  - first:
+      213: -3581802421511194514
+    second: ares_battle_frenzy_10
+  - first:
+      213: 7399575254977622741
+    second: ares_battle_frenzy_11
+  - first:
+      213: -1896757324474649371
+    second: ares_battle_frenzy_12
+  - first:
+      213: 3527394498097099031
+    second: ares_battle_frenzy_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ares_battle_frenzy_0
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 915
+        width: 108
+        height: 137
+      alignment: 9
+      pivot: {x: 0.5501962, y: 0.40563965}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a88de0f3901bdae0800000000000000
+      internalID: -1523605821346445152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ares_battle_frenzy_1
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 836
+        width: 298
+        height: 274
+      alignment: 9
+      pivot: {x: 0.52206177, y: 0.48951843}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba864558edbcf7d50800000000000000
+      internalID: 6737327724149631147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ares_battle_frenzy_2
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 812
+        width: 328
+        height: 348
+      alignment: 9
+      pivot: {x: 0.49044985, y: 0.4076403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ec8122bd04e22ca0800000000000000
+      internalID: -6043017002503533336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ares_battle_frenzy_3
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 775
+        width: 356
+        height: 445
+      alignment: 9
+      pivot: {x: 0.49155933, y: 0.3932473}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e94d28939c15e5380800000000000000
+      internalID: -8980650682235038562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ares_battle_frenzy_4
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 315
+        width: 294
+        height: 434
+      alignment: 9
+      pivot: {x: 0.5020901, y: 0.40157005}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e68f032cca1ea4ec0800000000000000
+      internalID: -3581802421511194514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ares_battle_frenzy_5
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 289
+        width: 329
+        height: 462
+      alignment: 9
+      pivot: {x: 0.49441972, y: 0.4315027}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d236b16d7290b660800000000000000
+      internalID: 7399575254977622741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ares_battle_frenzy_6
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 292
+        width: 306
+        height: 417
+      alignment: 9
+      pivot: {x: 0.48208398, y: 0.43419144}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e47199434d5da5e0800000000000000
+      internalID: -1896757324474649371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ares_battle_frenzy_7
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 296
+        width: 339
+        height: 411
+      alignment: 9
+      pivot: {x: 0.5000137, y: 0.4546488}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 711beb96b92d3f030800000000000000
+      internalID: 3527394498097099031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5730c34e934adea47a2866bda045134b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      3: -8980650682235038562
+      ares_battle_frenzy_0: -1523605821346445152
+      ares_battle_frenzy_1: 6737327724149631147
+      ares_battle_frenzy_2: -6043017002503533336
+      ares_battle_frenzy_3: -8980650682235038562
+      ares_battle_frenzy_4: -3581802421511194514
+      ares_battle_frenzy_5: 7399575254977622741
+      ares_battle_frenzy_6: -1896757324474649371
+      ares_battle_frenzy_7: 3527394498097099031
+      ares_battle_frenzy_8: 4669153923281295002
+      ares_battle_frenzy_9: -2491745180432424807
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

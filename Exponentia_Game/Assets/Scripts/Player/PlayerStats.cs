@@ -58,8 +58,12 @@ namespace Exponentia.Player
         [Header("Runtime Resources")]
         [SerializeField] private float currentHealth;
 
+        [Header("Economy")]
+        [SerializeField] private int gold = 100; // Oyuncu varsayılan olarak 100 altınla başlar
+
         public float MaxHealth { get => maxHealth; set => maxHealth = Mathf.Max(0f, value); }
         public float CurrentHealth { get => currentHealth; set => currentHealth = Mathf.Clamp(value, 0f, maxHealth); }
+        public int Gold { get => gold; set => gold = Mathf.Max(0, value); }
         public float Damage { get => damage; set => damage = Mathf.Max(0f, value); }
         public float MoveSpeed { get => moveSpeed; set => moveSpeed = Mathf.Max(0f, value); }
         public float AttackSpeed { get => attackSpeed; set => attackSpeed = Mathf.Max(0f, value); }

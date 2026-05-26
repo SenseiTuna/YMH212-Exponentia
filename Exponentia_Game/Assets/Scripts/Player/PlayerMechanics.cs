@@ -284,6 +284,8 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
             appliedDamage = damageable.TakeDamage(totalDamage);
         }
 
+        Debug.Log($"PlayerMechanics.DealDamage: Attacker={gameObject.name}, Target={target.name}, TotalDamage={totalDamage}, AppliedDamage={appliedDamage}");
+
         // Notify subscribers that damage was dealt
         if (appliedDamage > 0f)
         {

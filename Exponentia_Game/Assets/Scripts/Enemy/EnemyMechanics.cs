@@ -76,6 +76,9 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
     private Coroutine deathRoutine;
     private DamageFlashFeedback damageFlashFeedback;
     private KnockbackReceiver2D knockbackReceiver;
+    private Coroutine timeShiftMoveSpeedRoutine;
+    private bool timeShiftMoveSpeedActive;
+    private float timeShiftOriginalMoveSpeed;
 
     private static Sprite cachedSquareSprite;
     private static Material cachedSpriteMaterial;
@@ -325,6 +328,21 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
         }
 
         StartCoroutine(TemporaryMoveSpeedRoutine(multiplier, duration));
+    }
+
+    public void ApplyTimeShiftMoveSpeedMultiplier(float multiplier, float duration)
+    {
+        if (!IsAlive || multiplier <= 0f || duration <= 0f)
+        {
+            return;
+        }
+
+        if (timeShiftMoveSpeedRoutine != null)
+        {
+            StopCoroutine(timeShiftMoveSpeedRoutine);
+        }
+
+        timeShiftMoveSpeedRoutine = StartCoroutine(TimeShiftMoveSpeedRoutine(multiplier, duration));
     }
 
     public void ApplyTemporaryTouchDamageMultiplier(float multiplier, float duration)
@@ -687,6 +705,26 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
         {
             moveSpeed = previous;
         }
+    }
+
+    private IEnumerator TimeShiftMoveSpeedRoutine(float multiplier, float duration)
+    {
+        if (!timeShiftMoveSpeedActive)
+        {
+            timeShiftOriginalMoveSpeed = moveSpeed;
+            timeShiftMoveSpeedActive = true;
+        }
+
+        moveSpeed = timeShiftOriginalMoveSpeed * Mathf.Clamp01(multiplier);
+        yield return new WaitForSeconds(Mathf.Max(0.05f, duration));
+
+        if (!isDying)
+        {
+            moveSpeed = timeShiftOriginalMoveSpeed;
+        }
+
+        timeShiftMoveSpeedActive = false;
+        timeShiftMoveSpeedRoutine = null;
     }
 
     private IEnumerator TemporaryTouchDamageRoutine(float multiplier, float duration)

@@ -1,0 +1,357 @@
+fileFormatVersion: 2
+guid: cc0ca2fa95803a4479c6e3aaaa2606d4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3769173284193192504
+    second: hades_soul_armor_0
+  - first:
+      213: -67900694388125236
+    second: hades_soul_armor_1
+  - first:
+      213: -5583688953995959730
+    second: hades_soul_armor_2
+  - first:
+      213: -1809647472190107240
+    second: hades_soul_armor_3
+  - first:
+      213: 1656028833497329117
+    second: hades_soul_armor_4
+  - first:
+      213: -6327921534306698182
+    second: hades_soul_armor_5
+  - first:
+      213: 8889679017016207371
+    second: hades_soul_armor_6
+  - first:
+      213: -6776278434866095886
+    second: hades_soul_armor_7
+  - first:
+      213: 1995163235756746391
+    second: hades_soul_armor_8
+  - first:
+      213: -8906908283692709798
+    second: hades_soul_armor_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hades_soul_armor_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 723
+        width: 236
+        height: 178
+      alignment: 9
+      pivot: {x: 0.49342728, y: 0.4737895}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c5b5c23ed431bbc0800000000000000
+      internalID: -3769173284193192504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hades_soul_armor_1
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 683
+        width: 293
+        height: 292
+      alignment: 9
+      pivot: {x: 0.49986106, y: 0.42279553}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e426cc0ea70c282b0800000000000000
+      internalID: -5583688953995959730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hades_soul_armor_2
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 641
+        width: 305
+        height: 355
+      alignment: 9
+      pivot: {x: 0.5001215, y: 0.4661879}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 891dc634637d2e6e0800000000000000
+      internalID: -1809647472190107240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hades_soul_armor_3
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 646
+        width: 356
+        height: 476
+      alignment: 9
+      pivot: {x: 0.47838292, y: 0.33089453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddda96633756bf610800000000000000
+      internalID: 1656028833497329117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hades_soul_armor_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 339
+        height: 458
+      alignment: 9
+      pivot: {x: 0.5084388, y: 0.5796352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3cba1d24e4be28a0800000000000000
+      internalID: -6327921534306698182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hades_soul_armor_5
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 101
+        width: 347
+        height: 356
+      alignment: 9
+      pivot: {x: 0.5083852, y: 0.4647643}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b08ae7867fb7e5b70800000000000000
+      internalID: 8889679017016207371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hades_soul_armor_6
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 90
+        width: 342
+        height: 376
+      alignment: 9
+      pivot: {x: 0.510008, y: 0.4612723}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7962330646e30bb10800000000000000
+      internalID: 1995163235756746391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hades_soul_armor_7
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 0
+        width: 355
+        height: 457
+      alignment: 9
+      pivot: {x: 0.48038933, y: 0.57878876}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5803875b1e446480800000000000000
+      internalID: -8906908283692709798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 286b5393d79d0c84eb0466d9de60f791
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      hades_soul_armor_0: -3769173284193192504
+      hades_soul_armor_1: -5583688953995959730
+      hades_soul_armor_2: -1809647472190107240
+      hades_soul_armor_3: 1656028833497329117
+      hades_soul_armor_4: -6327921534306698182
+      hades_soul_armor_5: 8889679017016207371
+      hades_soul_armor_6: 1995163235756746391
+      hades_soul_armor_7: -8906908283692709798
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

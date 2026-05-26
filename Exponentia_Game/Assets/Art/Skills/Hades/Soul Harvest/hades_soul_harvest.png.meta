@@ -1,0 +1,407 @@
+fileFormatVersion: 2
+guid: 144671204c66a8247ade4ce638728714
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 701474629133863537
+    second: hades_soul_harvest_0
+  - first:
+      213: -1031426469757173069
+    second: hades_soul_harvest_1
+  - first:
+      213: -3823125589938961229
+    second: hades_soul_harvest_2
+  - first:
+      213: 761904430416121847
+    second: hades_soul_harvest_3
+  - first:
+      213: 153567243426069350
+    second: hades_soul_harvest_4
+  - first:
+      213: -4638290435011729260
+    second: hades_soul_harvest_5
+  - first:
+      213: -4547269305538185779
+    second: hades_soul_harvest_6
+  - first:
+      213: 6879658019882025826
+    second: hades_soul_harvest_7
+  - first:
+      213: -964262535654804716
+    second: hades_soul_harvest_8
+  - first:
+      213: -8980094268673385089
+    second: hades_soul_harvest_9
+  - first:
+      213: -1570690035739112561
+    second: hades_soul_harvest_10
+  - first:
+      213: -4755837566885876748
+    second: hades_soul_harvest_11
+  - first:
+      213: -8915336439724836968
+    second: hades_soul_harvest_12
+  - first:
+      213: 5770035408078304676
+    second: hades_soul_harvest_13
+  - first:
+      213: -5709731983630251052
+    second: hades_soul_harvest_14
+  - first:
+      213: -3377113653895996137
+    second: hades_soul_harvest_15
+  - first:
+      213: -7087314030599917646
+    second: hades_soul_harvest_16
+  - first:
+      213: -5135657378217954650
+    second: hades_soul_harvest_17
+  - first:
+      213: -4111862998681623041
+    second: hades_soul_harvest_18
+  - first:
+      213: 992699335003077617
+    second: hades_soul_harvest_19
+  - first:
+      213: -7368754018299039389
+    second: hades_soul_harvest_20
+  - first:
+      213: 3764746827836394117
+    second: hades_soul_harvest_21
+  - first:
+      213: -1360288909784078495
+    second: hades_soul_harvest_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hades_soul_harvest_1
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 766
+        width: 242
+        height: 227
+      alignment: 9
+      pivot: {x: 0.5083754, y: 0.30194655}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17a097865732cb900800000000000000
+      internalID: 701474629133863537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hades_soul_harvest_2
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 766
+        width: 239
+        height: 318
+      alignment: 9
+      pivot: {x: 0.5020124, y: 0.21530631}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b2403a2713afa1f0800000000000000
+      internalID: -1031426469757173069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hades_soul_harvest_3
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 767
+        width: 240
+        height: 346
+      alignment: 9
+      pivot: {x: 0.50008595, y: 0.19534425}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b48bff188781fac0800000000000000
+      internalID: -3823125589938961229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hades_soul_harvest_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 758
+        width: 249
+        height: 161
+      alignment: 9
+      pivot: {x: 0.49039978, y: 0.48107114}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 498a8009c6b71afb0800000000000000
+      internalID: -4638290435011729260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hades_soul_harvest_4
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 147
+        width: 174
+        height: 367
+      alignment: 9
+      pivot: {x: 0.5171836, y: 0.033830315}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4db48092305f2c0b0800000000000000
+      internalID: -5709731983630251052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hades_soul_harvest_5
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 148
+        width: 228
+        height: 457
+      alignment: 9
+      pivot: {x: 0.45168304, y: 0.025066918}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71d586546051221d0800000000000000
+      internalID: -3377113653895996137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hades_soul_harvest_6
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 148
+        width: 228
+        height: 457
+      alignment: 9
+      pivot: {x: 0.451683, y: 0.02506692}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bf237a707dc4ad90800000000000000
+      internalID: -7087314030599917646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hades_soul_harvest_7
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 149
+        width: 228
+        height: 457
+      alignment: 9
+      pivot: {x: 0.451683, y: 0.02506692}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff56286636abfe6c0800000000000000
+      internalID: -4111862998681623041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e5c95db1386b58d4185b6e64443e7714
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      hades_soul_harvest_0: -4638290435011729260
+      hades_soul_harvest_1: 701474629133863537
+      hades_soul_harvest_10: -1570690035739112561
+      hades_soul_harvest_11: -4755837566885876748
+      hades_soul_harvest_12: -8915336439724836968
+      hades_soul_harvest_13: 5770035408078304676
+      hades_soul_harvest_17: -5135657378217954650
+      hades_soul_harvest_19: 992699335003077617
+      hades_soul_harvest_2: -1031426469757173069
+      hades_soul_harvest_20: -7368754018299039389
+      hades_soul_harvest_21: 3764746827836394117
+      hades_soul_harvest_22: -1360288909784078495
+      hades_soul_harvest_3: -3823125589938961229
+      hades_soul_harvest_4: -5709731983630251052
+      hades_soul_harvest_5: -3377113653895996137
+      hades_soul_harvest_6: -7087314030599917646
+      hades_soul_harvest_7: -4111862998681623041
+      hades_soul_harvest_8: -964262535654804716
+      hades_soul_harvest_9: -8980094268673385089
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

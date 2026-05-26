@@ -90,6 +90,8 @@ public class PlayerMovement : MonoBehaviour
     public bool AttackPressedThisFrame { get; private set; }
     public bool DodgePressedThisFrame { get; private set; }
     public Vector2 LastMoveDirection => lastMoveDirection;
+    public Vector2 CurrentMoveInput => moveInput;
+    public bool IsMoving => moveInput.sqrMagnitude > 0.001f;
 
     public event System.Action OnInteractPressed;
     public event System.Action OnAttackPressed;

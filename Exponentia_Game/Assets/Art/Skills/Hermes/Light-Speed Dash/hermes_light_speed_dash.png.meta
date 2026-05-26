@@ -1,0 +1,401 @@
+fileFormatVersion: 2
+guid: 49b9ce219732981489c8aef4efd5b358
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -55850288151641230
+    second: hermes_light_speed_dash_0
+  - first:
+      213: -7113955959338210185
+    second: hermes_light_speed_dash_1
+  - first:
+      213: -3622712725399837739
+    second: hermes_light_speed_dash_2
+  - first:
+      213: 5535664326668328272
+    second: hermes_light_speed_dash_3
+  - first:
+      213: -162313960712020265
+    second: hermes_light_speed_dash_4
+  - first:
+      213: 4957823268044341981
+    second: hermes_light_speed_dash_5
+  - first:
+      213: 8203117869401470617
+    second: hermes_light_speed_dash_6
+  - first:
+      213: -5622402148030669090
+    second: hermes_light_speed_dash_7
+  - first:
+      213: 2932860941267017191
+    second: hermes_light_speed_dash_8
+  - first:
+      213: -7869386300640756212
+    second: hermes_light_speed_dash_9
+  - first:
+      213: 7202217341231548017
+    second: hermes_light_speed_dash_10
+  - first:
+      213: 5964660318905363921
+    second: hermes_light_speed_dash_11
+  - first:
+      213: 8198427957097460779
+    second: hermes_light_speed_dash_12
+  - first:
+      213: -7787306701940184575
+    second: hermes_light_speed_dash_13
+  - first:
+      213: -1521648345740697365
+    second: hermes_light_speed_dash_14
+  - first:
+      213: -6292526981566304011
+    second: hermes_light_speed_dash_15
+  - first:
+      213: 3010311454989825506
+    second: hermes_light_speed_dash_16
+  - first:
+      213: -5133114984524864396
+    second: hermes_light_speed_dash_17
+  - first:
+      213: 8041288488298980212
+    second: hermes_light_speed_dash_18
+  - first:
+      213: -312295949446202675
+    second: hermes_light_speed_dash_19
+  - first:
+      213: 3543332431382953092
+    second: hermes_light_speed_dash_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hermes_light_speed_dash_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 969
+        width: 315
+        height: 631
+      alignment: 9
+      pivot: {x: 0.5038096, y: 0.25367624}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2734e167574993ff0800000000000000
+      internalID: -55850288151641230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_light_speed_dash_1
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1065
+        width: 264
+        height: 134
+      alignment: 9
+      pivot: {x: 0.5097639, y: 0.47935644}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77c6fdf0fb6264d90800000000000000
+      internalID: -7113955959338210185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_light_speed_dash_2
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 1049
+        width: 306
+        height: 172
+      alignment: 9
+      pivot: {x: 0.4990426, y: 0.47019568}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d3614f58f989bdc0800000000000000
+      internalID: -3622712725399837739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_light_speed_dash_3
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 1036
+        width: 391
+        height: 564
+      alignment: 9
+      pivot: {x: 0.51919097, y: 0.1624862}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05d1eda3061a2dc40800000000000000
+      internalID: 5535664326668328272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_light_speed_dash_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 345
+        width: 449
+        height: 538
+      alignment: 9
+      pivot: {x: 0.5763352, y: 0.8323103}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7de5cad00585fbdf0800000000000000
+      internalID: -162313960712020265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_light_speed_dash_5
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 696
+        width: 302
+        height: 197
+      alignment: 9
+      pivot: {x: 0.5032498, y: 0.4880433}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd203fe9ef9bdc440800000000000000
+      internalID: 4957823268044341981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_light_speed_dash_6
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 698
+        width: 287
+        height: 192
+      alignment: 9
+      pivot: {x: 0.49872017, y: 0.48469672}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0e7bf57ad25ac290800000000000000
+      internalID: -7869386300640756212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_light_speed_dash_7
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 708
+        width: 261
+        height: 153
+      alignment: 9
+      pivot: {x: 0.50207704, y: 0.51279503}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b24fc633acaa6c170800000000000000
+      internalID: 8198427957097460779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c313bba63eb41874aa409b2f8a9f051b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      hermes_light_speed_dash_0: -55850288151641230
+      hermes_light_speed_dash_1: -7113955959338210185
+      hermes_light_speed_dash_10: 7202217341231548017
+      hermes_light_speed_dash_11: 5964660318905363921
+      hermes_light_speed_dash_13: -7787306701940184575
+      hermes_light_speed_dash_14: -1521648345740697365
+      hermes_light_speed_dash_15: -6292526981566304011
+      hermes_light_speed_dash_16: 3010311454989825506
+      hermes_light_speed_dash_17: -5133114984524864396
+      hermes_light_speed_dash_18: 8041288488298980212
+      hermes_light_speed_dash_19: -312295949446202675
+      hermes_light_speed_dash_2: -3622712725399837739
+      hermes_light_speed_dash_20: 3543332431382953092
+      hermes_light_speed_dash_3: 5535664326668328272
+      hermes_light_speed_dash_4: -162313960712020265
+      hermes_light_speed_dash_5: 4957823268044341981
+      hermes_light_speed_dash_6: -7869386300640756212
+      hermes_light_speed_dash_7: 8198427957097460779
+      hermes_light_speed_dash_8: 2932860941267017191
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -25,6 +25,8 @@ public class ArkePrismProjectile : MonoBehaviour
     private float elapsedTime;
     private bool resolvesOnExpiry;
     private bool reflectedToEnemies;
+    private float timeShiftSpeedMultiplier = 1f;
+    private Coroutine timeShiftSpeedRoutine;
     private const float CollisionArmDelay = 0.08f;
 
     private static Sprite cachedSprite;
@@ -86,7 +88,7 @@ public class ArkePrismProjectile : MonoBehaviour
     private void Update()
     {
         elapsedTime += Time.deltaTime;
-        transform.position += (Vector3)(velocity * Time.deltaTime);
+        transform.position += (Vector3)(velocity * timeShiftSpeedMultiplier * Time.deltaTime);
 
         if (!resolved && elapsedTime >= lifeTime)
         {
@@ -223,6 +225,29 @@ public class ArkePrismProjectile : MonoBehaviour
         {
             sr.color = projectileColor;
         }
+    }
+
+    public void ApplyTimeShiftSpeedMultiplier(float multiplier, float duration)
+    {
+        if (multiplier <= 0f || duration <= 0f)
+        {
+            return;
+        }
+
+        if (timeShiftSpeedRoutine != null)
+        {
+            StopCoroutine(timeShiftSpeedRoutine);
+        }
+
+        timeShiftSpeedRoutine = StartCoroutine(TimeShiftSpeedRoutine(multiplier, duration));
+    }
+
+    private System.Collections.IEnumerator TimeShiftSpeedRoutine(float multiplier, float duration)
+    {
+        timeShiftSpeedMultiplier = Mathf.Clamp01(multiplier);
+        yield return new WaitForSeconds(Mathf.Max(0.05f, duration));
+        timeShiftSpeedMultiplier = 1f;
+        timeShiftSpeedRoutine = null;
     }
 
     private void AffectEnemies(float heal, float moveBuff, float touchBuff)

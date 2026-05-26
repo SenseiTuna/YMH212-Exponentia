@@ -1,0 +1,543 @@
+fileFormatVersion: 2
+guid: 31982305e732fea45b898e51390ede1f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3660296419892845496
+    second: ares_bloody_strike_0
+  - first:
+      213: -7579164136077829564
+    second: ares_bloody_strike_1
+  - first:
+      213: 4286072529936407365
+    second: ares_bloody_strike_2
+  - first:
+      213: -4596543637633982160
+    second: ares_bloody_strike_3
+  - first:
+      213: -7666304983837892853
+    second: ares_bloody_strike_4
+  - first:
+      213: -3849529651882924612
+    second: ares_bloody_strike_5
+  - first:
+      213: 8578752010228717052
+    second: ares_bloody_strike_6
+  - first:
+      213: -2921408828114485372
+    second: ares_bloody_strike_7
+  - first:
+      213: -2389441817371706774
+    second: ares_bloody_strike_8
+  - first:
+      213: 6932034282019002941
+    second: ares_bloody_strike_9
+  - first:
+      213: 6200609207254684216
+    second: ares_bloody_strike_10
+  - first:
+      213: -3270567395165807673
+    second: ares_bloody_strike_11
+  - first:
+      213: -9025068892440502216
+    second: ares_bloody_strike_12
+  - first:
+      213: -878482615170447480
+    second: ares_bloody_strike_13
+  - first:
+      213: 6122164617959427328
+    second: ares_bloody_strike_14
+  - first:
+      213: -4850141416322202426
+    second: ares_bloody_strike_15
+  - first:
+      213: 6876707335471967703
+    second: ares_bloody_strike_16
+  - first:
+      213: -5467470318453671710
+    second: ares_bloody_strike_17
+  - first:
+      213: 8417102408039865747
+    second: ares_bloody_strike_18
+  - first:
+      213: -2116623287739611945
+    second: ares_bloody_strike_19
+  - first:
+      213: -2737293155121599393
+    second: ares_bloody_strike_20
+  - first:
+      213: 6020478403383531427
+    second: ares_bloody_strike_21
+  - first:
+      213: -6773881278017657606
+    second: ares_bloody_strike_22
+  - first:
+      213: -2494988770902235956
+    second: ares_bloody_strike_23
+  - first:
+      213: -8606786606262484303
+    second: ares_bloody_strike_24
+  - first:
+      213: 4571016466260041623
+    second: ares_bloody_strike_25
+  - first:
+      213: -1197556716531026674
+    second: ares_bloody_strike_26
+  - first:
+      213: -1698417347283774429
+    second: ares_bloody_strike_27
+  - first:
+      213: -5783607598233388722
+    second: ares_bloody_strike_28
+  - first:
+      213: -4183648365817808976
+    second: ares_bloody_strike_29
+  - first:
+      213: 4653718124575764842
+    second: ares_bloody_strike_30
+  - first:
+      213: -2322580379101970793
+    second: ares_bloody_strike_31
+  - first:
+      213: -4820899301181731321
+    second: ares_bloody_strike_32
+  - first:
+      213: -6980494374196628146
+    second: ares_bloody_strike_33
+  - first:
+      213: -2675940825676370589
+    second: ares_bloody_strike_34
+  - first:
+      213: -5945854570838893621
+    second: ares_bloody_strike_35
+  - first:
+      213: -6555014957572902491
+    second: ares_bloody_strike_36
+  - first:
+      213: 5049965546434297613
+    second: ares_bloody_strike_37
+  - first:
+      213: 662045037730342811
+    second: ares_bloody_strike_38
+  - first:
+      213: -1057375044444532581
+    second: ares_bloody_strike_39
+  - first:
+      213: -2236983486268309892
+    second: ares_bloody_strike_40
+  - first:
+      213: 4691513450409453062
+    second: ares_bloody_strike_41
+  - first:
+      213: -4889915078103296944
+    second: ares_bloody_strike_42
+  - first:
+      213: -6853020287493751166
+    second: ares_bloody_strike_43
+  - first:
+      213: 342760028735637850
+    second: ares_bloody_strike_44
+  - first:
+      213: 5856214961860841783
+    second: ares_bloody_strike_45
+  - first:
+      213: -7800135678263887974
+    second: ares_bloody_strike_46
+  - first:
+      213: 3138324308130321632
+    second: ares_bloody_strike_47
+  - first:
+      213: -4344751379524537598
+    second: ares_bloody_strike_48
+  - first:
+      213: 7894032344639455607
+    second: ares_bloody_strike_49
+  - first:
+      213: -4419021759290581962
+    second: ares_bloody_strike_50
+  - first:
+      213: -8658988816700415742
+    second: ares_bloody_strike_51
+  - first:
+      213: -5615503274710490000
+    second: ares_bloody_strike_52
+  - first:
+      213: 5098187843294882361
+    second: ares_bloody_strike_53
+  - first:
+      213: 596271523725947716
+    second: ares_bloody_strike_54
+  - first:
+      213: -3805570870451770251
+    second: ares_bloody_strike_55
+  - first:
+      213: 7820482519032844780
+    second: ares_bloody_strike_56
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ares_bloody_strike_0
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 605
+        width: 137
+        height: 122
+      alignment: 9
+      pivot: {x: 0.48582268, y: 0.47839355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bbd858633cfbc230800000000000000
+      internalID: 3660296419892845496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ares_bloody_strike_1
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 533
+        width: 259
+        height: 245
+      alignment: 9
+      pivot: {x: 0.46945745, y: 0.5322012}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 031ae344aebc530c0800000000000000
+      internalID: -4596543637633982160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ares_bloody_strike_2
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 510
+        width: 337
+        height: 311
+      alignment: 9
+      pivot: {x: 0.49971455, y: 0.49350378}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0f198a2c30db9590800000000000000
+      internalID: -7666304983837892853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ares_bloody_strike_3
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 484
+        width: 415
+        height: 403
+      alignment: 9
+      pivot: {x: 0.45678535, y: 0.4452981}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb56f236d29b39ac0800000000000000
+      internalID: -3849529651882924612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ares_bloody_strike_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 420
+        height: 437
+      alignment: 9
+      pivot: {x: 0.5226992, y: 0.51626647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3a9296b378833060800000000000000
+      internalID: 6932034282019002941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ares_bloody_strike_5
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 20
+        width: 431
+        height: 424
+      alignment: 9
+      pivot: {x: 0.5094833, y: 0.48476025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 830e7a0c8a380c280800000000000000
+      internalID: -9025068892440502216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ares_bloody_strike_6
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 51
+        width: 397
+        height: 362
+      alignment: 9
+      pivot: {x: 0.46962634, y: 0.48211357}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e05f8c0e28c616fe0800000000000000
+      internalID: -1197556716531026674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ares_bloody_strike_7
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 132
+        width: 219
+        height: 204
+      alignment: 9
+      pivot: {x: 0.54594135, y: 0.45874795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b972a33447e003900800000000000000
+      internalID: 662045037730342811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7c99a0c635ae33b4b91def7922269887
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ares_bloody_strike_0: 3660296419892845496
+      ares_bloody_strike_1: -4596543637633982160
+      ares_bloody_strike_10: 6200609207254684216
+      ares_bloody_strike_11: -3270567395165807673
+      ares_bloody_strike_13: -878482615170447480
+      ares_bloody_strike_14: 6122164617959427328
+      ares_bloody_strike_15: -4850141416322202426
+      ares_bloody_strike_16: 6876707335471967703
+      ares_bloody_strike_17: -5467470318453671710
+      ares_bloody_strike_18: 8417102408039865747
+      ares_bloody_strike_19: -2116623287739611945
+      ares_bloody_strike_2: -7666304983837892853
+      ares_bloody_strike_20: -2737293155121599393
+      ares_bloody_strike_21: 6020478403383531427
+      ares_bloody_strike_22: -6773881278017657606
+      ares_bloody_strike_23: -2494988770902235956
+      ares_bloody_strike_24: -8606786606262484303
+      ares_bloody_strike_25: 4571016466260041623
+      ares_bloody_strike_27: -1698417347283774429
+      ares_bloody_strike_28: -5783607598233388722
+      ares_bloody_strike_29: -4183648365817808976
+      ares_bloody_strike_3: -3849529651882924612
+      ares_bloody_strike_30: 4653718124575764842
+      ares_bloody_strike_31: -2322580379101970793
+      ares_bloody_strike_32: -4820899301181731321
+      ares_bloody_strike_33: -6980494374196628146
+      ares_bloody_strike_34: -2675940825676370589
+      ares_bloody_strike_35: -5945854570838893621
+      ares_bloody_strike_36: -6555014957572902491
+      ares_bloody_strike_37: 5049965546434297613
+      ares_bloody_strike_39: -1057375044444532581
+      ares_bloody_strike_4: 6932034282019002941
+      ares_bloody_strike_40: -2236983486268309892
+      ares_bloody_strike_41: 4691513450409453062
+      ares_bloody_strike_42: -4889915078103296944
+      ares_bloody_strike_43: -6853020287493751166
+      ares_bloody_strike_44: 342760028735637850
+      ares_bloody_strike_45: 5856214961860841783
+      ares_bloody_strike_46: -7800135678263887974
+      ares_bloody_strike_47: 3138324308130321632
+      ares_bloody_strike_48: -4344751379524537598
+      ares_bloody_strike_49: 7894032344639455607
+      ares_bloody_strike_5: -9025068892440502216
+      ares_bloody_strike_50: -4419021759290581962
+      ares_bloody_strike_51: -8658988816700415742
+      ares_bloody_strike_52: -5615503274710490000
+      ares_bloody_strike_53: 5098187843294882361
+      ares_bloody_strike_54: 596271523725947716
+      ares_bloody_strike_55: -3805570870451770251
+      ares_bloody_strike_56: 7820482519032844780
+      ares_bloody_strike_6: -1197556716531026674
+      ares_bloody_strike_7: 662045037730342811
+      ares_bloody_strike_8: -2389441817371706774
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

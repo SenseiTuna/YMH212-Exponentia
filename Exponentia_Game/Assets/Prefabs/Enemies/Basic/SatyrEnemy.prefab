@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5661352103140688261}
   - component: {fileID: 4049421138944716549}
   - component: {fileID: 4253808435126724280}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SatyrEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -322,7 +322,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8251788778959441337}
   - component: {fileID: 5839280114802445775}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EnemyBodyVisual
   m_TagString: Untagged
   m_Icon: {fileID: 0}

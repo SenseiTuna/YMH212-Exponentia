@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6335094348965271283}
   - component: {fileID: 265097613668839702}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EnemyBodyVisual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 3960262229140469712}
   - component: {fileID: 8687299977064989781}
   - component: {fileID: 6370855991710127367}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SparkingSpriteEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2190338083360517414}
   - component: {fileID: 1814354812265513168}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EnemyBodyVisual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 4960860802916209617}
   - component: {fileID: 8168057952370866588}
   - component: {fileID: 6131155426154827803}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SpearedTritonEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}

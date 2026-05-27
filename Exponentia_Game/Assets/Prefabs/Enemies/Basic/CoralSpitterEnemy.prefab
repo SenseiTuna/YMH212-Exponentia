@@ -89,7 +89,7 @@ SpriteRenderer:
   m_Size: {x: 0.04, y: 0.04}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!1 &8533752835152168689
 GameObject:
@@ -264,7 +264,7 @@ MonoBehaviour:
   placeholderColor: {r: 0.5, g: 0.75, b: 0.45, a: 1}
   placeholderScale: {x: 1, y: 1}
   sortingOrder: 5
-  enemyProjectilePrefab: {fileID: 7947579937356454847, guid: f6f9af9cce8214ac29b49154d133cce7, type: 3}
+  enemyProjectilePrefab: {fileID: 7947579937356454847, guid: 77822da2589e87246b30fa0dcbf80798, type: 3}
   yaziOffset: {x: 0, y: 1.1, z: 0}
   yaziFontBoyutu: 32
   yaziKarakterBoyutu: 0.22

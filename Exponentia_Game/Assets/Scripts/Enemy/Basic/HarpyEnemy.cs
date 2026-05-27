@@ -16,7 +16,7 @@ public class HarpyEnemy : EnemyMechanics
     private float nextDashTime;
     private Vector2 dashDirection;
 
-    private void Reset()
+    protected override void Reset()
     {
         ApplyDefaultSetup(
             "Harpy",

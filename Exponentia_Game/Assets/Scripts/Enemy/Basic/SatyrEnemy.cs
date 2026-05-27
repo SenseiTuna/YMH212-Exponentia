@@ -16,7 +16,7 @@ public class SatyrEnemy : EnemyMechanics
 
     private float nextShootTime;
 
-    private void Reset()
+    protected override void Reset()
     {
         ApplyDefaultSetup(
             "Satyr",

@@ -15,7 +15,7 @@ public class CosmicWandererEnemy : EnemyMechanics
 
     private float nextMimicTime;
 
-    private void Reset()
+    protected override void Reset()
     {
         ApplyDefaultSetup(
             "Cosmic Wanderer",

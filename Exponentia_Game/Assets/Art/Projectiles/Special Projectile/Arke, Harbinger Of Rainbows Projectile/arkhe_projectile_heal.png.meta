@@ -1,0 +1,327 @@
+fileFormatVersion: 2
+guid: 1c79de926f2c43f49986437bfcc39f0f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3999384861268602293
+    second: arkhe_projectile_heal_0
+  - first:
+      213: -5090250120583235111
+    second: arkhe_projectile_heal_1
+  - first:
+      213: -5597173490992380474
+    second: arkhe_projectile_heal_2
+  - first:
+      213: -7491516607045577124
+    second: arkhe_projectile_heal_3
+  - first:
+      213: -4219880264959481593
+    second: arkhe_projectile_heal_4
+  - first:
+      213: -3794303603216199917
+    second: arkhe_projectile_heal_5
+  - first:
+      213: -3151862668270644885
+    second: arkhe_projectile_heal_6
+  - first:
+      213: 3039411449205652254
+    second: arkhe_projectile_heal_7
+  - first:
+      213: -6835812908892013658
+    second: arkhe_projectile_heal_8
+  - first:
+      213: 1366470200055476266
+    second: arkhe_projectile_heal_9
+  - first:
+      213: -7168840434180728449
+    second: arkhe_projectile_heal_10
+  - first:
+      213: -5989015064748570156
+    second: arkhe_projectile_heal_11
+  - first:
+      213: 4072756124034379952
+    second: arkhe_projectile_heal_12
+  - first:
+      213: 6397790234100204077
+    second: arkhe_projectile_heal_13
+  - first:
+      213: 2458146248093139823
+    second: arkhe_projectile_heal_14
+  - first:
+      213: -1747514826704585703
+    second: arkhe_projectile_heal_15
+  - first:
+      213: -7054772251263448042
+    second: arkhe_projectile_heal_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: arkhe_projectile_heal_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 767
+        width: 352
+        height: 487
+      alignment: 9
+      pivot: {x: 0.5929093, y: 0.29919598}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bd6df7775ba08730800000000000000
+      internalID: 3999384861268602293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_projectile_heal_2
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 766
+        width: 367
+        height: 488
+      alignment: 9
+      pivot: {x: 0.43185583, y: 0.3035496}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c56db107659c80890800000000000000
+      internalID: -7491516607045577124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_projectile_heal_1
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 767
+        width: 285
+        height: 316
+      alignment: 9
+      pivot: {x: 0.50562507, y: 0.4655022}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31f4058d9fce75bc0800000000000000
+      internalID: -3794303603216199917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_projectile_heal_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 362
+        height: 478
+      alignment: 9
+      pivot: {x: 0.57971424, y: 0.6381786}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1b782c0c982e2a20800000000000000
+      internalID: 3039411449205652254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_projectile_heal_4
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 159
+        width: 293
+        height: 304
+      alignment: 9
+      pivot: {x: 0.48796296, y: 0.47996068}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a20b676386da6f210800000000000000
+      internalID: 1366470200055476266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_projectile_heal_5
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 1
+        width: 371
+        height: 468
+      alignment: 9
+      pivot: {x: 0.43518296, y: 0.6507226}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d9c23f978eb2eca0800000000000000
+      internalID: -5989015064748570156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ada009f345457de42b1c8f202c6fd43d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      arkhe_projectile_heal_0: 3999384861268602293
+      arkhe_projectile_heal_1: -3794303603216199917
+      arkhe_projectile_heal_10: -7168840434180728449
+      arkhe_projectile_heal_12: 4072756124034379952
+      arkhe_projectile_heal_13: 6397790234100204077
+      arkhe_projectile_heal_14: 2458146248093139823
+      arkhe_projectile_heal_15: -1747514826704585703
+      arkhe_projectile_heal_16: -7054772251263448042
+      arkhe_projectile_heal_2: -7491516607045577124
+      arkhe_projectile_heal_3: 3039411449205652254
+      arkhe_projectile_heal_4: 1366470200055476266
+      arkhe_projectile_heal_5: -5989015064748570156
+      arkhe_projectile_heal_6: -3151862668270644885
+      arkhe_projectile_heal_8: -6835812908892013658
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

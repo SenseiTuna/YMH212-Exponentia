@@ -1,0 +1,42 @@
+﻿%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8331504df8bd8a94f98552ce3a51f9cb, type: 3}
+  m_Name: SKL_TsunamiWave
+  m_EditorClassIdentifier: Assembly-CSharp::Exponentia.InventorySystem.SkillDefinition
+  itemId: skill.poseidon.tsunami_wave
+  displayName: Tsunami Wave
+  description: Sends a forward wave from the player, damaging, knocking back, and slowing enemies it touches.
+  icon: {fileID: -6399247390016101842, guid: fa619b13d15e4cf4aa5d9f206805a393, type: 3}
+  rarity: 2
+  category: 1
+  canStack: 0
+  maxStacks: 1
+  cooldown: 0
+  duration: 0.65
+  linkedGodSkillType: 11
+  skillEffectType: 6
+  visualEffectPrefab: {fileID: 2321409161993407196, guid: c0be4560b0ff4e6087c9ed5d18baba34, type: 3}
+  audioClip: {fileID: 0}
+  overrideRuntimeTuning: 1
+  runtimeDamage: 24
+  runtimeRadius: 1.4
+  runtimeRange: 6.5
+  runtimeForce: 420
+  runtimeTickInterval: 0.35
+  runtimeBleedDps: 0
+  runtimeBleedDuration: 0
+  runtimeStatusDuration: 3
+  runtimeMaxStacks: 5
+  runtimeMoveSpeedPerStack: 0.08
+  runtimeMaxMoveSpeed: 0
+  runtimeSlowMultiplier: 0.6
+  runtimeVfxLifetime: 0.65

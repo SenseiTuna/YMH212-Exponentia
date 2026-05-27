@@ -1,0 +1,384 @@
+fileFormatVersion: 2
+guid: e96c84157eb96b64f991bbec68deeb3f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1116507264746509146
+    second: hermes_time_shift_0
+  - first:
+      213: 827393548853913631
+    second: hermes_time_shift_1
+  - first:
+      213: 4061742969063734474
+    second: hermes_time_shift_2
+  - first:
+      213: 3371936636520907827
+    second: hermes_time_shift_3
+  - first:
+      213: -2997036968729927119
+    second: hermes_time_shift_4
+  - first:
+      213: -2182898400808038649
+    second: hermes_time_shift_5
+  - first:
+      213: -2738245671773122447
+    second: hermes_time_shift_6
+  - first:
+      213: -8287941297417788503
+    second: hermes_time_shift_7
+  - first:
+      213: 7747369987080969314
+    second: hermes_time_shift_8
+  - first:
+      213: 6802346028283293088
+    second: hermes_time_shift_9
+  - first:
+      213: -1804458791562631016
+    second: hermes_time_shift_10
+  - first:
+      213: 8627594315234979249
+    second: hermes_time_shift_11
+  - first:
+      213: 4170072477579938518
+    second: hermes_time_shift_12
+  - first:
+      213: 4000296087503419257
+    second: hermes_time_shift_13
+  - first:
+      213: 5977623482307477795
+    second: hermes_time_shift_14
+  - first:
+      213: -1235589944162129496
+    second: hermes_time_shift_15
+  - first:
+      213: -2184065119059326875
+    second: hermes_time_shift_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hermes_time_shift_5
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 127
+        width: 309
+        height: 374
+      alignment: 9
+      pivot: {x: 0.5063594, y: 0.50044847}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1823e88c0e7b7b00800000000000000
+      internalID: 827393548853913631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_time_shift_3
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 751
+        width: 320
+        height: 377
+      alignment: 9
+      pivot: {x: 0.4986244, y: 0.48105466}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: accfbf7d5b53e5830800000000000000
+      internalID: 4061742969063734474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_time_shift_6
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 127
+        width: 308
+        height: 373
+      alignment: 9
+      pivot: {x: 0.50010425, y: 0.502488}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33444f071868bce20800000000000000
+      internalID: 3371936636520907827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_time_shift_7
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 128
+        width: 308
+        height: 371
+      alignment: 9
+      pivot: {x: 0.495053, y: 0.5027888}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 132a32481c26866d0800000000000000
+      internalID: -2997036968729927119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_time_shift_1
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 798
+        width: 267
+        height: 265
+      alignment: 9
+      pivot: {x: 0.50370806, y: 0.5053706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a36f182d415bfc80800000000000000
+      internalID: -8287941297417788503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_time_shift_2
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 730
+        width: 306
+        height: 397
+      alignment: 9
+      pivot: {x: 0.5021795, y: 0.5094331}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26cdb77b4ff248b60800000000000000
+      internalID: 7747369987080969314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_time_shift_0
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 850
+        width: 165
+        height: 161
+      alignment: 9
+      pivot: {x: 0.5120105, y: 0.5065524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ad6d1f1ca9c66e50800000000000000
+      internalID: 6802346028283293088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_time_shift_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 125
+        width: 312
+        height: 375
+      alignment: 9
+      pivot: {x: 0.5041377, y: 0.5035953}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 568c52c8854a0b1e0800000000000000
+      internalID: -2184065119059326875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d1cc968e3523b9944a88657f4a2e9e21
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      hermes_time_shift_0: 6802346028283293088
+      hermes_time_shift_1: -8287941297417788503
+      hermes_time_shift_10: -1804458791562631016
+      hermes_time_shift_11: 8627594315234979249
+      hermes_time_shift_12: 4170072477579938518
+      hermes_time_shift_13: 4000296087503419257
+      hermes_time_shift_14: 5977623482307477795
+      hermes_time_shift_15: -1235589944162129496
+      hermes_time_shift_2: 7747369987080969314
+      hermes_time_shift_3: 4061742969063734474
+      hermes_time_shift_4: -2184065119059326875
+      hermes_time_shift_5: 827393548853913631
+      hermes_time_shift_6: 3371936636520907827
+      hermes_time_shift_7: -2997036968729927119
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

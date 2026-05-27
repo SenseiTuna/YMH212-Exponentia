@@ -1,0 +1,505 @@
+fileFormatVersion: 2
+guid: 0f66e8415de8128499047d71fa06050a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2461823616380562576
+    second: poseidon_wet_effect_0
+  - first:
+      213: -5301072981702276798
+    second: poseidon_wet_effect_1
+  - first:
+      213: 8526973410098115173
+    second: poseidon_wet_effect_2
+  - first:
+      213: 4082776147257564036
+    second: poseidon_wet_effect_3
+  - first:
+      213: -2967557244495058835
+    second: poseidon_wet_effect_4
+  - first:
+      213: 2848456652141415313
+    second: poseidon_wet_effect_5
+  - first:
+      213: 4049804756199222231
+    second: poseidon_wet_effect_6
+  - first:
+      213: -5527142745395746931
+    second: poseidon_wet_effect_7
+  - first:
+      213: -1602915444290437569
+    second: poseidon_wet_effect_8
+  - first:
+      213: 397685701862349149
+    second: poseidon_wet_effect_9
+  - first:
+      213: -6348662340486605170
+    second: poseidon_wet_effect_10
+  - first:
+      213: 843846955202294808
+    second: poseidon_wet_effect_11
+  - first:
+      213: 1408989841593298196
+    second: poseidon_wet_effect_12
+  - first:
+      213: 2427503179484482609
+    second: poseidon_wet_effect_13
+  - first:
+      213: 8818110157450830026
+    second: poseidon_wet_effect_14
+  - first:
+      213: 6037792756680292251
+    second: poseidon_wet_effect_15
+  - first:
+      213: 6383150021806165142
+    second: poseidon_wet_effect_16
+  - first:
+      213: 7297309381560125555
+    second: poseidon_wet_effect_17
+  - first:
+      213: -2306343688815907895
+    second: poseidon_wet_effect_18
+  - first:
+      213: 998668823187080939
+    second: poseidon_wet_effect_19
+  - first:
+      213: 2702365361195151094
+    second: poseidon_wet_effect_20
+  - first:
+      213: -2741650559510634131
+    second: poseidon_wet_effect_21
+  - first:
+      213: -2408170538351682262
+    second: poseidon_wet_effect_22
+  - first:
+      213: -9013671413007150466
+    second: poseidon_wet_effect_23
+  - first:
+      213: 7576226060391526531
+    second: poseidon_wet_effect_24
+  - first:
+      213: 6662125770015688109
+    second: poseidon_wet_effect_25
+  - first:
+      213: -2703970141946397843
+    second: poseidon_wet_effect_26
+  - first:
+      213: -2635963900989891197
+    second: poseidon_wet_effect_27
+  - first:
+      213: 6473540479136656795
+    second: poseidon_wet_effect_28
+  - first:
+      213: -6312330414881478912
+    second: poseidon_wet_effect_29
+  - first:
+      213: -2260680837211295075
+    second: poseidon_wet_effect_30
+  - first:
+      213: -3278632965613820006
+    second: poseidon_wet_effect_31
+  - first:
+      213: -2593925286039870380
+    second: poseidon_wet_effect_32
+  - first:
+      213: -5695654301896279456
+    second: poseidon_wet_effect_33
+  - first:
+      213: -5194504147843212086
+    second: poseidon_wet_effect_34
+  - first:
+      213: 636669467353510902
+    second: poseidon_wet_effect_35
+  - first:
+      213: 7622328739096389651
+    second: poseidon_wet_effect_36
+  - first:
+      213: 6092323570523690096
+    second: poseidon_wet_effect_37
+  - first:
+      213: 7111143487272524558
+    second: poseidon_wet_effect_38
+  - first:
+      213: 9198737373650275057
+    second: poseidon_wet_effect_39
+  - first:
+      213: 1626516271500138087
+    second: poseidon_wet_effect_40
+  - first:
+      213: -1142790426847519415
+    second: poseidon_wet_effect_41
+  - first:
+      213: 8226004346340777171
+    second: poseidon_wet_effect_42
+  - first:
+      213: 7537521272026505909
+    second: poseidon_wet_effect_43
+  - first:
+      213: 1800107095641631096
+    second: poseidon_wet_effect_44
+  - first:
+      213: -1528204550213839093
+    second: poseidon_wet_effect_45
+  - first:
+      213: -8692119763918101219
+    second: poseidon_wet_effect_46
+  - first:
+      213: 1445937203203114069
+    second: poseidon_wet_effect_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: poseidon_wet_effect_3
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 783
+        width: 296
+        height: 352
+      alignment: 9
+      pivot: {x: 0.49706537, y: 0.3652323}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09ce70a29872a2220800000000000000
+      internalID: 2461823616380562576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poseidon_wet_effect_2
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 804
+        width: 274
+        height: 219
+      alignment: 9
+      pivot: {x: 0.49463424, y: 0.49383795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41d6d48bbccbd8310800000000000000
+      internalID: 1408989841593298196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poseidon_wet_effect_1
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 797
+        width: 279
+        height: 261
+      alignment: 9
+      pivot: {x: 0.48811093, y: 0.44267467}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac0ee15c778306a70800000000000000
+      internalID: 8818110157450830026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poseidon_wet_effect_0
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 857
+        width: 134
+        height: 157
+      alignment: 9
+      pivot: {x: 0.5009096, y: 0.3517328}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2d9cf687a5749ed0800000000000000
+      internalID: -2408170538351682262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poseidon_wet_effect_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 311
+        height: 485
+      alignment: 9
+      pivot: {x: 0.49498335, y: 0.65347254}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06afb0cd698f4f0b0800000000000000
+      internalID: -5695654301896279456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poseidon_wet_effect_5
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 195
+        width: 285
+        height: 290
+      alignment: 9
+      pivot: {x: 0.49559358, y: 0.43746674}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f371f0e187e5d800800000000000000
+      internalID: 636669467353510902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poseidon_wet_effect_6
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 221
+        width: 275
+        height: 214
+      alignment: 9
+      pivot: {x: 0.5267782, y: 0.4488842}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fac88287ea78af70800000000000000
+      internalID: 9198737373650275057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poseidon_wet_effect_7
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 203
+        width: 279
+        height: 224
+      alignment: 9
+      pivot: {x: 0.487068, y: 0.4771568}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dc1678ae53a82270800000000000000
+      internalID: 8226004346340777171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e65bb638478223a4b90259832feb1245
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      3: 2461823616380562576
+      poseidon_wet_effect_0: -2408170538351682262
+      poseidon_wet_effect_1: 8818110157450830026
+      poseidon_wet_effect_10: -6348662340486605170
+      poseidon_wet_effect_11: 843846955202294808
+      poseidon_wet_effect_13: 2427503179484482609
+      poseidon_wet_effect_15: 6037792756680292251
+      poseidon_wet_effect_16: 6383150021806165142
+      poseidon_wet_effect_17: 7297309381560125555
+      poseidon_wet_effect_18: -2306343688815907895
+      poseidon_wet_effect_19: 998668823187080939
+      poseidon_wet_effect_2: 1408989841593298196
+      poseidon_wet_effect_20: 2702365361195151094
+      poseidon_wet_effect_21: -2741650559510634131
+      poseidon_wet_effect_23: -9013671413007150466
+      poseidon_wet_effect_24: 7576226060391526531
+      poseidon_wet_effect_25: 6662125770015688109
+      poseidon_wet_effect_26: -2703970141946397843
+      poseidon_wet_effect_27: -2635963900989891197
+      poseidon_wet_effect_28: 6473540479136656795
+      poseidon_wet_effect_29: -6312330414881478912
+      poseidon_wet_effect_3: 2461823616380562576
+      poseidon_wet_effect_30: -2260680837211295075
+      poseidon_wet_effect_31: -3278632965613820006
+      poseidon_wet_effect_32: -2593925286039870380
+      poseidon_wet_effect_34: -5194504147843212086
+      poseidon_wet_effect_36: 7622328739096389651
+      poseidon_wet_effect_37: 6092323570523690096
+      poseidon_wet_effect_38: 7111143487272524558
+      poseidon_wet_effect_4: -5695654301896279456
+      poseidon_wet_effect_40: 1626516271500138087
+      poseidon_wet_effect_41: -1142790426847519415
+      poseidon_wet_effect_43: 7537521272026505909
+      poseidon_wet_effect_44: 1800107095641631096
+      poseidon_wet_effect_45: -1528204550213839093
+      poseidon_wet_effect_46: -8692119763918101219
+      poseidon_wet_effect_47: 1445937203203114069
+      poseidon_wet_effect_5: 636669467353510902
+      poseidon_wet_effect_6: 9198737373650275057
+      poseidon_wet_effect_7: 8226004346340777171
+      poseidon_wet_effect_8: -1602915444290437569
+      poseidon_wet_effect_9: 397685701862349149
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

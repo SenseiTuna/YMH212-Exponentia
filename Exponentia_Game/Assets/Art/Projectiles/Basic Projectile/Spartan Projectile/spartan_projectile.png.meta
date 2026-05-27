@@ -1,0 +1,321 @@
+fileFormatVersion: 2
+guid: 4d2b97ca175b0ce47a7878f20150f99d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6956618124759020681
+    second: spartan_projectile_0
+  - first:
+      213: -4275038507478513798
+    second: spartan_projectile_1
+  - first:
+      213: 4568236305345346962
+    second: spartan_projectile_2
+  - first:
+      213: -4804627492486008770
+    second: spartan_projectile_3
+  - first:
+      213: 3084323317127103123
+    second: spartan_projectile_4
+  - first:
+      213: 1533442058091633827
+    second: spartan_projectile_5
+  - first:
+      213: 2292306784337468455
+    second: spartan_projectile_6
+  - first:
+      213: -599195697890408641
+    second: spartan_projectile_7
+  - first:
+      213: 3117629436679183481
+    second: spartan_projectile_8
+  - first:
+      213: -5511814068689916182
+    second: spartan_projectile_9
+  - first:
+      213: -299152007815074196
+    second: spartan_projectile_10
+  - first:
+      213: -583531282437225224
+    second: spartan_projectile_11
+  - first:
+      213: -5248242740452981296
+    second: spartan_projectile_12
+  - first:
+      213: 6232298051841110867
+    second: spartan_projectile_13
+  - first:
+      213: 7659792738912759274
+    second: spartan_projectile_14
+  - first:
+      213: 5015460316292130622
+    second: spartan_projectile_15
+  - first:
+      213: -7633989808566825830
+    second: spartan_projectile_16
+  - first:
+      213: -5769880495610900961
+    second: spartan_projectile_17
+  - first:
+      213: -5941168564427132273
+    second: spartan_projectile_18
+  - first:
+      213: -6199889473341388568
+    second: spartan_projectile_19
+  - first:
+      213: 1482053848151718208
+    second: spartan_projectile_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spartan_projectile_0
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 738
+        width: 438
+        height: 69
+      alignment: 9
+      pivot: {x: 0.563304, y: 0.4943485}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77bc1bb5ca0257f90800000000000000
+      internalID: -6956618124759020681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spartan_projectile_1
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 738
+        width: 455
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5795345, y: 0.50000095}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7780a8a0230ca4c0800000000000000
+      internalID: -4275038507478513798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spartan_projectile_2
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 738
+        width: 459
+        height: 78
+      alignment: 9
+      pivot: {x: 0.5837373, y: 0.4345351}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29df62657b2a56f30800000000000000
+      internalID: 4568236305345346962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spartan_projectile_3
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 127
+        width: 468
+        height: 263
+      alignment: 9
+      pivot: {x: 0.5988168, y: 0.5079097}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeeacbfae4a1283b0800000000000000
+      internalID: -5511814068689916182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spartan_projectile_4
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 127
+        width: 453
+        height: 263
+      alignment: 9
+      pivot: {x: 0.58387566, y: 0.5088609}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e665875d239dbf0800000000000000
+      internalID: -299152007815074196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1375969d50105d24fa64928d2a93c75f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      spartan_projectile_0: -6956618124759020681
+      spartan_projectile_1: -4275038507478513798
+      spartan_projectile_11: -583531282437225224
+      spartan_projectile_12: -5248242740452981296
+      spartan_projectile_13: 6232298051841110867
+      spartan_projectile_15: 5015460316292130622
+      spartan_projectile_16: -7633989808566825830
+      spartan_projectile_17: -5769880495610900961
+      spartan_projectile_18: -5941168564427132273
+      spartan_projectile_19: -6199889473341388568
+      spartan_projectile_2: 4568236305345346962
+      spartan_projectile_20: 1482053848151718208
+      spartan_projectile_3: -5511814068689916182
+      spartan_projectile_4: -299152007815074196
+      spartan_projectile_5: -4804627492486008770
+      spartan_projectile_6: 2292306784337468455
+      spartan_projectile_7: -599195697890408641
+      spartan_projectile_8: 3117629436679183481
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

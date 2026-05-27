@@ -15,7 +15,7 @@ MonoBehaviour:
   characterId: CH_Triangle
   characterName: 180 Yes Scope
   description: "Evrenin Temel Yap\u0131 Ta\u015F\u0131"
-  gameplaySprite: {fileID: 9202433172172592140, guid: 95b6efd9134b71445aee1c2c0185c271, type: 3}
+  gameplaySprite: {fileID: 3339759278924335677, guid: da2fde83d0dd0a549b3862798333adef, type: 3}
   characterColor: {r: 1, g: 1, b: 1, a: 1}
   portrait: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   icon: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}

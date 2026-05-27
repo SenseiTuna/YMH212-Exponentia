@@ -1,0 +1,324 @@
+fileFormatVersion: 2
+guid: 67dece8019cc78249806825bf3ceb79f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -625370213268003608
+    second: arkhe_projectile_black_hole_0
+  - first:
+      213: -2447745364094486362
+    second: arkhe_projectile_black_hole_1
+  - first:
+      213: -750300917670515681
+    second: arkhe_projectile_black_hole_2
+  - first:
+      213: -5743996098252077133
+    second: arkhe_projectile_black_hole_3
+  - first:
+      213: 3713336929454477335
+    second: arkhe_projectile_black_hole_4
+  - first:
+      213: 7341344664548157990
+    second: arkhe_projectile_black_hole_5
+  - first:
+      213: -1874243589765743368
+    second: arkhe_projectile_black_hole_6
+  - first:
+      213: -4954603006871499638
+    second: arkhe_projectile_black_hole_7
+  - first:
+      213: 1601552383628530459
+    second: arkhe_projectile_black_hole_8
+  - first:
+      213: -8247364721492014274
+    second: arkhe_projectile_black_hole_9
+  - first:
+      213: -7351027873898635620
+    second: arkhe_projectile_black_hole_10
+  - first:
+      213: 2121805023000377624
+    second: arkhe_projectile_black_hole_11
+  - first:
+      213: -4313981008962649455
+    second: arkhe_projectile_black_hole_12
+  - first:
+      213: -8266898822203612038
+    second: arkhe_projectile_black_hole_13
+  - first:
+      213: -7615540639414920440
+    second: arkhe_projectile_black_hole_14
+  - first:
+      213: -2874624383183008325
+    second: arkhe_projectile_black_hole_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: arkhe_projectile_black_hole_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 672
+        width: 384
+        height: 582
+      alignment: 9
+      pivot: {x: 0.56869847, y: 0.28644094}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e4ec09ba1d3257f0800000000000000
+      internalID: -625370213268003608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_projectile_black_hole_1
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 671
+        width: 356
+        height: 333
+      alignment: 9
+      pivot: {x: 0.5140017, y: 0.4908592}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1c69976a456695f0800000000000000
+      internalID: -750300917670515681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_projectile_black_hole_2
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 667
+        width: 389
+        height: 587
+      alignment: 9
+      pivot: {x: 0.46594805, y: 0.29200163}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b7847c4bf93940b0800000000000000
+      internalID: -5743996098252077133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_projectile_black_hole_3
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 229
+        width: 379
+        height: 382
+      alignment: 9
+      pivot: {x: 0.5242681, y: 0.50328326}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62a2a188312b1e560800000000000000
+      internalID: 7341344664548157990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_projectile_black_hole_4
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 238
+        width: 366
+        height: 362
+      alignment: 9
+      pivot: {x: 0.5032215, y: 0.49891427}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8c875cd0d6bd3bb0800000000000000
+      internalID: -4954603006871499638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_projectile_black_hole_5
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 1
+        width: 400
+        height: 587
+      alignment: 9
+      pivot: {x: 0.46120453, y: 0.7114914}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3b41627b797b8d80800000000000000
+      internalID: -8247364721492014274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e27e4ade8a049cd40bdb079cb52bbe90
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      arkhe_projectile_black_hole_0: -625370213268003608
+      arkhe_projectile_black_hole_1: -750300917670515681
+      arkhe_projectile_black_hole_10: -7351027873898635620
+      arkhe_projectile_black_hole_11: 2121805023000377624
+      arkhe_projectile_black_hole_12: -4313981008962649455
+      arkhe_projectile_black_hole_13: -8266898822203612038
+      arkhe_projectile_black_hole_14: -7615540639414920440
+      arkhe_projectile_black_hole_15: -2874624383183008325
+      arkhe_projectile_black_hole_2: -5743996098252077133
+      arkhe_projectile_black_hole_3: 7341344664548157990
+      arkhe_projectile_black_hole_4: -4954603006871499638
+      arkhe_projectile_black_hole_5: -8247364721492014274
+      arkhe_projectile_black_hole_6: -1874243589765743368
+      arkhe_projectile_black_hole_8: 1601552383628530459
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

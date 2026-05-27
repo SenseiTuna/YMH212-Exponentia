@@ -22,10 +22,12 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private PlayerMovement playerMovement;
     [SerializeField] private PlayerInputReader inputReader;
     [SerializeField] private PlayerStatController statController;
+    [SerializeField] private PlayerInventory playerInventory;
 
     [Header("Skill System")]
     [SerializeField] private GodSkillBase equippedSkill; // Inspector'dan degisebilecek aktif skill
     [SerializeField] private UnityEngine.UI.Image skillIconUI; // UI ustunde gosterilecek resim
+    [SerializeField] private UnityEngine.UI.Image skillCooldownFillUI;
 
     public GodSkillBase EquippedSkill => equippedSkill;
 
@@ -66,6 +68,7 @@ public class PlayerAttack : MonoBehaviour
         playerMovement = GetComponent<PlayerMovement>();
         inputReader = GetComponent<PlayerInputReader>();
         statController = GetComponent<PlayerStatController>();
+        playerInventory = GetComponent<PlayerInventory>();
     }
 
     private void Awake()
@@ -93,21 +96,12 @@ public class PlayerAttack : MonoBehaviour
             statController = GetComponent<PlayerStatController>();
         }
 
-        // OTOMATİK SKİLL BULMA (Eğer inspector üzerinden boş bırakıldıysa)
-        if (equippedSkill == null)
+        if (playerInventory == null)
         {
-            equippedSkill = GetComponentInChildren<GodSkillBase>(); 
+            playerInventory = GetComponent<PlayerInventory>();
         }
 
-        // OTOMATİK ARAYÜZ BULMA (Eğer inspector üzerinden boş bırakıldıysa)
-        if (skillIconUI == null)
-        {
-            GameObject uiObj = GameObject.Find("SkillIconUI");
-            if (uiObj != null)
-            {
-                skillIconUI = uiObj.GetComponent<UnityEngine.UI.Image>();
-            }
-        }
+        ResolveSkillUiReferences();
 
         if (equippedWeaponDefinition != null)
         {
@@ -120,8 +114,18 @@ public class PlayerAttack : MonoBehaviour
 #endif
     }
 
+    private void Start()
+    {
+        ResolveEquippedSkillSource();
+    }
+
     private void Update()
     {
+        if (equippedSkill == null)
+        {
+            ResolveEquippedSkillSource();
+        }
+
         UpdateSkillUI();
 
 #if UNITY_EDITOR
@@ -162,7 +166,7 @@ public class PlayerAttack : MonoBehaviour
             useSkill = true;
         }
 
-        if (useSkill && equippedSkill != null)
+        if (useSkill && equippedSkill != null && !equippedSkill.IsPassiveSkill)
         {
             if (equippedSkill.CanActivate())
             {
@@ -173,42 +177,41 @@ public class PlayerAttack : MonoBehaviour
 
     private void UpdateSkillUI()
     {
+        ResolveSkillUiReferences();
+
         if (skillIconUI == null)
         {
-            // Tembel arama (Lazy Find): Eğer UI sistemi Player'dan daha sonra oluşuyorsa Update içinde tekrar arıyoruz.
-            GameObject uiObj = GameObject.Find("SkillIconUI");
-            if (uiObj != null)
-            {
-                skillIconUI = uiObj.GetComponent<UnityEngine.UI.Image>();
-            }
-
-            if (skillIconUI == null) return;
+            return;
         }
 
-        // Eğer hala otomatik skill bulmadıysa burada tekrar deneyelim
-        if (equippedSkill == null)
-        {
-            equippedSkill = GetComponentInChildren<GodSkillBase>(); 
-        }
-
-        if (equippedSkill != null && equippedSkill.SkillIcon != null)
+        bool hasSkillIcon = equippedSkill != null && equippedSkill.SkillIcon != null;
+        if (hasSkillIcon)
         {
             skillIconUI.enabled = true;
             skillIconUI.sprite = equippedSkill.SkillIcon;
+            skillIconUI.color = ResolveSkillIconColor();
 
-            // Bekleme (Cooldown) veya mana yetersizse ikon rengini yarim (gri/transparan) yap
-            if (!equippedSkill.CanActivate())
+            float cooldownNormalized = GetEquippedSkillCooldownNormalized();
+            if (skillCooldownFillUI != null)
             {
-                skillIconUI.color = new Color(0.5f, 0.5f, 0.5f, 0.5f);
-            }
-            else
-            {
-                skillIconUI.color = Color.white;
+                bool showCooldown = cooldownNormalized > 0.001f;
+                skillCooldownFillUI.enabled = showCooldown;
+                skillCooldownFillUI.sprite = equippedSkill.SkillIcon;
+                skillCooldownFillUI.type = UnityEngine.UI.Image.Type.Filled;
+                skillCooldownFillUI.fillMethod = UnityEngine.UI.Image.FillMethod.Radial360;
+                skillCooldownFillUI.fillOrigin = 2;
+                skillCooldownFillUI.fillClockwise = false;
+                skillCooldownFillUI.fillAmount = cooldownNormalized;
+                skillCooldownFillUI.color = new Color(0f, 0f, 0f, 0.55f);
             }
         }
         else
         {
             skillIconUI.enabled = false;
+            if (skillCooldownFillUI != null)
+            {
+                skillCooldownFillUI.enabled = false;
+            }
         }
     }
 
@@ -281,6 +284,95 @@ public class PlayerAttack : MonoBehaviour
         equippedWeaponDefinition = weapon;
     }
 
+    public void SetEquippedSkill(GodSkillBase skill)
+    {
+        if (equippedSkill == skill)
+        {
+            return;
+        }
+
+        equippedSkill = skill;
+    }
+
+    public bool TryEquipSkillByDefinition(SkillDefinition skillDefinition)
+    {
+        if (skillDefinition == null)
+        {
+            return false;
+        }
+
+        GodSkillBase[] availableSkills = GetComponents<GodSkillBase>();
+        GodSkillBase matchedSkill = null;
+
+        if (IsConfiguredRuntimeSkillType(skillDefinition.linkedGodSkillType))
+        {
+            if (availableSkills != null)
+            {
+                for (int i = 0; i < availableSkills.Length; i++)
+                {
+                    if (availableSkills[i] is ConfiguredGodSkill configuredSkill &&
+                        configuredSkill.SkillType == skillDefinition.linkedGodSkillType)
+                    {
+                        matchedSkill = configuredSkill;
+                        break;
+                    }
+                }
+            }
+
+            matchedSkill = matchedSkill != null
+                ? matchedSkill
+                : ConfiguredGodSkill.CreateFromDefinition(gameObject, skillDefinition);
+        }
+        else
+        {
+            if (skillDefinition.linkedGodSkillType != GodSkillType.None && availableSkills != null)
+            {
+                for (int i = 0; i < availableSkills.Length; i++)
+                {
+                    if (availableSkills[i] != null && availableSkills[i].SkillType == skillDefinition.linkedGodSkillType)
+                    {
+                        matchedSkill = availableSkills[i];
+                        break;
+                    }
+                }
+            }
+
+            if (matchedSkill == null && skillDefinition.linkedGodSkillType == GodSkillType.None && availableSkills != null)
+            {
+                for (int i = 0; i < availableSkills.Length; i++)
+                {
+                    GodSkillBase candidate = availableSkills[i];
+                    if (candidate != null && MatchesSkillDefinition(candidate, skillDefinition))
+                    {
+                        matchedSkill = candidate;
+                        break;
+                    }
+                }
+            }
+        }
+
+        if (matchedSkill == null)
+        {
+            matchedSkill = ConfiguredGodSkill.CreateFromDefinition(gameObject, skillDefinition);
+            if (matchedSkill == null)
+            {
+                return false;
+            }
+        }
+        else if (matchedSkill is ConfiguredGodSkill configuredSkill)
+        {
+            configuredSkill.Configure(skillDefinition);
+        }
+        else
+        {
+            matchedSkill.ApplyInventoryDefinition(skillDefinition);
+        }
+
+        UpdateSkillUnlockStates(GetComponents<GodSkillBase>(), matchedSkill);
+        SetEquippedSkill(matchedSkill);
+        return true;
+    }
+
     public string GetCurrentWeaponDisplayName()
     {
         return equippedWeaponDefinition != null ? equippedWeaponDefinition.displayName : "Laser";
@@ -289,6 +381,16 @@ public class PlayerAttack : MonoBehaviour
     public float GetEquippedSkillRemainingCooldown()
     {
         return equippedSkill != null ? equippedSkill.RemainingCooldown : 0f;
+    }
+
+    public float GetEquippedSkillCooldownNormalized()
+    {
+        if (equippedSkill == null || equippedSkill.Cooldown <= 0.001f)
+        {
+            return 0f;
+        }
+
+        return Mathf.Clamp01(equippedSkill.RemainingCooldown / equippedSkill.Cooldown);
     }
 
     public bool TryGetAimDirection(out Vector2 direction)
@@ -311,6 +413,145 @@ public class PlayerAttack : MonoBehaviour
         }
 
         return Mouse.current != null && Mouse.current.leftButton.isPressed;
+    }
+
+    private static bool MatchesSkillDefinition(GodSkillBase candidate, SkillDefinition skillDefinition)
+    {
+        string candidateName = NormalizeSkillText(candidate.SkillName);
+        string candidateType = NormalizeSkillText(candidate.SkillType.ToString());
+        string definitionName = NormalizeSkillText(skillDefinition.displayName);
+        string definitionId = NormalizeSkillText(skillDefinition.itemId);
+
+        return
+            (!string.IsNullOrEmpty(definitionName) &&
+             (definitionName.Contains(candidateName) || candidateName.Contains(definitionName) ||
+              definitionName.Contains(candidateType) || candidateType.Contains(definitionName))) ||
+            (!string.IsNullOrEmpty(definitionId) &&
+             (definitionId.Contains(candidateName) || definitionId.Contains(candidateType)));
+    }
+
+    private static bool IsConfiguredRuntimeSkillType(GodSkillType skillType)
+    {
+        return skillType >= GodSkillType.ZeusLightningStrike;
+    }
+
+    private void ResolveSkillUiReferences()
+    {
+        if (skillIconUI == null)
+        {
+            GameObject uiObj = GameObject.Find("SkillIconUI");
+            if (uiObj != null)
+            {
+                skillIconUI = uiObj.GetComponent<UnityEngine.UI.Image>();
+            }
+        }
+
+        if (skillCooldownFillUI != null || skillIconUI == null)
+        {
+            return;
+        }
+
+        GameObject fillObject = GameObject.Find("SkillCooldownFill");
+        if (fillObject != null)
+        {
+            skillCooldownFillUI = fillObject.GetComponent<UnityEngine.UI.Image>();
+        }
+
+        if (skillCooldownFillUI == null)
+        {
+            Transform existingFill = skillIconUI.transform.Find("SkillCooldownFill");
+            if (existingFill != null)
+            {
+                skillCooldownFillUI = existingFill.GetComponent<UnityEngine.UI.Image>();
+            }
+        }
+
+        if (skillCooldownFillUI == null)
+        {
+            GameObject runtimeFill = new GameObject("SkillCooldownFill", typeof(RectTransform), typeof(UnityEngine.UI.Image));
+            RectTransform fillRect = runtimeFill.GetComponent<RectTransform>();
+            fillRect.SetParent(skillIconUI.transform, false);
+            fillRect.anchorMin = Vector2.zero;
+            fillRect.anchorMax = Vector2.one;
+            fillRect.offsetMin = Vector2.zero;
+            fillRect.offsetMax = Vector2.zero;
+
+            skillCooldownFillUI = runtimeFill.GetComponent<UnityEngine.UI.Image>();
+            skillCooldownFillUI.raycastTarget = false;
+            skillCooldownFillUI.enabled = false;
+        }
+    }
+
+    private Color ResolveSkillIconColor()
+    {
+        if (equippedSkill == null)
+        {
+            return Color.white;
+        }
+
+        float cooldownNormalized = GetEquippedSkillCooldownNormalized();
+        if (cooldownNormalized > 0.001f)
+        {
+            return new Color(1f, 1f, 1f, 0.45f);
+        }
+
+        if (!equippedSkill.IsPassiveSkill && !equippedSkill.CanActivate())
+        {
+            return new Color(0.5f, 0.5f, 0.5f, 0.5f);
+        }
+
+        return Color.white;
+    }
+
+    private static string NormalizeSkillText(string value)
+    {
+        if (string.IsNullOrWhiteSpace(value))
+        {
+            return string.Empty;
+        }
+
+        return value.Replace(" ", string.Empty).Replace("_", string.Empty).ToLowerInvariant();
+    }
+
+    private static void UpdateSkillUnlockStates(GodSkillBase[] availableSkills, GodSkillBase activeSkill)
+    {
+        if (availableSkills == null)
+        {
+            return;
+        }
+
+        for (int i = 0; i < availableSkills.Length; i++)
+        {
+            if (availableSkills[i] != null)
+            {
+                availableSkills[i].SetUnlocked(availableSkills[i] == activeSkill);
+            }
+        }
+    }
+
+    private void ResolveEquippedSkillSource()
+    {
+        if (playerInventory != null && playerInventory.EquippedSkill != null)
+        {
+            if (TryEquipSkillByDefinition(playerInventory.EquippedSkill))
+            {
+                return;
+            }
+        }
+
+        if (equippedSkill == null)
+        {
+            equippedSkill = GetComponent<ZeusSkill>();
+            if (equippedSkill == null)
+            {
+                equippedSkill = GetComponent<GodSkillBase>();
+            }
+
+            if (equippedSkill != null)
+            {
+                UpdateSkillUnlockStates(GetComponents<GodSkillBase>(), equippedSkill);
+            }
+        }
     }
 
     private bool TryResolveAttackDirection(out Vector2 direction)

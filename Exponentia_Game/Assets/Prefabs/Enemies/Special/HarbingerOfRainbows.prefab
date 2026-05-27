@@ -292,7 +292,7 @@ MonoBehaviour:
   placeholderColor: {r: 0.95, g: 0.85, b: 1, a: 1}
   placeholderScale: {x: 1.1, y: 1.1}
   sortingOrder: 5
-  enemyProjectilePrefab: {fileID: 7947579937356454847, guid: f6f9af9cce8214ac29b49154d133cce7, type: 3}
+  enemyProjectilePrefab: {fileID: 7947579937356454847, guid: 74489e99f168d154db529c6ae973f56e, type: 3}
   yaziOffset: {x: 0, y: 1.1, z: 0}
   yaziFontBoyutu: 32
   yaziKarakterBoyutu: 0.22
@@ -313,6 +313,11 @@ MonoBehaviour:
   coreBeamSpeed: 9.5
   coreBeamSize: 0.34
   coreBeamColor: {r: 1, g: 0.95, b: 0.8, a: 1}
+  prismDamageSprite: {fileID: -7429027417410141251, guid: 75286eb7ed1a73c4d8e2afee724fac6d, type: 3}
+  prismHealSprite: {fileID: 3999384861268602293, guid: 1c79de926f2c43f49986437bfcc39f0f, type: 3}
+  prismMoveSpeedSprite: {fileID: -3802334827041480869, guid: 60fb81fbe629a5443ab849252248a9fd, type: 3}
+  prismBuffDamageSprite: {fileID: 367227177234537652, guid: a462557767c6eaf459f98fb29e3466b5, type: 3}
+  prismVortexSprite: {fileID: -625370213268003608, guid: 67dece8019cc78249806825bf3ceb79f, type: 3}
 --- !u!1 &4829211761607858015
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,5 +407,5 @@ SpriteRenderer:
   m_Size: {x: 0.04, y: 0.04}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0

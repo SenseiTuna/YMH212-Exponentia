@@ -1,0 +1,272 @@
+fileFormatVersion: 2
+guid: 5f3c3db6ee135ff4990a846e720c40ca
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8081989670553300547
+    second: mermite_projectile_0
+  - first:
+      213: 6324464746070003017
+    second: mermite_projectile_1
+  - first:
+      213: 8883310652170163512
+    second: mermite_projectile_2
+  - first:
+      213: -5614699773937087042
+    second: mermite_projectile_3
+  - first:
+      213: 1370671726529808251
+    second: mermite_projectile_4
+  - first:
+      213: -8059528971463567248
+    second: mermite_projectile_5
+  - first:
+      213: 6274959106085234010
+    second: mermite_projectile_6
+  - first:
+      213: 1112425974870552034
+    second: mermite_projectile_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mermite_projectile_0
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 723
+        width: 378
+        height: 167
+      alignment: 9
+      pivot: {x: 0.49504533, y: 0.46859905}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34ea4bff8cef82070800000000000000
+      internalID: 8081989670553300547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mermite_projectile_1
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 717
+        width: 378
+        height: 167
+      alignment: 9
+      pivot: {x: 0.5168457, y: 0.4753279}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94dcbf79d2305c750800000000000000
+      internalID: 6324464746070003017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mermite_projectile_2
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 714
+        width: 380
+        height: 179
+      alignment: 9
+      pivot: {x: 0.51262754, y: 0.4022326}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 835db0ce8fbd74b70800000000000000
+      internalID: 8883310652170163512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mermite_projectile_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 230
+        width: 371
+        height: 197
+      alignment: 9
+      pivot: {x: 0.52503204, y: 0.4391089}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebd8306bd449412b0800000000000000
+      internalID: -5614699773937087042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mermite_projectile_4
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 225
+        width: 336
+        height: 192
+      alignment: 9
+      pivot: {x: 0.48733175, y: 0.42543063}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b770b735caa950310800000000000000
+      internalID: 1370671726529808251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 65d6eeae3d37cf541b43d5ad838d52ab
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      mermite_projectile_0: 8081989670553300547
+      mermite_projectile_1: 6324464746070003017
+      mermite_projectile_2: 8883310652170163512
+      mermite_projectile_3: -5614699773937087042
+      mermite_projectile_4: 1370671726529808251
+      mermite_projectile_5: -8059528971463567248
+      mermite_projectile_6: 6274959106085234010
+      mermite_projectile_7: 1112425974870552034
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

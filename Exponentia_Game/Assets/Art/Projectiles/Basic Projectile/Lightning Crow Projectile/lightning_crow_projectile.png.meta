@@ -1,0 +1,307 @@
+fileFormatVersion: 2
+guid: 58115081ec2c57c4a9e612f9a129d51f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6580735738493397224
+    second: lightning_crow_projectile_0
+  - first:
+      213: -8575370978533646897
+    second: lightning_crow_projectile_1
+  - first:
+      213: 3832176079666506857
+    second: lightning_crow_projectile_2
+  - first:
+      213: -8307357651344089425
+    second: lightning_crow_projectile_3
+  - first:
+      213: -8016282676023465157
+    second: lightning_crow_projectile_4
+  - first:
+      213: -8085601259403124771
+    second: lightning_crow_projectile_5
+  - first:
+      213: 4032708182441084402
+    second: lightning_crow_projectile_6
+  - first:
+      213: 785418515633184226
+    second: lightning_crow_projectile_7
+  - first:
+      213: -3001728135556852842
+    second: lightning_crow_projectile_8
+  - first:
+      213: 6393751263773304552
+    second: lightning_crow_projectile_9
+  - first:
+      213: -2832047569450910126
+    second: lightning_crow_projectile_10
+  - first:
+      213: -847678203087653901
+    second: lightning_crow_projectile_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lightning_crow_projectile_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 550
+        width: 336
+        height: 405
+      alignment: 9
+      pivot: {x: 0.48567462, y: 0.76476645}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 817126a46b78ca4a0800000000000000
+      internalID: -6580735738493397224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lightning_crow_projectile_1
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 548
+        width: 354
+        height: 421
+      alignment: 9
+      pivot: {x: 0.47748923, y: 0.7483387}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcdde4f77892ef880800000000000000
+      internalID: -8575370978533646897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lightning_crow_projectile_2
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 547
+        width: 384
+        height: 413
+      alignment: 9
+      pivot: {x: 0.50249004, y: 0.7701289}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae1389fa3656bc80800000000000000
+      internalID: -8307357651344089425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lightning_crow_projectile_3
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 50
+        width: 348
+        height: 424
+      alignment: 9
+      pivot: {x: 0.49542937, y: 0.7635355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f54639c9be07f730800000000000000
+      internalID: 4032708182441084402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lightning_crow_projectile_4
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 50
+        width: 354
+        height: 427
+      alignment: 9
+      pivot: {x: 0.51010996, y: 0.75144005}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ed94588afd56ea00800000000000000
+      internalID: 785418515633184226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lightning_crow_projectile_5
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 50
+        width: 345
+        height: 421
+      alignment: 9
+      pivot: {x: 0.50000036, y: 0.7644689}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e6a96b16ea2bb850800000000000000
+      internalID: 6393751263773304552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 42c3dbc2525c0844c9d3c9f081d215c1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      lightning_crow_projectile_0: -6580735738493397224
+      lightning_crow_projectile_1: -8575370978533646897
+      lightning_crow_projectile_10: -2832047569450910126
+      lightning_crow_projectile_11: -847678203087653901
+      lightning_crow_projectile_2: -8307357651344089425
+      lightning_crow_projectile_3: 4032708182441084402
+      lightning_crow_projectile_4: 785418515633184226
+      lightning_crow_projectile_5: 6393751263773304552
+      lightning_crow_projectile_8: -3001728135556852842
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

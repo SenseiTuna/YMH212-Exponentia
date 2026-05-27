@@ -15,7 +15,7 @@ public class LightningCrowEnemy : EnemyMechanics
 
     private float nextShootTime;
 
-    private void Reset()
+    protected override void Reset()
     {
         ApplyDefaultSetup(
             "Lightning Crow",

@@ -104,8 +104,9 @@ namespace Exponentia.InventorySystem.EditorTools
 
             SkillDefinition zeusBolt = CreateOrLoad<SkillDefinition>($"{Root}/Skills/SKL_ZeusBolt.asset");
             zeusBolt.itemId = "skill.zeus_bolt";
-            zeusBolt.displayName = "Zeus Bolt";
-            zeusBolt.description = "A focused lightning burst on activation.";
+            zeusBolt.displayName = "Zeus Lightning Strike";
+            zeusBolt.description = "Summon a focused lightning strike at the target location.";
+            zeusBolt.icon = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Art/Skill_Icons/Skills/Zeus/Lightning Strike/zeus_lightning_strike.png");
             zeusBolt.rarity = ItemRarity.Rare;
             zeusBolt.cooldown = 8f;
             zeusBolt.duration = 0.2f;

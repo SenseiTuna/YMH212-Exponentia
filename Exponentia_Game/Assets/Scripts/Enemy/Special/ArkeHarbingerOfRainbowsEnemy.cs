@@ -14,6 +14,11 @@ public class ArkeHarbingerOfRainbowsEnemy : EnemyMechanics
     [SerializeField] private float coreBeamSpeed = 9.5f;
     [SerializeField] private float coreBeamSize = 0.34f;
     [SerializeField] private Color coreBeamColor = new Color(1f, 0.95f, 0.8f);
+    [SerializeField] private Sprite prismDamageSprite;
+    [SerializeField] private Sprite prismHealSprite;
+    [SerializeField] private Sprite prismMoveSpeedSprite;
+    [SerializeField] private Sprite prismBuffDamageSprite;
+    [SerializeField] private Sprite prismVortexSprite;
 
     private float nextAttackTime;
 
@@ -41,7 +46,7 @@ public class ArkeHarbingerOfRainbowsEnemy : EnemyMechanics
         ArkePrismProjectile.PrismEffect.Vortex
     };
 
-    private void Reset()
+    protected override void Reset()
     {
         ApplyDefaultSetup(
             "Arke, Harbinger Of Rainbows",
@@ -103,7 +108,8 @@ public class ArkeHarbingerOfRainbowsEnemy : EnemyMechanics
                 buffDuration,
                 prismEffects[i],
                 prismColors[i],
-                projectileSize);
+                projectileSize,
+                GetPrismVisualSprite(prismEffects[i]));
         }
 
         SpawnEnemyProjectile(
@@ -115,5 +121,18 @@ public class ArkeHarbingerOfRainbowsEnemy : EnemyMechanics
             projectileLifeTime,
             coreBeamColor,
             coreBeamSize);
+    }
+
+    private Sprite GetPrismVisualSprite(ArkePrismProjectile.PrismEffect prismEffect)
+    {
+        return prismEffect switch
+        {
+            ArkePrismProjectile.PrismEffect.Damage => prismDamageSprite,
+            ArkePrismProjectile.PrismEffect.HealEnemies => prismHealSprite,
+            ArkePrismProjectile.PrismEffect.BuffMoveSpeed => prismMoveSpeedSprite,
+            ArkePrismProjectile.PrismEffect.BuffDamage => prismBuffDamageSprite,
+            ArkePrismProjectile.PrismEffect.Vortex => prismVortexSprite,
+            _ => prismDamageSprite
+        };
     }
 }

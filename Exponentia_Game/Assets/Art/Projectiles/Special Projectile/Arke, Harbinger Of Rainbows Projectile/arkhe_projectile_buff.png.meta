@@ -1,0 +1,336 @@
+fileFormatVersion: 2
+guid: 60fb81fbe629a5443ab849252248a9fd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3802334827041480869
+    second: arkhe_projectile_buff_0
+  - first:
+      213: 1345063366725456974
+    second: arkhe_projectile_buff_1
+  - first:
+      213: -7638862248538340817
+    second: arkhe_projectile_buff_2
+  - first:
+      213: 3795595417839190704
+    second: arkhe_projectile_buff_3
+  - first:
+      213: 8107738650686882578
+    second: arkhe_projectile_buff_4
+  - first:
+      213: -3581444277530540335
+    second: arkhe_projectile_buff_5
+  - first:
+      213: -784216035994672502
+    second: arkhe_projectile_buff_6
+  - first:
+      213: 3809612500708104349
+    second: arkhe_projectile_buff_7
+  - first:
+      213: 3245936789840320136
+    second: arkhe_projectile_buff_8
+  - first:
+      213: -7001456704283962972
+    second: arkhe_projectile_buff_9
+  - first:
+      213: -8382788222181267343
+    second: arkhe_projectile_buff_10
+  - first:
+      213: -7658326190933623735
+    second: arkhe_projectile_buff_11
+  - first:
+      213: 2961575316807279508
+    second: arkhe_projectile_buff_12
+  - first:
+      213: 6789244733170403765
+    second: arkhe_projectile_buff_13
+  - first:
+      213: 8204677405592887920
+    second: arkhe_projectile_buff_14
+  - first:
+      213: -991425479818966676
+    second: arkhe_projectile_buff_15
+  - first:
+      213: -2752490114226107331
+    second: arkhe_projectile_buff_16
+  - first:
+      213: -3786095132392417372
+    second: arkhe_projectile_buff_17
+  - first:
+      213: -7618286607220390980
+    second: arkhe_projectile_buff_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: arkhe_projectile_buff_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 669
+        width: 442
+        height: 355
+      alignment: 9
+      pivot: {x: 0.41387242, y: 0.24688669}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5f9815de946b3bc0800000000000000
+      internalID: -3802334827041480869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_projectile_buff_1
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 669
+        width: 416
+        height: 175
+      alignment: 9
+      pivot: {x: 0.35325316, y: 0.4980399}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f220bb3e14f4df590800000000000000
+      internalID: -7638862248538340817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_projectile_buff_2
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 668
+        width: 481
+        height: 356
+      alignment: 9
+      pivot: {x: 0.30249557, y: 0.24759768}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b2c76f2ce9aca430800000000000000
+      internalID: 3795595417839190704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_projectile_buff_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 440
+        height: 350
+      alignment: 9
+      pivot: {x: 0.41731545, y: 0.71982086}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 493ecdd3f01a91920800000000000000
+      internalID: 2961575316807279508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_projectile_buff_4
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 164
+        width: 412
+        height: 205
+      alignment: 9
+      pivot: {x: 0.35668707, y: 0.43163073}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 072a90151aedcd170800000000000000
+      internalID: 8204677405592887920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_projectile_buff_5
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 0
+        width: 482
+        height: 348
+      alignment: 9
+      pivot: {x: 0.30696985, y: 0.72536874}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3c47cd03d03dc9d0800000000000000
+      internalID: -2752490114226107331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d1a7e7f84f6ffda4d8feb956c7dd3394
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      arkhe_projectile_buff_0: -3802334827041480869
+      arkhe_projectile_buff_1: -7638862248538340817
+      arkhe_projectile_buff_10: -8382788222181267343
+      arkhe_projectile_buff_11: -7658326190933623735
+      arkhe_projectile_buff_13: 6789244733170403765
+      arkhe_projectile_buff_15: -991425479818966676
+      arkhe_projectile_buff_17: -3786095132392417372
+      arkhe_projectile_buff_18: -7618286607220390980
+      arkhe_projectile_buff_19: -553518113
+      arkhe_projectile_buff_2: 3795595417839190704
+      arkhe_projectile_buff_3: 2961575316807279508
+      arkhe_projectile_buff_4: 8204677405592887920
+      arkhe_projectile_buff_5: -2752490114226107331
+      arkhe_projectile_buff_6: -784216035994672502
+      arkhe_projectile_buff_7: 3809612500708104349
+      arkhe_projectile_buff_8: 3245936789840320136
+      arkhe_projectile_buff_9: -7001456704283962972
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

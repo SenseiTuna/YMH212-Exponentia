@@ -105,6 +105,8 @@ namespace Exponentia.InventorySystem
             {
                 SetActiveItem(activeItem);
             }
+
+            SyncEquippedSkillToPlayerAttack();
         }
 
         private void Update()
@@ -190,10 +192,11 @@ namespace Exponentia.InventorySystem
             }
 
             skillInventory.Add(skill);
-            if (equippedSkill == null)
-            {
-                equippedSkill = skill;
-            }
+
+            // Yeni gelen skill, aktif skill slotunu her zaman devralir.
+            equippedSkill = skill;
+
+            SyncEquippedSkillToPlayerAttack();
 
             if (verboseLogs)
             {
@@ -201,6 +204,19 @@ namespace Exponentia.InventorySystem
             }
 
             OnSkillAdded?.Invoke(skill);
+            RaiseInventoryChanged();
+            return true;
+        }
+
+        public bool EquipSkill(SkillDefinition skill)
+        {
+            if (skill == null || !ContainsSkill(skill.itemId))
+            {
+                return false;
+            }
+
+            equippedSkill = skill;
+            SyncEquippedSkillToPlayerAttack();
             RaiseInventoryChanged();
             return true;
         }
@@ -618,6 +634,16 @@ namespace Exponentia.InventorySystem
         private void RaiseInventoryChanged()
         {
             OnInventoryChanged?.Invoke();
+        }
+
+        private void SyncEquippedSkillToPlayerAttack()
+        {
+            if (playerAttack == null || equippedSkill == null)
+            {
+                return;
+            }
+
+            playerAttack.TryEquipSkillByDefinition(equippedSkill);
         }
     }
 }

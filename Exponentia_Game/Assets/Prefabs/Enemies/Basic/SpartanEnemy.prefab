@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 793270525437943179}
   - component: {fileID: 6567183880086125632}
   - component: {fileID: -6717582388751958523}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SpartanEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -320,7 +320,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6346770462643291404}
   - component: {fileID: 547430812082776386}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EnemyBodyVisual
   m_TagString: Untagged
   m_Icon: {fileID: 0}

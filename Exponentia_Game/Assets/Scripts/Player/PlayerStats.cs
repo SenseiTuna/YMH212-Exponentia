@@ -31,7 +31,7 @@ namespace Exponentia.Player
         [FormerlySerializedAs("canCalma")]
         [SerializeField] private float lifeSteal = 0f;
         [FormerlySerializedAs("kalkan")]
-        [SerializeField] private float shield = 0f;
+        [SerializeField] private float shield = 3f;
         [FormerlySerializedAs("mana")]
         [SerializeField] private float mana = 100f;
         [SerializeField] private float luck = 0f;
@@ -124,7 +124,7 @@ namespace Exponentia.Player
             ProjectileSpeed = statBlock.projectileSpeed;
             Defense = statBlock.defense;
             LifeSteal = statBlock.lifeSteal;
-            Shield = statBlock.shield;
+            Shield = statBlock.shield <= 0.001f ? 3f : statBlock.shield;
             Mana = statBlock.mana;
             Luck = statBlock.luck;
         }

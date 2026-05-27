@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI; // UI Image bileşenini kullanabilmek için ekledik!
 using TMPro;
 using Exponentia.Player;
+using Exponentia.InventorySystem;
 
 namespace Exponentia.UI
 {

@@ -122,7 +122,21 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
         EnsureHealthText();
         MevcutCan = Mathf.Max(0f, playerStats != null ? playerStats.MaxHealth : 0f);
         MevcutMana = Mathf.Max(0f, playerStats != null ? playerStats.Mana : 0f);
-        MevcutKalkan = Mathf.Max(0f, playerStats != null ? playerStats.Shield : 0f);
+
+        // Ensure player starts with full shields (defaulting to 3 if stats show 0 in Inspector)
+        if (playerStats != null)
+        {
+            if (playerStats.Shield <= 0.001f)
+            {
+                playerStats.Shield = 3f;
+            }
+            MevcutKalkan = playerStats.Shield;
+        }
+        else
+        {
+            MevcutKalkan = 3f;
+        }
+
         MevcutLaserMana = MaxLaserMana;
     }
 
@@ -202,9 +216,19 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
 
         if (MevcutKalkan > 0f)
         {
-            float absorbedDamage = Mathf.Min(MevcutKalkan, remainingDamage);
-            MevcutKalkan -= absorbedDamage;
-            remainingDamage -= absorbedDamage;
+            MevcutKalkan = Mathf.Max(0f, MevcutKalkan - 1f);
+            
+            // Premium neon cyan color feedback for shield hit
+            Color shieldColor = new Color(0.2f, 0.85f, 1f, 1f);
+            FloatingCombatText.Create("KALKAN -1", transform.position + Vector3.up * 0.9f, shieldColor);
+            
+            if (damageFlashFeedback != null)
+            {
+                damageFlashFeedback.Flash(shieldColor, damageFlashDuration);
+            }
+
+            OnCanDegisti?.Invoke(MevcutCan, playerStats.MaxHealth);
+            return 0f;
         }
 
         float reducedByDefense = Mathf.Max(1f, remainingDamage - playerStats.Defense);
@@ -565,10 +589,16 @@ public class PlayerMechanics : MonoBehaviour, IDamageable
             return;
         }
 
+        // Turkish: Karakter başlangıcında kalkanı olmayan karakterler için kalkanı 3'e çekerek güvenli/safe başlangıç sunuyoruz.
+        if (playerStats.Shield <= 0.001f)
+        {
+            playerStats.Shield = 3f;
+        }
+
         // Turkish: CharacterData uygulanınca runtime kaynaklarını PlayerStats ile tekrar hizalıyoruz.
         MevcutCan = Mathf.Clamp(playerStats.CurrentHealth, 0f, playerStats.MaxHealth);
         MevcutMana = Mathf.Max(0f, playerStats.Mana);
-        MevcutKalkan = Mathf.Max(0f, playerStats.Shield);
+        MevcutKalkan = playerStats.Shield;
         MevcutLaserMana = MaxLaserMana;
     }
 

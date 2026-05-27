@@ -45,6 +45,21 @@ namespace Exponentia.UI
         {
             ResolvePlayerReferences();
             TryAutoBindUiElements();
+
+            // Auto-instantiate our premium dynamic Roguelite Inventory HUD
+            if (FindFirstObjectByType<InventoryHUDController>() == null)
+            {
+                Canvas canvas = FindFirstObjectByType<Canvas>();
+                if (canvas != null)
+                {
+                    canvas.gameObject.AddComponent<InventoryHUDController>();
+                    Debug.Log("[PlayerHudController] Dynamic InventoryHUDController automatically added to " + canvas.name);
+                }
+                else
+                {
+                    Debug.LogWarning("[PlayerHudController] Canvas not found in scene! Dynamic Inventory cannot be initialized.");
+                }
+            }
         }
 
         private void OnEnable()

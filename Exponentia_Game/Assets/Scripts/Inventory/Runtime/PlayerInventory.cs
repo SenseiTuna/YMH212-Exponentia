@@ -426,6 +426,18 @@ namespace Exponentia.InventorySystem
             return result;
         }
 
+        public void SwapPassivePositions(int indexA, int indexB)
+        {
+            if (indexA < 0 || indexA >= passiveInventory.Count || indexB < 0 || indexB >= passiveInventory.Count)
+                return;
+            
+            PassiveStackEntry temp = passiveInventory[indexA];
+            passiveInventory[indexA] = passiveInventory[indexB];
+            passiveInventory[indexB] = temp;
+            
+            OnInventoryChanged?.Invoke();
+        }
+
         private bool ApplyRestoreHealthReward(float amount)
         {
             if (playerMechanics == null)

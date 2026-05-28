@@ -14,22 +14,9 @@ namespace Exponentia.UI
         [Header("HUD Elements")]
         [SerializeField] private Slider healthSlider;
         [SerializeField] private Image healthFillImage;
+        [SerializeField] private Slider manaSlider;
         [SerializeField] private Text healthText;
-
-        [Header("Skill Mana (Zeus)")]
-        [SerializeField] private Slider skillManaSlider;
-        [SerializeField] private Image skillManaImage;
-        [SerializeField] private Sprite[] skillManaSprites;
-        [SerializeField] private Text skillManaText;
-
-        [Header("Laser Mana")]
-        [SerializeField] private Slider laserManaSlider;
-        [SerializeField] private Image laserManaImage;
-        [SerializeField] private Image laserManaFillImage;
-        [SerializeField] private Sprite[] laserManaSprites;
-        [SerializeField] private Text laserManaText;
-
-        [Header("General HUD")]
+        [SerializeField] private Text manaText;
         [SerializeField] private Text skillText;
         [SerializeField] private Text weaponText;
         [SerializeField] private Text infoText;
@@ -45,21 +32,6 @@ namespace Exponentia.UI
         {
             ResolvePlayerReferences();
             TryAutoBindUiElements();
-
-            // Auto-instantiate our premium dynamic Roguelite Inventory HUD
-            if (FindFirstObjectByType<InventoryHUDController>() == null)
-            {
-                Canvas canvas = FindFirstObjectByType<Canvas>();
-                if (canvas != null)
-                {
-                    canvas.gameObject.AddComponent<InventoryHUDController>();
-                    Debug.Log("[PlayerHudController] Dynamic InventoryHUDController automatically added to " + canvas.name);
-                }
-                else
-                {
-                    Debug.LogWarning("[PlayerHudController] Canvas not found in scene! Dynamic Inventory cannot be initialized.");
-                }
-            }
         }
 
         private void OnEnable()
@@ -93,8 +65,7 @@ namespace Exponentia.UI
             }
 
             subscribedMechanics.OnCanDegisti -= HandleHealthChanged;
-            subscribedMechanics.OnManaDegisti -= HandleSkillManaChanged;
-            subscribedMechanics.OnLaserManaDegisti -= HandleLaserManaChanged;
+            subscribedMechanics.OnManaDegisti -= HandleManaChanged;
             subscribedMechanics.OnXpDegisti -= HandleXpChanged;
             subscribedMechanics = null;
         }
@@ -107,8 +78,7 @@ namespace Exponentia.UI
             }
 
             HandleHealthChanged(playerMechanics.MevcutCan, playerStats.MaxHealth);
-            HandleSkillManaChanged(playerMechanics.MevcutMana, playerStats.Mana);
-            HandleLaserManaChanged(playerMechanics.MevcutLaserMana, playerMechanics.MaxLaserMana);
+            HandleManaChanged(playerMechanics.MevcutMana, playerStats.Mana);
             HandleXpChanged(playerStats.Xp, playerStats.NextLevelXp);
             UpdateStaticFields();
         }
@@ -161,15 +131,13 @@ namespace Exponentia.UI
                 if (subscribedMechanics != null)
                 {
                     subscribedMechanics.OnCanDegisti -= HandleHealthChanged;
-                    subscribedMechanics.OnManaDegisti -= HandleSkillManaChanged;
-                    subscribedMechanics.OnLaserManaDegisti -= HandleLaserManaChanged;
+                    subscribedMechanics.OnManaDegisti -= HandleManaChanged;
                     subscribedMechanics.OnXpDegisti -= HandleXpChanged;
                 }
 
                 subscribedMechanics = playerMechanics;
                 subscribedMechanics.OnCanDegisti += HandleHealthChanged;
-                subscribedMechanics.OnManaDegisti += HandleSkillManaChanged;
-                subscribedMechanics.OnLaserManaDegisti += HandleLaserManaChanged;
+                subscribedMechanics.OnManaDegisti += HandleManaChanged;
                 subscribedMechanics.OnXpDegisti += HandleXpChanged;
             }
 
@@ -184,14 +152,9 @@ namespace Exponentia.UI
                 healthSlider = FindOptionalSlider("HealthBar");
             }
 
-            if (skillManaSlider == null)
+            if (manaSlider == null)
             {
-                skillManaSlider = FindOptionalSlider("SkillManaBar") ?? FindOptionalSlider("ManaBar");
-            }
-
-            if (laserManaSlider == null)
-            {
-                laserManaSlider = FindOptionalSlider("LaserManaBar");
+                manaSlider = FindOptionalSlider("ManaBar");
             }
 
             if (healthText == null)
@@ -199,14 +162,9 @@ namespace Exponentia.UI
                 healthText = FindOptionalText("HealthText");
             }
 
-            if (skillManaText == null)
+            if (manaText == null)
             {
-                skillManaText = FindOptionalText("SkillManaText") ?? FindOptionalText("ManaText");
-            }
-
-            if (laserManaText == null)
-            {
-                laserManaText = FindOptionalText("LaserManaText");
+                manaText = FindOptionalText("ManaText");
             }
 
             if (skillText == null)
@@ -245,65 +203,18 @@ namespace Exponentia.UI
             }
         }
 
-        private void HandleSkillManaChanged(float current, float max)
+        private void HandleManaChanged(float current, float max)
         {
-            if (skillManaSlider != null)
+            if (manaSlider != null)
             {
-                skillManaSlider.minValue = 0f;
-                skillManaSlider.maxValue = Mathf.Max(1f, max);
-                skillManaSlider.value = Mathf.Clamp(current, 0f, skillManaSlider.maxValue);
+                manaSlider.minValue = 0f;
+                manaSlider.maxValue = Mathf.Max(1f, max);
+                manaSlider.value = Mathf.Clamp(current, 0f, manaSlider.maxValue);
             }
 
-            if (skillManaText != null)
+            if (manaText != null)
             {
-                skillManaText.text = BuildGaugeText("Skill MP", current, max);
-            }
-
-            if (skillManaImage != null && skillManaSprites != null && skillManaSprites.Length > 0)
-            {
-                float percent = Mathf.Clamp01(current / Mathf.Max(1f, max));
-                int spriteIndex = Mathf.Clamp(Mathf.FloorToInt(percent * skillManaSprites.Length), 0, skillManaSprites.Length - 1);
-
-                // Eğer aktif yetenek kuşanılmışsa, sprite seçimini pürüzsüz yüzde yerine NET SKILL HAKKI (yük) sayısına göre yap
-                if (playerAttack != null && playerAttack.EquippedSkill != null)
-                {
-                    float cost = playerAttack.EquippedSkill.ManaCost;
-                    if (cost > 0f)
-                    {
-                        int charges = Mathf.FloorToInt(current / cost);
-                        spriteIndex = Mathf.Clamp(charges, 0, skillManaSprites.Length - 1);
-                    }
-                }
-
-                skillManaImage.sprite = skillManaSprites[spriteIndex];
-            }
-        }
-
-        private void HandleLaserManaChanged(float current, float max)
-        {
-            if (laserManaSlider != null)
-            {
-                laserManaSlider.minValue = 0f;
-                laserManaSlider.maxValue = Mathf.Max(1f, max);
-                laserManaSlider.value = Mathf.Clamp(current, 0f, laserManaSlider.maxValue);
-            }
-
-            if (laserManaText != null)
-            {
-                laserManaText.text = BuildGaugeText("Laser MP", current, max);
-            }
-
-            float percent = Mathf.Clamp01(current / Mathf.Max(1f, max));
-
-            if (laserManaFillImage != null)
-            {
-                laserManaFillImage.fillAmount = percent;
-            }
-
-            if (laserManaImage != null && laserManaSprites != null && laserManaSprites.Length > 0)
-            {
-                int spriteIndex = Mathf.Clamp(Mathf.FloorToInt(percent * laserManaSprites.Length), 0, laserManaSprites.Length - 1);
-                laserManaImage.sprite = laserManaSprites[spriteIndex];
+                manaText.text = BuildGaugeText("MP", current, max);
             }
         }
 

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8089455688942574166}
   - component: {fileID: 1565853404079343414}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: EnemyBodyVisual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 6695298604264833222}
   - component: {fileID: 2172719505803353933}
   - component: {fileID: 1504076988312039869}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: StyxJellyfishEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}

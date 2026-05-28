@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8014933078023913040}
   - component: {fileID: 1548541267960472942}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: EnemyBodyVisual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 4295037107853384490}
   - component: {fileID: 7702904502542436476}
   - component: {fileID: -2369101727465224368}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: CoralSpitterEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}

@@ -125,10 +125,15 @@ GameObject:
   - component: {fileID: 7558214801132853810}
   - component: {fileID: 3214891503290248852}
   - component: {fileID: 6743210987654321012}
-  - component: {fileID: -8229712424665165490}
   - component: {fileID: 2453811820116149079}
   - component: {fileID: -3715116439228494856}
   - component: {fileID: 3270152759459399765}
+  - component: {fileID: -5121730209057677618}
+  - component: {fileID: -8229712424665165490}
+  - component: {fileID: 8088782953340082468}
+  - component: {fileID: 4632266276934396422}
+  - component: {fileID: -6345279769038755036}
+  - component: {fileID: 6911561290995158347}
   m_Layer: 0
   m_Name: PlayerBase
   m_TagString: Player
@@ -201,7 +206,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 1630519669529170824, guid: 95b6efd9134b71445aee1c2c0185c271, type: 3}
+  m_Sprite: {fileID: 3339759278924335677, guid: da2fde83d0dd0a549b3862798333adef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -275,8 +280,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 1.23, y: 1.51}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.85, y: 1.16}
     newSize: {x: 1.23, y: 1.51}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -329,11 +334,12 @@ MonoBehaviour:
   playerMovement: {fileID: 8053774950672793964}
   inputReader: {fileID: 0}
   statController: {fileID: 0}
+  playerInventory: {fileID: 0}
   equippedSkill: {fileID: 0}
   skillIconUI: {fileID: 0}
   equippedWeaponDefinition: {fileID: 0}
   defaultDamageMultiplier: 1
-  laserManaCost: 10
+  laserManaCost: 0
   laserLifetime: 1.5
   spawnOffset: 0.6
   gamepadAimDeadzone: 0.2
@@ -373,8 +379,6 @@ MonoBehaviour:
   healthTextColor: {r: 0, g: 1, b: 0, a: 1}
   healthTextFontSize: 32
   healthTextCharacterSize: 0.22
-  laserManaRegenRate: 15
-  killsNeededForSkillMana: 5
 --- !u!114 &7558214801132853810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -439,35 +443,6 @@ MonoBehaviour:
   sortingOrder: 30
   showWhenIdle: 1
   useMoveDirectionFallback: 1
---- !u!114 &-8229712424665165490
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2913247188878387274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95be78963494843f7a5549bbdbb3591f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ZeusSkill
-  skillName: Zeus
-  skillDescription: Gokyuzunden cagrilan yildirim temelli aktif skill.
-  godSkillType: 1
-  skillIcon: {fileID: 7091687155753810841, guid: 23213466e6c6746a39df99ae707dba80, type: 3}
-  isUnlocked: 1
-  skillLevel: 1
-  maxSkillLevel: 5
-  manaCost: 30
-  cooldown: 0
-  lightningDamage: 30
-  chainRadius: 3
-  maxChainCount: 3
-  stunDuration: 0.6
-  killAttackSpeedPerStack: 0.15
-  maxKillStacks: 5
-  killStackDuration: 4
-  wrathCooldown: 5
 --- !u!114 &2453811820116149079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -527,7 +502,7 @@ MonoBehaviour:
   playerAttack: {fileID: 1575948987179740482}
   voidCorruptionManager: {fileID: 0}
   activeWeapon: {fileID: 0}
-  equippedSkill: {fileID: 0}
+  equippedSkill: {fileID: 11400000, guid: 2ceb6d2d6e690409ea6c0dcf38b8df5a, type: 2}
   activeItem: {fileID: 0}
   weaponInventory: []
   skillInventory: []
@@ -540,3 +515,172 @@ MonoBehaviour:
     m_Bits: 4294967295
   activeItemAreaRadius: 2.5
   verboseLogs: 1
+--- !u!114 &-5121730209057677618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af8af9dacc4024fa9b0af4b2435a93de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AresSkill
+  skillName: Ares
+  skillDescription: Gecici ofansif guclendirme saglayan savas skill'i.
+  godSkillType: 4
+  skillIcon: {fileID: 0}
+  isUnlocked: 0
+  skillLevel: 1
+  maxSkillLevel: 5
+  manaCost: 24
+  cooldown: 10
+  berserkDuration: 4
+  bonusDamageMultiplier: 1.5
+  bonusAttackSpeedMultiplier: 1.35
+  bonusMoveSpeedMultiplier: 1.2
+  bleedDps: 6
+  bleedDuration: 4
+--- !u!114 &-8229712424665165490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95be78963494843f7a5549bbdbb3591f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ZeusSkill
+  skillName: Zeus Lightning Strike
+  skillDescription: Gokyuzunden cagrilan hizli bir yildirim vurusu.
+  godSkillType: 1
+  skillIcon: {fileID: -674937221467695307, guid: 9265c881aa19a444da3cf4eec1e60e0b, type: 3}
+  isUnlocked: 1
+  skillLevel: 1
+  maxSkillLevel: 5
+  manaCost: 0
+  cooldown: 0
+  lightningDamage: 30
+  chainRadius: 3
+  maxChainCount: 3
+  lightningStrikeController: {fileID: 9100000, guid: 42d478f30d6256e4b9b553898f101ab2, type: 2}
+  lightningStrikeFirstFrame: {fileID: -674937221467695307, guid: 9265c881aa19a444da3cf4eec1e60e0b, type: 3}
+  animationLifetime: 0.85
+  animationOffset: {x: 0, y: 2.6}
+  animationScale: 1.6
+  animationSortingOrder: 500
+  killAttackSpeedPerStack: 0.15
+  maxKillStacks: 5
+  killStackDuration: 4
+  wrathCooldown: 10
+--- !u!114 &8088782953340082468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af0f2be95445544c1b4d90845527812a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AthenaSkill
+  skillName: Athena
+  skillDescription: Kalkan ve savunma odakli koruyucu skill.
+  godSkillType: 6
+  skillIcon: {fileID: 0}
+  isUnlocked: 0
+  skillLevel: 1
+  maxSkillLevel: 5
+  manaCost: 0
+  cooldown: 0
+  shieldAmount: 35
+  shieldDuration: 4
+  defenseBonus: 8
+  canReflectProjectiles: 1
+  reflectSpeedMultiplier: 1.1
+  reflectDamageMultiplier: 1
+--- !u!114 &4632266276934396422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60fffbf2413294b46bb35d59ba9f53f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HadesSkill
+  skillName: Hades
+  skillDescription: Can cekme ve ruh temali aktif skill.
+  godSkillType: 3
+  skillIcon: {fileID: 0}
+  isUnlocked: 0
+  skillLevel: 1
+  maxSkillLevel: 5
+  manaCost: 32
+  cooldown: 8
+  soulDamage: 26
+  executeThreshold: 0.15
+  fearDuration: 1.2
+  lifeStealRatio: 0.25
+  dotDps: 4
+  dotDuration: 5
+  soulsPerKill: 1
+  soulToShield: 8
+--- !u!114 &-6345279769038755036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 311878b4dfa5743d6a4d15ca3d47b112, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HermesSkill
+  skillName: Hermes
+  skillDescription: Hiz, atiklik ve pozisyon alma odakli aktif skill.
+  godSkillType: 5
+  skillIcon: {fileID: 0}
+  isUnlocked: 0
+  skillLevel: 1
+  maxSkillLevel: 5
+  manaCost: 0
+  cooldown: 0
+  dashDistance: 4
+  dashDuration: 0.2
+  hasteDuration: 3
+  cooldownReductionRatio: 0.2
+--- !u!114 &6911561290995158347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e04a20ae855d84385882fda2197fd629, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PoseidonSkill
+  skillName: Poseidon
+  skillDescription: Dalga ve itme temelli alan baskisi skill'i.
+  godSkillType: 2
+  skillIcon: {fileID: 0}
+  isUnlocked: 0
+  skillLevel: 1
+  maxSkillLevel: 5
+  manaCost: 0
+  cooldown: 0
+  waveDamage: 22
+  waveRange: 5
+  knockbackForce: 4
+  slowDuration: 1.5
+  passiveKnockbackInterval: 10
+  passiveSlowAmount: 0.25

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 258976143027685204}
   - component: {fileID: 5765687423665589940}
   - component: {fileID: 2276269775880814754}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: HarpyEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -317,7 +317,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4750029445065308922}
   - component: {fileID: 752745339313120450}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: EnemyBodyVisual
   m_TagString: Untagged
   m_Icon: {fileID: 0}

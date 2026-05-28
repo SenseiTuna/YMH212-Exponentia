@@ -150,7 +150,7 @@ public abstract class GodSkillBase : MonoBehaviour
 
     private void CacheOwnerReferences()
     {
-        owner = GetComponentInParent<PlayerMechanics>();
-        ownerStats = GetComponentInParent<PlayerStats>();
+        owner = GetComponent<PlayerMechanics>();
+        ownerStats = GetComponent<PlayerStats>();
     }
 }

@@ -149,19 +149,6 @@ public class VisibleMacroGrid : MonoBehaviour
         return combatColor;
     }
 
-    public Dictionary<Vector2Int, MacroGridCellView> CellViews => _views;
-
-    public Vector2Int WorldToMacro(Vector3 worldPos)
-    {
-        float xOffset = (width - 1) * 0.5f;
-        float yOffset = (height - 1) * 0.5f;
-
-        int x = Mathf.RoundToInt((worldPos.x / cellWorldSize) + xOffset);
-        int y = Mathf.RoundToInt((worldPos.y / cellWorldSize) + yOffset);
-
-        return new Vector2Int(x, y);
-    }
-
     private void ClearVisuals()
     {
         Transform existing = transform.Find("GridCells");

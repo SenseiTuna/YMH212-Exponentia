@@ -337,6 +337,7 @@ MonoBehaviour:
   playerInventory: {fileID: 0}
   equippedSkill: {fileID: 0}
   skillIconUI: {fileID: 0}
+  skillCooldownFillUI: {fileID: 0}
   equippedWeaponDefinition: {fileID: 0}
   defaultDamageMultiplier: 1
   laserManaCost: 0

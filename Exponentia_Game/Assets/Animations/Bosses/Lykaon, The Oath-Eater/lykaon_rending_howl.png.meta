@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: 8f670e086f9d8564cbe6602b0ea54b73
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4341631649296926098
+    second: lykaon_rending_howl_0
+  - first:
+      213: 990590888877211328
+    second: lykaon_rending_howl_1
+  - first:
+      213: -5857030004571231616
+    second: lykaon_rending_howl_2
+  - first:
+      213: 3835398760542932708
+    second: lykaon_rending_howl_3
+  - first:
+      213: 3473012809175995312
+    second: lykaon_rending_howl_4
+  - first:
+      213: -5438142993879679677
+    second: lykaon_rending_howl_5
+  - first:
+      213: 5139244178403751420
+    second: lykaon_rending_howl_6
+  - first:
+      213: 7481324485747235489
+    second: lykaon_rending_howl_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lykaon_rending_howl_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 429
+        width: 430
+        height: 458
+      alignment: 9
+      pivot: {x: 0.46642, y: 0.44865012}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6a3016940d6fb3c0800000000000000
+      internalID: -4341631649296926098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_rending_howl_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 430
+        height: 433
+      alignment: 9
+      pivot: {x: 0.44761825, y: 0.46529377}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ceb3414a294fbd00800000000000000
+      internalID: 990590888877211328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_rending_howl_5
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 0
+        width: 412
+        height: 432
+      alignment: 9
+      pivot: {x: 0.40902963, y: 0.4661651}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08a2ab22e36a7bea0800000000000000
+      internalID: -5857030004571231616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_rending_howl_1
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 429
+        width: 387
+        height: 415
+      alignment: 9
+      pivot: {x: 0.4226344, y: 0.48058024}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ee82261ad21a3530800000000000000
+      internalID: 3835398760542932708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_rending_howl_2
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 429
+        width: 395
+        height: 434
+      alignment: 9
+      pivot: {x: 0.4241282, y: 0.46892214}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b31157cfbe923030800000000000000
+      internalID: 3473012809175995312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_rending_howl_3
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 429
+        width: 473
+        height: 458
+      alignment: 9
+      pivot: {x: 0.37321204, y: 0.45306182}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34db50472c5d784b0800000000000000
+      internalID: -5438142993879679677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_rending_howl_6
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 0
+        width: 402
+        height: 402
+      alignment: 9
+      pivot: {x: 0.44406387, y: 0.4986274}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf5ffb3f953425740800000000000000
+      internalID: 5139244178403751420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_rending_howl_7
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 0
+        width: 453
+        height: 391
+      alignment: 9
+      pivot: {x: 0.41168576, y: 0.48467147}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aa55666bf003d760800000000000000
+      internalID: 7481324485747235489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 18d32f321b3c38b4fae4d4d93a91015b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      lykaon_rending_howl_0: -4341631649296926098
+      lykaon_rending_howl_1: 3835398760542932708
+      lykaon_rending_howl_2: 3473012809175995312
+      lykaon_rending_howl_3: -5438142993879679677
+      lykaon_rending_howl_4: 990590888877211328
+      lykaon_rending_howl_5: -5857030004571231616
+      lykaon_rending_howl_6: 5139244178403751420
+      lykaon_rending_howl_7: 7481324485747235489
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

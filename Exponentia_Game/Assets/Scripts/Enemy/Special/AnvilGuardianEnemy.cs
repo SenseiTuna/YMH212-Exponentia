@@ -48,7 +48,6 @@ public class AnvilGuardianEnemy : EnemyMechanics
     protected override void Update()
     {
         base.Update();
-        ReflectIncomingProjectiles();
 
         if (!IsAlive || PlayerTarget == null || Time.time < nextHammerTime)
         {
@@ -78,65 +77,57 @@ public class AnvilGuardianEnemy : EnemyMechanics
             hammerProjectileSize);
     }
 
-    private void ReflectIncomingProjectiles()
+    public bool TryReflectPlayerProjectile(PlayerProjectile playerProjectile, Collider2D projectileCollider)
     {
+        if (!IsAlive || playerProjectile == null)
+        {
+            return false;
+        }
+
+        if (reflectCollider == null)
+        {
+            reflectCollider = GetComponent<Collider2D>();
+        }
+
         if (useHitboxForReflection && reflectCollider != null)
         {
-            ReflectIncomingProjectilesNearHitbox();
-            return;
-        }
-
-        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, reflectRadius);
-        for (int i = 0; i < hits.Length; i++)
-        {
-            PlayerProjectile playerProjectile = hits[i].GetComponentInParent<PlayerProjectile>();
-            if (playerProjectile == null)
-            {
-                continue;
-            }
-
-            ReflectProjectile(playerProjectile, transform.position);
-        }
-    }
-
-    private void ReflectIncomingProjectilesNearHitbox()
-    {
-        Bounds bounds = reflectCollider.bounds;
-        float searchRadius = Mathf.Max(0.1f, bounds.extents.magnitude + reflectHitboxPadding + 1f);
-        Collider2D[] hits = Physics2D.OverlapCircleAll(bounds.center, searchRadius);
-
-        for (int i = 0; i < hits.Length; i++)
-        {
-            PlayerProjectile playerProjectile = hits[i].GetComponentInParent<PlayerProjectile>();
-            if (playerProjectile == null)
-            {
-                continue;
-            }
-
-            Collider2D projectileCollider = hits[i];
-            if (projectileCollider == null || projectileCollider.transform.root != playerProjectile.transform.root)
+            if (projectileCollider == null)
             {
                 projectileCollider = playerProjectile.GetComponent<Collider2D>();
             }
 
             if (projectileCollider == null)
             {
-                continue;
+                return false;
             }
 
             ColliderDistance2D distance = reflectCollider.Distance(projectileCollider);
             if (!distance.isOverlapped && distance.distance > reflectHitboxPadding)
             {
-                continue;
+                return false;
             }
 
             Vector2 reflectOrigin = reflectCollider.ClosestPoint(playerProjectile.transform.position);
             ReflectProjectile(playerProjectile, reflectOrigin);
+            return true;
         }
+
+        if (Vector2.Distance(transform.position, playerProjectile.transform.position) > reflectRadius)
+        {
+            return false;
+        }
+
+        ReflectProjectile(playerProjectile, transform.position);
+        return true;
     }
 
     private void ReflectProjectile(PlayerProjectile playerProjectile, Vector2 reflectOrigin)
     {
+        if (playerProjectile == null)
+        {
+            return;
+        }
+
         Vector2 reflectDirection = ((Vector2)playerProjectile.transform.position - reflectOrigin).normalized;
         if (reflectDirection.sqrMagnitude <= 0.001f)
         {

@@ -1,0 +1,344 @@
+fileFormatVersion: 2
+guid: 42815c803f54b6c42ac14d6acaa60f30
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6470712431650727348
+    second: lykaon_attack_windup_0
+  - first:
+      213: 6559686706865236639
+    second: lykaon_attack_windup_1
+  - first:
+      213: 7595060066518234036
+    second: lykaon_attack_windup_2
+  - first:
+      213: 8050325815991712939
+    second: lykaon_attack_windup_3
+  - first:
+      213: 4755065602451398013
+    second: lykaon_attack_windup_4
+  - first:
+      213: -8087761238208359767
+    second: lykaon_attack_windup_5
+  - first:
+      213: 7961083605723361264
+    second: lykaon_attack_windup_6
+  - first:
+      213: 5326307513480505395
+    second: lykaon_attack_windup_7
+  - first:
+      213: -2468485505509415566
+    second: lykaon_attack_windup_8
+  - first:
+      213: 5614017397153756210
+    second: lykaon_attack_windup_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lykaon_attack_windup_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 444
+        width: 446
+        height: 443
+      alignment: 9
+      pivot: {x: 0.5099836, y: 0.49073395}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4a11c3a3596336a0800000000000000
+      internalID: -6470712431650727348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_attack_windup_1
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 456
+        width: 430
+        height: 383
+      alignment: 9
+      pivot: {x: 0.46865305, y: 0.47137865}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9aed802e40b80b50800000000000000
+      internalID: 6559686706865236639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_attack_windup_2
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 459
+        width: 428
+        height: 341
+      alignment: 9
+      pivot: {x: 0.4777849, y: 0.43540904}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bacb75c5da088bf60800000000000000
+      internalID: 8050325815991712939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_attack_windup_3
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 457
+        width: 434
+        height: 430
+      alignment: 9
+      pivot: {x: 0.45062453, y: 0.35454357}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7d5bc5d8f26df140800000000000000
+      internalID: 4755065602451398013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_attack_windup_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 421
+        height: 363
+      alignment: 9
+      pivot: {x: 0.49770108, y: 0.45015633}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a2da60310082cf80800000000000000
+      internalID: -8087761238208359767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_attack_windup_5
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 13
+        width: 427
+        height: 370
+      alignment: 9
+      pivot: {x: 0.46022138, y: 0.40940544}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ffa35a1c537b7e60800000000000000
+      internalID: 7961083605723361264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_attack_windup_6
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 12
+        width: 426
+        height: 393
+      alignment: 9
+      pivot: {x: 0.48239064, y: 0.4082507}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27529e6e28d2ebdd0800000000000000
+      internalID: -2468485505509415566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_attack_windup_7
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 0
+        width: 438
+        height: 352
+      alignment: 9
+      pivot: {x: 0.4760299, y: 0.41889113}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2347630141ff8ed40800000000000000
+      internalID: 5614017397153756210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 9f1effba08f8b5d40bd407946829fb2c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      lykaon_attack_windup_0: -6470712431650727348
+      lykaon_attack_windup_1: 6559686706865236639
+      lykaon_attack_windup_2: 8050325815991712939
+      lykaon_attack_windup_3: 4755065602451398013
+      lykaon_attack_windup_4: -8087761238208359767
+      lykaon_attack_windup_5: 7961083605723361264
+      lykaon_attack_windup_6: -2468485505509415566
+      lykaon_attack_windup_7: 5614017397153756210
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

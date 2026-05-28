@@ -124,6 +124,12 @@ public class PlayerProjectile : MonoBehaviour
             return;
         }
 
+        AnvilGuardianEnemy anvilGuardian = other.GetComponentInParent<AnvilGuardianEnemy>();
+        if (anvilGuardian != null && anvilGuardian.TryReflectPlayerProjectile(this, circleCollider))
+        {
+            return;
+        }
+
         alreadyHit.Add(other);
         owner.DealDamage(other.gameObject, damageMultiplier);
 

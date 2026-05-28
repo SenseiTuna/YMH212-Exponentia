@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8295789283506576283}
   - component: {fileID: 7904227003819431958}
   - component: {fileID: 8908163326708937972}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: BlackHole
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -320,7 +320,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6516553160353252262}
   - component: {fileID: 6907319663388947112}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: EnemyBodyVisual
   m_TagString: Untagged
   m_Icon: {fileID: 0}

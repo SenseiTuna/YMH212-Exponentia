@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 913644575503569982}
   - component: {fileID: 5984587857475730905}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: EnemyBodyVisual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 57137633829259789}
   - component: {fileID: 3369363557502261032}
   - component: {fileID: -2424553511457687279}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: CreeperSnakeEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}

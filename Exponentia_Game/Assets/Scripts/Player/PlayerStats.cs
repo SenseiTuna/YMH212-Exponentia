@@ -31,10 +31,9 @@ namespace Exponentia.Player
         [FormerlySerializedAs("canCalma")]
         [SerializeField] private float lifeSteal = 0f;
         [FormerlySerializedAs("kalkan")]
-        [SerializeField] private float shield = 3f;
+        [SerializeField] private float shield = 0f;
         [FormerlySerializedAs("mana")]
         [SerializeField] private float mana = 100f;
-        [SerializeField] private float luck = 0f;
 
         [Header("Progression")]
         [FormerlySerializedAs("level")]
@@ -59,12 +58,8 @@ namespace Exponentia.Player
         [Header("Runtime Resources")]
         [SerializeField] private float currentHealth;
 
-        [Header("Economy")]
-        [SerializeField] private int gold = 100; // Oyuncu varsayılan olarak 100 altınla başlar
-
         public float MaxHealth { get => maxHealth; set => maxHealth = Mathf.Max(0f, value); }
         public float CurrentHealth { get => currentHealth; set => currentHealth = Mathf.Clamp(value, 0f, maxHealth); }
-        public int Gold { get => gold; set => gold = Mathf.Max(0, value); }
         public float Damage { get => damage; set => damage = Mathf.Max(0f, value); }
         public float MoveSpeed { get => moveSpeed; set => moveSpeed = Mathf.Max(0f, value); }
         public float AttackSpeed { get => attackSpeed; set => attackSpeed = Mathf.Max(0f, value); }
@@ -73,7 +68,6 @@ namespace Exponentia.Player
         public float LifeSteal { get => lifeSteal; set => lifeSteal = Mathf.Max(0f, value); }
         public float Shield { get => shield; set => shield = Mathf.Max(0f, value); }
         public float Mana { get => mana; set => mana = Mathf.Max(0f, value); }
-        public float Luck { get => luck; set => luck = value; }
         public int Level { get => level; set => level = Mathf.Max(1, value); }
         public float Xp { get => xp; set => xp = Mathf.Max(0f, value); }
         public float NextLevelXp { get => nextLevelXp; set => nextLevelXp = Mathf.Max(1f, value); }
@@ -90,7 +84,6 @@ namespace Exponentia.Player
             maxHealth = Mathf.Max(1f, maxHealth);
             currentHealth = Mathf.Clamp(currentHealth <= 0f ? maxHealth : currentHealth, 0f, maxHealth);
             mana = Mathf.Max(0f, mana);
-            luck = Mathf.Max(0f, luck);
             shield = Mathf.Max(0f, shield);
             level = Mathf.Max(1, level);
             nextLevelXp = Mathf.Max(1f, nextLevelXp);
@@ -124,9 +117,8 @@ namespace Exponentia.Player
             ProjectileSpeed = statBlock.projectileSpeed;
             Defense = statBlock.defense;
             LifeSteal = statBlock.lifeSteal;
-            Shield = statBlock.shield <= 0.001f ? 3f : statBlock.shield;
+            Shield = statBlock.shield;
             Mana = statBlock.mana;
-            Luck = statBlock.luck;
         }
     }
 }

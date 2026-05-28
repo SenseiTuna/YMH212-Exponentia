@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8160456539501261363}
   - component: {fileID: 8673883503321744666}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: EnemyBodyVisual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 6273494334577808164}
   - component: {fileID: 2759914302737081640}
   - component: {fileID: -3801306255099220050}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: LightningCrowEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}

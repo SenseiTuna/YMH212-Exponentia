@@ -1,4 +1,4 @@
-/*
+﻿/*
  * PROJ_NAME: Exponentia
  * PROJ_ID: EXP-ROGUELITE-001
  * VERSION: 0.5.0
@@ -29,25 +29,9 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private UnityEngine.UI.Image skillIconUI; // UI ustunde gosterilecek resim
     [SerializeField] private UnityEngine.UI.Image skillCooldownFillUI;
 
-    public GodSkillBase EquippedSkill => equippedSkill;
-
     [Header("Weapon System")]
     [SerializeField] private WeaponDefinition equippedWeaponDefinition;
     [SerializeField] private float defaultDamageMultiplier = 1f;
-
-    [Header("Ammo System (Mermi Sistemi)")]
-    [SerializeField] private bool useAmmoLimit = true; // True ise mermi sınırını aktif eder, False ise sınırsız yapar.
-    [SerializeField] private int maxAmmo = 1000;       // Başlangıç mermi kapasitesi
-    private int currentAmmo;
-
-    public bool UseAmmoLimit => useAmmoLimit;
-    public int MaxAmmo => maxAmmo;
-    public int CurrentAmmo => currentAmmo;
-    public WeaponDefinition EquippedWeaponDefinition => equippedWeaponDefinition;
-
-#if UNITY_EDITOR
-    private int lastMaxAmmo;
-#endif
 
     [Header("Laser Attack")]
     [SerializeField] private float laserManaCost = 0f;
@@ -107,11 +91,6 @@ public class PlayerAttack : MonoBehaviour
         {
             ApplyWeaponDefinition(equippedWeaponDefinition);
         }
-
-        currentAmmo = maxAmmo;
-#if UNITY_EDITOR
-        lastMaxAmmo = maxAmmo;
-#endif
     }
 
     private void Start()
@@ -127,15 +106,6 @@ public class PlayerAttack : MonoBehaviour
         }
 
         UpdateSkillUI();
-
-#if UNITY_EDITOR
-        // Editörde kolay test için mermi sayısını güncelliyoruz
-        if (maxAmmo != lastMaxAmmo)
-        {
-            currentAmmo = maxAmmo;
-            lastMaxAmmo = maxAmmo;
-        }
-#endif
 
         if (TryResolveAttackDirection(out Vector2 resolvedDirection))
         {
@@ -228,26 +198,14 @@ public class PlayerAttack : MonoBehaviour
             return false;
         }
 
-        // Mermi sınırımız aktifse ve mermi kalmadıysa ateş etmeyi durdur!
-        if (useAmmoLimit && currentAmmo <= 0)
-        {
-            return false;
-        }
-
         if (!TryResolveAttackDirection(out Vector2 direction))
         {
             return false;
         }
 
-        // Arka plandaki enerji (Laser Mana) tüketimini tamamen kapatıyoruz!
-        // if (!playerMechanics.HarcaLaserMana(laserManaCost))
-        // {
-        //     return false;
-        // }
-
-        if (useAmmoLimit)
+        if (!playerMechanics.HarcaMana(laserManaCost))
         {
-            currentAmmo = Mathf.Max(0, currentAmmo - 1);
+            return false;
         }
 
         float fireRate = ResolveFireRate();

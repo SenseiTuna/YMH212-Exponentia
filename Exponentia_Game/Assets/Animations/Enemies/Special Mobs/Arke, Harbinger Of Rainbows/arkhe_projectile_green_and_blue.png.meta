@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: 03e2720f00a510b43a2379987328b3a0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4791670491638063312
+    second: arkhe_projectile_green_and_blue_0
+  - first:
+      213: 5092901459141240190
+    second: arkhe_projectile_green_and_blue_1
+  - first:
+      213: -1966210181393559134
+    second: arkhe_projectile_green_and_blue_2
+  - first:
+      213: 5282712495160705977
+    second: arkhe_projectile_green_and_blue_3
+  - first:
+      213: -2309496757263700087
+    second: arkhe_projectile_green_and_blue_4
+  - first:
+      213: -7909522051650873850
+    second: arkhe_projectile_green_and_blue_5
+  - first:
+      213: 8161318150975894244
+    second: arkhe_projectile_green_and_blue_6
+  - first:
+      213: -7634526621380189353
+    second: arkhe_projectile_green_and_blue_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: arkhe_projectile_green_and_blue_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 447
+        width: 377
+        height: 424
+      alignment: 9
+      pivot: {x: 0.46959272, y: 0.5282011}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03f11314311908db0800000000000000
+      internalID: -4791670491638063312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_projectile_green_and_blue_1
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 442
+        width: 390
+        height: 434
+      alignment: 9
+      pivot: {x: 0.47699633, y: 0.5137377}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e75ae2cc4ee9da640800000000000000
+      internalID: 5092901459141240190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_projectile_green_and_blue_2
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 448
+        width: 390
+        height: 427
+      alignment: 9
+      pivot: {x: 0.4514154, y: 0.5175407}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a1d748e14e96b4e0800000000000000
+      internalID: -1966210181393559134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_projectile_green_and_blue_3
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 442
+        width: 391
+        height: 445
+      alignment: 9
+      pivot: {x: 0.38119188, y: 0.489758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b3429c7607ff4940800000000000000
+      internalID: 5282712495160705977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_projectile_green_and_blue_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 394
+        height: 438
+      alignment: 9
+      pivot: {x: 0.4772142, y: 0.5318771}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98f616d7fe403ffd0800000000000000
+      internalID: -2309496757263700087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_projectile_green_and_blue_5
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 22
+        width: 399
+        height: 405
+      alignment: 9
+      pivot: {x: 0.41356182, y: 0.49140334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6061b38b99bbb3290800000000000000
+      internalID: -7909522051650873850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_projectile_green_and_blue_6
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 24
+        width: 414
+        height: 389
+      alignment: 9
+      pivot: {x: 0.43238956, y: 0.50639457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e2bdd72e93d24170800000000000000
+      internalID: 8161318150975894244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_projectile_green_and_blue_7
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 5
+        width: 380
+        height: 428
+      alignment: 9
+      pivot: {x: 0.4684127, y: 0.5210844}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 753ee50cc76bc0690800000000000000
+      internalID: -7634526621380189353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 914ee38231c87cf41890bffb1998a4b8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      arkhe_projectile_green_and_blue_0: -4791670491638063312
+      arkhe_projectile_green_and_blue_1: 5092901459141240190
+      arkhe_projectile_green_and_blue_2: -1966210181393559134
+      arkhe_projectile_green_and_blue_3: 5282712495160705977
+      arkhe_projectile_green_and_blue_4: -2309496757263700087
+      arkhe_projectile_green_and_blue_5: -7909522051650873850
+      arkhe_projectile_green_and_blue_6: 8161318150975894244
+      arkhe_projectile_green_and_blue_7: -7634526621380189353
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

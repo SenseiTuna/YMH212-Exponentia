@@ -6,6 +6,13 @@ public class EnemyProjectile : MonoBehaviour
     [SerializeField] private Color projectileColor = new Color(1f, 0.45f, 0.2f);
     [SerializeField] private float projectileSize = 0.22f;
 
+    [Header("Sprite / Hitbox Scale")]
+    [SerializeField] private float projectileScale = 1f;
+    [SerializeField] private bool syncHitboxToSprite = true;
+    [SerializeField] private float hitboxRadiusMultiplier = 1f;
+    [SerializeField] private float hitboxRadiusPadding = 0f;
+    [SerializeField] private bool rotateVisualToDirection = true;
+
     private Vector2 velocity;
     private float damage;
     private EnemyMechanics owner;
@@ -36,13 +43,19 @@ public class EnemyProjectile : MonoBehaviour
         projectileColor = color;
         projectileSize = Mathf.Max(0.05f, size);
 
-        transform.right = direction.sqrMagnitude > 0.001f ? direction.normalized : Vector2.right;
+        ApplyVisualRotation(direction);
         if (visualSprite != null && spriteRenderer != null)
         {
             spriteRenderer.sprite = visualSprite;
         }
         ApplyVisualState();
         Destroy(gameObject, Mathf.Max(0.1f, lifeTime));
+    }
+
+    public void SetRotateVisualToDirection(bool value)
+    {
+        rotateVisualToDirection = value;
+        ApplyVisualRotation(velocity.sqrMagnitude > 0.001f ? velocity.normalized : Vector2.right);
     }
 
     public void ConfigureCurvedPath(Vector2 targetPosition, float travelDuration, float curveOffset, float aoeRadius)
@@ -63,7 +76,7 @@ public class EnemyProjectile : MonoBehaviour
 
         Vector2 perpendicular = new Vector2(-straightDirection.y, straightDirection.x);
         curveControlPoint = (curveStartPoint + curveEndPoint) * 0.5f + perpendicular * curveOffset;
-        transform.right = straightDirection;
+        ApplyVisualRotation(straightDirection);
     }
 
     private void Awake()
@@ -90,6 +103,18 @@ public class EnemyProjectile : MonoBehaviour
 
         spriteRenderer.sortingOrder = 8;
 
+        ApplyVisualState();
+    }
+
+    private void OnValidate()
+    {
+        ClampScaleSettings();
+        CacheProjectileComponents();
+        ApplyVisualState();
+    }
+
+    private void LateUpdate()
+    {
         ApplyVisualState();
     }
 
@@ -173,7 +198,7 @@ public class EnemyProjectile : MonoBehaviour
         Vector2 direction = velocity.sqrMagnitude > 0.001f ? -velocity.normalized : -(Vector2)transform.right;
         float reflectedSpeed = velocity.magnitude * Mathf.Max(0.01f, speedMultiplier);
         velocity = direction.normalized * reflectedSpeed;
-        transform.right = velocity.sqrMagnitude > 0.001f ? velocity.normalized : Vector2.right;
+        ApplyVisualRotation(velocity.sqrMagnitude > 0.001f ? velocity.normalized : Vector2.right);
         projectileColor = Color.cyan;
         ApplyVisualState();
     }
@@ -205,7 +230,7 @@ public class EnemyProjectile : MonoBehaviour
         Vector2 tangent = secondLerp - firstLerp;
         if (tangent.sqrMagnitude > 0.001f)
         {
-            transform.right = tangent.normalized;
+            ApplyVisualRotation(tangent.normalized);
         }
 
         transform.position = bezierPoint;
@@ -295,17 +320,67 @@ public class EnemyProjectile : MonoBehaviour
 
     private void ApplyVisualState()
     {
+        ClampScaleSettings();
+
         if (spriteRenderer != null)
         {
             spriteRenderer.color = projectileColor;
         }
 
+        float visualScale = GetVisualScale();
+
         if (circleCollider != null)
         {
-            circleCollider.radius = projectileSize * 0.5f;
+            if (syncHitboxToSprite)
+            {
+                float desiredWorldRadius = Mathf.Max(
+                    0.01f,
+                    visualScale * 0.5f * hitboxRadiusMultiplier + hitboxRadiusPadding);
+                circleCollider.radius = desiredWorldRadius / visualScale;
+            }
+            else
+            {
+                circleCollider.radius = Mathf.Max(0.01f, circleCollider.radius);
+            }
         }
 
-        transform.localScale = Vector3.one * projectileSize;
+        transform.localScale = Vector3.one * visualScale;
+    }
+
+    private void CacheProjectileComponents()
+    {
+        if (circleCollider == null)
+        {
+            circleCollider = GetComponent<CircleCollider2D>();
+        }
+
+        if (spriteRenderer == null)
+        {
+            spriteRenderer = GetComponent<SpriteRenderer>();
+        }
+    }
+
+    private void ClampScaleSettings()
+    {
+        projectileSize = Mathf.Max(0.01f, projectileSize);
+        projectileScale = Mathf.Max(0.01f, projectileScale);
+        hitboxRadiusMultiplier = Mathf.Max(0.01f, hitboxRadiusMultiplier);
+    }
+
+    private float GetVisualScale()
+    {
+        return Mathf.Max(0.01f, projectileSize * projectileScale);
+    }
+
+    private void ApplyVisualRotation(Vector2 direction)
+    {
+        if (!rotateVisualToDirection)
+        {
+            transform.rotation = Quaternion.identity;
+            return;
+        }
+
+        transform.right = direction.sqrMagnitude > 0.001f ? direction.normalized : Vector2.right;
     }
 
     private System.Collections.IEnumerator TimeShiftSpeedRoutine(float multiplier, float duration)

@@ -68,18 +68,15 @@ public class CurseOfTheBlackbeardEnemy : EnemyMechanics
             directionToPlayer = Vector2.right;
         }
 
-        if (animator != null)
-        {
-            animator.SetTrigger("Attack");
-        }
-
         if (attackIndex == 0)
         {
+            TriggerAttackAnimation("cannonball attack");
             StartCoroutine(FireCannonBarrage(PlayerTarget.position));
             nextAttackTime = Time.time + cannonVolleyCooldown;
         }
         else
         {
+            TriggerAttackAnimation("parrot attack");
             FireBroadside(directionToPlayer);
             nextAttackTime = Time.time + broadsideCooldown;
         }

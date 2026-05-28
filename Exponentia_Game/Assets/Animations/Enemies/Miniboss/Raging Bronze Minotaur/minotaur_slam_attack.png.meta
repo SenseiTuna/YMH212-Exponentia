@@ -1,0 +1,348 @@
+fileFormatVersion: 2
+guid: 629f9ac4c03109f4f9d8fb88f6cd085d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1408144452420216674
+    second: minotaur_slam_attack_0
+  - first:
+      213: 5410308725391500021
+    second: minotaur_slam_attack_1
+  - first:
+      213: -489755518651958373
+    second: minotaur_slam_attack_2
+  - first:
+      213: -5323272173088657641
+    second: minotaur_slam_attack_3
+  - first:
+      213: -719185145758319533
+    second: minotaur_slam_attack_4
+  - first:
+      213: -2156121046958209464
+    second: minotaur_slam_attack_5
+  - first:
+      213: -3392280586014378767
+    second: minotaur_slam_attack_6
+  - first:
+      213: 4592588954959220159
+    second: minotaur_slam_attack_7
+  - first:
+      213: 964182859470707335
+    second: minotaur_slam_attack_8
+  - first:
+      213: -5642763967204483705
+    second: minotaur_slam_attack_9
+  - first:
+      213: -429751184184473922
+    second: minotaur_slam_attack_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: minotaur_slam_attack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 428
+        width: 443
+        height: 459
+      alignment: 9
+      pivot: {x: 0.71656805, y: 0.037282906}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 267a1f63bebba8310800000000000000
+      internalID: 1408144452420216674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_slam_attack_1
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 464
+        width: 365
+        height: 400
+      alignment: 9
+      pivot: {x: 0.73858124, y: 0.037518922}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f22826ee17451b40800000000000000
+      internalID: 5410308725391500021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_slam_attack_2
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 464
+        width: 361
+        height: 402
+      alignment: 9
+      pivot: {x: 0.704554, y: 0.015722094}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9b76fb53f90439f0800000000000000
+      internalID: -489755518651958373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_slam_attack_3
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 427
+        width: 446
+        height: 460
+      alignment: 9
+      pivot: {x: 0.61230963, y: 0.095867254}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71f24589920ff16b0800000000000000
+      internalID: -5323272173088657641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_slam_attack_6
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 58
+        width: 292
+        height: 347
+      alignment: 9
+      pivot: {x: 0.9208947, y: 0.014859433}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f4b824b7c23ce0d0800000000000000
+      internalID: -3392280586014378767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_slam_attack_7
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 0
+        width: 416
+        height: 421
+      alignment: 9
+      pivot: {x: 0.69612974, y: 0.12098542}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbd0abb62572cbf30800000000000000
+      internalID: 4592588954959220159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_slam_attack_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 415
+        height: 387
+      alignment: 9
+      pivot: {x: 0.67420447, y: 0.2451399}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78a9545c337716d00800000000000000
+      internalID: 964182859470707335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_slam_attack_5
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 32
+        width: 391
+        height: 345
+      alignment: 9
+      pivot: {x: 0.5977279, y: 0.18118404}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78d17678110e0b1b0800000000000000
+      internalID: -5642763967204483705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4796f721caa56a24288c1e5678a69107
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      minotaur_slam_attack_0: 1408144452420216674
+      minotaur_slam_attack_1: 5410308725391500021
+      minotaur_slam_attack_10: -429751184184473922
+      minotaur_slam_attack_2: -489755518651958373
+      minotaur_slam_attack_3: -5323272173088657641
+      minotaur_slam_attack_4: 964182859470707335
+      minotaur_slam_attack_5: -5642763967204483705
+      minotaur_slam_attack_6: -3392280586014378767
+      minotaur_slam_attack_7: 4592588954959220159
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

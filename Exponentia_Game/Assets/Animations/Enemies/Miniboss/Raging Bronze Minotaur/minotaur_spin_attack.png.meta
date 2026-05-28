@@ -1,0 +1,355 @@
+fileFormatVersion: 2
+guid: 860376c701a129042b104ecdc0749d46
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3023920150592445466
+    second: minotaur_spin_attack_0
+  - first:
+      213: 297462067308825936
+    second: minotaur_spin_attack_1
+  - first:
+      213: -3455823985480225516
+    second: minotaur_spin_attack_2
+  - first:
+      213: -8637599080778946946
+    second: minotaur_spin_attack_3
+  - first:
+      213: -813946214595936198
+    second: minotaur_spin_attack_4
+  - first:
+      213: 5854618164316079950
+    second: minotaur_spin_attack_5
+  - first:
+      213: 6846598969038712189
+    second: minotaur_spin_attack_6
+  - first:
+      213: 418036237772424242
+    second: minotaur_spin_attack_7
+  - first:
+      213: 7817783554758994232
+    second: minotaur_spin_attack_8
+  - first:
+      213: 8273511526116061753
+    second: minotaur_spin_attack_9
+  - first:
+      213: -7572244239846422934
+    second: minotaur_spin_attack_10
+  - first:
+      213: 3892365623821034612
+    second: minotaur_spin_attack_11
+  - first:
+      213: 7281441821772568415
+    second: minotaur_spin_attack_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: minotaur_spin_attack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 467
+        width: 441
+        height: 420
+      alignment: 9
+      pivot: {x: 0.7247313, y: 0.01608596}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1c55350b5f17f920800000000000000
+      internalID: 3023920150592445466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_spin_attack_1
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 461
+        width: 401
+        height: 380
+      alignment: 9
+      pivot: {x: 0.7270753, y: 0.052524608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05d88189c2cc02400800000000000000
+      internalID: 297462067308825936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_spin_attack_2
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 478
+        width: 423
+        height: 375
+      alignment: 9
+      pivot: {x: 0.78305596, y: 0.015702719}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e762ee56665112880800000000000000
+      internalID: -8637599080778946946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_spin_attack_3
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 478
+        width: 437
+        height: 409
+      alignment: 9
+      pivot: {x: 0.6645011, y: 0.06406296}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e470c9b8338cf3150800000000000000
+      internalID: 5854618164316079950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_spin_attack_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 439
+        height: 410
+      alignment: 9
+      pivot: {x: 0.8307346, y: 0.1516395}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2348aaf4eb92dc500800000000000000
+      internalID: 418036237772424242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_spin_attack_5
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 48
+        width: 419
+        height: 364
+      alignment: 9
+      pivot: {x: 0.747193, y: 0.03355675}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9327f37e5ea61d270800000000000000
+      internalID: 8273511526116061753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_spin_attack_6
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 35
+        width: 436
+        height: 390
+      alignment: 9
+      pivot: {x: 0.6008796, y: 0.109521486}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4746bc789e5740630800000000000000
+      internalID: 3892365623821034612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_spin_attack_7
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 0
+        width: 418
+        height: 410
+      alignment: 9
+      pivot: {x: 0.7059218, y: 0.0847358}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f575d6712c0ec0560800000000000000
+      internalID: 7281441821772568415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c54505a5a2f417844b1609d1848db0db
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      minotaur_spin_attack_0: 3023920150592445466
+      minotaur_spin_attack_1: 297462067308825936
+      minotaur_spin_attack_10: -7572244239846422934
+      minotaur_spin_attack_2: -8637599080778946946
+      minotaur_spin_attack_3: 5854618164316079950
+      minotaur_spin_attack_4: 418036237772424242
+      minotaur_spin_attack_5: 8273511526116061753
+      minotaur_spin_attack_6: 3892365623821034612
+      minotaur_spin_attack_7: 7281441821772568415
+      minotaur_spin_attack_8: 7817783554758994232
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,403 @@
+fileFormatVersion: 2
+guid: a037ccc3e7e6fc440abc7f1d1424abe5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4573399889928508471
+    second: daedalus_spinning_feather_attack_0
+  - first:
+      213: -2249923933723553991
+    second: daedalus_spinning_feather_attack_1
+  - first:
+      213: 5518357483714755277
+    second: daedalus_spinning_feather_attack_2
+  - first:
+      213: -7729069505043697586
+    second: daedalus_spinning_feather_attack_3
+  - first:
+      213: 2581612457600802766
+    second: daedalus_spinning_feather_attack_4
+  - first:
+      213: -4796350283951708214
+    second: daedalus_spinning_feather_attack_5
+  - first:
+      213: -2953463442809559157
+    second: daedalus_spinning_feather_attack_6
+  - first:
+      213: 3788782956714714269
+    second: daedalus_spinning_feather_attack_7
+  - first:
+      213: -7018822417217622226
+    second: daedalus_spinning_feather_attack_8
+  - first:
+      213: 6321953811690935394
+    second: daedalus_spinning_feather_attack_9
+  - first:
+      213: 5288871175750963772
+    second: daedalus_spinning_feather_attack_10
+  - first:
+      213: -384441507093516547
+    second: daedalus_spinning_feather_attack_11
+  - first:
+      213: -334808539716448899
+    second: daedalus_spinning_feather_attack_12
+  - first:
+      213: 297560103489863489
+    second: daedalus_spinning_feather_attack_13
+  - first:
+      213: 4818633731145761067
+    second: daedalus_spinning_feather_attack_14
+  - first:
+      213: -3479484870390365692
+    second: daedalus_spinning_feather_attack_15
+  - first:
+      213: 8437045129652820928
+    second: daedalus_spinning_feather_attack_16
+  - first:
+      213: -624417318484953113
+    second: daedalus_spinning_feather_attack_17
+  - first:
+      213: 3678805393101274383
+    second: daedalus_spinning_feather_attack_18
+  - first:
+      213: 7860001523145464291
+    second: daedalus_spinning_feather_attack_19
+  - first:
+      213: 803437987680403516
+    second: daedalus_spinning_feather_attack_20
+  - first:
+      213: 5167649064081992795
+    second: daedalus_spinning_feather_attack_21
+  - first:
+      213: 1416012925368348540
+    second: daedalus_spinning_feather_attack_22
+  - first:
+      213: 485865223130287465
+    second: daedalus_spinning_feather_attack_23
+  - first:
+      213: -3951209457387987404
+    second: daedalus_spinning_feather_attack_24
+  - first:
+      213: -3157953598430900578
+    second: daedalus_spinning_feather_attack_25
+  - first:
+      213: 5917715904629061162
+    second: daedalus_spinning_feather_attack_26
+  - first:
+      213: 2160767974978565516
+    second: daedalus_spinning_feather_attack_27
+  - first:
+      213: -7498971854053457852
+    second: daedalus_spinning_feather_attack_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: daedalus_spinning_feather_attack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 444
+        width: 443
+        height: 443
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 734dffe08faf77f30800000000000000
+      internalID: 4573399889928508471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daedalus_spinning_feather_attack_1
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 444
+        width: 443
+        height: 443
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93f02c65a1aa6c0e0800000000000000
+      internalID: -2249923933723553991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daedalus_spinning_feather_attack_2
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 444
+        width: 443
+        height: 443
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcabf68d4e4259c40800000000000000
+      internalID: 5518357483714755277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daedalus_spinning_feather_attack_3
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 444
+        width: 443
+        height: 443
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e40f09b4c34dcb490800000000000000
+      internalID: -7729069505043697586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daedalus_spinning_feather_attack_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 443
+        height: 443
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecfd40b2adab3d320800000000000000
+      internalID: 2581612457600802766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daedalus_spinning_feather_attack_5
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 1
+        width: 443
+        height: 443
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac7e6b234d0ff6db0800000000000000
+      internalID: -4796350283951708214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daedalus_spinning_feather_attack_6
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 1
+        width: 443
+        height: 443
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b87eb3a95a03307d0800000000000000
+      internalID: -2953463442809559157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daedalus_spinning_feather_attack_7
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 1
+        width: 443
+        height: 443
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d94e80a7606749430800000000000000
+      internalID: 3788782956714714269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 85c87d316aa7ccb4ba97621b380b3dad
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":2.0},"gridSpriteSize":{"x":443.0,"y":443.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      daedalus_spinning_feather_attack_0: 4573399889928508471
+      daedalus_spinning_feather_attack_1: -2249923933723553991
+      daedalus_spinning_feather_attack_2: 5518357483714755277
+      daedalus_spinning_feather_attack_3: -7729069505043697586
+      daedalus_spinning_feather_attack_4: 2581612457600802766
+      daedalus_spinning_feather_attack_5: -4796350283951708214
+      daedalus_spinning_feather_attack_6: -2953463442809559157
+      daedalus_spinning_feather_attack_7: 3788782956714714269
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -25,7 +25,7 @@ namespace Exponentia.Data
         public float projectileSpeed = 14f;
         public float defense = 0f;
         public float lifeSteal = 0f;
-        public float shield = 0f;
+        public float shield = 3f;
         public float mana = 100f;
     }
 }

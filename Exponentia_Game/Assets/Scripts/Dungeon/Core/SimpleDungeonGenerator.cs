@@ -51,10 +51,26 @@ public class SimpleDungeonGenerator : MonoBehaviour
     [SerializeField] private Color doorMarkerColor = Color.white;
     [SerializeField] private float doorMarkerScale = 0.35f;
 
-    private List<DebugPlacedRoom> _placedRooms = new List<DebugPlacedRoom>();
+    [System.Serializable]
+    public class RoomConnection
+    {
+        public string RoomIdA;
+        public string RoomIdB;
+        public RoomConnection(string a, string b)
+        {
+            RoomIdA = a;
+            RoomIdB = b;
+        }
+    }
+
+    [SerializeField] private List<DebugPlacedRoom> _placedRooms = new List<DebugPlacedRoom>();
+    [SerializeField] private List<RoomConnection> _roomConnections = new List<RoomConnection>();
     private Transform _connectionsRoot;
     private Transform _doorMarkersRoot;
     private int _corridorCounter;
+
+    public List<DebugPlacedRoom> PlacedRooms => _placedRooms;
+    public List<RoomConnection> RoomConnections => _roomConnections;
 
     private static Sprite _cachedDebugSprite;
 
@@ -83,6 +99,7 @@ public class SimpleDungeonGenerator : MonoBehaviour
         ClearDoorMarkers();
 
         _placedRooms.Clear();
+        _roomConnections.Clear();
         _corridorCounter = 0;
 
         Vector2Int startOrigin = new Vector2Int(visibleGrid.Width / 2, visibleGrid.Height / 2);
@@ -114,6 +131,7 @@ public class SimpleDungeonGenerator : MonoBehaviour
         {
             bool isTreasure = roomTypeQueue[i];
 
+            // ENTEGRASYON NOTU: Hazine odaları "TREASURE_" önekiyle üretilir; buraya gelecekte kalıcı fiziksel ödül spawner veya satıcı NPC yerleştirilebilir.
             string roomId = isTreasure
                 ? $"TREASURE_{placedTreasureCount:00}"
                 : $"COMBAT_{placedCombatCount:00}";
@@ -154,6 +172,7 @@ public class SimpleDungeonGenerator : MonoBehaviour
                 continue;
             }
 
+            _roomConnections.Add(new RoomConnection(selectedParent.RoomId, nextRoom.RoomId));
             placementOrder.Add(nextRoom);
 
             if (isTreasure)
@@ -184,6 +203,7 @@ public class SimpleDungeonGenerator : MonoBehaviour
             usedCombatParentsForTreasure
         );
 
+        // ENTEGRASYON NOTU: Boss odası "BOSS_" önekiyle üretilir; buraya gelecekte kat geçiş portalı veya boss canavarı yerleştirilmelidir.
         bool bossPlaced = TryPlaceAdjacentToAnyParent(
             bossParentCandidates,
             "BOSS_00",
@@ -204,6 +224,7 @@ public class SimpleDungeonGenerator : MonoBehaviour
             }
             else
             {
+                _roomConnections.Add(new RoomConnection(bossParent.RoomId, bossRoom.RoomId));
                 placementOrder.Add(bossRoom);
             }
         }
@@ -213,6 +234,18 @@ public class SimpleDungeonGenerator : MonoBehaviour
         }
 
         visibleGrid.RefreshColors();
+
+        DungeonMapManager mapManager = FindAnyObjectByType<DungeonMapManager>();
+        if (mapManager != null)
+        {
+            mapManager.ResetDiscovery();
+        }
+
+        UiMinimap uiMinimap = FindAnyObjectByType<UiMinimap>();
+        if (uiMinimap != null)
+        {
+            uiMinimap.ResetDiscovery();
+        }
 
         Debug.Log("Debug dungeon üretildi. Yerleşen oda sayısı: " + _placedRooms.Count);
     }

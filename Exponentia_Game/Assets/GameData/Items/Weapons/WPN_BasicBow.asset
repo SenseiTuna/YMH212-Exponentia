@@ -20,13 +20,13 @@ MonoBehaviour:
   category: 0
   canStack: 0
   maxStacks: 1
-  damage: 100
-  fireRate: 100
+  damage: 1
+  fireRate: 2.2
   projectilePrefab: {fileID: 0}
-  projectileSpeed: 20
-  projectileLifetime: 0.5
-  projectileCount: 10
-  spreadAngle: 360
+  projectileSpeed: 14
+  projectileLifetime: 2.2
+  projectileCount: 1
+  spreadAngle: 0
   pierceCount: 0
   areaRadius: 0
   knockback: 0

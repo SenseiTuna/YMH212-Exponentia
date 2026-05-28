@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: 8fa6bfd792bfe4449b5675459ac63994
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 558917515599165512
+    second: blackbeard_parrot_attak_0
+  - first:
+      213: -2377846619275559103
+    second: blackbeard_parrot_attak_1
+  - first:
+      213: 3106551108659462882
+    second: blackbeard_parrot_attak_2
+  - first:
+      213: 5211736404431192925
+    second: blackbeard_parrot_attak_3
+  - first:
+      213: 5658211128226340905
+    second: blackbeard_parrot_attak_4
+  - first:
+      213: 495322922838349683
+    second: blackbeard_parrot_attak_5
+  - first:
+      213: 7015667850268183073
+    second: blackbeard_parrot_attak_6
+  - first:
+      213: 1690746903652741879
+    second: blackbeard_parrot_attak_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: blackbeard_parrot_attak_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 822
+        width: 439
+        height: 421
+      alignment: 9
+      pivot: {x: 0.40076736, y: 0.53355336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8483808e48ca1c700800000000000000
+      internalID: 558917515599165512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackbeard_parrot_attak_1
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 817
+        width: 444
+        height: 414
+      alignment: 9
+      pivot: {x: 0.39513955, y: 0.54884344}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14f77bf1911300fd0800000000000000
+      internalID: -2377846619275559103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackbeard_parrot_attak_2
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 790
+        width: 444
+        height: 407
+      alignment: 9
+      pivot: {x: 0.39411226, y: 0.5313761}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e24e3c26cfac1b20800000000000000
+      internalID: 3106551108659462882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackbeard_parrot_attak_3
+      rect:
+        serializedVersion: 2
+        x: 1906
+        y: 792
+        width: 444
+        height: 403
+      alignment: 9
+      pivot: {x: 0.3961242, y: 0.5379934}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d53c71995aec35840800000000000000
+      internalID: 5211736404431192925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackbeard_parrot_attak_4
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 399
+        width: 428
+        height: 403
+      alignment: 9
+      pivot: {x: 0.3736474, y: 0.53805655}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 920e71aea01068e40800000000000000
+      internalID: 5658211128226340905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackbeard_parrot_attak_5
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 375
+        width: 444
+        height: 403
+      alignment: 9
+      pivot: {x: 0.39622498, y: 0.53687704}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37753e0f29dbfd600800000000000000
+      internalID: 495322922838349683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackbeard_parrot_attak_6
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 343
+        width: 444
+        height: 403
+      alignment: 9
+      pivot: {x: 0.39529088, y: 0.53775746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12a0d5d3db8ac5160800000000000000
+      internalID: 7015667850268183073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blackbeard_parrot_attak_7
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 334
+        width: 444
+        height: 410
+      alignment: 9
+      pivot: {x: 0.3943905, y: 0.54420614}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f23055d95db67710800000000000000
+      internalID: 1690746903652741879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1f7e3399985833247a2dd8cd21e74539
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      blackbeard_parrot_attak_0: 558917515599165512
+      blackbeard_parrot_attak_1: -2377846619275559103
+      blackbeard_parrot_attak_2: 3106551108659462882
+      blackbeard_parrot_attak_3: 5211736404431192925
+      blackbeard_parrot_attak_4: 5658211128226340905
+      blackbeard_parrot_attak_5: 495322922838349683
+      blackbeard_parrot_attak_6: 7015667850268183073
+      blackbeard_parrot_attak_7: 1690746903652741879
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

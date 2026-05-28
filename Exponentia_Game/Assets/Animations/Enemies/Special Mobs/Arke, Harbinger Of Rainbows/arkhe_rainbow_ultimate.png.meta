@@ -1,0 +1,382 @@
+fileFormatVersion: 2
+guid: e85ea9a3a8748aa4bae22a03acd5f9bf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6742027856861852986
+    second: arkhe_rainbow_ultimate_0
+  - first:
+      213: 396117290176621391
+    second: arkhe_rainbow_ultimate_1
+  - first:
+      213: 8419000887389441130
+    second: arkhe_rainbow_ultimate_2
+  - first:
+      213: -6390317420893104812
+    second: arkhe_rainbow_ultimate_3
+  - first:
+      213: -6898876099115303468
+    second: arkhe_rainbow_ultimate_4
+  - first:
+      213: -8121270072581561143
+    second: arkhe_rainbow_ultimate_5
+  - first:
+      213: 6955531970968538694
+    second: arkhe_rainbow_ultimate_6
+  - first:
+      213: 26402753876706501
+    second: arkhe_rainbow_ultimate_7
+  - first:
+      213: -4493813525922537474
+    second: arkhe_rainbow_ultimate_8
+  - first:
+      213: -4757448002879005911
+    second: arkhe_rainbow_ultimate_9
+  - first:
+      213: 5223500505684431467
+    second: arkhe_rainbow_ultimate_10
+  - first:
+      213: -3350732510838583614
+    second: arkhe_rainbow_ultimate_11
+  - first:
+      213: -600286181615368995
+    second: arkhe_rainbow_ultimate_12
+  - first:
+      213: 2393457613717406988
+    second: arkhe_rainbow_ultimate_13
+  - first:
+      213: 8892464142537202020
+    second: arkhe_rainbow_ultimate_14
+  - first:
+      213: 2258542170394599726
+    second: arkhe_rainbow_ultimate_15
+  - first:
+      213: 2101695528741303490
+    second: arkhe_rainbow_ultimate_16
+  - first:
+      213: -3456929794381563249
+    second: arkhe_rainbow_ultimate_17
+  - first:
+      213: 9145326384965318151
+    second: arkhe_rainbow_ultimate_18
+  - first:
+      213: -8938152360994674739
+    second: arkhe_rainbow_ultimate_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: arkhe_rainbow_ultimate_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 454
+        width: 411
+        height: 433
+      alignment: 9
+      pivot: {x: 0.52320206, y: 0.4964897}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ca06fd82618f62a0800000000000000
+      internalID: -6742027856861852986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_rainbow_ultimate_1
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 451
+        width: 374
+        height: 429
+      alignment: 9
+      pivot: {x: 0.45994315, y: 0.5103815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6ccb8883bc46d470800000000000000
+      internalID: 8419000887389441130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_rainbow_ultimate_2
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 450
+        width: 385
+        height: 433
+      alignment: 9
+      pivot: {x: 0.44922286, y: 0.49411115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ddbcca5db44240a0800000000000000
+      internalID: -6898876099115303468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_rainbow_ultimate_3
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 463
+        width: 412
+        height: 424
+      alignment: 9
+      pivot: {x: 0.49756628, y: 0.46915552}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c4e3c6b5e37b4f80800000000000000
+      internalID: -8121270072581561143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_rainbow_ultimate_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 389
+        height: 440
+      alignment: 9
+      pivot: {x: 0.6118279, y: 0.49761692}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eff9a8c4864c2a1c0800000000000000
+      internalID: -4493813525922537474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_rainbow_ultimate_6
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 23
+        width: 334
+        height: 417
+      alignment: 9
+      pivot: {x: 0.5480515, y: 0.5190187}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46914d9f501686b70800000000000000
+      internalID: 8892464142537202020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_rainbow_ultimate_7
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 0
+        width: 416
+        height: 439
+      alignment: 9
+      pivot: {x: 0.40640756, y: 0.5489424}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8a3c68eaa48600d0800000000000000
+      internalID: -3456929794381563249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_rainbow_ultimate_5
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 17
+        width: 361
+        height: 419
+      alignment: 9
+      pivot: {x: 0.56526786, y: 0.48922157}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7067dd2a4e9baee70800000000000000
+      internalID: 9145326384965318151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 36bebe701aa93f849a29364e8d946d21
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      arkhe_rainbow_ultimate_0: -6742027856861852986
+      arkhe_rainbow_ultimate_1: 8419000887389441130
+      arkhe_rainbow_ultimate_10: 5223500505684431467
+      arkhe_rainbow_ultimate_11: -3350732510838583614
+      arkhe_rainbow_ultimate_12: -600286181615368995
+      arkhe_rainbow_ultimate_13: 2393457613717406988
+      arkhe_rainbow_ultimate_15: 2258542170394599726
+      arkhe_rainbow_ultimate_16: 2101695528741303490
+      arkhe_rainbow_ultimate_19: -8938152360994674739
+      arkhe_rainbow_ultimate_2: -6898876099115303468
+      arkhe_rainbow_ultimate_3: -8121270072581561143
+      arkhe_rainbow_ultimate_4: -4493813525922537474
+      arkhe_rainbow_ultimate_5: 9145326384965318151
+      arkhe_rainbow_ultimate_6: 8892464142537202020
+      arkhe_rainbow_ultimate_7: -3456929794381563249
+      arkhe_rainbow_ultimate_9: -4757448002879005911
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

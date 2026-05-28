@@ -11,6 +11,12 @@ public class PlayerProjectile : MonoBehaviour
     [SerializeField] private float lazerKalInligi = 0.22f;
     [SerializeField] private float izSuresi = 0.12f;
 
+    [Header("Sprite / Hitbox Scale")]
+    [SerializeField] private float projectileScale = 1f;
+    [SerializeField] private bool syncHitboxToSprite = true;
+    [SerializeField] private float hitboxRadiusMultiplier = 1f;
+    [SerializeField] private float hitboxRadiusPadding = 0f;
+
     private PlayerMechanics owner;
     private Vector2 velocity;
     private float lifeTime;
@@ -19,6 +25,7 @@ public class PlayerProjectile : MonoBehaviour
     private readonly HashSet<Collider2D> alreadyHit = new HashSet<Collider2D>();
     private SpriteRenderer spriteRenderer;
     private TrailRenderer trailRenderer;
+    private CircleCollider2D circleCollider;
 
     private static Sprite cachedSprite;
     private static Material cachedSpriteMaterial;
@@ -53,9 +60,8 @@ public class PlayerProjectile : MonoBehaviour
         rb.bodyType = RigidbodyType2D.Kinematic;
         rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
 
-        CircleCollider2D circleCollider = GetComponent<CircleCollider2D>();
+        circleCollider = GetComponent<CircleCollider2D>();
         circleCollider.isTrigger = true;
-        circleCollider.radius = 0.12f;
 
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (spriteRenderer == null)
@@ -68,7 +74,6 @@ public class PlayerProjectile : MonoBehaviour
         spriteRenderer.material = GetOrCreateSpriteMaterial();
         spriteRenderer.drawMode = SpriteDrawMode.Sliced;
         spriteRenderer.sortingOrder = 10;
-        transform.localScale = new Vector3(lazerUzunlugu, lazerKalInligi, 1f);
 
         trailRenderer = GetComponent<TrailRenderer>();
         if (trailRenderer == null)
@@ -86,6 +91,20 @@ public class PlayerProjectile : MonoBehaviour
         trailRenderer.material = GetOrCreateSpriteMaterial();
         trailRenderer.startColor = lazerRengi;
         trailRenderer.endColor = new Color(lazerRengi.r, lazerRengi.g, lazerRengi.b, 0f);
+
+        ApplyVisualState();
+    }
+
+    private void OnValidate()
+    {
+        ClampScaleSettings();
+        CacheProjectileComponents();
+        ApplyVisualState();
+    }
+
+    private void LateUpdate()
+    {
+        ApplyVisualState();
     }
 
     private void Update()
@@ -150,5 +169,64 @@ public class PlayerProjectile : MonoBehaviour
         }
 
         return cachedSpriteMaterial;
+    }
+
+    private void ApplyVisualState()
+    {
+        ClampScaleSettings();
+
+        float scale = Mathf.Max(0.01f, projectileScale);
+        transform.localScale = new Vector3(
+            Mathf.Max(0.01f, lazerUzunlugu) * scale,
+            Mathf.Max(0.01f, lazerKalInligi) * scale,
+            1f);
+
+        if (circleCollider != null)
+        {
+            if (syncHitboxToSprite)
+            {
+                float longestSide = Mathf.Max(lazerUzunlugu, lazerKalInligi);
+                float desiredWorldRadius = Mathf.Max(
+                    0.01f,
+                    longestSide * scale * 0.5f * hitboxRadiusMultiplier + hitboxRadiusPadding);
+                circleCollider.radius = desiredWorldRadius / Mathf.Max(0.01f, longestSide * scale);
+            }
+            else
+            {
+                circleCollider.radius = Mathf.Max(0.01f, circleCollider.radius);
+            }
+        }
+
+        if (trailRenderer != null)
+        {
+            trailRenderer.time = Mathf.Max(0.01f, izSuresi);
+            trailRenderer.startWidth = Mathf.Max(0.01f, lazerKalInligi * scale * 0.8f);
+        }
+    }
+
+    private void CacheProjectileComponents()
+    {
+        if (circleCollider == null)
+        {
+            circleCollider = GetComponent<CircleCollider2D>();
+        }
+
+        if (spriteRenderer == null)
+        {
+            spriteRenderer = GetComponent<SpriteRenderer>();
+        }
+
+        if (trailRenderer == null)
+        {
+            trailRenderer = GetComponent<TrailRenderer>();
+        }
+    }
+
+    private void ClampScaleSettings()
+    {
+        lazerUzunlugu = Mathf.Max(0.01f, lazerUzunlugu);
+        lazerKalInligi = Mathf.Max(0.01f, lazerKalInligi);
+        projectileScale = Mathf.Max(0.01f, projectileScale);
+        hitboxRadiusMultiplier = Mathf.Max(0.01f, hitboxRadiusMultiplier);
     }
 }

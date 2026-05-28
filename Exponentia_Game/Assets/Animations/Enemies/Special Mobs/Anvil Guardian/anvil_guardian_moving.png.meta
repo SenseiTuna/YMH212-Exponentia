@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: 2f4de416f2795914aa83134b4ebdba4a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5651325403712194400
+    second: anvil_guardian_moving_0
+  - first:
+      213: 5789610613708366711
+    second: anvil_guardian_moving_1
+  - first:
+      213: -3711654474672362949
+    second: anvil_guardian_moving_2
+  - first:
+      213: -8132066877515289604
+    second: anvil_guardian_moving_3
+  - first:
+      213: -3915408182325557435
+    second: anvil_guardian_moving_4
+  - first:
+      213: -1180538969405524251
+    second: anvil_guardian_moving_5
+  - first:
+      213: -8371262720425328020
+    second: anvil_guardian_moving_6
+  - first:
+      213: -1565595179249530089
+    second: anvil_guardian_moving_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: anvil_guardian_moving_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 461
+        width: 467
+        height: 426
+      alignment: 9
+      pivot: {x: 0.453923, y: 0.31454855}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a8f791cc757291b0800000000000000
+      internalID: -5651325403712194400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anvil_guardian_moving_1
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 455
+        width: 381
+        height: 384
+      alignment: 9
+      pivot: {x: 0.33440056, y: 0.36843887}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7732be1bd24d85050800000000000000
+      internalID: 5789610613708366711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anvil_guardian_moving_2
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 450
+        width: 383
+        height: 386
+      alignment: 9
+      pivot: {x: 0.37989876, y: 0.37436086}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3a2a24abed8d7cc0800000000000000
+      internalID: -3711654474672362949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anvil_guardian_moving_3
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 450
+        width: 433
+        height: 437
+      alignment: 9
+      pivot: {x: 0.30592456, y: 0.33504626}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfb2bfba248152f80800000000000000
+      internalID: -8132066877515289604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anvil_guardian_moving_4
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 32
+        width: 363
+        height: 391
+      alignment: 9
+      pivot: {x: 0.39668593, y: 0.40407908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 547c3ddb00da9a9c0800000000000000
+      internalID: -3915408182325557435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anvil_guardian_moving_5
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 39
+        width: 370
+        height: 385
+      alignment: 9
+      pivot: {x: 0.37021318, y: 0.39474046}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e6f315ef02ed9fe0800000000000000
+      internalID: -1180538969405524251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anvil_guardian_moving_6
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 40
+        width: 382
+        height: 381
+      alignment: 9
+      pivot: {x: 0.40181458, y: 0.39226767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c62049b98ec43db80800000000000000
+      internalID: -8371262720425328020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anvil_guardian_moving_7
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 35
+        width: 374
+        height: 389
+      alignment: 9
+      pivot: {x: 0.3595666, y: 0.40229702}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71b84c6ba73e54ae0800000000000000
+      internalID: -1565595179249530089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 56ba0297913db61428e2f9719c89396a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      anvil_guardian_moving_0: -5651325403712194400
+      anvil_guardian_moving_1: 5789610613708366711
+      anvil_guardian_moving_2: -3711654474672362949
+      anvil_guardian_moving_3: -8132066877515289604
+      anvil_guardian_moving_4: -3915408182325557435
+      anvil_guardian_moving_5: -1180538969405524251
+      anvil_guardian_moving_6: -8371262720425328020
+      anvil_guardian_moving_7: -1565595179249530089
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

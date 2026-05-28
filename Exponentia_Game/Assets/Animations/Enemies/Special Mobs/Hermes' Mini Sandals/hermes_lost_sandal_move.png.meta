@@ -1,0 +1,343 @@
+fileFormatVersion: 2
+guid: 1cd25da87339adb42a437727676cafbb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8950269564839859843
+    second: hermes_lost_sandal_move_0
+  - first:
+      213: -6796193445270500666
+    second: hermes_lost_sandal_move_1
+  - first:
+      213: 5311241606933835947
+    second: hermes_lost_sandal_move_2
+  - first:
+      213: 2779214108776460764
+    second: hermes_lost_sandal_move_3
+  - first:
+      213: 9219562198491620807
+    second: hermes_lost_sandal_move_4
+  - first:
+      213: 2015812678868550859
+    second: hermes_lost_sandal_move_5
+  - first:
+      213: 9149586057387680130
+    second: hermes_lost_sandal_move_6
+  - first:
+      213: 1717888142420625916
+    second: hermes_lost_sandal_move_7
+  - first:
+      213: 8740651149742187091
+    second: hermes_lost_sandal_move_8
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hermes_lost_sandal_move_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 561
+        width: 350
+        height: 561
+      alignment: 9
+      pivot: {x: 0.34075958, y: 0.34394452}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d79eab750414ac380800000000000000
+      internalID: -8950269564839859843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_lost_sandal_move_1
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 561
+        width: 309
+        height: 561
+      alignment: 9
+      pivot: {x: 0.26775423, y: 0.35713226}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ca40ddb1121fa1a0800000000000000
+      internalID: -6796193445270500666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_lost_sandal_move_2
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 561
+        width: 359
+        height: 561
+      alignment: 9
+      pivot: {x: 0.2554493, y: 0.3140523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba0f091f91255b940800000000000000
+      internalID: 5311241606933835947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_lost_sandal_move_3
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 561
+        width: 383
+        height: 561
+      alignment: 9
+      pivot: {x: 0.22956422, y: 0.2850392}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd1ff5cc180c19620800000000000000
+      internalID: 2779214108776460764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_lost_sandal_move_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 316
+        height: 561
+      alignment: 9
+      pivot: {x: 0.24324335, y: 0.48637262}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c566b1e8f672ff70800000000000000
+      internalID: 9219562198491620807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_lost_sandal_move_5
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 0
+        width: 383
+        height: 561
+      alignment: 9
+      pivot: {x: 0.24308622, y: 0.5109897}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc440b183fa99fb10800000000000000
+      internalID: 2015812678868550859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_lost_sandal_move_6
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 304
+        height: 561
+      alignment: 9
+      pivot: {x: 0.251766, y: 0.47845992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 281a578ea0cd9fe70800000000000000
+      internalID: 9149586057387680130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_lost_sandal_move_7
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 0
+        width: 397
+        height: 561
+      alignment: 9
+      pivot: {x: 0.24407052, y: 0.483735}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf946dce92a27d710800000000000000
+      internalID: 1717888142420625916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f7a0d540bea1fb2468dafb5b06f6a65d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":2.0},"gridSpriteSize":{"x":350.0,"y":561.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      hermes_lost_sandal_move_0: -8950269564839859843
+      hermes_lost_sandal_move_1: -6796193445270500666
+      hermes_lost_sandal_move_2: 5311241606933835947
+      hermes_lost_sandal_move_3: 2779214108776460764
+      hermes_lost_sandal_move_4: 9219562198491620807
+      hermes_lost_sandal_move_5: 2015812678868550859
+      hermes_lost_sandal_move_6: 9149586057387680130
+      hermes_lost_sandal_move_7: 1717888142420625916
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

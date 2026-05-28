@@ -83,10 +83,7 @@ public class HermesMiniSandalsEnemy : EnemyMechanics
         nextDashTime = Time.time + dashCooldown;
         nextMineDropTime = Time.time;
 
-        if (animator != null)
-        {
-            animator.SetTrigger("Attack");
-        }
+        TriggerAttackAnimation("dash");
     }
 
     private void DropMine()

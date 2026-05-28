@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: 6f5b91227c7bab04f98fc1df7e063d8b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5731301279881875494
+    second: arkhe_moving_0
+  - first:
+      213: -8185322165637496034
+    second: arkhe_moving_1
+  - first:
+      213: -2672619760404250001
+    second: arkhe_moving_2
+  - first:
+      213: -4100044642064873186
+    second: arkhe_moving_3
+  - first:
+      213: 1865930972022347051
+    second: arkhe_moving_4
+  - first:
+      213: -528435059899642672
+    second: arkhe_moving_5
+  - first:
+      213: -5080680846311369390
+    second: arkhe_moving_6
+  - first:
+      213: -2031176239830581389
+    second: arkhe_moving_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: arkhe_moving_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 452
+        width: 467
+        height: 435
+      alignment: 9
+      pivot: {x: 0.51830226, y: 0.5056259}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adf26e70ad35670b0800000000000000
+      internalID: -5731301279881875494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_moving_1
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 451
+        width: 358
+        height: 397
+      alignment: 9
+      pivot: {x: 0.43016845, y: 0.5692634}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e13cb09abd4e76e80800000000000000
+      internalID: -8185322165637496034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_moving_2
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 444
+        width: 379
+        height: 361
+      alignment: 9
+      pivot: {x: 0.46704873, y: 0.6121386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f624a61fc72f8ead0800000000000000
+      internalID: -2672619760404250001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_moving_3
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 445
+        width: 436
+        height: 442
+      alignment: 9
+      pivot: {x: 0.39675343, y: 0.49767584}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e19ca7afe17b917c0800000000000000
+      internalID: -4100044642064873186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_moving_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 450
+        height: 380
+      alignment: 9
+      pivot: {x: 0.53343415, y: 0.63960415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b259aca355e15e910800000000000000
+      internalID: 1865930972022347051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_moving_5
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 5
+        width: 347
+        height: 436
+      alignment: 9
+      pivot: {x: 0.3918288, y: 0.48390555}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dcc1dfdc1f9aa8f0800000000000000
+      internalID: -528435059899642672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_moving_6
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 40
+        width: 390
+        height: 358
+      alignment: 9
+      pivot: {x: 0.44882813, y: 0.6200268}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 255da7a50bbcd79b0800000000000000
+      internalID: -5080680846311369390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_moving_7
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 0
+        width: 443
+        height: 424
+      alignment: 9
+      pivot: {x: 0.3974893, y: 0.59407485}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37f3fa4b8ffcfc3e0800000000000000
+      internalID: -2031176239830581389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 90ea349ee4a9c4d49ad4e8e5984a7bc4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      arkhe_moving_0: -5731301279881875494
+      arkhe_moving_1: -8185322165637496034
+      arkhe_moving_2: -2672619760404250001
+      arkhe_moving_3: -4100044642064873186
+      arkhe_moving_4: 1865930972022347051
+      arkhe_moving_5: -528435059899642672
+      arkhe_moving_6: -5080680846311369390
+      arkhe_moving_7: -2031176239830581389
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

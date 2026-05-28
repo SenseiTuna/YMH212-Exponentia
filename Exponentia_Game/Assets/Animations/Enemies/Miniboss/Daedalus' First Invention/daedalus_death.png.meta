@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: 4d9da3637950f4b4d8428d6d3f536448
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8118785609877379112
+    second: daedalus_death_0
+  - first:
+      213: 8970910292553937449
+    second: daedalus_death_1
+  - first:
+      213: 2523819847464249763
+    second: daedalus_death_2
+  - first:
+      213: -8817643661252828755
+    second: daedalus_death_3
+  - first:
+      213: 1750723896358066026
+    second: daedalus_death_4
+  - first:
+      213: 4825147156459282032
+    second: daedalus_death_5
+  - first:
+      213: -1432850180713587753
+    second: daedalus_death_6
+  - first:
+      213: 5650658566227411588
+    second: daedalus_death_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: daedalus_death_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 429
+        width: 477
+        height: 458
+      alignment: 9
+      pivot: {x: 0.22132763, y: 0.028554259}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8285b4c3f78bba070800000000000000
+      internalID: 8118785609877379112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daedalus_death_1
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 440
+        width: 365
+        height: 404
+      alignment: 9
+      pivot: {x: 0.18640555, y: 0.008756581}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 922b29391631f7c70800000000000000
+      internalID: 8970910292553937449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daedalus_death_2
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 435
+        width: 372
+        height: 348
+      alignment: 9
+      pivot: {x: 0.14019693, y: 0.009281816}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a9ef2d87c8660320800000000000000
+      internalID: 2523819847464249763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daedalus_death_3
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 433
+        width: 422
+        height: 454
+      alignment: 9
+      pivot: {x: 0.2123575, y: 0.008978016}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da1ec07decf61a580800000000000000
+      internalID: -8817643661252828755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daedalus_death_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 433
+        height: 365
+      alignment: 9
+      pivot: {x: 0.36356312, y: 0.106742516}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a67d536ab12db4810800000000000000
+      internalID: 1750723896358066026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daedalus_death_5
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 39
+        width: 404
+        height: 324
+      alignment: 9
+      pivot: {x: 0.3149269, y: 0.03418621}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07eddb926cd56f240800000000000000
+      internalID: 4825147156459282032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daedalus_death_6
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 40
+        width: 415
+        height: 287
+      alignment: 9
+      pivot: {x: 0.30426216, y: 0.060973722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7db563a2a5e7d1ce0800000000000000
+      internalID: -1432850180713587753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daedalus_death_7
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 0
+        width: 439
+        height: 305
+      alignment: 9
+      pivot: {x: 0.28237143, y: 0.21096982}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 482c00b070c2b6e40800000000000000
+      internalID: 5650658566227411588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: cc055e22dcc9b6c4194a9a1e7503522a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      daedalus_death_0: 8118785609877379112
+      daedalus_death_1: 8970910292553937449
+      daedalus_death_2: 2523819847464249763
+      daedalus_death_3: -8817643661252828755
+      daedalus_death_4: 1750723896358066026
+      daedalus_death_5: 4825147156459282032
+      daedalus_death_6: -1432850180713587753
+      daedalus_death_7: 5650658566227411588
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

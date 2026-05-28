@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: e0969e15966685742b34977363de7846
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3244602339752992579
+    second: black_hole_rotating_0
+  - first:
+      213: -2914726826886822635
+    second: black_hole_rotating_1
+  - first:
+      213: 8597580523438398557
+    second: black_hole_rotating_2
+  - first:
+      213: -5828435383914274213
+    second: black_hole_rotating_3
+  - first:
+      213: 3759020353306441828
+    second: black_hole_rotating_4
+  - first:
+      213: 5500489516248424197
+    second: black_hole_rotating_5
+  - first:
+      213: -4442193125279496981
+    second: black_hole_rotating_6
+  - first:
+      213: 8158964441869149321
+    second: black_hole_rotating_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: black_hole_rotating_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 458
+        width: 431
+        height: 429
+      alignment: 9
+      pivot: {x: 0.5445431, y: 0.3839279}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34fd06a23a4270d20800000000000000
+      internalID: 3244602339752992579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_hole_rotating_1
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 459
+        width: 389
+        height: 404
+      alignment: 9
+      pivot: {x: 0.4865059, y: 0.40038654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5150c12d46fcc87d0800000000000000
+      internalID: -2914726826886822635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_hole_rotating_2
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 466
+        width: 382
+        height: 385
+      alignment: 9
+      pivot: {x: 0.5045805, y: 0.40342385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5cdc532fedb05770800000000000000
+      internalID: 8597580523438398557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_hole_rotating_3
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 460
+        width: 423
+        height: 427
+      alignment: 9
+      pivot: {x: 0.47414705, y: 0.37706804}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b52e87116ec3d1fa0800000000000000
+      internalID: -5828435383914274213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_hole_rotating_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 413
+        height: 410
+      alignment: 9
+      pivot: {x: 0.5518988, y: 0.45412278}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4683b4e5819ba2430800000000000000
+      internalID: 3759020353306441828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_hole_rotating_5
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 27
+        width: 388
+        height: 392
+      alignment: 9
+      pivot: {x: 0.52142066, y: 0.40514845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50f5fba721aa55c40800000000000000
+      internalID: 5500489516248424197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_hole_rotating_6
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 19
+        width: 398
+        height: 404
+      alignment: 9
+      pivot: {x: 0.49670288, y: 0.41337955}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be4880863e82a52c0800000000000000
+      internalID: -4442193125279496981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: black_hole_rotating_7
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 0
+        width: 421
+        height: 411
+      alignment: 9
+      pivot: {x: 0.49480492, y: 0.44997728}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98467ac8ee67a3170800000000000000
+      internalID: 8158964441869149321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 75cd1c70251f587409bfc665609d5d7c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      black_hole_rotating_0: 3244602339752992579
+      black_hole_rotating_1: -2914726826886822635
+      black_hole_rotating_2: 8597580523438398557
+      black_hole_rotating_3: -5828435383914274213
+      black_hole_rotating_4: 3759020353306441828
+      black_hole_rotating_5: 5500489516248424197
+      black_hole_rotating_6: -4442193125279496981
+      black_hole_rotating_7: 8158964441869149321
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

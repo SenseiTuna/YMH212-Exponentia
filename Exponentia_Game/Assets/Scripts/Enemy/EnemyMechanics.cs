@@ -32,9 +32,25 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
     [SerializeField] protected Vector2 placeholderScale = Vector2.one;
     [SerializeField] protected int sortingOrder = 5;
 
+    [Header("Sprite / Hitbox Scale")]
+    [SerializeField] private bool syncHitboxToSprite = true;
+    [SerializeField] private float enemyScale = 1f;
+    [SerializeField] private bool refitHitboxDuringAnimation = true;
+    [SerializeField] private Vector2 hitboxSizeMultiplier = Vector2.one;
+    [SerializeField] private Vector2 hitboxPadding = Vector2.zero;
+    [SerializeField] private Vector2 hitboxOffset = Vector2.zero;
+    [SerializeField] private SpriteRenderer hitboxReferenceRenderer;
+    [SerializeField] private Collider2D hitboxCollider;
+    [SerializeField] private Transform visualScaleRoot;
+    [SerializeField, HideInInspector] private bool visualHitboxDefaultsCaptured;
+    [SerializeField, HideInInspector] private Vector3 visualBaseLocalScale = Vector3.one;
+
     protected Animator animator;
     protected SpriteRenderer mainSpriteRenderer;
     private bool isFacingRight = true;
+    private bool animatorHasIsWalking;
+    private bool animatorHasAttackTrigger;
+    private bool animatorHasDieTrigger;
 
     [Header("Projectile Template")]
     [SerializeField] protected EnemyProjectile enemyProjectilePrefab;
@@ -74,6 +90,7 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
     protected Rigidbody2D rb2d;
     protected bool isDying;
     private Coroutine deathRoutine;
+    private Coroutine fallbackAnimationReturnRoutine;
     private DamageFlashFeedback damageFlashFeedback;
     private KnockbackReceiver2D knockbackReceiver;
     private Coroutine timeShiftMoveSpeedRoutine;
@@ -97,11 +114,17 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
         
         animator = GetComponentInChildren<Animator>();
         mainSpriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        CacheAnimatorParameters();
+        PlayDefaultAliveAnimation();
 
         if (usePlaceholderVisuals && animator == null)
         {
             EnsurePlaceholderBody();
         }
+
+        CacheVisualHitboxReferences();
+        CaptureVisualHitboxDefaultsIfNeeded();
+        ApplyVisualHitboxScale();
 
         EnsureHealthText();
         
@@ -154,6 +177,8 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
         if (usePlaceholderVisuals && animator == null)
         {
             ApplyVisuals();
+            CacheVisualHitboxReferences();
+            ApplyVisualHitboxScale();
         }
         UpdateHealthText();
     }
@@ -163,17 +188,29 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
         EnsureEnemyTag();
         EnsurePlaceholderBody();
         ApplyVisuals();
+        CacheVisualHitboxReferences();
+        CaptureVisualHitboxDefaultsIfNeeded();
+        ApplyVisualHitboxScale();
     }
 
     protected virtual void OnValidate()
     {
-        if (!Application.isPlaying)
-        {
-            return;
-        }
+        ClampVisualHitboxSettings();
+        CacheVisualHitboxReferences();
+        CaptureVisualHitboxDefaultsIfNeeded();
+        ApplyVisualHitboxScale();
 
-        EnsurePlaceholderBody();
-        ApplyVisuals();
+        if (Application.isPlaying)
+        {
+            if (usePlaceholderVisuals && animator == null)
+            {
+                EnsurePlaceholderBody();
+                ApplyVisuals();
+                CacheVisualHitboxReferences();
+            }
+
+            ApplyVisualHitboxScale();
+        }
     }
 
     protected virtual void Update()
@@ -202,7 +239,7 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
 
         if (isDying)
         {
-            animator.SetBool("isWalking", false);
+            SetAnimatorBoolIfPresent("isWalking", false);
             return;
         }
 
@@ -218,7 +255,7 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
         }
 
         bool isMoving = velocity.sqrMagnitude > 0.01f || (isUnstucking);
-        animator.SetBool("isWalking", isMoving);
+        SetAnimatorBoolIfPresent("isWalking", isMoving);
 
         // 2. Yön Dönüşü (FlipX)
         // Eğer bir velocity varsa velocity yönüne, yoksa playera doğru baksın
@@ -257,6 +294,8 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
 
     protected virtual void LateUpdate()
     {
+        ApplyVisualHitboxScale(refitHitboxDuringAnimation);
+
         if (isDying)
         {
             return;
@@ -377,9 +416,12 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
         // Animasyon varsa oynatıp bekleyeceğiz, yoksa anında yok et
         if (animator != null)
         {
-            animator.ResetTrigger("Attack");
-            animator.SetBool("isWalking", false); // Kesinlikle yürümeyi durdur ki animasyon bug'a girmesin
-            animator.SetTrigger("Die");
+            ResetAnimatorTriggerIfPresent("Attack");
+            SetAnimatorBoolIfPresent("isWalking", false); // Kesinlikle yürümeyi durdur ki animasyon bug'a girmesin
+            if (!SetAnimatorTriggerIfPresent("Die"))
+            {
+                PlayAnimatorStateIfPresent("death", "Death");
+            }
             
             // Fizikleri kapat ki ölürken itilmesin veya hasar vurmasin
             if (rb2d != null)
@@ -544,7 +586,175 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
         // Hasar verdiyse "Attack" animasyonunu tetikle
         if (animator != null)
         {
-            animator.SetTrigger("Attack");
+            TriggerAttackAnimation("attack", "Attack");
+        }
+    }
+
+    private void CacheAnimatorParameters()
+    {
+        animatorHasIsWalking = false;
+        animatorHasAttackTrigger = false;
+        animatorHasDieTrigger = false;
+
+        if (animator == null)
+        {
+            return;
+        }
+
+        foreach (AnimatorControllerParameter parameter in animator.parameters)
+        {
+            if (parameter.name == "isWalking" && parameter.type == AnimatorControllerParameterType.Bool)
+            {
+                animatorHasIsWalking = true;
+            }
+            else if (parameter.name == "Attack" && parameter.type == AnimatorControllerParameterType.Trigger)
+            {
+                animatorHasAttackTrigger = true;
+            }
+            else if (parameter.name == "Die" && parameter.type == AnimatorControllerParameterType.Trigger)
+            {
+                animatorHasDieTrigger = true;
+            }
+        }
+    }
+
+    protected void SetAnimatorBoolIfPresent(string parameterName, bool value)
+    {
+        if (animator == null)
+        {
+            return;
+        }
+
+        if (parameterName == "isWalking" && animatorHasIsWalking)
+        {
+            animator.SetBool(parameterName, value);
+        }
+    }
+
+    protected bool SetAnimatorTriggerIfPresent(string parameterName)
+    {
+        if (animator == null)
+        {
+            return false;
+        }
+
+        if (parameterName == "Attack" && animatorHasAttackTrigger)
+        {
+            animator.SetTrigger(parameterName);
+            return true;
+        }
+        else if (parameterName == "Die" && animatorHasDieTrigger)
+        {
+            animator.SetTrigger(parameterName);
+            return true;
+        }
+
+        return false;
+    }
+
+    protected void ResetAnimatorTriggerIfPresent(string parameterName)
+    {
+        if (animator == null)
+        {
+            return;
+        }
+
+        if (parameterName == "Attack" && animatorHasAttackTrigger)
+        {
+            animator.ResetTrigger(parameterName);
+        }
+        else if (parameterName == "Die" && animatorHasDieTrigger)
+        {
+            animator.ResetTrigger(parameterName);
+        }
+    }
+
+    protected bool PlayAnimatorStateIfPresent(params string[] stateNames)
+    {
+        if (animator == null || stateNames == null)
+        {
+            return false;
+        }
+
+        for (int i = 0; i < stateNames.Length; i++)
+        {
+            string stateName = stateNames[i];
+            if (string.IsNullOrWhiteSpace(stateName))
+            {
+                continue;
+            }
+
+            int stateHash = Animator.StringToHash(stateName);
+            int baseLayerStateHash = Animator.StringToHash("Base Layer." + stateName);
+            if (animator.HasState(0, stateHash))
+            {
+                animator.Play(stateHash, 0, 0f);
+                return true;
+            }
+
+            if (animator.HasState(0, baseLayerStateHash))
+            {
+                animator.Play(baseLayerStateHash, 0, 0f);
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    protected void TriggerAttackAnimation(params string[] fallbackStateNames)
+    {
+        if (SetAnimatorTriggerIfPresent("Attack"))
+        {
+            return;
+        }
+
+        if (fallbackStateNames != null && fallbackStateNames.Length > 0)
+        {
+            if (PlayAnimatorStateIfPresent(fallbackStateNames))
+            {
+                ScheduleReturnToAliveAnimation();
+            }
+        }
+    }
+
+    private void PlayDefaultAliveAnimation()
+    {
+        PlayAnimatorStateIfPresent("move", "idle", "rotating");
+    }
+
+    private void ScheduleReturnToAliveAnimation()
+    {
+        if (!isActiveAndEnabled)
+        {
+            return;
+        }
+
+        if (fallbackAnimationReturnRoutine != null)
+        {
+            StopCoroutine(fallbackAnimationReturnRoutine);
+        }
+
+        fallbackAnimationReturnRoutine = StartCoroutine(ReturnToAliveAnimationAfterCurrentState());
+    }
+
+    private IEnumerator ReturnToAliveAnimationAfterCurrentState()
+    {
+        yield return null;
+
+        float delay = 0.75f;
+        if (animator != null)
+        {
+            AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+            delay = Mathf.Clamp(stateInfo.length, 0.1f, 3f);
+        }
+
+        yield return new WaitForSeconds(delay);
+
+        fallbackAnimationReturnRoutine = null;
+        if (!isDying && IsAlive)
+        {
+            PlayDefaultAliveAnimation();
         }
     }
 
@@ -797,6 +1007,102 @@ public class EnemyMechanics : MonoBehaviour, IDamageable
         bodyVisual.localPosition = Vector3.zero;
         bodyVisual.localRotation = Quaternion.identity;
         bodyVisual.localScale = new Vector3(placeholderScale.x, placeholderScale.y, 1f);
+    }
+
+    private void ClampVisualHitboxSettings()
+    {
+        enemyScale = Mathf.Max(0.01f, enemyScale);
+        hitboxSizeMultiplier.x = Mathf.Max(0.01f, hitboxSizeMultiplier.x);
+        hitboxSizeMultiplier.y = Mathf.Max(0.01f, hitboxSizeMultiplier.y);
+    }
+
+    private void CacheVisualHitboxReferences()
+    {
+        if (hitboxCollider == null)
+        {
+            hitboxCollider = GetComponent<Collider2D>();
+        }
+
+        if (hitboxReferenceRenderer == null)
+        {
+            hitboxReferenceRenderer = mainSpriteRenderer != null
+                ? mainSpriteRenderer
+                : GetComponentInChildren<SpriteRenderer>();
+        }
+
+        if (visualScaleRoot == null && hitboxReferenceRenderer != null)
+        {
+            visualScaleRoot = hitboxReferenceRenderer.transform;
+        }
+    }
+
+    private void CaptureVisualHitboxDefaultsIfNeeded()
+    {
+        if (visualHitboxDefaultsCaptured || visualScaleRoot == null)
+        {
+            return;
+        }
+
+        visualBaseLocalScale = visualScaleRoot.localScale;
+        visualHitboxDefaultsCaptured = true;
+    }
+
+    private void ApplyVisualHitboxScale(bool fitHitbox = true)
+    {
+        ClampVisualHitboxSettings();
+        CacheVisualHitboxReferences();
+        CaptureVisualHitboxDefaultsIfNeeded();
+
+        if (visualScaleRoot != null)
+        {
+            visualScaleRoot.localScale = new Vector3(
+                visualBaseLocalScale.x * enemyScale,
+                visualBaseLocalScale.y * enemyScale,
+                visualBaseLocalScale.z);
+        }
+
+        if (fitHitbox && syncHitboxToSprite)
+        {
+            FitHitboxToSpriteBounds();
+        }
+    }
+
+    private void FitHitboxToSpriteBounds()
+    {
+        if (hitboxCollider == null ||
+            hitboxReferenceRenderer == null ||
+            hitboxReferenceRenderer.sprite == null)
+        {
+            return;
+        }
+
+        Bounds spriteBounds = hitboxReferenceRenderer.bounds;
+        Vector3 colliderScale = hitboxCollider.transform.lossyScale;
+        float scaleX = Mathf.Max(0.0001f, Mathf.Abs(colliderScale.x));
+        float scaleY = Mathf.Max(0.0001f, Mathf.Abs(colliderScale.y));
+
+        Vector2 localSize = new Vector2(
+            Mathf.Max(0.01f, (spriteBounds.size.x / scaleX) * hitboxSizeMultiplier.x + hitboxPadding.x),
+            Mathf.Max(0.01f, (spriteBounds.size.y / scaleY) * hitboxSizeMultiplier.y + hitboxPadding.y));
+
+        Vector2 localCenter = hitboxCollider.transform.InverseTransformPoint(spriteBounds.center);
+        localCenter += hitboxOffset;
+
+        if (hitboxCollider is BoxCollider2D boxCollider)
+        {
+            boxCollider.size = localSize;
+            boxCollider.offset = localCenter;
+        }
+        else if (hitboxCollider is CapsuleCollider2D capsuleCollider)
+        {
+            capsuleCollider.size = localSize;
+            capsuleCollider.offset = localCenter;
+        }
+        else if (hitboxCollider is CircleCollider2D circleCollider)
+        {
+            circleCollider.radius = Mathf.Max(localSize.x, localSize.y) * 0.5f;
+            circleCollider.offset = localCenter;
+        }
     }
 
     private void EnsureHealthText()

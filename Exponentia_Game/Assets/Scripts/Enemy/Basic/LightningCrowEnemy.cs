@@ -57,7 +57,7 @@ public class LightningCrowEnemy : EnemyMechanics
 
     private void FireTornado(string projectileName, Vector2 direction)
     {
-        SpawnEnemyProjectile(
+        EnemyProjectile projectile = SpawnEnemyProjectile(
             projectileName,
             transform.position + (Vector3)(direction.normalized * projectileSpawnOffset),
             direction,
@@ -66,5 +66,10 @@ public class LightningCrowEnemy : EnemyMechanics
             projectileLifeTime,
             projectileColor,
             projectileSize);
+
+        if (projectile != null)
+        {
+            projectile.SetRotateVisualToDirection(false);
+        }
     }
 }

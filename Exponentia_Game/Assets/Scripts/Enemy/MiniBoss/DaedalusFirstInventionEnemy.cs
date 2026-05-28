@@ -61,22 +61,20 @@ public class DaedalusFirstInventionEnemy : EnemyMechanics
             directionToPlayer = Vector2.right;
         }
 
-        if (animator != null)
-        {
-            animator.SetTrigger("Attack");
-        }
-
         switch (attackIndex)
         {
             case 0:
+                TriggerAttackAnimation("spinning feather attack", "wing slam");
                 FireFullRing();
                 nextAttackTime = Time.time + fullRingCooldown;
                 break;
             case 1:
+                TriggerAttackAnimation("wing slam", "spinning feather attack");
                 FireHalfRing(directionToPlayer);
                 nextAttackTime = Time.time + halfRingCooldown;
                 break;
             default:
+                TriggerAttackAnimation("laser beam attack");
                 FireLaser(directionToPlayer);
                 nextAttackTime = Time.time + laserCooldown;
                 break;

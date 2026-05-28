@@ -116,10 +116,7 @@ public class RagingBronzeMinotaurEnemy : EnemyMechanics
         {
             ThrowSpinningAxes();
             nextAxeTime = Time.time + axeCooldown;
-            if (animator != null)
-            {
-                animator.SetTrigger("Attack");
-            }
+            TriggerAttackAnimation("spin attack");
         }
     }
 
@@ -138,10 +135,7 @@ public class RagingBronzeMinotaurEnemy : EnemyMechanics
         nextTrailDropTime = chargeMoveStartTime;
         nextSlamTime = Time.time + slamWindup;
 
-        if (animator != null)
-        {
-            animator.SetTrigger("Attack");
-        }
+        TriggerAttackAnimation("dash attack");
     }
 
     private void SpawnChargeTrail()

@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: 62c44538641ecfe4aa6229e790832c57
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9078772990195545804
+    second: xenith_idle_0
+  - first:
+      213: 2673941772270078301
+    second: xenith_idle_1
+  - first:
+      213: -3966534186677729270
+    second: xenith_idle_2
+  - first:
+      213: -349895630716069478
+    second: xenith_idle_3
+  - first:
+      213: 2672975712909170586
+    second: xenith_idle_4
+  - first:
+      213: -2733789340267385727
+    second: xenith_idle_5
+  - first:
+      213: 6633418056361201280
+    second: xenith_idle_6
+  - first:
+      213: 7073432667696783008
+    second: xenith_idle_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: xenith_idle_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 589
+        width: 364
+        height: 405
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50229913}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 439cbfa1118b10280800000000000000
+      internalID: -9078772990195545804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xenith_idle_1
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 581
+        width: 310
+        height: 428
+      alignment: 9
+      pivot: {x: 0.5087298, y: 0.4312356}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d598c3eefdfbb1520800000000000000
+      internalID: 2673941772270078301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xenith_idle_2
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 577
+        width: 319
+        height: 424
+      alignment: 9
+      pivot: {x: 0.50106037, y: 0.43377843}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0881ad3c2a04f8c0800000000000000
+      internalID: -3966534186677729270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xenith_idle_3
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 580
+        width: 329
+        height: 423
+      alignment: 9
+      pivot: {x: 0.49794373, y: 0.43282208}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9915b617cbe42bf0800000000000000
+      internalID: -349895630716069478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xenith_idle_4
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 117
+        width: 334
+        height: 426
+      alignment: 9
+      pivot: {x: 0.49721235, y: 0.4409887}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a979235bf31581520800000000000000
+      internalID: 2672975712909170586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xenith_idle_5
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 115
+        width: 330
+        height: 428
+      alignment: 9
+      pivot: {x: 0.5065833, y: 0.44271466}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18cec9a4411af0ad0800000000000000
+      internalID: -2733789340267385727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xenith_idle_6
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 115
+        width: 322
+        height: 427
+      alignment: 9
+      pivot: {x: 0.4990363, y: 0.44185364}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08e4210b392ae0c50800000000000000
+      internalID: 6633418056361201280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xenith_idle_7
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 116
+        width: 325
+        height: 426
+      alignment: 9
+      pivot: {x: 0.5, y: 0.44026026}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aed5bcd881e92260800000000000000
+      internalID: 7073432667696783008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c6eb0f4ccb23efb459de02879f70954c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      xenith_idle_0: -9078772990195545804
+      xenith_idle_1: 2673941772270078301
+      xenith_idle_2: -3966534186677729270
+      xenith_idle_3: -349895630716069478
+      xenith_idle_4: 2672975712909170586
+      xenith_idle_5: -2733789340267385727
+      xenith_idle_6: 6633418056361201280
+      xenith_idle_7: 7073432667696783008
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

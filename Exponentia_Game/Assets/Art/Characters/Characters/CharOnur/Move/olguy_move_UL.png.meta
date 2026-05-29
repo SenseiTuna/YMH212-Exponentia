@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: bb4ddc92b79f4364389fb3e5f4b9380f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8609276726465636590
+    second: olguy_move_UL_0
+  - first:
+      213: 314137977828431022
+    second: olguy_move_UL_1
+  - first:
+      213: -1723929829206836712
+    second: olguy_move_UL_2
+  - first:
+      213: 6859946972481600714
+    second: olguy_move_UL_3
+  - first:
+      213: 4714916221541668321
+    second: olguy_move_UL_4
+  - first:
+      213: -148520883169986604
+    second: olguy_move_UL_5
+  - first:
+      213: 5565636802630771925
+    second: olguy_move_UL_6
+  - first:
+      213: 4550100895876237453
+    second: olguy_move_UL_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: olguy_move_UL_0
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 463
+        width: 252
+        height: 402
+      alignment: 9
+      pivot: {x: 0.5575253, y: 0.6603298}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee8a50e919b4a7770800000000000000
+      internalID: 8609276726465636590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: olguy_move_UL_1
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 461
+        width: 242
+        height: 407
+      alignment: 9
+      pivot: {x: 0.5350092, y: 0.662032}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea45ce293da0c5400800000000000000
+      internalID: 314137977828431022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: olguy_move_UL_2
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 463
+        width: 240
+        height: 405
+      alignment: 9
+      pivot: {x: 0.5688919, y: 0.6629714}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81a3d6044fe5318e0800000000000000
+      internalID: -1723929829206836712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: olguy_move_UL_3
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 461
+        width: 279
+        height: 408
+      alignment: 9
+      pivot: {x: 0.5753559, y: 0.66562414}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acc38c80d6d633f50800000000000000
+      internalID: 6859946972481600714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: olguy_move_UL_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 35
+        width: 272
+        height: 405
+      alignment: 9
+      pivot: {x: 0.5751953, y: 0.66783583}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e5d7b2a25fbe6140800000000000000
+      internalID: 4714916221541668321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: olguy_move_UL_5
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 37
+        width: 254
+        height: 403
+      alignment: 9
+      pivot: {x: 0.5296866, y: 0.66389537}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d7fcec2b0950fdf0800000000000000
+      internalID: -148520883169986604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: olguy_move_UL_6
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 34
+        width: 267
+        height: 405
+      alignment: 9
+      pivot: {x: 0.54869324, y: 0.6677522}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d4e5a91f2d1d3d40800000000000000
+      internalID: 5565636802630771925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: olguy_move_UL_7
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 35
+        width: 255
+        height: 404
+      alignment: 9
+      pivot: {x: 0.54710287, y: 0.6645949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d88c3e648a4352f30800000000000000
+      internalID: 4550100895876237453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0f30c4ec6d4a52745b40f88d76307b32
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      olguy_move_UL_0: 8609276726465636590
+      olguy_move_UL_1: 314137977828431022
+      olguy_move_UL_2: -1723929829206836712
+      olguy_move_UL_3: 6859946972481600714
+      olguy_move_UL_4: 4714916221541668321
+      olguy_move_UL_5: -148520883169986604
+      olguy_move_UL_6: 5565636802630771925
+      olguy_move_UL_7: 4550100895876237453
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

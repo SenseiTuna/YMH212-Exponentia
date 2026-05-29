@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: dd0aea20f6f960f4fb8d1ce940bf8744
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7652887311739627161
+    second: oldguy_spawning_0
+  - first:
+      213: 5764870597550842657
+    second: oldguy_spawning_1
+  - first:
+      213: 5546400050733835876
+    second: oldguy_spawning_2
+  - first:
+      213: -7367396219189102384
+    second: oldguy_spawning_3
+  - first:
+      213: -8429151269545492346
+    second: oldguy_spawning_4
+  - first:
+      213: 1520731380677018920
+    second: oldguy_spawning_5
+  - first:
+      213: 4058883398139134136
+    second: oldguy_spawning_6
+  - first:
+      213: -5179735583129562392
+    second: oldguy_spawning_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: oldguy_spawning_0
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 481
+        width: 271
+        height: 356
+      alignment: 9
+      pivot: {x: 0.49999976, y: 0.50986916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7695aa5698b7bc590800000000000000
+      internalID: -7652887311739627161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldguy_spawning_1
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 481
+        width: 275
+        height: 357
+      alignment: 9
+      pivot: {x: 0.49914595, y: 0.5134864}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 123ac1fc34fe00050800000000000000
+      internalID: 5764870597550842657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldguy_spawning_2
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 471
+        width: 285
+        height: 375
+      alignment: 9
+      pivot: {x: 0.51473707, y: 0.49328044}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 466e236c575c8fc40800000000000000
+      internalID: 5546400050733835876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldguy_spawning_3
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 462
+        width: 282
+        height: 369
+      alignment: 9
+      pivot: {x: 0.50893664, y: 0.5000002}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d87dab3c20c1c990800000000000000
+      internalID: -7367396219189102384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldguy_spawning_4
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 36
+        width: 303
+        height: 380
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68045b47493a50b80800000000000000
+      internalID: -8429151269545492346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldguy_spawning_5
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 27
+        width: 275
+        height: 390
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8250b003229ba1510800000000000000
+      internalID: 1520731380677018920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldguy_spawning_6
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 36
+        width: 274
+        height: 381
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b040da12fc045830800000000000000
+      internalID: 4058883398139134136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldguy_spawning_7
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 57
+        width: 199
+        height: 355
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e29c193ee1ed18b0800000000000000
+      internalID: -5179735583129562392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 843afd79e58c52f4d9b02a6c92134f8c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      oldguy_spawning_0: -7652887311739627161
+      oldguy_spawning_1: 5764870597550842657
+      oldguy_spawning_2: 5546400050733835876
+      oldguy_spawning_3: -7367396219189102384
+      oldguy_spawning_4: -8429151269545492346
+      oldguy_spawning_5: 1520731380677018920
+      oldguy_spawning_6: 4058883398139134136
+      oldguy_spawning_7: -5179735583129562392
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

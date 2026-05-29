@@ -134,6 +134,8 @@ GameObject:
   - component: {fileID: 4632266276934396422}
   - component: {fileID: -6345279769038755036}
   - component: {fileID: 6911561290995158347}
+  - component: {fileID: -8809343556899761825}
+  - component: {fileID: 6012384509123456789}
   m_Layer: 0
   m_Name: PlayerBase
   m_TagString: Player
@@ -685,3 +687,45 @@ MonoBehaviour:
   slowDuration: 1.5
   passiveKnockbackInterval: 10
   passiveSlowAmount: 0.25
+--- !u!95 &-8809343556899761825
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ece902c72f638f04a891e22d5b48d8db, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6012384509123456789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b0bab125a204b41ae22660af024e677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimationController
+  animator: {fileID: -8809343556899761825}
+  playerMovement: {fileID: 8053774950672793964}
+  idleState: idle
+  movePrefix: move_
+  attackPrefix: attack_
+  fallbackAttackState: attack
+  crossFadeDuration: 0.03
+  attackLockDuration: 0.22

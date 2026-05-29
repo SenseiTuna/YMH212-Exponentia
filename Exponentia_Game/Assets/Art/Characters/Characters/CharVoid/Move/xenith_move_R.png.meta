@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: 8fc323b28434fdd44a11eae70ecc701c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8612148536766114289
+    second: xenith_move_R_0
+  - first:
+      213: -7524335115428718528
+    second: xenith_move_R_1
+  - first:
+      213: 7386741921365311406
+    second: xenith_move_R_2
+  - first:
+      213: -1286612946920124322
+    second: xenith_move_R_3
+  - first:
+      213: -7473132215672906139
+    second: xenith_move_R_4
+  - first:
+      213: 6278269196904115189
+    second: xenith_move_R_5
+  - first:
+      213: -768181477047158286
+    second: xenith_move_R_6
+  - first:
+      213: 5722808734775840018
+    second: xenith_move_R_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: xenith_move_R_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 476
+        width: 404
+        height: 411
+      alignment: 9
+      pivot: {x: 0.6313192, y: 0.50119114}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f06d721f8808b7880800000000000000
+      internalID: -8612148536766114289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xenith_move_R_1
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 479
+        width: 333
+        height: 401
+      alignment: 9
+      pivot: {x: 0.5453746, y: 0.50517035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0489fd10411349790800000000000000
+      internalID: -7524335115428718528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xenith_move_R_2
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 480
+        width: 333
+        height: 399
+      alignment: 9
+      pivot: {x: 0.55125415, y: 0.5000796}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaf377e04aaf28660800000000000000
+      internalID: 7386741921365311406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xenith_move_R_3
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 487
+        width: 430
+        height: 400
+      alignment: 9
+      pivot: {x: 0.43849984, y: 0.43306366}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e50586f6758052ee0800000000000000
+      internalID: -1286612946920124322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xenith_move_R_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 399
+        height: 442
+      alignment: 9
+      pivot: {x: 0.66356856, y: 0.5767367}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56ed94d18d91a4890800000000000000
+      internalID: -7473132215672906139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xenith_move_R_5
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 77
+        width: 340
+        height: 369
+      alignment: 9
+      pivot: {x: 0.55457276, y: 0.48327228}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fb2fb52294e02750800000000000000
+      internalID: 6278269196904115189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xenith_move_R_6
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 66
+        width: 328
+        height: 380
+      alignment: 9
+      pivot: {x: 0.5680021, y: 0.49586543}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f9b191440fd655f0800000000000000
+      internalID: -768181477047158286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xenith_move_R_7
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 67
+        width: 317
+        height: 370
+      alignment: 9
+      pivot: {x: 0.57740223, y: 0.48483428}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21d01d939308b6f40800000000000000
+      internalID: 5722808734775840018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 22b7e1b71d55b984e823949945e179bf
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      xenith_move_R_0: -8612148536766114289
+      xenith_move_R_1: -7524335115428718528
+      xenith_move_R_2: 7386741921365311406
+      xenith_move_R_3: -1286612946920124322
+      xenith_move_R_4: -7473132215672906139
+      xenith_move_R_5: 6278269196904115189
+      xenith_move_R_6: -768181477047158286
+      xenith_move_R_7: 5722808734775840018
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

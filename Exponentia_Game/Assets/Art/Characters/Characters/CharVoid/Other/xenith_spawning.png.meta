@@ -1,0 +1,458 @@
+fileFormatVersion: 2
+guid: 3a7f5422b43609d44b7ce409f7944f10
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2941821591053208726
+    second: xenith_spawning_0
+  - first:
+      213: -7440295713448510773
+    second: xenith_spawning_1
+  - first:
+      213: 4231245846512882057
+    second: xenith_spawning_2
+  - first:
+      213: -1422493580877949592
+    second: xenith_spawning_3
+  - first:
+      213: 2461222375176393468
+    second: xenith_spawning_4
+  - first:
+      213: -4231664399601884367
+    second: xenith_spawning_5
+  - first:
+      213: 1380693183573967129
+    second: xenith_spawning_6
+  - first:
+      213: 4343491286768437090
+    second: xenith_spawning_7
+  - first:
+      213: -1428616203416873970
+    second: xenith_spawning_8
+  - first:
+      213: 3941816316680382703
+    second: xenith_spawning_9
+  - first:
+      213: -2840604251479770016
+    second: xenith_spawning_10
+  - first:
+      213: -8648357324593328411
+    second: xenith_spawning_11
+  - first:
+      213: 9147668902797107493
+    second: xenith_spawning_12
+  - first:
+      213: -6350589563649015357
+    second: xenith_spawning_13
+  - first:
+      213: -4618546472863667049
+    second: xenith_spawning_14
+  - first:
+      213: 1452967606944379968
+    second: xenith_spawning_15
+  - first:
+      213: 8055493435949760613
+    second: xenith_spawning_16
+  - first:
+      213: 7747194425306758148
+    second: xenith_spawning_17
+  - first:
+      213: -7459169883914082527
+    second: xenith_spawning_18
+  - first:
+      213: -5783993039587774896
+    second: xenith_spawning_19
+  - first:
+      213: -403581821916769713
+    second: xenith_spawning_20
+  - first:
+      213: -48699775727001226
+    second: xenith_spawning_21
+  - first:
+      213: 5913998802983016698
+    second: xenith_spawning_22
+  - first:
+      213: 6931432851408964937
+    second: xenith_spawning_23
+  - first:
+      213: 6451839200880186780
+    second: xenith_spawning_24
+  - first:
+      213: -5953540915523004955
+    second: xenith_spawning_25
+  - first:
+      213: -5129643496951790436
+    second: xenith_spawning_26
+  - first:
+      213: -3815775163665678419
+    second: xenith_spawning_27
+  - first:
+      213: -64401652047548988
+    second: xenith_spawning_28
+  - first:
+      213: 2704105444069495273
+    second: xenith_spawning_29
+  - first:
+      213: 7152554196238732401
+    second: xenith_spawning_30
+  - first:
+      213: -4994339907109026555
+    second: xenith_spawning_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: xenith_spawning_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 397
+        width: 396
+        height: 396
+      alignment: 9
+      pivot: {x: 0.5429914, y: 0.43759325}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69c0d4f862373d820800000000000000
+      internalID: 2941821591053208726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xenith_spawning_1
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 397
+        width: 396
+        height: 396
+      alignment: 9
+      pivot: {x: 0.46788117, y: 0.42971632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bca3a001872ceb890800000000000000
+      internalID: -7440295713448510773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xenith_spawning_2
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 403
+        width: 396
+        height: 390
+      alignment: 9
+      pivot: {x: 0.41680384, y: 0.6171781}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9815fb6eda768ba30800000000000000
+      internalID: 4231245846512882057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xenith_spawning_3
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 415
+        width: 396
+        height: 378
+      alignment: 9
+      pivot: {x: 0.37123278, y: 0.6519449}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8651f78ff99424ce0800000000000000
+      internalID: -1422493580877949592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xenith_spawning_4
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 421
+        width: 396
+        height: 372
+      alignment: 9
+      pivot: {x: 0.37380797, y: 0.6506573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf2d1a9c5b4082220800000000000000
+      internalID: 2461222375176393468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xenith_spawning_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 396
+        height: 396
+      alignment: 9
+      pivot: {x: 0.49227396, y: 0.7176164}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 133201d16ab1645c0800000000000000
+      internalID: -4231664399601884367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xenith_spawning_6
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 1
+        width: 396
+        height: 396
+      alignment: 9
+      pivot: {x: 0.432687, y: 0.7288642}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 911cabe9225392310800000000000000
+      internalID: 1380693183573967129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xenith_spawning_7
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1
+        width: 389
+        height: 401
+      alignment: 9
+      pivot: {x: 0.4123229, y: 0.7285139}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26746d0005e274c30800000000000000
+      internalID: 4343491286768437090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xenith_spawning_8
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 1
+        width: 389
+        height: 412
+      alignment: 9
+      pivot: {x: 0.40498003, y: 0.7195837}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0458f2d1298c2ce0800000000000000
+      internalID: -1428616203416873970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xenith_spawning_9
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 1
+        width: 414
+        height: 417
+      alignment: 9
+      pivot: {x: 0.410416, y: 0.7118234}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe8a29d2e0524b630800000000000000
+      internalID: 3941816316680382703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 85b24fedb3f73eb4ab5326bf3291374f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":2.0},"gridSpriteSize":{"x":396.0,"y":396.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      xenith_spawning_0: 2941821591053208726
+      xenith_spawning_1: -7440295713448510773
+      xenith_spawning_2: 4231245846512882057
+      xenith_spawning_3: -1422493580877949592
+      xenith_spawning_4: 2461222375176393468
+      xenith_spawning_5: -4231664399601884367
+      xenith_spawning_6: 1380693183573967129
+      xenith_spawning_7: 4343491286768437090
+      xenith_spawning_8: -1428616203416873970
+      xenith_spawning_9: 3941816316680382703
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

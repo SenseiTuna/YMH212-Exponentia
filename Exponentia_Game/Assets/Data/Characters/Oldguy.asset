@@ -10,19 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 085a4e4cc41ed1e47aaea84a087251e4, type: 3}
-  m_Name: CH_Triangle
+  m_Name: Oldguy
   m_EditorClassIdentifier: Assembly-CSharp::Exponentia.Data.CharacterData
-  characterId: CH_Triangle
-  characterName: 180 Yes Scope
-  description: "Evrenin Temel Yap\u0131 Ta\u015F\u0131"
-  gameplaySprite: {fileID: 3339759278924335677, guid: da2fde83d0dd0a549b3862798333adef, type: 3}
+  characterId: Oldguy
+  characterName: Oldguy
+  description: 'Gelecekten gelen kahraman
+
+'
+  gameplaySprite: {fileID: 2256123409727681256, guid: 5ab0cc8debddf84499092b5283886f0a, type: 3}
   characterColor: {r: 1, g: 1, b: 1, a: 1}
-  portrait: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  icon: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  portrait: {fileID: 0}
+  icon: {fileID: 2256123409727681256, guid: 5ab0cc8debddf84499092b5283886f0a, type: 3}
   baseStats:
-    maxHealth: 100
+    maxHealth: 1000
     damage: 10
-    moveSpeed: 5
+    moveSpeed: 4
     attackSpeed: 1
     projectileSpeed: 10
     defense: 0
@@ -34,16 +36,16 @@ MonoBehaviour:
     isDashing: 0
     dashSpeed: 10
     dashDuration: 0.5
-    fireRate: 0.5
+    fireRate: 1
     range: 8
     projectileSize: 1
     projectileLifetime: 3
-    critChance: 0.05
+    critChance: 0.02
     critMultiplier: 1.5
     cooldownReduction: 0
     luck: 0
     pickupRange: 2
-  startingWeapon: {fileID: 0}
+  startingWeapon: {fileID: 11400000, guid: 917f847755c4f16448ead9a648ac7876, type: 2}
   startingAbilityId: 
   idleAnimation: {fileID: 0}
   moveAnimation: {fileID: 0}

@@ -17,6 +17,13 @@ namespace Exponentia.InventorySystem
         public GameObject visualEffectPrefab;
         public AudioClip audioClip;
 
+        [Header("Skill Effect Rendering")]
+        public bool renderVfxBehindOwner;
+        [Tooltip("Used when Render Vfx Behind Owner is off.")]
+        public int runtimeVfxSortingOrder = 500;
+        [Tooltip("Used when Render Vfx Behind Owner is on. -1 draws behind the player sprite.")]
+        public int runtimeVfxSortingOrderOffsetFromOwner = -1;
+
         [Header("Runtime Tuning")]
         public bool overrideRuntimeTuning;
         [Min(0f)] public float runtimeDamage = 25f;

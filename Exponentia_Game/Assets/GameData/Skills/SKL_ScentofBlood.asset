@@ -1,4 +1,4 @@
-﻿%YAML 1.1
+%YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
@@ -26,6 +26,9 @@ MonoBehaviour:
   skillEffectType: 6
   visualEffectPrefab: {fileID: 6136667361165749246, guid: b7cc2775607a4de9bb052e6c7ee2a299, type: 3}
   audioClip: {fileID: 0}
+  renderVfxBehindOwner: 1
+  runtimeVfxSortingOrder: 500
+  runtimeVfxSortingOrderOffsetFromOwner: -1
   overrideRuntimeTuning: 1
   runtimeDamage: 0.15
   runtimeRadius: 0.1

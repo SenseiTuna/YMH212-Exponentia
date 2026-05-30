@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: -8809343556899761825}
   - component: {fileID: 6012384509123456789}
   m_Layer: 0
-  m_Name: PlayerBase
+  m_Name: PlayerBaseOldguy
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -206,14 +206,14 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 3339759278924335677, guid: da2fde83d0dd0a549b3862798333adef, type: 3}
+  m_Sprite: {fileID: 2256123409727681256, guid: 5ab0cc8debddf84499092b5283886f0a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.23, y: 1.51}
+  m_Size: {x: 12.54, y: 12.19}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -283,8 +283,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.85, y: 1.16}
-    newSize: {x: 1.23, y: 1.51}
+    oldSize: {x: 9.52, y: 12.19}
+    newSize: {x: 12.54, y: 12.19}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -378,9 +378,9 @@ MonoBehaviour:
   damageFlashDuration: 0.12
   combatFeedback: {fileID: 0}
   autoAddFeedbackComponents: 1
-  healthTextOffset: {x: 0, y: 1.35, z: 0}
-  healthTextColor: {r: 0, g: 1, b: 0, a: 1}
-  healthTextFontSize: 32
+  healthTextOffset: {x: 0, y: 1, z: 0}
+  healthTextColor: {r: 0, g: 1, b: 0, a: 0}
+  healthTextFontSize: 24
   healthTextCharacterSize: 0.22
 --- !u!114 &7558214801132853810
 MonoBehaviour:
@@ -439,11 +439,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAimIndicator
   playerAttack: {fileID: 1575948987179740482}
   playerMovement: {fileID: 8053774950672793964}
-  indicatorColor: {r: 1, g: 0.86, b: 0.2, a: 0.95}
+  playerInventory: {fileID: 0}
+  playerSpriteRenderer: {fileID: 0}
+  indicatorColor: {r: 1, g: 1, b: 1, a: 1}
   indicatorStartOffset: 0.2
   indicatorLength: 1.35
   indicatorWidth: 0.06
   sortingOrder: 30
+  renderBehindPlayerSprite: 1
+  sortingOrderOffsetFromPlayer: -1
+  useWeaponSpriteIndicator: 1
+  weaponSpriteDistance: 1
+  weaponSpriteScale: 0.4
+  weaponSpriteRotationOffsetDegrees: -45
   showWhenIdle: 1
   useMoveDirectionFallback: 1
 --- !u!114 &2453811820116149079
@@ -697,7 +705,7 @@ Animator:
   m_GameObject: {fileID: 2913247188878387274}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ece902c72f638f04a891e22d5b48d8db, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3d914b07cfadf2b49abe89da85f5cf16, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

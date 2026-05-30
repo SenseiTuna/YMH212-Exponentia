@@ -23,10 +23,15 @@ MonoBehaviour:
   damage: 1.25
   fireRate: 1.6
   projectilePrefab: {fileID: 0}
-  projectileSpeed: 18
+  projectileSpeed: 25
   projectileLifetime: 2.8
   projectileCount: 1
   spreadAngle: 0
-  pierceCount: 1
+  pierceCount: 4
   areaRadius: 0
   knockback: 0
+  useIconAsAimIndicator: 1
+  aimIndicatorSprite: {fileID: 0}
+  aimIndicatorDistance: 0.8
+  aimIndicatorScale: 0.6
+  aimIndicatorRotationOffsetDegrees: 0

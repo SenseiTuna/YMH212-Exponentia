@@ -26,6 +26,9 @@ MonoBehaviour:
   skillEffectType: 0
   visualEffectPrefab: {fileID: 0}
   audioClip: {fileID: 0}
+  renderVfxBehindOwner: 1
+  runtimeVfxSortingOrder: 500
+  runtimeVfxSortingOrderOffsetFromOwner: -1
   overrideRuntimeTuning: 0
   runtimeDamage: 25
   runtimeRadius: 2.5

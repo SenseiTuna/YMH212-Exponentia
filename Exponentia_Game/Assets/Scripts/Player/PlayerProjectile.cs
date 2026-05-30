@@ -10,6 +10,7 @@ public class PlayerProjectile : MonoBehaviour
     [SerializeField] private float lazerUzunlugu = 1.2f;
     [SerializeField] private float lazerKalInligi = 0.22f;
     [SerializeField] private float izSuresi = 0.12f;
+    [SerializeField] private float spriteRotationOffsetDegrees = 0f;
 
     [Header("Sprite / Hitbox Scale")]
     [SerializeField] private float projectileScale = 1f;
@@ -26,6 +27,9 @@ public class PlayerProjectile : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private TrailRenderer trailRenderer;
     private CircleCollider2D circleCollider;
+    private Vector3 initialLocalScale = Vector3.one;
+    private Color initialSpriteColor = Color.white;
+    private bool useGeneratedLaserVisual;
 
     private static Sprite cachedSprite;
     private static Material cachedSpriteMaterial;
@@ -49,12 +53,19 @@ public class PlayerProjectile : MonoBehaviour
         this.damageMultiplier = Mathf.Max(0f, damageMultiplier);
         remainingPierce = Mathf.Max(0, pierceCount);
 
-        transform.right = direction.sqrMagnitude > 0.001f ? direction.normalized : Vector2.right;
+        if (direction.sqrMagnitude > 0.001f)
+        {
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg + spriteRotationOffsetDegrees;
+            transform.rotation = Quaternion.Euler(0f, 0f, angle);
+        }
+
         Destroy(gameObject, lifeTime);
     }
 
     private void Awake()
     {
+        initialLocalScale = transform.localScale;
+
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0f;
         rb.bodyType = RigidbodyType2D.Kinematic;
@@ -69,10 +80,20 @@ public class PlayerProjectile : MonoBehaviour
             spriteRenderer = gameObject.AddComponent<SpriteRenderer>();
         }
 
-        spriteRenderer.sprite = GetOrCreateSprite();
-        spriteRenderer.color = lazerRengi;
+        useGeneratedLaserVisual = spriteRenderer.sprite == null;
+        if (useGeneratedLaserVisual)
+        {
+            spriteRenderer.sprite = GetOrCreateSprite();
+            spriteRenderer.color = lazerRengi;
+        }
+
+        initialSpriteColor = spriteRenderer.color;
         spriteRenderer.material = GetOrCreateSpriteMaterial();
-        spriteRenderer.drawMode = SpriteDrawMode.Sliced;
+        if (useGeneratedLaserVisual)
+        {
+            spriteRenderer.drawMode = SpriteDrawMode.Sliced;
+        }
+
         spriteRenderer.sortingOrder = 10;
 
         trailRenderer = GetComponent<TrailRenderer>();
@@ -89,8 +110,9 @@ public class PlayerProjectile : MonoBehaviour
         trailRenderer.receiveShadows = false;
         trailRenderer.sortingOrder = 9;
         trailRenderer.material = GetOrCreateSpriteMaterial();
-        trailRenderer.startColor = lazerRengi;
-        trailRenderer.endColor = new Color(lazerRengi.r, lazerRengi.g, lazerRengi.b, 0f);
+        Color trailColor = useGeneratedLaserVisual ? lazerRengi : initialSpriteColor;
+        trailRenderer.startColor = trailColor;
+        trailRenderer.endColor = new Color(trailColor.r, trailColor.g, trailColor.b, 0f);
 
         ApplyVisualState();
     }
@@ -99,6 +121,14 @@ public class PlayerProjectile : MonoBehaviour
     {
         ClampScaleSettings();
         CacheProjectileComponents();
+        if (!Application.isPlaying && spriteRenderer != null && spriteRenderer.sprite != null)
+        {
+            initialLocalScale = transform.localScale;
+            initialSpriteColor = spriteRenderer.color;
+            useGeneratedLaserVisual = false;
+            return;
+        }
+
         ApplyVisualState();
     }
 
@@ -182,20 +212,37 @@ public class PlayerProjectile : MonoBehaviour
         ClampScaleSettings();
 
         float scale = Mathf.Max(0.01f, projectileScale);
-        transform.localScale = new Vector3(
-            Mathf.Max(0.01f, lazerUzunlugu) * scale,
-            Mathf.Max(0.01f, lazerKalInligi) * scale,
-            1f);
+        if (useGeneratedLaserVisual)
+        {
+            transform.localScale = new Vector3(
+                Mathf.Max(0.01f, lazerUzunlugu) * scale,
+                Mathf.Max(0.01f, lazerKalInligi) * scale,
+                1f);
+        }
+        else
+        {
+            transform.localScale = new Vector3(
+                initialLocalScale.x * scale,
+                initialLocalScale.y * scale,
+                initialLocalScale.z);
+
+            if (spriteRenderer != null)
+            {
+                spriteRenderer.color = initialSpriteColor;
+            }
+        }
 
         if (circleCollider != null)
         {
             if (syncHitboxToSprite)
             {
-                float longestSide = Mathf.Max(lazerUzunlugu, lazerKalInligi);
+                float longestSide = useGeneratedLaserVisual
+                    ? Mathf.Max(lazerUzunlugu * scale, lazerKalInligi * scale)
+                    : Mathf.Max(Mathf.Abs(transform.localScale.x), Mathf.Abs(transform.localScale.y));
                 float desiredWorldRadius = Mathf.Max(
                     0.01f,
-                    longestSide * scale * 0.5f * hitboxRadiusMultiplier + hitboxRadiusPadding);
-                circleCollider.radius = desiredWorldRadius / Mathf.Max(0.01f, longestSide * scale);
+                    longestSide * 0.5f * hitboxRadiusMultiplier + hitboxRadiusPadding);
+                circleCollider.radius = desiredWorldRadius / Mathf.Max(0.01f, longestSide);
             }
             else
             {
@@ -206,7 +253,10 @@ public class PlayerProjectile : MonoBehaviour
         if (trailRenderer != null)
         {
             trailRenderer.time = Mathf.Max(0.01f, izSuresi);
-            trailRenderer.startWidth = Mathf.Max(0.01f, lazerKalInligi * scale * 0.8f);
+            float width = useGeneratedLaserVisual
+                ? lazerKalInligi * scale
+                : Mathf.Min(Mathf.Abs(transform.localScale.x), Mathf.Abs(transform.localScale.y));
+            trailRenderer.startWidth = Mathf.Max(0.01f, width * 0.8f);
         }
     }
 

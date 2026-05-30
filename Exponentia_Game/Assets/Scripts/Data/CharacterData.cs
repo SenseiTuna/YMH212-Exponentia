@@ -7,6 +7,7 @@
  * DESCRIPTION: ScriptableObject definition for playable character data.
  */
 
+using Exponentia.InventorySystem;
 using UnityEngine;
 
 namespace Exponentia.Data
@@ -30,7 +31,7 @@ namespace Exponentia.Data
         public StatBlock baseStats = new StatBlock();
 
         [Header("Starting Loadout")]
-        public WeaponData startingWeapon;
+        public WeaponDefinition startingWeapon;
         public string startingAbilityId;
 
         [Header("Animation References")]

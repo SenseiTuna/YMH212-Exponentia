@@ -53,7 +53,9 @@ public class ConfiguredGodSkill : GodSkillBase
     [SerializeField] private float slowMultiplier = 0.1f;
     [SerializeField] private float vfxLifetime;
     [SerializeField] private int maxStacks = 5;
+    [SerializeField] private bool renderVfxBehindOwner;
     [SerializeField] private int sortingOrder = 500;
+    [SerializeField] private int sortingOrderOffsetFromOwner = -1;
 
     [Header("Runtime Debug")]
     [SerializeField] private int passiveStacks;
@@ -104,6 +106,9 @@ public class ConfiguredGodSkill : GodSkillBase
         sourceItemId = definition.itemId;
         visualEffectPrefab = definition.visualEffectPrefab;
         duration = Mathf.Max(0.1f, definition.duration);
+        renderVfxBehindOwner = definition.renderVfxBehindOwner;
+        sortingOrder = definition.runtimeVfxSortingOrder;
+        sortingOrderOffsetFromOwner = definition.runtimeVfxSortingOrderOffsetFromOwner;
         ConfigureRuntimeEffect(definition);
         ApplyRuntimeTuningOverrides(definition);
         ConfigureSkillDefinition(
@@ -860,11 +865,7 @@ public class ConfiguredGodSkill : GodSkillBase
             instance.transform.SetParent(parent, true);
         }
 
-        SpriteRenderer[] renderers = instance.GetComponentsInChildren<SpriteRenderer>(true);
-        for (int i = 0; i < renderers.Length; i++)
-        {
-            renderers[i].sortingOrder = Mathf.Max(renderers[i].sortingOrder, sortingOrder);
-        }
+        ApplyVfxSorting(instance);
 
         Animator[] animators = instance.GetComponentsInChildren<Animator>(true);
         float lifetime = vfxLifetime > 0f
@@ -896,6 +897,37 @@ public class ConfiguredGodSkill : GodSkillBase
         }
 
         return instance;
+    }
+
+    private void ApplyVfxSorting(GameObject instance)
+    {
+        if (instance == null)
+        {
+            return;
+        }
+
+        SpriteRenderer ownerRenderer = owner != null ? owner.GetComponent<SpriteRenderer>() : null;
+        int targetSortingLayerId = ownerRenderer != null ? ownerRenderer.sortingLayerID : 0;
+        int targetSortingOrder = renderVfxBehindOwner && ownerRenderer != null
+            ? ownerRenderer.sortingOrder + sortingOrderOffsetFromOwner
+            : sortingOrder;
+
+        SpriteRenderer[] renderers = instance.GetComponentsInChildren<SpriteRenderer>(true);
+        for (int i = 0; i < renderers.Length; i++)
+        {
+            SpriteRenderer renderer = renderers[i];
+            if (renderer == null)
+            {
+                continue;
+            }
+
+            if (renderVfxBehindOwner && ownerRenderer != null)
+            {
+                renderer.sortingLayerID = targetSortingLayerId;
+            }
+
+            renderer.sortingOrder = targetSortingOrder;
+        }
     }
 
     private float ResolveDefaultVfxLifetime()

@@ -10,31 +10,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 085a4e4cc41ed1e47aaea84a087251e4, type: 3}
-  m_Name: CH_Circle
+  m_Name: Xenith
   m_EditorClassIdentifier: Assembly-CSharp::Exponentia.Data.CharacterData
-  characterId: CH_Circle
-  characterName: Yuwarlak Dop
-  description: unga bunga yuwarlak adamka
-  gameplaySprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+  characterId: Xenith
+  characterName: Xenith
+  description: "Void kurtar\u0131c\u0131"
+  gameplaySprite: {fileID: 8931958534918782917, guid: c0645e99ae23766439c8e0f351b338f7, type: 3}
   characterColor: {r: 1, g: 1, b: 1, a: 1}
-  portrait: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
-  icon: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+  portrait: {fileID: 0}
+  icon: {fileID: 8931958534918782917, guid: c0645e99ae23766439c8e0f351b338f7, type: 3}
   baseStats:
-    maxHealth: 2000
-    damage: 100
-    moveSpeed: 10
-    attackSpeed: 5
+    maxHealth: 1000
+    damage: 10
+    moveSpeed: 4
+    attackSpeed: 1
     projectileSpeed: 10
     defense: 0
     lifeSteal: 0
     shield: 0
     mana: 100
-    armor: 10
+    armor: 0
     knockbackResistance: 2
     isDashing: 0
     dashSpeed: 10
     dashDuration: 0.5
-    fireRate: 5
+    fireRate: 1
     range: 8
     projectileSize: 1
     projectileLifetime: 3
@@ -43,7 +43,7 @@ MonoBehaviour:
     cooldownReduction: 0
     luck: 0
     pickupRange: 2
-  startingWeapon: {fileID: 0}
+  startingWeapon: {fileID: 11400000, guid: 84f5d4a4ec5d49344ab0f519525d778f, type: 2}
   startingAbilityId: 
   idleAnimation: {fileID: 0}
   moveAnimation: {fileID: 0}

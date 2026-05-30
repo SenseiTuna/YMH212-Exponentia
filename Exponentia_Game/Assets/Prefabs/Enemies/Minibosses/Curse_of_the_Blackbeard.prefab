@@ -88,7 +88,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 6271483303270961194, guid: 800464cf09130324287557bc3685038c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -132,17 +132,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.3691826, y: 0.00039196014}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.42026275, y: 0.4999095}
+    oldSize: {x: 4.63, y: 4.33}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 4.63, y: 4.33}
   m_EdgeRadius: 0
 --- !u!50 &503144578347559782
 Rigidbody2D:
@@ -214,7 +214,7 @@ MonoBehaviour:
   version: 5
   radius: 0.5
   height: 2
-  canMove: 1
+  canMove: 0
   maxSpeed: 1
   gravity: {x: NaN, y: NaN, z: NaN}
   groundMask:
@@ -292,6 +292,17 @@ MonoBehaviour:
   placeholderColor: {r: 0.3, g: 0.25, b: 0.22, a: 1}
   placeholderScale: {x: 1.35, y: 1.35}
   sortingOrder: 5
+  syncHitboxToSprite: 1
+  enemyScale: 1
+  refitHitboxDuringAnimation: 1
+  hitboxSizeMultiplier: {x: 1, y: 1}
+  hitboxPadding: {x: 0, y: 0}
+  hitboxOffset: {x: 0, y: 0}
+  hitboxReferenceRenderer: {fileID: 1949647341968480106}
+  hitboxCollider: {fileID: 4079365456393484914}
+  visualScaleRoot: {fileID: 5484941935028108497}
+  visualHitboxDefaultsCaptured: 1
+  visualBaseLocalScale: {x: 1, y: 1, z: 1}
   enemyProjectilePrefab: {fileID: 7947579937356454847, guid: 2b1aa04f620893642ad0c856805b3716, type: 3}
   yaziOffset: {x: 0, y: 1.1, z: 0}
   yaziFontBoyutu: 32
@@ -324,8 +335,8 @@ MonoBehaviour:
   broadsideProjectileLifeTime: 4
   broadsideProjectileSize: 0.22
   broadsideSpawnOffset: 1.1
-  cannonColor: {r: 0.35, g: 0.35, b: 0.38, a: 1}
-  splashColor: {r: 0.2, g: 0.55, b: 1, a: 0.75}
+  cannonColor: {r: 1, g: 1, b: 1, a: 1}
+  splashColor: {r: 1, g: 1, b: 1, a: 1}
   cannonBallVisualSprite: {fileID: 6049965757482729694, guid: ed3cd10a9fa664b4eb495350c34f244e, type: 3}
 --- !u!1 &4829211761607858015
 GameObject:

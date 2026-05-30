@@ -292,6 +292,17 @@ MonoBehaviour:
   placeholderColor: {r: 1, g: 0.86, b: 0.4, a: 1}
   placeholderScale: {x: 0.9, y: 0.9}
   sortingOrder: 5
+  syncHitboxToSprite: 1
+  enemyScale: 1
+  refitHitboxDuringAnimation: 1
+  hitboxSizeMultiplier: {x: 1, y: 1}
+  hitboxPadding: {x: 0, y: 0}
+  hitboxOffset: {x: 0, y: 0}
+  hitboxReferenceRenderer: {fileID: 1949647341968480106}
+  hitboxCollider: {fileID: 4079365456393484914}
+  visualScaleRoot: {fileID: 5484941935028108497}
+  visualHitboxDefaultsCaptured: 1
+  visualBaseLocalScale: {x: 1, y: 1, z: 1}
   enemyProjectilePrefab: {fileID: 7947579937356454847, guid: 95d6f3a197e52674c8154a593eec0c5a, type: 3}
   yaziOffset: {x: 0, y: 1.1, z: 0}
   yaziFontBoyutu: 32

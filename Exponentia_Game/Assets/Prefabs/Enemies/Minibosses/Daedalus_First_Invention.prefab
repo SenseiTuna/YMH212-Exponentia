@@ -88,7 +88,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 9048184895581220343, guid: 0a6242fc999dced4c8945751388957cd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -132,17 +132,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.06955147, y: 0.3671379}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.5151529, y: 0.41501433}
+    oldSize: {x: 4.59, y: 4.32}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 4.59, y: 4.32}
   m_EdgeRadius: 0
 --- !u!50 &503144578347559782
 Rigidbody2D:
@@ -292,6 +292,17 @@ MonoBehaviour:
   placeholderColor: {r: 0.65, g: 0.68, b: 0.72, a: 1}
   placeholderScale: {x: 1.25, y: 1.25}
   sortingOrder: 5
+  syncHitboxToSprite: 1
+  enemyScale: 1
+  refitHitboxDuringAnimation: 1
+  hitboxSizeMultiplier: {x: 1, y: 1}
+  hitboxPadding: {x: 0, y: 0}
+  hitboxOffset: {x: 0, y: 0}
+  hitboxReferenceRenderer: {fileID: 1949647341968480106}
+  hitboxCollider: {fileID: 4079365456393484914}
+  visualScaleRoot: {fileID: 5484941935028108497}
+  visualHitboxDefaultsCaptured: 1
+  visualBaseLocalScale: {x: 1, y: 1, z: 1}
   enemyProjectilePrefab: {fileID: 7947579937356454847, guid: 655d17ae6b8da184f8fb735429288650, type: 3}
   yaziOffset: {x: 0, y: 1.1, z: 0}
   yaziFontBoyutu: 32
@@ -317,8 +328,8 @@ MonoBehaviour:
   laserSpawnOffset: 1.1
   fullRingFeatherCount: 10
   halfRingFeatherCount: 7
-  featherColor: {r: 0.75, g: 0.75, b: 0.8, a: 1}
-  laserColor: {r: 1, g: 0.95, b: 0.8, a: 1}
+  featherColor: {r: 1, g: 1, b: 1, a: 1}
+  laserColor: {r: 1, g: 0.080161005, b: 0, a: 1}
   featherVisualSprite: {fileID: 5818535851474507565, guid: 011de1fa0200ec84cbe7e88ffc5ed0ee, type: 3}
   laserVisualSprite: {fileID: 1212751554039222040, guid: 5256424fe7c8ae64bacf47fcc8d377f0, type: 3}
 --- !u!1 &4829211761607858015

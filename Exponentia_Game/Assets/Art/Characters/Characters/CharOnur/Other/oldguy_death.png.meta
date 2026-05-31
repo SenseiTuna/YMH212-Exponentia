@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: bc165e0726cdf2d4faa999e967daee4e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -361714220276156124
+    second: oldguy_death_0
+  - first:
+      213: 4965495756112139299
+    second: oldguy_death_1
+  - first:
+      213: 5460988836376676264
+    second: oldguy_death_2
+  - first:
+      213: -8177436341567708114
+    second: oldguy_death_3
+  - first:
+      213: 4038294044781238655
+    second: oldguy_death_4
+  - first:
+      213: -1745613864267177166
+    second: oldguy_death_5
+  - first:
+      213: 2270178194757670184
+    second: oldguy_death_6
+  - first:
+      213: -1875363971113730429
+    second: oldguy_death_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: oldguy_death_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 461
+        width: 379
+        height: 426
+      alignment: 9
+      pivot: {x: 0.8982576, y: 0.031209812}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4297b3645deeafaf0800000000000000
+      internalID: -361714220276156124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldguy_death_1
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 458
+        width: 302
+        height: 314
+      alignment: 9
+      pivot: {x: 0.8434523, y: 0.036556657}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32416c4f41cf8e440800000000000000
+      internalID: 4965495756112139299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldguy_death_2
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 440
+        width: 284
+        height: 324
+      alignment: 9
+      pivot: {x: 0.83251435, y: 0.03891528}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a70b92c96459cb40800000000000000
+      internalID: 5460988836376676264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldguy_death_3
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 441
+        width: 313
+        height: 262
+      alignment: 9
+      pivot: {x: 0.8066523, y: 0.027298324}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e24ac7729f8e38e80800000000000000
+      internalID: -8177436341567708114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldguy_death_4
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 65
+        width: 327
+        height: 282
+      alignment: 9
+      pivot: {x: 0.807726, y: 0.036119446}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f79d2c5b907ea0830800000000000000
+      internalID: 4038294044781238655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldguy_death_5
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 67
+        width: 391
+        height: 225
+      alignment: 9
+      pivot: {x: 0.8246655, y: 0.03213043}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 233ab59607556c7e0800000000000000
+      internalID: -1745613864267177166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldguy_death_6
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 68
+        width: 412
+        height: 191
+      alignment: 9
+      pivot: {x: 0.83066213, y: 0.021791788}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8255e5b4a0b418f10800000000000000
+      internalID: 2270178194757670184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldguy_death_7
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 63
+        width: 393
+        height: 164
+      alignment: 9
+      pivot: {x: 0.8308916, y: 0.0610573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38e3335876e59f5e0800000000000000
+      internalID: -1875363971113730429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 17d3c43e95aa8f6469db7f78ef4840aa
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      oldguy_death_0: -361714220276156124
+      oldguy_death_1: 4965495756112139299
+      oldguy_death_2: 5460988836376676264
+      oldguy_death_3: -8177436341567708114
+      oldguy_death_4: 4038294044781238655
+      oldguy_death_5: -1745613864267177166
+      oldguy_death_6: 2270178194757670184
+      oldguy_death_7: -1875363971113730429
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

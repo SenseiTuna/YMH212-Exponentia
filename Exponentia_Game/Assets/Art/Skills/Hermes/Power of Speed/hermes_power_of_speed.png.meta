@@ -1,0 +1,479 @@
+fileFormatVersion: 2
+guid: 93341889f42e3b242b1256bb90ab21a5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2649530220728071405
+    second: hermes_power_of_speed_0
+  - first:
+      213: -1142405145954457242
+    second: hermes_power_of_speed_1
+  - first:
+      213: 117289624426402294
+    second: hermes_power_of_speed_2
+  - first:
+      213: 5151433424520942686
+    second: hermes_power_of_speed_3
+  - first:
+      213: -3445580931485791334
+    second: hermes_power_of_speed_4
+  - first:
+      213: -486119361556590677
+    second: hermes_power_of_speed_5
+  - first:
+      213: -8873379267760502280
+    second: hermes_power_of_speed_6
+  - first:
+      213: 1809840892832983324
+    second: hermes_power_of_speed_7
+  - first:
+      213: 2675117897178205198
+    second: hermes_power_of_speed_8
+  - first:
+      213: 193951653818503292
+    second: hermes_power_of_speed_9
+  - first:
+      213: -2018850404758507499
+    second: hermes_power_of_speed_10
+  - first:
+      213: 1537376971561701381
+    second: hermes_power_of_speed_11
+  - first:
+      213: -8947454363031516903
+    second: hermes_power_of_speed_12
+  - first:
+      213: 4115038081270141831
+    second: hermes_power_of_speed_13
+  - first:
+      213: 1319453209373632063
+    second: hermes_power_of_speed_14
+  - first:
+      213: 6846311117301194289
+    second: hermes_power_of_speed_15
+  - first:
+      213: -4687989739321379837
+    second: hermes_power_of_speed_16
+  - first:
+      213: 97136204240712563
+    second: hermes_power_of_speed_17
+  - first:
+      213: -2189808518128411536
+    second: hermes_power_of_speed_18
+  - first:
+      213: 1489269782898409339
+    second: hermes_power_of_speed_19
+  - first:
+      213: 1959951531106378055
+    second: hermes_power_of_speed_20
+  - first:
+      213: 6697450747230748667
+    second: hermes_power_of_speed_21
+  - first:
+      213: 3780433179137991052
+    second: hermes_power_of_speed_22
+  - first:
+      213: 2089103185835374982
+    second: hermes_power_of_speed_23
+  - first:
+      213: 4405262025532184387
+    second: hermes_power_of_speed_24
+  - first:
+      213: -1061200123107312057
+    second: hermes_power_of_speed_25
+  - first:
+      213: -7458752663997642846
+    second: hermes_power_of_speed_26
+  - first:
+      213: 3785475260405244758
+    second: hermes_power_of_speed_27
+  - first:
+      213: -3476054547195484284
+    second: hermes_power_of_speed_28
+  - first:
+      213: 2317754082536943090
+    second: hermes_power_of_speed_29
+  - first:
+      213: -8961131075719501940
+    second: hermes_power_of_speed_30
+  - first:
+      213: -4944415272200806928
+    second: hermes_power_of_speed_31
+  - first:
+      213: -1352020302895186148
+    second: hermes_power_of_speed_32
+  - first:
+      213: 2496315910387933889
+    second: hermes_power_of_speed_33
+  - first:
+      213: 7997747175372114681
+    second: hermes_power_of_speed_34
+  - first:
+      213: 5102007668454797017
+    second: hermes_power_of_speed_35
+  - first:
+      213: 6598280765562938648
+    second: hermes_power_of_speed_36
+  - first:
+      213: -8937598595657068370
+    second: hermes_power_of_speed_37
+  - first:
+      213: -6158010115594557871
+    second: hermes_power_of_speed_38
+  - first:
+      213: 895838362486134557
+    second: hermes_power_of_speed_39
+  - first:
+      213: 8492260609615429650
+    second: hermes_power_of_speed_40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hermes_power_of_speed_0
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 610
+        width: 124
+        height: 115
+      alignment: 9
+      pivot: {x: 0.4942995, y: 0.49535656}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31b47d35d4afa3bd0800000000000000
+      internalID: -2649530220728071405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_power_of_speed_2
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 502
+        width: 339
+        height: 322
+      alignment: 9
+      pivot: {x: 0.5033956, y: 0.51008654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6696ecd829c5520f0800000000000000
+      internalID: -1142405145954457242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_power_of_speed_3
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 456
+        width: 442
+        height: 431
+      alignment: 9
+      pivot: {x: 0.47807872, y: 0.48839766}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5415a8f7619d7740800000000000000
+      internalID: 5151433424520942686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_power_of_speed_1
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 545
+        width: 253
+        height: 246
+      alignment: 9
+      pivot: {x: 0.4982307, y: 0.4936315}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9b0ee5f566de20d0800000000000000
+      internalID: -3445580931485791334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_power_of_speed_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 416
+        height: 412
+      alignment: 9
+      pivot: {x: 0.5190731, y: 0.53838915}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7ff1602af2faa410800000000000000
+      internalID: 1489269782898409339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_power_of_speed_5
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 8
+        width: 451
+        height: 431
+      alignment: 9
+      pivot: {x: 0.48385912, y: 0.49863955}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c81ee9362fbc67430800000000000000
+      internalID: 3780433179137991052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_power_of_speed_6
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 21
+        width: 401
+        height: 402
+      alignment: 9
+      pivot: {x: 0.48825568, y: 0.5050205}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 689bada674cfdfc10800000000000000
+      internalID: 2089103185835374982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_power_of_speed_7
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 33
+        width: 382
+        height: 367
+      alignment: 9
+      pivot: {x: 0.49467716, y: 0.5193929}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74e769a4c1cd541f0800000000000000
+      internalID: -1061200123107312057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: dd862af34ed97f94d970ad02ecc59151
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      hermes_power_of_speed_0: -2649530220728071405
+      hermes_power_of_speed_1: -3445580931485791334
+      hermes_power_of_speed_10: -2018850404758507499
+      hermes_power_of_speed_11: 1537376971561701381
+      hermes_power_of_speed_12: -8947454363031516903
+      hermes_power_of_speed_13: 4115038081270141831
+      hermes_power_of_speed_14: 1319453209373632063
+      hermes_power_of_speed_15: 6846311117301194289
+      hermes_power_of_speed_16: -4687989739321379837
+      hermes_power_of_speed_17: 97136204240712563
+      hermes_power_of_speed_18: -2189808518128411536
+      hermes_power_of_speed_2: -1142405145954457242
+      hermes_power_of_speed_20: 1959951531106378055
+      hermes_power_of_speed_21: 6697450747230748667
+      hermes_power_of_speed_24: 4405262025532184387
+      hermes_power_of_speed_26: -7458752663997642846
+      hermes_power_of_speed_27: 3785475260405244758
+      hermes_power_of_speed_28: -3476054547195484284
+      hermes_power_of_speed_29: 2317754082536943090
+      hermes_power_of_speed_3: 5151433424520942686
+      hermes_power_of_speed_30: -8961131075719501940
+      hermes_power_of_speed_31: -4944415272200806928
+      hermes_power_of_speed_32: -1352020302895186148
+      hermes_power_of_speed_33: 2496315910387933889
+      hermes_power_of_speed_34: 7997747175372114681
+      hermes_power_of_speed_35: 5102007668454797017
+      hermes_power_of_speed_36: 6598280765562938648
+      hermes_power_of_speed_37: -8937598595657068370
+      hermes_power_of_speed_38: -6158010115594557871
+      hermes_power_of_speed_39: 895838362486134557
+      hermes_power_of_speed_4: 1489269782898409339
+      hermes_power_of_speed_40: 8492260609615429650
+      hermes_power_of_speed_5: 3780433179137991052
+      hermes_power_of_speed_6: 2089103185835374982
+      hermes_power_of_speed_7: -1061200123107312057
+      hermes_power_of_speed_8: 2675117897178205198
+      hermes_power_of_speed_9: 193951653818503292
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

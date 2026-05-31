@@ -1,0 +1,351 @@
+fileFormatVersion: 2
+guid: c6938aa7234978a4fa44cd43843b8159
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2671959494267562594
+    second: athena_holy_shield_0
+  - first:
+      213: -4544123325591984520
+    second: athena_holy_shield_1
+  - first:
+      213: 7494668367381616524
+    second: athena_holy_shield_2
+  - first:
+      213: -8535129874318879898
+    second: athena_holy_shield_3
+  - first:
+      213: -694362578183532739
+    second: athena_holy_shield_4
+  - first:
+      213: -1101791797044051190
+    second: athena_holy_shield_5
+  - first:
+      213: 4176262158819618428
+    second: athena_holy_shield_6
+  - first:
+      213: -2858628140487124612
+    second: athena_holy_shield_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: athena_holy_shield_0
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 833
+        width: 146
+        height: 134
+      alignment: 9
+      pivot: {x: 0.503785, y: 0.49133894}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26aec0ed005b41520800000000000000
+      internalID: 2671959494267562594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: athena_holy_shield_1
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 792
+        width: 222
+        height: 219
+      alignment: 9
+      pivot: {x: 0.504595, y: 0.4840116}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 876e58249e700f0c0800000000000000
+      internalID: -4544123325591984520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: athena_holy_shield_2
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 732
+        width: 284
+        height: 334
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4989721}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c875323fb29620860800000000000000
+      internalID: 7494668367381616524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: athena_holy_shield_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 362
+        height: 614
+      alignment: 9
+      pivot: {x: 0.4807765, y: 0.64245725}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6631661b9902d8980800000000000000
+      internalID: -8535129874318879898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: athena_holy_shield_5
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 241
+        width: 303
+        height: 307
+      alignment: 9
+      pivot: {x: 0.5048288, y: 0.4754122}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3fcb0ef9e02d56f0800000000000000
+      internalID: -694362578183532739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: athena_holy_shield_3
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 729
+        width: 327
+        height: 343
+      alignment: 9
+      pivot: {x: 0.48288664, y: 0.49097106}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0300c8b236a5b0f0800000000000000
+      internalID: -1101791797044051190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: athena_holy_shield_6
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 253
+        width: 261
+        height: 256
+      alignment: 9
+      pivot: {x: 0.51155573, y: 0.49175298}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7e69518e4015f930800000000000000
+      internalID: 4176262158819618428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: athena_holy_shield_7
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 0
+        width: 235
+        height: 480
+      alignment: 9
+      pivot: {x: 0.4381623, y: 0.7895995}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7954551adc1458d0800000000000000
+      internalID: -2858628140487124612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0a84fd060f48d344c9d78497ea2f5e2b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      athena_holy_shield_0: 2671959494267562594
+      athena_holy_shield_1: -4544123325591984520
+      athena_holy_shield_2: 7494668367381616524
+      athena_holy_shield_3: -1101791797044051190
+      athena_holy_shield_4: -8535129874318879898
+      athena_holy_shield_5: -694362578183532739
+      athena_holy_shield_6: 4176262158819618428
+      athena_holy_shield_7: -2858628140487124612
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

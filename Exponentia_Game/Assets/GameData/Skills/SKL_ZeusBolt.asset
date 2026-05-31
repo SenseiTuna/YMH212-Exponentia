@@ -13,15 +13,20 @@ MonoBehaviour:
   m_Name: SKL_ZeusBolt
   m_EditorClassIdentifier: Assembly-CSharp::Exponentia.InventorySystem.SkillDefinition
   itemId: skill.zeus_bolt
-  displayName: Zeus Bolt
-  description: A focused lightning burst on activation.
-  icon: {fileID: 0}
+  displayName: Zeus Lightning Strike
+  description: Summon a focused lightning strike at the target location.
+  icon: {fileID: -668224934380726118, guid: 7e149817ea37ba641abc7ac5c93f7280, type: 3}
   rarity: 2
   category: 1
   canStack: 0
   maxStacks: 1
-  cooldown: 8
+  cooldown: 0
   duration: 0.2
+  linkedGodSkillType: 1
   skillEffectType: 1
-  visualEffectPrefab: {fileID: 0}
+  visualEffectPrefab: {fileID: 1256367468533653591, guid: 2a861fd0535864c4ea3db1ffd3561c83, type: 3}
   audioClip: {fileID: 0}
+  renderVfxBehindOwner: 1
+  runtimeVfxSortingOrder: 500
+  runtimeVfxSortingOrderOffsetFromOwner: -1
+

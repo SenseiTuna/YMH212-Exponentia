@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8331504df8bd8a94f98552ce3a51f9cb, type: 3}
+  m_Name: SKL_BloodyStrike
+  m_EditorClassIdentifier: Assembly-CSharp::Exponentia.InventorySystem.SkillDefinition
+  itemId: skill.ares.bloody_strike
+  displayName: Bloody Strike
+  description: A powerful circular melee strike.
+  icon: {fileID: -5854841752377391633, guid: 61cab2139311a264496975ff1b0fb144, type: 3}
+  rarity: 2
+  category: 1
+  canStack: 0
+  maxStacks: 1
+  cooldown: 0
+  duration: 0.5
+  linkedGodSkillType: 20
+  skillEffectType: 6
+  visualEffectPrefab: {fileID: 3485694742961236959, guid: 3f93626f907f4248b9e03a629b81254b, type: 3}
+  audioClip: {fileID: 0}
+  renderVfxBehindOwner: 1
+  runtimeVfxSortingOrder: 500
+  runtimeVfxSortingOrderOffsetFromOwner: -1
+  overrideRuntimeTuning: 1
+  runtimeDamage: 32
+  runtimeRadius: 2.25
+  runtimeRange: 5
+  runtimeForce: 280
+  runtimeTickInterval: 0.35
+  runtimeBleedDps: 6
+  runtimeBleedDuration: 4
+  runtimeVfxLifetime: 0.5

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8331504df8bd8a94f98552ce3a51f9cb, type: 3}
+  m_Name: SKL_ProtectiveAura
+  m_EditorClassIdentifier: Assembly-CSharp::Exponentia.InventorySystem.SkillDefinition
+  itemId: skill.athena.protective_aura
+  displayName: Protective Aura
+  description: Gain extra defense based on nearby enemies.
+  icon: {fileID: -2458358920559711712, guid: c9d2bf90a62b8124399d7e8e156137c8, type: 3}
+  rarity: 2
+  category: 1
+  canStack: 0
+  maxStacks: 1
+  cooldown: 0
+  duration: 2
+  linkedGodSkillType: 30
+  skillEffectType: 6
+  visualEffectPrefab: {fileID: 7473492489168662982, guid: 7e86fffc97eb40d4977ec2e56b320348, type: 3}
+  audioClip: {fileID: 0}
+  renderVfxBehindOwner: 1
+  runtimeVfxSortingOrder: 500
+  runtimeVfxSortingOrderOffsetFromOwner: -1

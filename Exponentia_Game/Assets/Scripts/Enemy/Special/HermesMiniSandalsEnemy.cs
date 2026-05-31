@@ -14,6 +14,7 @@ public class HermesMiniSandalsEnemy : EnemyMechanics
     [SerializeField] private float mineProjectileLifeTime = 2.5f;
     [SerializeField] private float mineProjectileSize = 0.18f;
     [SerializeField] private Color mineColor = new Color(1f, 0.9f, 0.25f);
+    [SerializeField] private Sprite mineVisualSprite;
 
     private bool isDashing;
     private float dashEndTime;
@@ -21,7 +22,7 @@ public class HermesMiniSandalsEnemy : EnemyMechanics
     private float nextMineDropTime;
     private Vector2 dashDirection;
 
-    private void Reset()
+    protected override void Reset()
     {
         ApplyDefaultSetup(
             "Hermes Mini Sandals",
@@ -82,10 +83,7 @@ public class HermesMiniSandalsEnemy : EnemyMechanics
         nextDashTime = Time.time + dashCooldown;
         nextMineDropTime = Time.time;
 
-        if (animator != null)
-        {
-            animator.SetTrigger("Attack");
-        }
+        TriggerAttackAnimation("dash");
     }
 
     private void DropMine()
@@ -94,5 +92,6 @@ public class HermesMiniSandalsEnemy : EnemyMechanics
         mineObject.transform.position = transform.position;
         EnemyBurstMine mine = mineObject.AddComponent<EnemyBurstMine>();
         mine.Initialize(this, enemyProjectilePrefab, dashDirection, mineArmDuration, mineBurstDamage, mineProjectileSpeed, mineProjectileLifeTime, mineProjectileSize, mineColor);
+        mine.ApplyVisualSprite(mineVisualSprite);
     }
 }

@@ -1,0 +1,503 @@
+fileFormatVersion: 2
+guid: 339be7a05a73e5541b0190edffad94dd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6672859393780653412
+    second: hermes_child_of_the_wind_0
+  - first:
+      213: 7569954999754510256
+    second: hermes_child_of_the_wind_1
+  - first:
+      213: -3910636554231627236
+    second: hermes_child_of_the_wind_2
+  - first:
+      213: -4690227544808682114
+    second: hermes_child_of_the_wind_3
+  - first:
+      213: -6348670500736483459
+    second: hermes_child_of_the_wind_4
+  - first:
+      213: 5277632883396764458
+    second: hermes_child_of_the_wind_5
+  - first:
+      213: -4359339490508750467
+    second: hermes_child_of_the_wind_6
+  - first:
+      213: -3207451226629350753
+    second: hermes_child_of_the_wind_7
+  - first:
+      213: 7528130098157986212
+    second: hermes_child_of_the_wind_8
+  - first:
+      213: 6851693700814608535
+    second: hermes_child_of_the_wind_9
+  - first:
+      213: 4406358048685845518
+    second: hermes_child_of_the_wind_10
+  - first:
+      213: 2459868765467353075
+    second: hermes_child_of_the_wind_11
+  - first:
+      213: -8984646164110358349
+    second: hermes_child_of_the_wind_12
+  - first:
+      213: -7687599738966513414
+    second: hermes_child_of_the_wind_13
+  - first:
+      213: -7977754759563053702
+    second: hermes_child_of_the_wind_14
+  - first:
+      213: -3624182451116736182
+    second: hermes_child_of_the_wind_15
+  - first:
+      213: 7895581749265367416
+    second: hermes_child_of_the_wind_16
+  - first:
+      213: 4568187274818163853
+    second: hermes_child_of_the_wind_17
+  - first:
+      213: -8545727169898321302
+    second: hermes_child_of_the_wind_18
+  - first:
+      213: -4222288533853306028
+    second: hermes_child_of_the_wind_19
+  - first:
+      213: -3110270505864123855
+    second: hermes_child_of_the_wind_20
+  - first:
+      213: -2152586772768627618
+    second: hermes_child_of_the_wind_21
+  - first:
+      213: 2105986438447236195
+    second: hermes_child_of_the_wind_22
+  - first:
+      213: 3277910064685104878
+    second: hermes_child_of_the_wind_23
+  - first:
+      213: -6509690368335177491
+    second: hermes_child_of_the_wind_24
+  - first:
+      213: -4677320057043373580
+    second: hermes_child_of_the_wind_25
+  - first:
+      213: 671108777170732231
+    second: hermes_child_of_the_wind_26
+  - first:
+      213: -9141085383521399768
+    second: hermes_child_of_the_wind_27
+  - first:
+      213: -2993215283499541268
+    second: hermes_child_of_the_wind_28
+  - first:
+      213: -7717272516202307364
+    second: hermes_child_of_the_wind_29
+  - first:
+      213: -1573676866664600251
+    second: hermes_child_of_the_wind_30
+  - first:
+      213: -2407775687045221029
+    second: hermes_child_of_the_wind_31
+  - first:
+      213: -5658941371079261756
+    second: hermes_child_of_the_wind_32
+  - first:
+      213: 8760432005446295023
+    second: hermes_child_of_the_wind_33
+  - first:
+      213: -2558554204172012403
+    second: hermes_child_of_the_wind_34
+  - first:
+      213: 5465788389672617132
+    second: hermes_child_of_the_wind_35
+  - first:
+      213: -263362670590651958
+    second: hermes_child_of_the_wind_36
+  - first:
+      213: -7520047641122113002
+    second: hermes_child_of_the_wind_37
+  - first:
+      213: 2182359706381017952
+    second: hermes_child_of_the_wind_38
+  - first:
+      213: -3137437979652605401
+    second: hermes_child_of_the_wind_39
+  - first:
+      213: 8820350750142235254
+    second: hermes_child_of_the_wind_40
+  - first:
+      213: 1688784892068247703
+    second: hermes_child_of_the_wind_41
+  - first:
+      213: -7857380544590777167
+    second: hermes_child_of_the_wind_42
+  - first:
+      213: 5643554939315311740
+    second: hermes_child_of_the_wind_43
+  - first:
+      213: -801445001023793886
+    second: hermes_child_of_the_wind_44
+  - first:
+      213: -1204852078253634974
+    second: hermes_child_of_the_wind_45
+  - first:
+      213: 4991335549706706918
+    second: hermes_child_of_the_wind_46
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hermes_child_of_the_wind_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 669
+        width: 287
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5214212, y: 0.48013067}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9263955cbd3563a0800000000000000
+      internalID: -6672859393780653412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_child_of_the_wind_2
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 641
+        width: 305
+        height: 292
+      alignment: 9
+      pivot: {x: 0.49266258, y: 0.5114351}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c12cd5bf5c0aab9c0800000000000000
+      internalID: -3910636554231627236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_child_of_the_wind_3
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 630
+        width: 308
+        height: 311
+      alignment: 9
+      pivot: {x: 0.5021509, y: 0.51515734}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d0debd5e6f8eeb0800000000000000
+      internalID: -4690227544808682114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_child_of_the_wind_1
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 671
+        width: 287
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5214212, y: 0.4801307}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9add5a6a18dc73d0800000000000000
+      internalID: -3207451226629350753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_child_of_the_wind_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 215
+        width: 343
+        height: 346
+      alignment: 9
+      pivot: {x: 0.5387819, y: 0.4646634}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fedd6938e7e439970800000000000000
+      internalID: 8760432005446295023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_child_of_the_wind_5
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 178
+        width: 371
+        height: 396
+      alignment: 9
+      pivot: {x: 0.4919473, y: 0.49941593}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca404e7d4916adb40800000000000000
+      internalID: 5465788389672617132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_child_of_the_wind_6
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 197
+        width: 316
+        height: 340
+      alignment: 9
+      pivot: {x: 0.4896076, y: 0.522358}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06367fe179c494e10800000000000000
+      internalID: 2182359706381017952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_child_of_the_wind_7
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 210
+        width: 309
+        height: 326
+      alignment: 9
+      pivot: {x: 0.49938688, y: 0.50132525}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6720498664e286a70800000000000000
+      internalID: 8820350750142235254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c29ac645414c56547a6adb583a4babe3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      hermes_child_of_the_wind_0: -6672859393780653412
+      hermes_child_of_the_wind_1: -3207451226629350753
+      hermes_child_of_the_wind_10: 4406358048685845518
+      hermes_child_of_the_wind_11: 2459868765467353075
+      hermes_child_of_the_wind_12: -8984646164110358349
+      hermes_child_of_the_wind_13: -7687599738966513414
+      hermes_child_of_the_wind_14: -7977754759563053702
+      hermes_child_of_the_wind_15: -3624182451116736182
+      hermes_child_of_the_wind_16: 7895581749265367416
+      hermes_child_of_the_wind_17: 4568187274818163853
+      hermes_child_of_the_wind_18: -8545727169898321302
+      hermes_child_of_the_wind_19: -4222288533853306028
+      hermes_child_of_the_wind_2: -3910636554231627236
+      hermes_child_of_the_wind_20: -3110270505864123855
+      hermes_child_of_the_wind_21: -2152586772768627618
+      hermes_child_of_the_wind_22: 2105986438447236195
+      hermes_child_of_the_wind_23: 3277910064685104878
+      hermes_child_of_the_wind_24: -6509690368335177491
+      hermes_child_of_the_wind_25: -4677320057043373580
+      hermes_child_of_the_wind_26: 671108777170732231
+      hermes_child_of_the_wind_27: -9141085383521399768
+      hermes_child_of_the_wind_28: -2993215283499541268
+      hermes_child_of_the_wind_29: -7717272516202307364
+      hermes_child_of_the_wind_3: -4690227544808682114
+      hermes_child_of_the_wind_30: -1573676866664600251
+      hermes_child_of_the_wind_31: -2407775687045221029
+      hermes_child_of_the_wind_32: -5658941371079261756
+      hermes_child_of_the_wind_34: -2558554204172012403
+      hermes_child_of_the_wind_36: -263362670590651958
+      hermes_child_of_the_wind_37: -7520047641122113002
+      hermes_child_of_the_wind_39: -3137437979652605401
+      hermes_child_of_the_wind_4: 8760432005446295023
+      hermes_child_of_the_wind_41: 1688784892068247703
+      hermes_child_of_the_wind_42: -7857380544590777167
+      hermes_child_of_the_wind_43: 5643554939315311740
+      hermes_child_of_the_wind_44: -801445001023793886
+      hermes_child_of_the_wind_45: -1204852078253634974
+      hermes_child_of_the_wind_46: 4991335549706706918
+      hermes_child_of_the_wind_5: 5465788389672617132
+      hermes_child_of_the_wind_6: 2182359706381017952
+      hermes_child_of_the_wind_7: 8820350750142235254
+      hermes_child_of_the_wind_8: 7528130098157986212
+      hermes_child_of_the_wind_9: 6851693700814608535
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

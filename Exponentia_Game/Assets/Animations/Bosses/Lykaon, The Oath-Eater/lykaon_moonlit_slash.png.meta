@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: 46838b30b30788c4daea216fc2abeca2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -163450611710923547
+    second: lykaon_moonlit_slash_0
+  - first:
+      213: 2428541468023924982
+    second: lykaon_moonlit_slash_1
+  - first:
+      213: 1619772936688054453
+    second: lykaon_moonlit_slash_2
+  - first:
+      213: 5446249793809068352
+    second: lykaon_moonlit_slash_3
+  - first:
+      213: 8651906509855520495
+    second: lykaon_moonlit_slash_4
+  - first:
+      213: -8280109248159784960
+    second: lykaon_moonlit_slash_5
+  - first:
+      213: 4144393742966153805
+    second: lykaon_moonlit_slash_6
+  - first:
+      213: 9027885743157925358
+    second: lykaon_moonlit_slash_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lykaon_moonlit_slash_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 484
+        width: 420
+        height: 403
+      alignment: 9
+      pivot: {x: 0.5086044, y: 0.4528386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ec66aed88e4bbdf0800000000000000
+      internalID: -163450611710923547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_moonlit_slash_1
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 489
+        width: 359
+        height: 351
+      alignment: 9
+      pivot: {x: 0.46389574, y: 0.5056733}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f82fd32999e3b120800000000000000
+      internalID: 2428541468023924982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_moonlit_slash_2
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 490
+        width: 412
+        height: 342
+      alignment: 9
+      pivot: {x: 0.43812606, y: 0.49839488}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b0351c67e69a7610800000000000000
+      internalID: 1619772936688054453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_moonlit_slash_3
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 481
+        width: 431
+        height: 406
+      alignment: 9
+      pivot: {x: 0.4814524, y: 0.4370568}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 041b80ef457f49b40800000000000000
+      internalID: 5446249793809068352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_moonlit_slash_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 427
+        height: 398
+      alignment: 9
+      pivot: {x: 0.44153622, y: 0.5539152}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe6f3d5812fb11870800000000000000
+      internalID: 8651906509855520495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_moonlit_slash_5
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 50
+        width: 408
+        height: 368
+      alignment: 9
+      pivot: {x: 0.4741468, y: 0.4577462}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 000620a3284271d80800000000000000
+      internalID: -8280109248159784960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_moonlit_slash_6
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 50
+        width: 408
+        height: 368
+      alignment: 9
+      pivot: {x: 0.4741468, y: 0.4577462}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4269dab628d38930800000000000000
+      internalID: 4144393742966153805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_moonlit_slash_7
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 0
+        width: 421
+        height: 406
+      alignment: 9
+      pivot: {x: 0.4406306, y: 0.5553685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee5ddb9604e794d70800000000000000
+      internalID: 9027885743157925358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1835f8a4fa1604f478a962e6c6577a4b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      lykaon_moonlit_slash_0: -163450611710923547
+      lykaon_moonlit_slash_1: 2428541468023924982
+      lykaon_moonlit_slash_2: 1619772936688054453
+      lykaon_moonlit_slash_3: 5446249793809068352
+      lykaon_moonlit_slash_4: 8651906509855520495
+      lykaon_moonlit_slash_5: -8280109248159784960
+      lykaon_moonlit_slash_6: 4144393742966153805
+      lykaon_moonlit_slash_7: 9027885743157925358
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

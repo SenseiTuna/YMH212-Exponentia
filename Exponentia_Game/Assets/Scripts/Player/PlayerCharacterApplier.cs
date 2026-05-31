@@ -8,6 +8,7 @@
  */
 
 using Exponentia.Data;
+using Exponentia.InventorySystem;
 using UnityEngine;
 
 namespace Exponentia.Player
@@ -19,6 +20,7 @@ namespace Exponentia.Player
         private SpriteRenderer spriteRenderer;
         private PlayerStats playerStats;
         private PlayerMovement playerMovement;
+        private PlayerInventory playerInventory;
 
         private void Awake()
         {
@@ -39,6 +41,7 @@ namespace Exponentia.Player
 
             ApplyVisual(characterData);
             ApplyStats(characterData);
+            ApplyStartingLoadout(characterData);
 
             Debug.Log("Applied character: " + characterData.characterName);
         }
@@ -62,6 +65,11 @@ namespace Exponentia.Player
             if (playerMovement == null)
             {
                 playerMovement = GetComponent<PlayerMovement>();
+            }
+
+            if (playerInventory == null)
+            {
+                playerInventory = GetComponent<PlayerInventory>();
             }
         }
 
@@ -110,6 +118,22 @@ namespace Exponentia.Player
             {
                 mechanics.SyncResourcesFromStats();
             }
+        }
+
+        private void ApplyStartingLoadout(CharacterData characterData)
+        {
+            if (characterData.startingWeapon == null)
+            {
+                return;
+            }
+
+            if (playerInventory == null)
+            {
+                Debug.LogWarning("PlayerCharacterApplier: PlayerInventory is missing, starting weapon cannot be equipped.", this);
+                return;
+            }
+
+            playerInventory.AddWeapon(characterData.startingWeapon);
         }
     }
 }

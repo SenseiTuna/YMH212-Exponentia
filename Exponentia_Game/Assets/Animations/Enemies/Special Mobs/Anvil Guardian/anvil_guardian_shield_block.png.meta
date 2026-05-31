@@ -1,0 +1,335 @@
+fileFormatVersion: 2
+guid: 294ffc3205f01e0499b05d71dce2633f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6175872387777746867
+    second: anvil_guardian_shield_block_0
+  - first:
+      213: -8199558719067633355
+    second: anvil_guardian_shield_block_1
+  - first:
+      213: -5008138986672144169
+    second: anvil_guardian_shield_block_2
+  - first:
+      213: -775098001495240051
+    second: anvil_guardian_shield_block_3
+  - first:
+      213: -5412263286974512463
+    second: anvil_guardian_shield_block_4
+  - first:
+      213: 5262380296272433171
+    second: anvil_guardian_shield_block_5
+  - first:
+      213: -4525757892576100035
+    second: anvil_guardian_shield_block_6
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: anvil_guardian_shield_block_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 705
+        width: 316
+        height: 343
+      alignment: 9
+      pivot: {x: 0.46839556, y: 0.35271326}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b7d2ab273b15b550800000000000000
+      internalID: 6175872387777746867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anvil_guardian_shield_block_2
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 706
+        width: 312
+        height: 305
+      alignment: 9
+      pivot: {x: 0.3910145, y: 0.32128987}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5394403c9c0553e80800000000000000
+      internalID: -8199558719067633355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anvil_guardian_shield_block_3
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 706
+        width: 328
+        height: 337
+      alignment: 9
+      pivot: {x: 0.30177307, y: 0.3413421}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d04f9930248f7ab0800000000000000
+      internalID: -5008138986672144169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anvil_guardian_shield_block_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 236
+        width: 328
+        height: 337
+      alignment: 9
+      pivot: {x: 0.42202452, y: 0.395227}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d82d2ca697c4e35f0800000000000000
+      internalID: -775098001495240051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anvil_guardian_shield_block_5
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 235
+        width: 320
+        height: 337
+      alignment: 9
+      pivot: {x: 0.50519055, y: 0.40266305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b20ff44737c3e4b0800000000000000
+      internalID: -5412263286974512463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anvil_guardian_shield_block_6
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 242
+        width: 278
+        height: 332
+      alignment: 9
+      pivot: {x: 0.5283787, y: 0.37743443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31055588ffab70940800000000000000
+      internalID: 5262380296272433171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anvil_guardian_shield_block_7
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 246
+        width: 307
+        height: 320
+      alignment: 9
+      pivot: {x: 0.4458994, y: 0.36635035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d31c499dc274131c0800000000000000
+      internalID: -4525757892576100035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anvil_guardian_shield_block_1
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 704
+        width: 297
+        height: 327
+      alignment: 9
+      pivot: {x: 0.39737505, y: 0.36088875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 666c9725c0e563a4199b0484df754711
+      internalID: 2087291474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ff9667d9f33485841bdbc05e94beeead
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      anvil_guardian_shield_block_0: 6175872387777746867
+      anvil_guardian_shield_block_1: 2087291474
+      anvil_guardian_shield_block_2: -8199558719067633355
+      anvil_guardian_shield_block_3: -5008138986672144169
+      anvil_guardian_shield_block_4: -775098001495240051
+      anvil_guardian_shield_block_5: -5412263286974512463
+      anvil_guardian_shield_block_6: 5262380296272433171
+      anvil_guardian_shield_block_7: -4525757892576100035
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

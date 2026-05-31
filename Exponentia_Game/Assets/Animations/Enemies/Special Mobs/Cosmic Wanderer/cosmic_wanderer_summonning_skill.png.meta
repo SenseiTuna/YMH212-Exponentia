@@ -1,0 +1,409 @@
+fileFormatVersion: 2
+guid: 57981f94d7cc7f448b0c8edca3ca2ac0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2477167127704938302
+    second: cosmic_wanderer_summonning_skill_0
+  - first:
+      213: 8065924892238432084
+    second: cosmic_wanderer_summonning_skill_1
+  - first:
+      213: 894091106748673433
+    second: cosmic_wanderer_summonning_skill_2
+  - first:
+      213: -1754620628013445029
+    second: cosmic_wanderer_summonning_skill_3
+  - first:
+      213: -2127362284485642171
+    second: cosmic_wanderer_summonning_skill_4
+  - first:
+      213: 4801517594875216596
+    second: cosmic_wanderer_summonning_skill_5
+  - first:
+      213: -1993589569175657032
+    second: cosmic_wanderer_summonning_skill_6
+  - first:
+      213: 5062766586800085629
+    second: cosmic_wanderer_summonning_skill_7
+  - first:
+      213: 530836517588091477
+    second: cosmic_wanderer_summonning_skill_8
+  - first:
+      213: 5729101829654106491
+    second: cosmic_wanderer_summonning_skill_9
+  - first:
+      213: 4710125239216954375
+    second: cosmic_wanderer_summonning_skill_10
+  - first:
+      213: 6488241399601282042
+    second: cosmic_wanderer_summonning_skill_11
+  - first:
+      213: 6885743308529652986
+    second: cosmic_wanderer_summonning_skill_12
+  - first:
+      213: -9200037469839815806
+    second: cosmic_wanderer_summonning_skill_13
+  - first:
+      213: 4503319249046237438
+    second: cosmic_wanderer_summonning_skill_14
+  - first:
+      213: -5850804268985900337
+    second: cosmic_wanderer_summonning_skill_15
+  - first:
+      213: 2107649682442287995
+    second: cosmic_wanderer_summonning_skill_16
+  - first:
+      213: -2100547062346078567
+    second: cosmic_wanderer_summonning_skill_17
+  - first:
+      213: 1715857298729210791
+    second: cosmic_wanderer_summonning_skill_18
+  - first:
+      213: 8480958551656430096
+    second: cosmic_wanderer_summonning_skill_19
+  - first:
+      213: -2449613964251853097
+    second: cosmic_wanderer_summonning_skill_20
+  - first:
+      213: 3702828269585345946
+    second: cosmic_wanderer_summonning_skill_21
+  - first:
+      213: 2901593088607533055
+    second: cosmic_wanderer_summonning_skill_22
+  - first:
+      213: 2451360473176401128
+    second: cosmic_wanderer_summonning_skill_23
+  - first:
+      213: 4838282642112404076
+    second: cosmic_wanderer_summonning_skill_24
+  - first:
+      213: -6077147039575687454
+    second: cosmic_wanderer_summonning_skill_25
+  - first:
+      213: -7699339979376857549
+    second: cosmic_wanderer_summonning_skill_26
+  - first:
+      213: -4722809462473051943
+    second: cosmic_wanderer_summonning_skill_27
+  - first:
+      213: -8370126465753619150
+    second: cosmic_wanderer_summonning_skill_28
+  - first:
+      213: 8452596719214860695
+    second: cosmic_wanderer_summonning_skill_29
+  - first:
+      213: 9215027826506334385
+    second: cosmic_wanderer_summonning_skill_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cosmic_wanderer_summonning_skill_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 444
+        width: 443
+        height: 443
+      alignment: 9
+      pivot: {x: 0.5073963, y: 0.62133473}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c85fd73f955f9dd0800000000000000
+      internalID: -2477167127704938302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic_wanderer_summonning_skill_1
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 444
+        width: 443
+        height: 443
+      alignment: 9
+      pivot: {x: 0.51336986, y: 0.619855}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4574ad254fbefef60800000000000000
+      internalID: 8065924892238432084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic_wanderer_summonning_skill_2
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 444
+        width: 443
+        height: 443
+      alignment: 9
+      pivot: {x: 0.48775798, y: 0.61829674}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99d279edf13786c00800000000000000
+      internalID: 894091106748673433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic_wanderer_summonning_skill_3
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 444
+        width: 443
+        height: 443
+      alignment: 9
+      pivot: {x: 0.45865178, y: 0.59551215}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b509fafc5d556a7e0800000000000000
+      internalID: -1754620628013445029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic_wanderer_summonning_skill_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 443
+        height: 443
+      alignment: 9
+      pivot: {x: 0.49437496, y: 0.6447089}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5487ba406471a72e0800000000000000
+      internalID: -2127362284485642171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic_wanderer_summonning_skill_5
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 1
+        width: 443
+        height: 443
+      alignment: 9
+      pivot: {x: 0.56652075, y: 0.6574228}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d2435120da62a240800000000000000
+      internalID: 4801517594875216596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic_wanderer_summonning_skill_6
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 1
+        width: 443
+        height: 443
+      alignment: 9
+      pivot: {x: 0.48993897, y: 0.6602117}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b56c5d69d85554e0800000000000000
+      internalID: -1993589569175657032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic_wanderer_summonning_skill_7
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 1
+        width: 443
+        height: 443
+      alignment: 9
+      pivot: {x: 0.4852295, y: 0.6511014}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7a9fe2136f824640800000000000000
+      internalID: 5062766586800085629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e16f4b5591d61ce4180d3991d1ab84df
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":2.0},"gridSpriteSize":{"x":443.0,"y":443.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5310131907463074,"y":0.6391785740852356},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      cosmic_wanderer_summonning_skill_0: -2477167127704938302
+      cosmic_wanderer_summonning_skill_1: 8065924892238432084
+      cosmic_wanderer_summonning_skill_2: 894091106748673433
+      cosmic_wanderer_summonning_skill_3: -1754620628013445029
+      cosmic_wanderer_summonning_skill_4: -2127362284485642171
+      cosmic_wanderer_summonning_skill_5: 4801517594875216596
+      cosmic_wanderer_summonning_skill_6: -1993589569175657032
+      cosmic_wanderer_summonning_skill_7: 5062766586800085629
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8331504df8bd8a94f98552ce3a51f9cb, type: 3}
+  m_Name: SKL_LikeLightning
+  m_EditorClassIdentifier: Assembly-CSharp::Exponentia.InventorySystem.SkillDefinition
+  itemId: skill.zeus.like_lightning
+  displayName: Like Lightning
+  description: Kills grant temporary stacking attack speed.
+  icon: {fileID: 4849477828658615797, guid: 2dcd851b77d143d4e8b1cc3ea61a5af8, type: 3}
+  rarity: 2
+  category: 1
+  canStack: 0
+  maxStacks: 1
+  cooldown: 0
+  duration: 4
+  linkedGodSkillType: 9
+  skillEffectType: 6
+  visualEffectPrefab: {fileID: 7769020685471178370, guid: f26377e99feb4413844d0056fad86dfa, type: 3}
+  audioClip: {fileID: 0}
+  renderVfxBehindOwner: 1
+  runtimeVfxSortingOrder: 500
+  runtimeVfxSortingOrderOffsetFromOwner: -1

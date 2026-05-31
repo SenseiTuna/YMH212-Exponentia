@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: fdb5b8e5f07d2bb4c99276b754818c1f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7960547700324368431
+    second: lykaon_twin_claw_slash_0
+  - first:
+      213: 8013821225940857341
+    second: lykaon_twin_claw_slash_1
+  - first:
+      213: -5010833785126711579
+    second: lykaon_twin_claw_slash_2
+  - first:
+      213: 5306986554953599638
+    second: lykaon_twin_claw_slash_3
+  - first:
+      213: 4720447051081206320
+    second: lykaon_twin_claw_slash_4
+  - first:
+      213: 2340853986617853281
+    second: lykaon_twin_claw_slash_5
+  - first:
+      213: -3709849065667752086
+    second: lykaon_twin_claw_slash_6
+  - first:
+      213: 1795030938854202742
+    second: lykaon_twin_claw_slash_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lykaon_twin_claw_slash_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 532
+        width: 385
+        height: 409
+      alignment: 9
+      pivot: {x: 0.45075324, y: 0.3704689}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dffc981b04768190800000000000000
+      internalID: -7960547700324368431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_twin_claw_slash_1
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 533
+        width: 336
+        height: 351
+      alignment: 9
+      pivot: {x: 0.3348803, y: 0.43420446}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df1b0b922ffc63f60800000000000000
+      internalID: 8013821225940857341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_twin_claw_slash_2
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 533
+        width: 378
+        height: 313
+      alignment: 9
+      pivot: {x: 0.27902383, y: 0.4646737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ee0ff09831f57ab0800000000000000
+      internalID: -5010833785126711579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_twin_claw_slash_3
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 533
+        width: 391
+        height: 408
+      alignment: 9
+      pivot: {x: 0.3005162, y: 0.35650036}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69a88c3772436a940800000000000000
+      internalID: 5306986554953599638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_twin_claw_slash_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 406
+        height: 373
+      alignment: 9
+      pivot: {x: 0.3534572, y: 0.55089843}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03a4cbc3595628140800000000000000
+      internalID: 4720447051081206320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_twin_claw_slash_5
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 65
+        width: 358
+        height: 304
+      alignment: 9
+      pivot: {x: 0.3560999, y: 0.46216553}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1650a676c426c7020800000000000000
+      internalID: 2340853986617853281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_twin_claw_slash_6
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 66
+        width: 346
+        height: 321
+      alignment: 9
+      pivot: {x: 0.41475365, y: 0.48725268}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6f0f8e2ee7f38cc0800000000000000
+      internalID: -3709849065667752086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_twin_claw_slash_7
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 0
+        width: 400
+        height: 387
+      alignment: 9
+      pivot: {x: 0.37862426, y: 0.57741433}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67d9d3fd02b39e810800000000000000
+      internalID: 1795030938854202742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b21d3bbdf8f662e44aa7a64ed9fdec60
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      lykaon_twin_claw_slash_0: -7960547700324368431
+      lykaon_twin_claw_slash_1: 8013821225940857341
+      lykaon_twin_claw_slash_2: -5010833785126711579
+      lykaon_twin_claw_slash_3: 5306986554953599638
+      lykaon_twin_claw_slash_4: 4720447051081206320
+      lykaon_twin_claw_slash_5: 2340853986617853281
+      lykaon_twin_claw_slash_6: -3709849065667752086
+      lykaon_twin_claw_slash_7: 1795030938854202742
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

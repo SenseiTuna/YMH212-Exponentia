@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: 744e81e16a6470241a5e590dcda682f3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6223333025114657396
+    second: oldguy_move_DR_0
+  - first:
+      213: -5931122324136485645
+    second: oldguy_move_DR_1
+  - first:
+      213: 3815541628887473019
+    second: oldguy_move_DR_2
+  - first:
+      213: 7411411036897034266
+    second: oldguy_move_DR_3
+  - first:
+      213: 5655505654503694335
+    second: oldguy_move_DR_4
+  - first:
+      213: 6977946843626503473
+    second: oldguy_move_DR_5
+  - first:
+      213: -8893791967310901798
+    second: oldguy_move_DR_6
+  - first:
+      213: -3982242013999138847
+    second: oldguy_move_DR_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: oldguy_move_DR_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 467
+        width: 365
+        height: 420
+      alignment: 9
+      pivot: {x: 0.6862247, y: 0.6487938}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8d6517169742a9a0800000000000000
+      internalID: -6223333025114657396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldguy_move_DR_1
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 466
+        width: 290
+        height: 408
+      alignment: 9
+      pivot: {x: 0.58425254, y: 0.6606569}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fc947eabab60bda0800000000000000
+      internalID: -5931122324136485645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldguy_move_DR_2
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 466
+        width: 248
+        height: 405
+      alignment: 9
+      pivot: {x: 0.59070265, y: 0.66054916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7b9d8755e683f430800000000000000
+      internalID: 3815541628887473019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldguy_move_DR_3
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 466
+        width: 355
+        height: 421
+      alignment: 9
+      pivot: {x: 0.4268245, y: 0.63066363}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1048aa121f9ad660800000000000000
+      internalID: 7411411036897034266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldguy_move_DR_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 336
+        height: 433
+      alignment: 9
+      pivot: {x: 0.7127938, y: 0.6800893}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fffd7e9bd646c7e40800000000000000
+      internalID: 5655505654503694335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldguy_move_DR_5
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 27
+        width: 254
+        height: 405
+      alignment: 9
+      pivot: {x: 0.5925098, y: 0.6630888}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13d7aebfea5a6d060800000000000000
+      internalID: 6977946843626503473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldguy_move_DR_6
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 27
+        width: 227
+        height: 404
+      alignment: 9
+      pivot: {x: 0.5704082, y: 0.65983564}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: add063ab357e29480800000000000000
+      internalID: -8893791967310901798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldguy_move_DR_7
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 0
+        width: 336
+        height: 426
+      alignment: 9
+      pivot: {x: 0.39148602, y: 0.68194133}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e7f1f1bcfb3cb8c0800000000000000
+      internalID: -3982242013999138847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 99d6fe75c074d504d98f0b883807e79d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      oldguy_move_DR_0: -6223333025114657396
+      oldguy_move_DR_1: -5931122324136485645
+      oldguy_move_DR_2: 3815541628887473019
+      oldguy_move_DR_3: 7411411036897034266
+      oldguy_move_DR_4: 5655505654503694335
+      oldguy_move_DR_5: 6977946843626503473
+      oldguy_move_DR_6: -8893791967310901798
+      oldguy_move_DR_7: -3982242013999138847
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

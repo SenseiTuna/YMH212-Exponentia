@@ -1,5 +1,6 @@
 using UnityEngine;
 using Exponentia.Player;
+using Exponentia.InventorySystem;
 
 public abstract class GodSkillBase : MonoBehaviour
 {
@@ -32,6 +33,7 @@ public abstract class GodSkillBase : MonoBehaviour
     public float ManaCost => manaCost;
     public float Cooldown => cooldown;
     public float RemainingCooldown => Mathf.Max(0f, nextUseTime - Time.time);
+    public virtual bool IsPassiveSkill => false;
 
     protected virtual void Reset()
     {
@@ -41,12 +43,9 @@ public abstract class GodSkillBase : MonoBehaviour
     protected virtual void Awake()
     {
         CacheOwnerReferences();
-
-        // Eğer isUnlocked tikini Inspector'da kapalı unuttuysan diye garantilemek için başlangıçta otomatik açıyoruz:
-        isUnlocked = true; 
     }
 
-    public void SetUnlocked(bool unlocked)
+    public virtual void SetUnlocked(bool unlocked)
     {
         isUnlocked = unlocked;
     }
@@ -54,6 +53,20 @@ public abstract class GodSkillBase : MonoBehaviour
     public void SetSkillLevel(int newLevel)
     {
         skillLevel = Mathf.Clamp(newLevel, 1, Mathf.Max(1, maxSkillLevel));
+    }
+
+    public void ApplyInventoryDefinition(SkillDefinition definition)
+    {
+        if (definition == null)
+        {
+            return;
+        }
+
+        skillName = definition.displayName;
+        skillDescription = definition.description;
+        godSkillType = definition.linkedGodSkillType;
+        skillIcon = definition.icon;
+        ApplyCooldown(definition.cooldown);
     }
 
     public bool CanActivate()
@@ -113,8 +126,26 @@ public abstract class GodSkillBase : MonoBehaviour
         skillDescription = newDescription;
         godSkillType = newSkillType;
         manaCost = Mathf.Max(0f, newManaCost);
-        cooldown = Mathf.Max(0f, newCooldown);
+        ApplyCooldown(newCooldown);
         isUnlocked = unlockedByDefault;
+    }
+
+    protected void SetSkillIcon(Sprite newSkillIcon)
+    {
+        skillIcon = newSkillIcon;
+    }
+
+    private void ApplyCooldown(float newCooldown)
+    {
+        cooldown = Mathf.Max(0f, newCooldown);
+        if (cooldown <= 0f)
+        {
+            nextUseTime = 0f;
+        }
+        else if (nextUseTime > Time.time + cooldown)
+        {
+            nextUseTime = Time.time + cooldown;
+        }
     }
 
     private void CacheOwnerReferences()

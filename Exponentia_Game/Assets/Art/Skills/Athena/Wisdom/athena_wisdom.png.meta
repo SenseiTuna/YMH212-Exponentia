@@ -1,0 +1,357 @@
+fileFormatVersion: 2
+guid: 3f3a3a1a7d2047f49ac93cb9e4c79dea
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5774524992799635360
+    second: athena_wisdom_0
+  - first:
+      213: 7610678675270468432
+    second: athena_wisdom_1
+  - first:
+      213: -5815575829434838517
+    second: athena_wisdom_2
+  - first:
+      213: -3148338065715140516
+    second: athena_wisdom_3
+  - first:
+      213: -2911597111511821382
+    second: athena_wisdom_4
+  - first:
+      213: 7256161220708349531
+    second: athena_wisdom_5
+  - first:
+      213: -4759571485639964529
+    second: athena_wisdom_6
+  - first:
+      213: 1483453645398615295
+    second: athena_wisdom_7
+  - first:
+      213: -1451980737024064307
+    second: athena_wisdom_8
+  - first:
+      213: -1228381400455008154
+    second: athena_wisdom_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: athena_wisdom_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 580
+        width: 301
+        height: 307
+      alignment: 9
+      pivot: {x: 0.7348102, y: 0.27960384}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a7ff6ed2eb332050800000000000000
+      internalID: 5774524992799635360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: athena_wisdom_1
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 543
+        width: 268
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5001453, y: 0.48052382}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 053032b9eef8e9960800000000000000
+      internalID: 7610678675270468432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: athena_wisdom_2
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 502
+        width: 327
+        height: 326
+      alignment: 9
+      pivot: {x: 0.50009817, y: 0.5031412}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b02503a689cea4fa0800000000000000
+      internalID: -5815575829434838517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: athena_wisdom_3
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 500
+        width: 389
+        height: 387
+      alignment: 9
+      pivot: {x: 0.42799923, y: 0.42893884}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c586538b53bde44d0800000000000000
+      internalID: -3148338065715140516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: athena_wisdom_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 427
+        height: 438
+      alignment: 9
+      pivot: {x: 0.5175814, y: 0.55014706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab3d8477adde797d0800000000000000
+      internalID: -2911597111511821382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: athena_wisdom_5
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 69
+        width: 362
+        height: 340
+      alignment: 9
+      pivot: {x: 0.49587253, y: 0.5028251}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5639497f2013b460800000000000000
+      internalID: 7256161220708349531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: athena_wisdom_6
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 76
+        width: 325
+        height: 316
+      alignment: 9
+      pivot: {x: 0.5030908, y: 0.5063574}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc488fc663789dbe0800000000000000
+      internalID: -1451980737024064307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: athena_wisdom_7
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 37
+        width: 382
+        height: 385
+      alignment: 9
+      pivot: {x: 0.50397944, y: 0.51426065}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 660be21ef99e3fee0800000000000000
+      internalID: -1228381400455008154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a1dc2a2d6a67a4c47a5d7f3c497780a9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      athena_wisdom_0: 5774524992799635360
+      athena_wisdom_1: 7610678675270468432
+      athena_wisdom_2: -5815575829434838517
+      athena_wisdom_3: -3148338065715140516
+      athena_wisdom_4: -2911597111511821382
+      athena_wisdom_5: 7256161220708349531
+      athena_wisdom_6: -1451980737024064307
+      athena_wisdom_7: -1228381400455008154
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,319 @@
+fileFormatVersion: 2
+guid: 1703ca0162563ad45a1c93dc5a3baaf2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1378984780887988417
+    second: hermes_projectile_0
+  - first:
+      213: -4252692987570184524
+    second: hermes_projectile_1
+  - first:
+      213: -6335577953046973733
+    second: hermes_projectile_2
+  - first:
+      213: 4154172856446356608
+    second: hermes_projectile_3
+  - first:
+      213: -5716718639851240957
+    second: hermes_projectile_4
+  - first:
+      213: -1493764445004814813
+    second: hermes_projectile_5
+  - first:
+      213: 6524446909631376894
+    second: hermes_projectile_6
+  - first:
+      213: -8112238435608623248
+    second: hermes_projectile_7
+  - first:
+      213: -4946388467305203584
+    second: hermes_projectile_8
+  - first:
+      213: -4586324464236091283
+    second: hermes_projectile_9
+  - first:
+      213: 2370911594975155792
+    second: hermes_projectile_10
+  - first:
+      213: 1008096427010796573
+    second: hermes_projectile_11
+  - first:
+      213: -2872823309364276547
+    second: hermes_projectile_12
+  - first:
+      213: 4165725261765962920
+    second: hermes_projectile_13
+  - first:
+      213: 4243637873802067725
+    second: hermes_projectile_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hermes_projectile_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 681
+        width: 418
+        height: 343
+      alignment: 9
+      pivot: {x: 0.7852391, y: 0.2117459}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c89f7f1a53232310800000000000000
+      internalID: 1378984780887988417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_projectile_1
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 682
+        width: 357
+        height: 159
+      alignment: 9
+      pivot: {x: 0.7493199, y: 0.44455245}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd2b6d54b618318a0800000000000000
+      internalID: -6335577953046973733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_projectile_2
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 681
+        width: 472
+        height: 343
+      alignment: 9
+      pivot: {x: 0.61988807, y: 0.21054015}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30200de7fa22aa0b0800000000000000
+      internalID: -5716718639851240957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_projectile_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 432
+        height: 330
+      alignment: 9
+      pivot: {x: 0.7981785, y: 0.73611647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d68268cf23a1a50c0800000000000000
+      internalID: -4586324464236091283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_projectile_4
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 172
+        width: 402
+        height: 179
+      alignment: 9
+      pivot: {x: 0.77495, y: 0.4025231}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0565954b88b27e020800000000000000
+      internalID: 2370911594975155792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hermes_projectile_5
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 511
+        height: 415
+      alignment: 9
+      pivot: {x: 0.6754506, y: 0.5805176}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db251e6cb6ea128d0800000000000000
+      internalID: -2872823309364276547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b4163088643a9d840bdd0d2c11560e7d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      hermes_projectile_0: 1378984780887988417
+      hermes_projectile_1: -6335577953046973733
+      hermes_projectile_11: 1008096427010796573
+      hermes_projectile_13: 4165725261765962920
+      hermes_projectile_14: 4243637873802067725
+      hermes_projectile_2: -5716718639851240957
+      hermes_projectile_3: -4586324464236091283
+      hermes_projectile_4: 2370911594975155792
+      hermes_projectile_5: -2872823309364276547
+      hermes_projectile_6: 6524446909631376894
+      hermes_projectile_7: -8112238435608623248
+      hermes_projectile_8: -4946388467305203584
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

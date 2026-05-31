@@ -17,7 +17,7 @@ public class CreeperSnakeEnemy : EnemyMechanics
 
     private float nextAttackTime;
 
-    private void Reset()
+    protected override void Reset()
     {
         ApplyDefaultSetup(
             "Creeper Snake",

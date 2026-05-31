@@ -1,0 +1,406 @@
+fileFormatVersion: 2
+guid: d90320e59112f5f40bd3ad8e4728cfd6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -336199056785596866
+    second: lykaon_blood_fang_dash_0
+  - first:
+      213: 2884913127855419337
+    second: lykaon_blood_fang_dash_1
+  - first:
+      213: 1593712929105981575
+    second: lykaon_blood_fang_dash_2
+  - first:
+      213: 7443076830535731645
+    second: lykaon_blood_fang_dash_3
+  - first:
+      213: -1139603694501852138
+    second: lykaon_blood_fang_dash_4
+  - first:
+      213: 2736330117840070349
+    second: lykaon_blood_fang_dash_5
+  - first:
+      213: 5890705489635927156
+    second: lykaon_blood_fang_dash_6
+  - first:
+      213: 6661141304449894407
+    second: lykaon_blood_fang_dash_7
+  - first:
+      213: -2641118606707810417
+    second: lykaon_blood_fang_dash_8
+  - first:
+      213: 3656236832591766522
+    second: lykaon_blood_fang_dash_9
+  - first:
+      213: -9151148968974769560
+    second: lykaon_blood_fang_dash_10
+  - first:
+      213: -1130494779756522379
+    second: lykaon_blood_fang_dash_11
+  - first:
+      213: -9006621681834737155
+    second: lykaon_blood_fang_dash_12
+  - first:
+      213: -4848421095775849076
+    second: lykaon_blood_fang_dash_13
+  - first:
+      213: -4335099765009717853
+    second: lykaon_blood_fang_dash_14
+  - first:
+      213: -3517786989508787344
+    second: lykaon_blood_fang_dash_15
+  - first:
+      213: 1268411204728882898
+    second: lykaon_blood_fang_dash_16
+  - first:
+      213: 2600442953638437069
+    second: lykaon_blood_fang_dash_17
+  - first:
+      213: 9047947256686308742
+    second: lykaon_blood_fang_dash_18
+  - first:
+      213: 4829175529085688815
+    second: lykaon_blood_fang_dash_19
+  - first:
+      213: -4545260719288024034
+    second: lykaon_blood_fang_dash_20
+  - first:
+      213: 7472835491094122041
+    second: lykaon_blood_fang_dash_21
+  - first:
+      213: -6625815926931005151
+    second: lykaon_blood_fang_dash_22
+  - first:
+      213: -725790661630891197
+    second: lykaon_blood_fang_dash_23
+  - first:
+      213: -7354770643000607650
+    second: lykaon_blood_fang_dash_24
+  - first:
+      213: -6496643156043498384
+    second: lykaon_blood_fang_dash_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lykaon_blood_fang_dash_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 474
+        width: 431
+        height: 413
+      alignment: 9
+      pivot: {x: 0.49538672, y: 0.29892477}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3e19763db4955bf0800000000000000
+      internalID: -336199056785596866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_blood_fang_dash_1
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 472
+        width: 312
+        height: 272
+      alignment: 9
+      pivot: {x: 0.62924975, y: 0.4243754}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cfeea17435490820800000000000000
+      internalID: 2884913127855419337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_blood_fang_dash_2
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 481
+        width: 429
+        height: 314
+      alignment: 9
+      pivot: {x: 0.5374121, y: 0.4378454}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7803f4517710e1610800000000000000
+      internalID: 1593712929105981575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_blood_fang_dash_3
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 481
+        width: 566
+        height: 406
+      alignment: 9
+      pivot: {x: 0.45671788, y: 0.2966519}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61c8e7c4a705f20f0800000000000000
+      internalID: -1139603694501852138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_blood_fang_dash_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 374
+        height: 355
+      alignment: 9
+      pivot: {x: 0.59209424, y: 0.46886334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a567b86bb1a6d3c0800000000000000
+      internalID: -4335099765009717853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_blood_fang_dash_5
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 79
+        width: 397
+        height: 294
+      alignment: 9
+      pivot: {x: 0.49509382, y: 0.48144957}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07386defe5f4e2fc0800000000000000
+      internalID: -3517786989508787344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_blood_fang_dash_6
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 57
+        width: 360
+        height: 259
+      alignment: 9
+      pivot: {x: 0.56783783, y: 0.4692344}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc0694ea611a61420800000000000000
+      internalID: 2600442953638437069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_blood_fang_dash_7
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 34
+        width: 396
+        height: 376
+      alignment: 9
+      pivot: {x: 0.4734269, y: 0.5092627}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68de1458714c09d70800000000000000
+      internalID: 9047947256686308742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 88dc2776aa8531a4880d0385b6f09be3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      lykaon_blood_fang_dash_0: -336199056785596866
+      lykaon_blood_fang_dash_1: 2884913127855419337
+      lykaon_blood_fang_dash_10: -9151148968974769560
+      lykaon_blood_fang_dash_11: -1130494779756522379
+      lykaon_blood_fang_dash_12: -9006621681834737155
+      lykaon_blood_fang_dash_13: -4848421095775849076
+      lykaon_blood_fang_dash_16: 1268411204728882898
+      lykaon_blood_fang_dash_19: 4829175529085688815
+      lykaon_blood_fang_dash_2: 1593712929105981575
+      lykaon_blood_fang_dash_20: -4545260719288024034
+      lykaon_blood_fang_dash_21: 7472835491094122041
+      lykaon_blood_fang_dash_22: -6625815926931005151
+      lykaon_blood_fang_dash_23: -725790661630891197
+      lykaon_blood_fang_dash_24: -7354770643000607650
+      lykaon_blood_fang_dash_25: -6496643156043498384
+      lykaon_blood_fang_dash_3: -1139603694501852138
+      lykaon_blood_fang_dash_4: -4335099765009717853
+      lykaon_blood_fang_dash_5: -3517786989508787344
+      lykaon_blood_fang_dash_6: 2600442953638437069
+      lykaon_blood_fang_dash_7: 9047947256686308742
+      lykaon_blood_fang_dash_8: -2641118606707810417
+      lykaon_blood_fang_dash_9: 3656236832591766522
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,351 @@
+fileFormatVersion: 2
+guid: 14d49e6b5cdded442a4c19f530b95ac6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3240596770443052133
+    second: athena_protective_aura_0
+  - first:
+      213: 6451296974878157039
+    second: athena_protective_aura_1
+  - first:
+      213: -7377790036966645294
+    second: athena_protective_aura_2
+  - first:
+      213: -4188503211658456384
+    second: athena_protective_aura_3
+  - first:
+      213: 7170209499075949059
+    second: athena_protective_aura_4
+  - first:
+      213: 7527398429826262588
+    second: athena_protective_aura_5
+  - first:
+      213: -7491015658872867608
+    second: athena_protective_aura_6
+  - first:
+      213: 6349361166510143358
+    second: athena_protective_aura_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: athena_protective_aura_0
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 608
+        width: 126
+        height: 120
+      alignment: 9
+      pivot: {x: 0.5191141, y: 0.4588811}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5644982e799e8fc20800000000000000
+      internalID: 3240596770443052133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: athena_protective_aura_1
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 538
+        width: 252
+        height: 249
+      alignment: 9
+      pivot: {x: 0.49523756, y: 0.5025603}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe82a201b6c978950800000000000000
+      internalID: 6451296974878157039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: athena_protective_aura_2
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 512
+        width: 304
+        height: 300
+      alignment: 9
+      pivot: {x: 0.4967278, y: 0.5033199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d1ef23fc03dc9990800000000000000
+      internalID: -7377790036966645294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: athena_protective_aura_3
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 479
+        width: 411
+        height: 408
+      alignment: 9
+      pivot: {x: 0.4576526, y: 0.45221546}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c2d38845827fd5c0800000000000000
+      internalID: -4188503211658456384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: athena_protective_aura_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 432
+        height: 429
+      alignment: 9
+      pivot: {x: 0.5069868, y: 0.5134414}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 302bd8dcc83b18360800000000000000
+      internalID: 7170209499075949059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: athena_protective_aura_5
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 4
+        width: 434
+        height: 434
+      alignment: 9
+      pivot: {x: 0.49806714, y: 0.4978992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c36a0a47df0b67860800000000000000
+      internalID: 7527398429826262588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: athena_protective_aura_6
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 42
+        width: 363
+        height: 355
+      alignment: 9
+      pivot: {x: 0.50218517, y: 0.50065607}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e47ef582f09a0890800000000000000
+      internalID: -7491015658872867608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: athena_protective_aura_7
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 0
+        width: 381
+        height: 376
+      alignment: 9
+      pivot: {x: 0.41603452, y: 0.58589506}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e773f7037567d1850800000000000000
+      internalID: 6349361166510143358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d0983dfa7a9af4d418e1b93bc470b4ee
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      athena_protective_aura_0: 3240596770443052133
+      athena_protective_aura_1: 6451296974878157039
+      athena_protective_aura_2: -7377790036966645294
+      athena_protective_aura_3: -4188503211658456384
+      athena_protective_aura_4: 7170209499075949059
+      athena_protective_aura_5: 7527398429826262588
+      athena_protective_aura_6: -7491015658872867608
+      athena_protective_aura_7: 6349361166510143358
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

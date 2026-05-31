@@ -27,7 +27,6 @@ namespace Pathfinding {
 
 		public void OnDestroy () {
 			if (version != null && !setReminder) {
-				Debug.Log("Closed window, reminding again tomorrow");
 				EditorPrefs.SetString("AstarRemindUpdateDate", DateTime.UtcNow.AddDays(1).ToString(System.Globalization.CultureInfo.InvariantCulture));
 				EditorPrefs.SetString("AstarRemindUpdateVersion", version.ToString());
 			}

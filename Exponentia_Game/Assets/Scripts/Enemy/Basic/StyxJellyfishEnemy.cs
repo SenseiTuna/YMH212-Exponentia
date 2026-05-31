@@ -14,7 +14,7 @@ public class StyxJellyfishEnemy : EnemyMechanics
 
     private float nextRingTime;
 
-    private void Reset()
+    protected override void Reset()
     {
         ApplyDefaultSetup(
             "Styx Jellyfish",
@@ -48,7 +48,7 @@ public class StyxJellyfishEnemy : EnemyMechanics
         FireRing();
     }
 
-    private void CachePlayerReferences()
+    protected override void CachePlayerReferences()
     {
         if (playerMechanics != null && playerMechanics.gameObject != null)
         {

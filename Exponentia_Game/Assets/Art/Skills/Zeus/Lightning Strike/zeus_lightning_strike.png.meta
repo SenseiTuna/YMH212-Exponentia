@@ -1,0 +1,698 @@
+fileFormatVersion: 2
+guid: 9265c881aa19a444da3cf4eec1e60e0b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -674937221467695307
+    second: zeus_lightning_strike_0
+  - first:
+      213: 7697458502637638062
+    second: zeus_lightning_strike_1
+  - first:
+      213: 8836808562449456596
+    second: zeus_lightning_strike_2
+  - first:
+      213: -8739169739380539812
+    second: zeus_lightning_strike_3
+  - first:
+      213: -1591126897386712229
+    second: zeus_lightning_strike_4
+  - first:
+      213: 3767972730182372090
+    second: zeus_lightning_strike_5
+  - first:
+      213: -3101863568536281655
+    second: zeus_lightning_strike_6
+  - first:
+      213: -5836909512673527512
+    second: zeus_lightning_strike_7
+  - first:
+      213: 8938969084284249462
+    second: zeus_lightning_strike_8
+  - first:
+      213: 4626726151979011638
+    second: zeus_lightning_strike_9
+  - first:
+      213: 477151974601291767
+    second: zeus_lightning_strike_10
+  - first:
+      213: -7673880960516729804
+    second: zeus_lightning_strike_11
+  - first:
+      213: -6487287001068751959
+    second: zeus_lightning_strike_12
+  - first:
+      213: -4796093870637612192
+    second: zeus_lightning_strike_13
+  - first:
+      213: -1323951142854723835
+    second: zeus_lightning_strike_14
+  - first:
+      213: -4869764559954615882
+    second: zeus_lightning_strike_15
+  - first:
+      213: -4573639493638576254
+    second: zeus_lightning_strike_16
+  - first:
+      213: 8536819148197488066
+    second: zeus_lightning_strike_17
+  - first:
+      213: -3292797170903371687
+    second: zeus_lightning_strike_18
+  - first:
+      213: 5647047174123612478
+    second: zeus_lightning_strike_19
+  - first:
+      213: 867537503894658593
+    second: zeus_lightning_strike_20
+  - first:
+      213: -8003570559417624699
+    second: zeus_lightning_strike_21
+  - first:
+      213: 6476208333147446526
+    second: zeus_lightning_strike_22
+  - first:
+      213: 7122041662107749432
+    second: zeus_lightning_strike_23
+  - first:
+      213: 7687231117862657368
+    second: zeus_lightning_strike_24
+  - first:
+      213: -3980903299791169230
+    second: zeus_lightning_strike_25
+  - first:
+      213: 8863123592622996370
+    second: zeus_lightning_strike_26
+  - first:
+      213: -4454765515384480970
+    second: zeus_lightning_strike_27
+  - first:
+      213: -6485560150446055611
+    second: zeus_lightning_strike_28
+  - first:
+      213: 6203174629079488957
+    second: zeus_lightning_strike_29
+  - first:
+      213: 1105231269968243032
+    second: zeus_lightning_strike_30
+  - first:
+      213: -8567554788014882285
+    second: zeus_lightning_strike_31
+  - first:
+      213: -7618509983421930982
+    second: zeus_lightning_strike_32
+  - first:
+      213: -8221315279319741204
+    second: zeus_lightning_strike_33
+  - first:
+      213: -2801474636118694531
+    second: zeus_lightning_strike_34
+  - first:
+      213: -6926938020166738940
+    second: zeus_lightning_strike_35
+  - first:
+      213: -2343329348544046546
+    second: zeus_lightning_strike_36
+  - first:
+      213: -5321785349025985547
+    second: zeus_lightning_strike_37
+  - first:
+      213: 8764741395219202591
+    second: zeus_lightning_strike_38
+  - first:
+      213: 3380842525339220348
+    second: zeus_lightning_strike_39
+  - first:
+      213: -3423837945982291651
+    second: zeus_lightning_strike_40
+  - first:
+      213: 7414597448743725940
+    second: zeus_lightning_strike_41
+  - first:
+      213: 3421759457240364348
+    second: zeus_lightning_strike_42
+  - first:
+      213: -6963582960523090472
+    second: zeus_lightning_strike_43
+  - first:
+      213: -2261172904267963035
+    second: zeus_lightning_strike_44
+  - first:
+      213: 6263337728029882521
+    second: zeus_lightning_strike_45
+  - first:
+      213: 5677869363903181015
+    second: zeus_lightning_strike_46
+  - first:
+      213: 4858418980923011578
+    second: zeus_lightning_strike_47
+  - first:
+      213: -5384161907341447626
+    second: zeus_lightning_strike_48
+  - first:
+      213: 3644033183885979309
+    second: zeus_lightning_strike_49
+  - first:
+      213: 3288699906040752995
+    second: zeus_lightning_strike_50
+  - first:
+      213: 2981628870141684243
+    second: zeus_lightning_strike_51
+  - first:
+      213: 2396921588582420459
+    second: zeus_lightning_strike_52
+  - first:
+      213: -6527334477908288604
+    second: zeus_lightning_strike_53
+  - first:
+      213: -2393461469136613737
+    second: zeus_lightning_strike_54
+  - first:
+      213: -7435144728515424654
+    second: zeus_lightning_strike_55
+  - first:
+      213: 1814161815189086874
+    second: zeus_lightning_strike_56
+  - first:
+      213: 8083864098692216319
+    second: zeus_lightning_strike_57
+  - first:
+      213: -3678644701856707873
+    second: zeus_lightning_strike_58
+  - first:
+      213: -4314948037268637289
+    second: zeus_lightning_strike_59
+  - first:
+      213: -4049147912784832946
+    second: zeus_lightning_strike_60
+  - first:
+      213: 4760892139159992905
+    second: zeus_lightning_strike_61
+  - first:
+      213: 4508883256442215550
+    second: zeus_lightning_strike_62
+  - first:
+      213: -8075497610970999696
+    second: zeus_lightning_strike_63
+  - first:
+      213: -836903516482661298
+    second: zeus_lightning_strike_64
+  - first:
+      213: 827393232568155912
+    second: zeus_lightning_strike_65
+  - first:
+      213: 3652464836728504127
+    second: zeus_lightning_strike_66
+  - first:
+      213: 4177272426225655665
+    second: zeus_lightning_strike_67
+  - first:
+      213: 6445264317849463403
+    second: zeus_lightning_strike_68
+  - first:
+      213: -4028476749178807224
+    second: zeus_lightning_strike_69
+  - first:
+      213: 1763003880393556993
+    second: zeus_lightning_strike_70
+  - first:
+      213: 6793557257684547384
+    second: zeus_lightning_strike_71
+  - first:
+      213: 5071428698962162949
+    second: zeus_lightning_strike_72
+  - first:
+      213: 5245612646857895953
+    second: zeus_lightning_strike_73
+  - first:
+      213: 5908082956733447959
+    second: zeus_lightning_strike_74
+  - first:
+      213: 5014785696791319271
+    second: zeus_lightning_strike_75
+  - first:
+      213: -4228057229284400705
+    second: zeus_lightning_strike_76
+  - first:
+      213: -4030519857579836840
+    second: zeus_lightning_strike_77
+  - first:
+      213: -2372863741027800680
+    second: zeus_lightning_strike_78
+  - first:
+      213: 4573556256046916306
+    second: zeus_lightning_strike_79
+  - first:
+      213: 4727556983179615265
+    second: zeus_lightning_strike_80
+  - first:
+      213: -2086920444452427445
+    second: zeus_lightning_strike_81
+  - first:
+      213: 8662228001193950883
+    second: zeus_lightning_strike_82
+  - first:
+      213: -6389219088306185126
+    second: zeus_lightning_strike_83
+  - first:
+      213: 1316681149212889583
+    second: zeus_lightning_strike_84
+  - first:
+      213: -1099562694856346639
+    second: zeus_lightning_strike_85
+  - first:
+      213: 3462174900567262647
+    second: zeus_lightning_strike_86
+  - first:
+      213: 8661207759564535922
+    second: zeus_lightning_strike_87
+  - first:
+      213: -1198427378660074851
+    second: zeus_lightning_strike_88
+  - first:
+      213: -867541800255557219
+    second: zeus_lightning_strike_89
+  - first:
+      213: -3549136415037735997
+    second: zeus_lightning_strike_90
+  - first:
+      213: -800488838443271289
+    second: zeus_lightning_strike_91
+  - first:
+      213: -3795676097735814679
+    second: zeus_lightning_strike_92
+  - first:
+      213: -7949663471411578389
+    second: zeus_lightning_strike_93
+  - first:
+      213: -5641745048905375110
+    second: zeus_lightning_strike_94
+  - first:
+      213: -1245277866048648407
+    second: zeus_lightning_strike_95
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: zeus_lightning_strike_0
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 621
+        width: 228
+        height: 501
+      alignment: 9
+      pivot: {x: 0.47521457, y: 0.8189039}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5379abc4c2422a6f0800000000000000
+      internalID: -674937221467695307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zeus_lightning_strike_1
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 602
+        width: 208
+        height: 520
+      alignment: 9
+      pivot: {x: 0.49727514, y: 0.8312953}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afa01e90c378a4430800000000000000
+      internalID: 3767972730182372090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zeus_lightning_strike_2
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 593
+        width: 245
+        height: 529
+      alignment: 9
+      pivot: {x: 0.52190363, y: 0.4975571}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 829fef639b12ffea0800000000000000
+      internalID: -5836909512673527512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zeus_lightning_strike_3
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 574
+        width: 339
+        height: 548
+      alignment: 9
+      pivot: {x: 0.47016442, y: 0.510546}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67526fe75099d0c70800000000000000
+      internalID: 8938969084284249462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zeus_lightning_strike_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 22
+        width: 358
+        height: 541
+      alignment: 9
+      pivot: {x: 0.49823108, y: 0.5337453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f77cfd513f2f9600800000000000000
+      internalID: 477151974601291767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zeus_lightning_strike_5
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 50
+        width: 349
+        height: 512
+      alignment: 9
+      pivot: {x: 0.5063943, y: 0.50563776}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a3b949f7d688f5a0800000000000000
+      internalID: -6487287001068751959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zeus_lightning_strike_6
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 54
+        width: 302
+        height: 508
+      alignment: 9
+      pivot: {x: 0.49420065, y: 0.50000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85d588619f78eaa60800000000000000
+      internalID: 7687231117862657368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zeus_lightning_strike_7
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 53
+        width: 283
+        height: 508
+      alignment: 9
+      pivot: {x: 0.5206299, y: 0.5034477}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83770910550974e50800000000000000
+      internalID: 6793557257684547384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 36ee32c034f854e4b93b61d837f5554d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      zeus_lightning_strike_0: -674937221467695307
+      zeus_lightning_strike_1: 3767972730182372090
+      zeus_lightning_strike_11: -7673880960516729804
+      zeus_lightning_strike_13: -4796093870637612192
+      zeus_lightning_strike_14: -1323951142854723835
+      zeus_lightning_strike_15: -4869764559954615882
+      zeus_lightning_strike_16: -4573639493638576254
+      zeus_lightning_strike_17: 8536819148197488066
+      zeus_lightning_strike_18: -3292797170903371687
+      zeus_lightning_strike_19: 5647047174123612478
+      zeus_lightning_strike_2: -5836909512673527512
+      zeus_lightning_strike_20: 867537503894658593
+      zeus_lightning_strike_21: -8003570559417624699
+      zeus_lightning_strike_22: 6476208333147446526
+      zeus_lightning_strike_23: 7122041662107749432
+      zeus_lightning_strike_25: -3980903299791169230
+      zeus_lightning_strike_26: 8863123592622996370
+      zeus_lightning_strike_27: -4454765515384480970
+      zeus_lightning_strike_28: -6485560150446055611
+      zeus_lightning_strike_29: 6203174629079488957
+      zeus_lightning_strike_3: 8938969084284249462
+      zeus_lightning_strike_30: 1105231269968243032
+      zeus_lightning_strike_31: -8567554788014882285
+      zeus_lightning_strike_32: -7618509983421930982
+      zeus_lightning_strike_33: -8221315279319741204
+      zeus_lightning_strike_34: -2801474636118694531
+      zeus_lightning_strike_35: -6926938020166738940
+      zeus_lightning_strike_36: -2343329348544046546
+      zeus_lightning_strike_37: -5321785349025985547
+      zeus_lightning_strike_38: 8764741395219202591
+      zeus_lightning_strike_39: 3380842525339220348
+      zeus_lightning_strike_4: 477151974601291767
+      zeus_lightning_strike_40: -3423837945982291651
+      zeus_lightning_strike_41: 7414597448743725940
+      zeus_lightning_strike_42: 3421759457240364348
+      zeus_lightning_strike_43: -6963582960523090472
+      zeus_lightning_strike_44: -2261172904267963035
+      zeus_lightning_strike_45: 6263337728029882521
+      zeus_lightning_strike_46: 5677869363903181015
+      zeus_lightning_strike_47: 4858418980923011578
+      zeus_lightning_strike_48: -5384161907341447626
+      zeus_lightning_strike_49: 3644033183885979309
+      zeus_lightning_strike_5: -6487287001068751959
+      zeus_lightning_strike_50: 3288699906040752995
+      zeus_lightning_strike_51: 2981628870141684243
+      zeus_lightning_strike_52: 2396921588582420459
+      zeus_lightning_strike_53: -6527334477908288604
+      zeus_lightning_strike_54: -2393461469136613737
+      zeus_lightning_strike_55: -7435144728515424654
+      zeus_lightning_strike_56: 1814161815189086874
+      zeus_lightning_strike_57: 8083864098692216319
+      zeus_lightning_strike_58: -3678644701856707873
+      zeus_lightning_strike_59: -4314948037268637289
+      zeus_lightning_strike_6: 7687231117862657368
+      zeus_lightning_strike_60: -4049147912784832946
+      zeus_lightning_strike_61: 4760892139159992905
+      zeus_lightning_strike_62: 4508883256442215550
+      zeus_lightning_strike_63: -8075497610970999696
+      zeus_lightning_strike_64: -836903516482661298
+      zeus_lightning_strike_65: 827393232568155912
+      zeus_lightning_strike_66: 3652464836728504127
+      zeus_lightning_strike_67: 4177272426225655665
+      zeus_lightning_strike_68: 6445264317849463403
+      zeus_lightning_strike_69: -4028476749178807224
+      zeus_lightning_strike_7: 6793557257684547384
+      zeus_lightning_strike_70: 1763003880393556993
+      zeus_lightning_strike_72: 5071428698962162949
+      zeus_lightning_strike_73: 5245612646857895953
+      zeus_lightning_strike_74: 5908082956733447959
+      zeus_lightning_strike_75: 5014785696791319271
+      zeus_lightning_strike_76: -4228057229284400705
+      zeus_lightning_strike_77: -4030519857579836840
+      zeus_lightning_strike_78: -2372863741027800680
+      zeus_lightning_strike_79: 4573556256046916306
+      zeus_lightning_strike_80: 4727556983179615265
+      zeus_lightning_strike_81: -2086920444452427445
+      zeus_lightning_strike_82: 8662228001193950883
+      zeus_lightning_strike_83: -6389219088306185126
+      zeus_lightning_strike_84: 1316681149212889583
+      zeus_lightning_strike_85: -1099562694856346639
+      zeus_lightning_strike_86: 3462174900567262647
+      zeus_lightning_strike_87: 8661207759564535922
+      zeus_lightning_strike_88: -1198427378660074851
+      zeus_lightning_strike_89: -867541800255557219
+      zeus_lightning_strike_9: 4626726151979011638
+      zeus_lightning_strike_90: -3549136415037735997
+      zeus_lightning_strike_91: -800488838443271289
+      zeus_lightning_strike_92: -3795676097735814679
+      zeus_lightning_strike_93: -7949663471411578389
+      zeus_lightning_strike_94: -5641745048905375110
+      zeus_lightning_strike_95: -1245277866048648407
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -7,6 +7,10 @@ public class AthenaSkill : GodSkillBase
     [SerializeField] private float shieldDuration = 4f;
     [SerializeField] private float defenseBonus = 8f;
     [SerializeField] private bool canReflectProjectiles = true;
+    [SerializeField] private float reflectSpeedMultiplier = 1.1f;
+    [SerializeField] private float reflectDamageMultiplier = 1f;
+
+    private float reflectEndTime;
 
     protected override void Reset()
     {
@@ -35,6 +39,15 @@ public class AthenaSkill : GodSkillBase
             StartCoroutine(RestoreDefenseAfter(shieldDuration, prev));
         }
 
+        if (canReflectProjectiles)
+        {
+            reflectEndTime = Time.time + shieldDuration;
+        }
+
+        Debug.Log(
+            $"Athena skilli kullanildi. Shield={shieldAmount:0.##}, DefenseBonus={defenseBonus:0.##}, " +
+            $"Sure={shieldDuration:0.##}sn, Reflect={canReflectProjectiles}");
+
         return true;
     }
 
@@ -43,5 +56,39 @@ public class AthenaSkill : GodSkillBase
         yield return new WaitForSeconds(dur);
         if (ownerStats != null)
             ownerStats.Defense = prev;
+    }
+
+    public bool TryReflectProjectile(PlayerMechanics targetPlayer, EnemyProjectile projectile)
+    {
+        if (!CanReflectProjectileFor(targetPlayer) || projectile == null)
+        {
+            return false;
+        }
+
+        projectile.Reflect(targetPlayer, reflectSpeedMultiplier, reflectDamageMultiplier);
+        Debug.Log($"Athena reflect tetiklendi. Projectile={projectile.name}, SureSonu={reflectEndTime:0.##}");
+        return true;
+    }
+
+    public bool TryReflectProjectile(PlayerMechanics targetPlayer, ArkePrismProjectile projectile)
+    {
+        if (!CanReflectProjectileFor(targetPlayer) || projectile == null)
+        {
+            return false;
+        }
+
+        projectile.Reflect(targetPlayer, reflectSpeedMultiplier, reflectDamageMultiplier);
+        Debug.Log($"Athena reflect tetiklendi. Projectile={projectile.name}, SureSonu={reflectEndTime:0.##}");
+        return true;
+    }
+
+    private bool CanReflectProjectileFor(PlayerMechanics targetPlayer)
+    {
+        return
+            canReflectProjectiles &&
+            IsUnlocked &&
+            owner != null &&
+            owner == targetPlayer &&
+            Time.time < reflectEndTime;
     }
 }

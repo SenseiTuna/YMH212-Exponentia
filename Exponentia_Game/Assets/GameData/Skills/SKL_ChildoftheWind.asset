@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8331504df8bd8a94f98552ce3a51f9cb, type: 3}
+  m_Name: SKL_ChildoftheWind
+  m_EditorClassIdentifier: Assembly-CSharp::Exponentia.InventorySystem.SkillDefinition
+  itemId: skill.hermes.child_of_the_wind
+  displayName: Child of the Wind
+  description: Passive: gains stacking move speed while moving, resets shortly after stopping.
+  icon: {fileID: -2857313419194856784, guid: 188d0265561b13b4e9d468c5f254fd11, type: 3}
+  rarity: 2
+  category: 1
+  canStack: 0
+  maxStacks: 1
+  cooldown: 0
+  duration: 0.25
+  linkedGodSkillType: 25
+  skillEffectType: 6
+  visualEffectPrefab: {fileID: 8735909083612155990, guid: 33c5ce4bada749e4ac9c91f32bbf10b0, type: 3}
+  audioClip: {fileID: 0}
+  renderVfxBehindOwner: 1
+  runtimeVfxSortingOrder: 500
+  runtimeVfxSortingOrderOffsetFromOwner: -1
+  overrideRuntimeTuning: 1
+  runtimeDamage: 0
+  runtimeRadius: 0.1
+  runtimeRange: 0
+  runtimeForce: 0
+  runtimeTickInterval: 0.45
+  runtimeBleedDps: 0
+  runtimeBleedDuration: 0
+  runtimeMaxStacks: 5
+  runtimeMoveSpeedPerStack: 0.1
+  runtimeMaxMoveSpeed: 10
+  runtimeVfxLifetime: 0.35

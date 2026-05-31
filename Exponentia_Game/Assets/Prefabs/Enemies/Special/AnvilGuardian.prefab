@@ -251,7 +251,7 @@ Animator:
   m_GameObject: {fileID: 4778144227512895465}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a46d6305feed2fd4fa38ba3c7a408525, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -292,7 +292,7 @@ MonoBehaviour:
   placeholderColor: {r: 0.45, g: 0.45, b: 0.5, a: 1}
   placeholderScale: {x: 1.15, y: 1.15}
   sortingOrder: 5
-  enemyProjectilePrefab: {fileID: 7947579937356454847, guid: f6f9af9cce8214ac29b49154d133cce7, type: 3}
+  enemyProjectilePrefab: {fileID: 7947579937356454847, guid: d89a152c72a6275459bcd700433764f7, type: 3}
   yaziOffset: {x: 0, y: 1.1, z: 0}
   yaziFontBoyutu: 32
   yaziKarakterBoyutu: 0.22
@@ -405,5 +405,5 @@ SpriteRenderer:
   m_Size: {x: 0.04, y: 0.04}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0

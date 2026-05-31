@@ -20,6 +20,13 @@ namespace Exponentia.InventorySystem
         [Min(0f)] public float areaRadius = 0f;
         [Min(0f)] public float knockback = 0f;
 
+        [Header("Aim Indicator")]
+        public bool useIconAsAimIndicator = true;
+        public Sprite aimIndicatorSprite;
+        [Min(0f)] public float aimIndicatorDistance = 0.8f;
+        [Min(0.01f)] public float aimIndicatorScale = 0.55f;
+        public float aimIndicatorRotationOffsetDegrees = 0f;
+
         private void Reset()
         {
             category = ItemCategory.Weapon;
@@ -35,6 +42,8 @@ namespace Exponentia.InventorySystem
             fireRate = Mathf.Max(0.01f, fireRate);
             projectileLifetime = Mathf.Max(0.05f, projectileLifetime);
             damage = Mathf.Max(0f, damage);
+            aimIndicatorDistance = Mathf.Max(0f, aimIndicatorDistance);
+            aimIndicatorScale = Mathf.Max(0.01f, aimIndicatorScale);
         }
     }
 }

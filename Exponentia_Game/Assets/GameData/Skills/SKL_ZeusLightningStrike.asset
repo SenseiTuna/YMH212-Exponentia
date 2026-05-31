@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8331504df8bd8a94f98552ce3a51f9cb, type: 3}
+  m_Name: SKL_ZeusLightningStrike
+  m_EditorClassIdentifier: Assembly-CSharp::Exponentia.InventorySystem.SkillDefinition
+  itemId: skill.zeus.lightning_strike
+  displayName: Zeus Lightning Strike
+  description: High damage lightning strike that explodes at the target location.
+  icon: {fileID: -668224934380726118, guid: 7e149817ea37ba641abc7ac5c93f7280, type: 3}
+  rarity: 2
+  category: 1
+  canStack: 0
+  maxStacks: 1
+  cooldown: 0
+  duration: 0.85
+  linkedGodSkillType: 7
+  skillEffectType: 6
+  visualEffectPrefab: {fileID: 5170949183414414993, guid: 77ac922091d940b6a448df0a5b2f03ff, type: 3}
+  audioClip: {fileID: 0}
+  renderVfxBehindOwner: 1
+  runtimeVfxSortingOrder: 500
+  runtimeVfxSortingOrderOffsetFromOwner: -1

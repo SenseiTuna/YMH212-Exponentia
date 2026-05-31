@@ -1,0 +1,739 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2315561131788138783
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8260108142819837691}
+  - component: {fileID: 4554448928247814099}
+  - component: {fileID: 1109900136571033090}
+  m_Layer: 0
+  m_Name: CinemachineCamera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8260108142819837691
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2315561131788138783}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 0.8409, y: 0.8409, z: 0.8409}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1939470576001102316}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4554448928247814099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2315561131788138783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineCamera
+  Priority:
+    Enabled: 0
+    m_Value: 0
+  OutputChannel: 1
+  StandbyUpdate: 2
+  m_StreamingVersion: 20241001
+  m_LegacyPriority: 0
+  Target:
+    TrackingTarget: {fileID: 1939470576001102316}
+    LookAtTarget: {fileID: 0}
+    CustomLookAtTarget: 0
+  Lens:
+    FieldOfView: 34
+    OrthographicSize: 10
+    NearClipPlane: 0.3
+    FarClipPlane: 1000
+    Dutch: 0
+    ModeOverride: 0
+    PhysicalProperties:
+      GateFit: 2
+      SensorSize: {x: 21.946, y: 16.002}
+      LensShift: {x: 0, y: 0}
+      FocusDistance: 10
+      Iso: 200
+      ShutterSpeed: 0.005
+      Aperture: 16
+      BladeCount: 5
+      Curvature: {x: 2, y: 11}
+      BarrelClipping: 0.25
+      Anamorphism: 0
+  BlendHint: 0
+--- !u!114 &1109900136571033090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2315561131788138783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 886251e9a18ece04ea8e61686c173e1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachinePositionComposer
+  CameraDistance: 10
+  DeadZoneDepth: 0
+  Composition:
+    ScreenPosition: {x: 0, y: 0}
+    DeadZone:
+      Enabled: 0
+      Size: {x: 0.2, y: 0.2}
+    HardLimits:
+      Enabled: 0
+      Size: {x: 0.8, y: 0.8}
+      Offset: {x: 0, y: 0}
+  CenterOnActivate: 1
+  TargetOffset: {x: 0, y: 0, z: 0}
+  Damping: {x: 1, y: 1, z: 1}
+  Lookahead:
+    Enabled: 0
+    Time: 0
+    Smoothing: 0
+    IgnoreY: 0
+--- !u!1 &2913247188878387274
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1939470576001102316}
+  - component: {fileID: 5261264480110557049}
+  - component: {fileID: 2300376608390944534}
+  - component: {fileID: 4014719071822133577}
+  - component: {fileID: 8053774950672793964}
+  - component: {fileID: 1575948987179740482}
+  - component: {fileID: 5042919499841549475}
+  - component: {fileID: 7558214801132853810}
+  - component: {fileID: 3214891503290248852}
+  - component: {fileID: 6743210987654321012}
+  - component: {fileID: 2453811820116149079}
+  - component: {fileID: -3715116439228494856}
+  - component: {fileID: 3270152759459399765}
+  - component: {fileID: -5121730209057677618}
+  - component: {fileID: -8229712424665165490}
+  - component: {fileID: 8088782953340082468}
+  - component: {fileID: 4632266276934396422}
+  - component: {fileID: -6345279769038755036}
+  - component: {fileID: 6911561290995158347}
+  - component: {fileID: -8809343556899761825}
+  - component: {fileID: 6012384509123456789}
+  m_Layer: 0
+  m_Name: PlayerBaseOldguy
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1939470576001102316
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.39, y: 1.48, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8260108142819837691}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &5261264480110557049
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 10
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 2256123409727681256, guid: 5ab0cc8debddf84499092b5283886f0a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 12.54, y: 12.19}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
+--- !u!50 &2300376608390944534
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!61 &4014719071822133577
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 9.52, y: 12.19}
+    newSize: {x: 12.54, y: 12.19}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &8053774950672793964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 335eb9a2778ab784fa96f34d0f1854a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  moveSpeed: 5
+  gamepadMoveDeadzone: 0.3
+  useCentralInput: 1
+  inputReader: {fileID: 0}
+  keyboardBindings:
+    interact: 19
+    attack: 1
+    dodge: 51
+  xboxBindings:
+    interact: 2
+    attack: 0
+    dodge: 1
+  playStationBindings:
+    interact: 2
+    attack: 0
+    dodge: 1
+--- !u!114 &1575948987179740482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0d62293465f44324b0233efd63a250d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAttack
+  playerStats: {fileID: 0}
+  playerMechanics: {fileID: 0}
+  playerMovement: {fileID: 8053774950672793964}
+  inputReader: {fileID: 0}
+  statController: {fileID: 0}
+  playerInventory: {fileID: 0}
+  equippedSkill: {fileID: 0}
+  skillIconUI: {fileID: 0}
+  skillCooldownFillUI: {fileID: 0}
+  equippedWeaponDefinition: {fileID: 0}
+  defaultDamageMultiplier: 1
+  laserManaCost: 0
+  laserLifetime: 1.5
+  spawnOffset: 0.6
+  gamepadAimDeadzone: 0.2
+  prioritizeControllerRightStick: 1
+  useCentralInput: 1
+  fallbackToMoveDirection: 1
+--- !u!114 &5042919499841549475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1598c3eb153c4939be00c9abfd8ecc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMechanics
+  playerStats: {fileID: 0}
+  playerMovement: {fileID: 8053774950672793964}
+  attackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  attackRange: 1.5
+  attackRadius: 0.5
+  baseAttackMultiplier: 1
+  baseAttackManaCost: 0
+  damageCooldown: 0.2
+  invulnerabilityDuration: 0.75
+  flashInterval: 0.08
+  flashDuringIFrames: 1
+  damageFlashColor: {r: 1, g: 0, b: 0, a: 1}
+  damageFlashDuration: 0.12
+  combatFeedback: {fileID: 0}
+  autoAddFeedbackComponents: 1
+  healthTextOffset: {x: 0, y: 1, z: 0}
+  healthTextColor: {r: 0, g: 1, b: 0, a: 0}
+  healthTextFontSize: 24
+  healthTextCharacterSize: 0.22
+--- !u!114 &7558214801132853810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a4cd367d552f48d9befe8ad567afbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
+  maxHealth: 100
+  damage: 10
+  moveSpeed: 10
+  attackSpeed: 5
+  projectileSpeed: 14
+  defense: 0
+  lifeSteal: 0
+  shield: 0
+  mana: 1000
+  level: 1
+  xp: 0
+  nextLevelXp: 100
+  levelXpMultiplier: 1.35
+  levelUpMaxHealthBonus: 15
+  levelUpDamageBonus: 3
+  levelUpManaBonus: 10
+  levelUpDefenseBonus: 1
+  levelUpShieldBonus: 2
+  currentHealth: 0
+--- !u!114 &3214891503290248852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130329c766b77894a8e229b1557113c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Exponentia.Player.PlayerCharacterApplier
+--- !u!114 &6743210987654321012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b816593174e1f0d44a115ee6a92b9b46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAimIndicator
+  playerAttack: {fileID: 1575948987179740482}
+  playerMovement: {fileID: 8053774950672793964}
+  playerInventory: {fileID: 0}
+  playerSpriteRenderer: {fileID: 0}
+  indicatorColor: {r: 1, g: 1, b: 1, a: 1}
+  indicatorStartOffset: 0.2
+  indicatorLength: 1.35
+  indicatorWidth: 0.06
+  sortingOrder: 30
+  renderBehindPlayerSprite: 1
+  sortingOrderOffsetFromPlayer: -1
+  useWeaponSpriteIndicator: 1
+  weaponSpriteDistance: 1
+  weaponSpriteScale: 0.4
+  weaponSpriteRotationOffsetDegrees: -45
+  showWhenIdle: 1
+  useMoveDirectionFallback: 1
+--- !u!114 &2453811820116149079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9719d8662b7b304282ec43910244586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteractor
+  playerMovement: {fileID: 8053774950672793964}
+  interactableLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  interactRadius: 1.25
+  interactOffset: {x: 0, y: 0}
+  drawGizmos: 1
+--- !u!114 &-3715116439228494856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b246cbf3c60a0e4b8bd68a9578e9781, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Exponentia.InventorySystem.PlayerStatController
+  playerStats: {fileID: 7558214801132853810}
+  playerMechanics: {fileID: 5042919499841549475}
+  playerMovement: {fileID: 8053774950672793964}
+  preserveHealthPercentOnMaxHealthChange: 0
+  healToNewMaxWhenMaxHealthIncreases: 0
+  runtimeCooldownReduction: 0
+  runtimeProjectileCount: 1
+  runtimeCritChance: 0
+  runtimeArmor: 0
+  verboseLogs: 0
+  runtimeModifiers: []
+--- !u!114 &3270152759459399765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc3b20af039d2e4f8b7bca922906f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Exponentia.InventorySystem.PlayerInventory
+  statController: {fileID: -3715116439228494856}
+  playerMechanics: {fileID: 5042919499841549475}
+  playerAttack: {fileID: 1575948987179740482}
+  voidCorruptionManager: {fileID: 0}
+  activeWeapon: {fileID: 0}
+  equippedSkill: {fileID: 11400000, guid: 2ceb6d2d6e690409ea6c0dcf38b8df5a, type: 2}
+  activeItem: {fileID: 0}
+  weaponInventory: []
+  skillInventory: []
+  passiveInventory: []
+  rewardHistory: []
+  allowKeyboardActiveItemTest: 1
+  activeItemTestKey: 113
+  activeItemDamageMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  activeItemAreaRadius: 2.5
+  verboseLogs: 1
+--- !u!114 &-5121730209057677618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af8af9dacc4024fa9b0af4b2435a93de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AresSkill
+  skillName: Ares
+  skillDescription: Gecici ofansif guclendirme saglayan savas skill'i.
+  godSkillType: 4
+  skillIcon: {fileID: 0}
+  isUnlocked: 0
+  skillLevel: 1
+  maxSkillLevel: 5
+  manaCost: 24
+  cooldown: 10
+  berserkDuration: 4
+  bonusDamageMultiplier: 1.5
+  bonusAttackSpeedMultiplier: 1.35
+  bonusMoveSpeedMultiplier: 1.2
+  bleedDps: 6
+  bleedDuration: 4
+--- !u!114 &-8229712424665165490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95be78963494843f7a5549bbdbb3591f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ZeusSkill
+  skillName: Zeus Lightning Strike
+  skillDescription: Gokyuzunden cagrilan hizli bir yildirim vurusu.
+  godSkillType: 1
+  skillIcon: {fileID: -674937221467695307, guid: 9265c881aa19a444da3cf4eec1e60e0b, type: 3}
+  isUnlocked: 1
+  skillLevel: 1
+  maxSkillLevel: 5
+  manaCost: 0
+  cooldown: 0
+  lightningDamage: 30
+  chainRadius: 3
+  maxChainCount: 3
+  lightningStrikeController: {fileID: 9100000, guid: 42d478f30d6256e4b9b553898f101ab2, type: 2}
+  lightningStrikeFirstFrame: {fileID: -674937221467695307, guid: 9265c881aa19a444da3cf4eec1e60e0b, type: 3}
+  animationLifetime: 0.85
+  animationOffset: {x: 0, y: 2.6}
+  animationScale: 1.6
+  animationSortingOrder: 500
+  killAttackSpeedPerStack: 0.15
+  maxKillStacks: 5
+  killStackDuration: 4
+  wrathCooldown: 10
+--- !u!114 &8088782953340082468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af0f2be95445544c1b4d90845527812a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AthenaSkill
+  skillName: Athena
+  skillDescription: Kalkan ve savunma odakli koruyucu skill.
+  godSkillType: 6
+  skillIcon: {fileID: 0}
+  isUnlocked: 0
+  skillLevel: 1
+  maxSkillLevel: 5
+  manaCost: 0
+  cooldown: 0
+  shieldAmount: 35
+  shieldDuration: 4
+  defenseBonus: 8
+  canReflectProjectiles: 1
+  reflectSpeedMultiplier: 1.1
+  reflectDamageMultiplier: 1
+--- !u!114 &4632266276934396422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60fffbf2413294b46bb35d59ba9f53f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HadesSkill
+  skillName: Hades
+  skillDescription: Can cekme ve ruh temali aktif skill.
+  godSkillType: 3
+  skillIcon: {fileID: 0}
+  isUnlocked: 0
+  skillLevel: 1
+  maxSkillLevel: 5
+  manaCost: 32
+  cooldown: 8
+  soulDamage: 26
+  executeThreshold: 0.15
+  fearDuration: 1.2
+  lifeStealRatio: 0.25
+  dotDps: 4
+  dotDuration: 5
+  soulsPerKill: 1
+  soulToShield: 8
+--- !u!114 &-6345279769038755036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 311878b4dfa5743d6a4d15ca3d47b112, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HermesSkill
+  skillName: Hermes
+  skillDescription: Hiz, atiklik ve pozisyon alma odakli aktif skill.
+  godSkillType: 5
+  skillIcon: {fileID: 0}
+  isUnlocked: 0
+  skillLevel: 1
+  maxSkillLevel: 5
+  manaCost: 0
+  cooldown: 0
+  dashDistance: 4
+  dashDuration: 0.2
+  hasteDuration: 3
+  cooldownReductionRatio: 0.2
+--- !u!114 &6911561290995158347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e04a20ae855d84385882fda2197fd629, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PoseidonSkill
+  skillName: Poseidon
+  skillDescription: Dalga ve itme temelli alan baskisi skill'i.
+  godSkillType: 2
+  skillIcon: {fileID: 0}
+  isUnlocked: 0
+  skillLevel: 1
+  maxSkillLevel: 5
+  manaCost: 0
+  cooldown: 0
+  waveDamage: 22
+  waveRange: 5
+  knockbackForce: 4
+  slowDuration: 1.5
+  passiveKnockbackInterval: 10
+  passiveSlowAmount: 0.25
+--- !u!95 &-8809343556899761825
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3d914b07cfadf2b49abe89da85f5cf16, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6012384509123456789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913247188878387274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b0bab125a204b41ae22660af024e677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimationController
+  animator: {fileID: -8809343556899761825}
+  playerMovement: {fileID: 8053774950672793964}
+  idleState: idle
+  movePrefix: move_
+  attackPrefix: attack_
+  fallbackAttackState: attack
+  crossFadeDuration: 0.03
+  attackLockDuration: 0.22

@@ -1,0 +1,374 @@
+fileFormatVersion: 2
+guid: 22b7b1359b8944741a2ac2e2f014ed1d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3196159405781442664
+    second: anvil_guardian_death_0
+  - first:
+      213: 7672718497491352820
+    second: anvil_guardian_death_1
+  - first:
+      213: 1243737823650901924
+    second: anvil_guardian_death_2
+  - first:
+      213: -6630663669771072442
+    second: anvil_guardian_death_3
+  - first:
+      213: -6917914808882922738
+    second: anvil_guardian_death_4
+  - first:
+      213: 1875661357374089975
+    second: anvil_guardian_death_5
+  - first:
+      213: 4396813093243455741
+    second: anvil_guardian_death_6
+  - first:
+      213: 7163019022961252582
+    second: anvil_guardian_death_7
+  - first:
+      213: -169428729759226325
+    second: anvil_guardian_death_8
+  - first:
+      213: 2198432534176861741
+    second: anvil_guardian_death_9
+  - first:
+      213: 8768071836199751333
+    second: anvil_guardian_death_10
+  - first:
+      213: -3516074005251767795
+    second: anvil_guardian_death_11
+  - first:
+      213: -6463281477305626496
+    second: anvil_guardian_death_12
+  - first:
+      213: 1899114988172891302
+    second: anvil_guardian_death_13
+  - first:
+      213: 1579363418117351349
+    second: anvil_guardian_death_14
+  - first:
+      213: -5969841907355445295
+    second: anvil_guardian_death_15
+  - first:
+      213: 2127214248070999489
+    second: anvil_guardian_death_16
+  - first:
+      213: 8937015054867256744
+    second: anvil_guardian_death_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: anvil_guardian_death_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 451
+        width: 422
+        height: 436
+      alignment: 9
+      pivot: {x: 0.484769, y: 0.31574214}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89f9fd454f5f4a3d0800000000000000
+      internalID: -3196159405781442664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anvil_guardian_death_2
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 451
+        width: 387
+        height: 362
+      alignment: 9
+      pivot: {x: 0.4301351, y: 0.33835784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fc7a8852d8fa7a60800000000000000
+      internalID: 7672718497491352820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anvil_guardian_death_7
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 63
+        width: 472
+        height: 280
+      alignment: 9
+      pivot: {x: 0.43961656, y: 0.3124823}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4afed6406f4a24110800000000000000
+      internalID: 1243737823650901924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anvil_guardian_death_3
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 449
+        width: 488
+        height: 438
+      alignment: 9
+      pivot: {x: 0.4414045, y: 0.17564999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0b7e1e4221aeff90800000000000000
+      internalID: -6917914808882922738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anvil_guardian_death_1
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 449
+        width: 379
+        height: 350
+      alignment: 9
+      pivot: {x: 0.43796074, y: 0.34889632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7faa53d1110b70a10800000000000000
+      internalID: 1875661357374089975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anvil_guardian_death_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 447
+        height: 354
+      alignment: 9
+      pivot: {x: 0.48992145, y: 0.38698938}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d02cbf83255643fc0800000000000000
+      internalID: -3516074005251767795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anvil_guardian_death_5
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 66
+        width: 418
+        height: 308
+      alignment: 9
+      pivot: {x: 0.4474366, y: 0.2987264}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a45aa115030b5a10800000000000000
+      internalID: 1899114988172891302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anvil_guardian_death_6
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 62
+        width: 433
+        height: 281
+      alignment: 9
+      pivot: {x: 0.40292308, y: 0.31833842}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d796d23a6cd62da0800000000000000
+      internalID: -5969841907355445295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1304b9bde822c8248b1445d6e74e7496
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      anvil_guardian_death_0: -3196159405781442664
+      anvil_guardian_death_1: 1875661357374089975
+      anvil_guardian_death_10: 8768071836199751333
+      anvil_guardian_death_14: 1579363418117351349
+      anvil_guardian_death_16: 2127214248070999489
+      anvil_guardian_death_17: 8937015054867256744
+      anvil_guardian_death_2: 7672718497491352820
+      anvil_guardian_death_3: -6917914808882922738
+      anvil_guardian_death_4: -3516074005251767795
+      anvil_guardian_death_5: 1899114988172891302
+      anvil_guardian_death_6: -5969841907355445295
+      anvil_guardian_death_7: 1243737823650901924
+      anvil_guardian_death_8: -169428729759226325
+      anvil_guardian_death_9: 2198432534176861741
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

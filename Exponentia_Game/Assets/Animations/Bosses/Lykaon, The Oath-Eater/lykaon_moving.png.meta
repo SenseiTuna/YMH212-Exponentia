@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: befa0504f0d2a624ba7d3a3babc34022
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7962754928638304068
+    second: lykaon_moving_0
+  - first:
+      213: -7101117370778563577
+    second: lykaon_moving_1
+  - first:
+      213: 8637401732755418926
+    second: lykaon_moving_2
+  - first:
+      213: 8213599802653754247
+    second: lykaon_moving_3
+  - first:
+      213: 3598195871879155875
+    second: lykaon_moving_4
+  - first:
+      213: 3275381793595193140
+    second: lykaon_moving_5
+  - first:
+      213: -7472922425716768191
+    second: lykaon_moving_6
+  - first:
+      213: -168110110211879074
+    second: lykaon_moving_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lykaon_moving_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 474
+        width: 411
+        height: 413
+      alignment: 9
+      pivot: {x: 0.52543885, y: 0.39939648}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44f1afa4b63618e60800000000000000
+      internalID: 7962754928638304068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_moving_1
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 479
+        width: 372
+        height: 334
+      alignment: 9
+      pivot: {x: 0.37765732, y: 0.49830216}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70c4366ef53c37d90800000000000000
+      internalID: -7101117370778563577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_moving_2
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 473
+        width: 370
+        height: 341
+      alignment: 9
+      pivot: {x: 0.41747025, y: 0.5173918}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2fea3fec173ed770800000000000000
+      internalID: 8637401732755418926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_moving_3
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 471
+        width: 425
+        height: 416
+      alignment: 9
+      pivot: {x: 0.3706385, y: 0.4193583}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7834564c0819cf170800000000000000
+      internalID: 8213599802653754247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_moving_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 376
+        height: 396
+      alignment: 9
+      pivot: {x: 0.48270643, y: 0.5693589}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a052a7d41c5fe130800000000000000
+      internalID: 3598195871879155875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_moving_5
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 44
+        width: 346
+        height: 345
+      alignment: 9
+      pivot: {x: 0.40874925, y: 0.5117774}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 437f507336e747d20800000000000000
+      internalID: 3275381793595193140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_moving_6
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 63
+        width: 375
+        height: 322
+      alignment: 9
+      pivot: {x: 0.3879759, y: 0.48906073}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1420a15a5a8da4890800000000000000
+      internalID: -7472922425716768191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lykaon_moving_7
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 0
+        width: 400
+        height: 383
+      alignment: 9
+      pivot: {x: 0.36390105, y: 0.5362696}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5f4ba5deb0caadf0800000000000000
+      internalID: -168110110211879074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 97920b0fd97424c48b26bd1f50fb18c9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      lykaon_moving_0: 7962754928638304068
+      lykaon_moving_1: -7101117370778563577
+      lykaon_moving_2: 8637401732755418926
+      lykaon_moving_3: 8213599802653754247
+      lykaon_moving_4: 3598195871879155875
+      lykaon_moving_5: 3275381793595193140
+      lykaon_moving_6: -7472922425716768191
+      lykaon_moving_7: -168110110211879074
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

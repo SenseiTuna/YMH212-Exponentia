@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: 6d9bb299cd6d7e346b14170f041493b8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8715758465152892672
+    second: anvil_guardian_hammer_throw_0
+  - first:
+      213: 7589511463162387450
+    second: anvil_guardian_hammer_throw_1
+  - first:
+      213: 2809679890977388403
+    second: anvil_guardian_hammer_throw_2
+  - first:
+      213: 7376503351999031239
+    second: anvil_guardian_hammer_throw_3
+  - first:
+      213: 5829222008470261098
+    second: anvil_guardian_hammer_throw_4
+  - first:
+      213: -5995755919360130257
+    second: anvil_guardian_hammer_throw_5
+  - first:
+      213: -5048339135237920444
+    second: anvil_guardian_hammer_throw_6
+  - first:
+      213: -8890096322374812482
+    second: anvil_guardian_hammer_throw_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: anvil_guardian_hammer_throw_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 458
+        width: 430
+        height: 429
+      alignment: 9
+      pivot: {x: 0.48829108, y: 0.3053095}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00fba8f552894f870800000000000000
+      internalID: 8715758465152892672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anvil_guardian_hammer_throw_1
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 462
+        width: 370
+        height: 360
+      alignment: 9
+      pivot: {x: 0.40541482, y: 0.3857288}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afb9c8cf67c535960800000000000000
+      internalID: 7589511463162387450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anvil_guardian_hammer_throw_2
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 458
+        width: 382
+        height: 398
+      alignment: 9
+      pivot: {x: 0.41225255, y: 0.32273367}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 377f34a79fcfdf620800000000000000
+      internalID: 2809679890977388403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anvil_guardian_hammer_throw_3
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 458
+        width: 430
+        height: 429
+      alignment: 9
+      pivot: {x: 0.32095265, y: 0.3055013}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c7616c57ba9e5660800000000000000
+      internalID: 7376503351999031239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anvil_guardian_hammer_throw_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 418
+        height: 391
+      alignment: 9
+      pivot: {x: 0.521577, y: 0.524301}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6d42cb388e85e050800000000000000
+      internalID: 5829222008470261098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anvil_guardian_hammer_throw_5
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 71
+        width: 392
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5306778, y: 0.40320382}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f23089a12cbcacca0800000000000000
+      internalID: -5995755919360130257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anvil_guardian_hammer_throw_6
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 68
+        width: 318
+        height: 330
+      alignment: 9
+      pivot: {x: 0.38675714, y: 0.3758544}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 449e072cd42b0f9b0800000000000000
+      internalID: -5048339135237920444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anvil_guardian_hammer_throw_7
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 68
+        width: 327
+        height: 325
+      alignment: 9
+      pivot: {x: 0.35176072, y: 0.37837675}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebcb7dd1f7800a480800000000000000
+      internalID: -8890096322374812482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4f5b5944ae8678446bead3ab42a46e41
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      anvil_guardian_hammer_throw_0: 8715758465152892672
+      anvil_guardian_hammer_throw_1: 7589511463162387450
+      anvil_guardian_hammer_throw_2: 2809679890977388403
+      anvil_guardian_hammer_throw_3: 7376503351999031239
+      anvil_guardian_hammer_throw_4: 5829222008470261098
+      anvil_guardian_hammer_throw_5: -5995755919360130257
+      anvil_guardian_hammer_throw_6: -5048339135237920444
+      anvil_guardian_hammer_throw_7: -8890096322374812482
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

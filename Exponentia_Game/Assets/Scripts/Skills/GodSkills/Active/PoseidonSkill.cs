@@ -35,6 +35,7 @@ public class PoseidonSkill : GodSkillBase
 
         Vector2 origin = (Vector2)owner.transform.position;
         Collider2D[] hits = Physics2D.OverlapCircleAll(origin + dir.normalized * (waveRange * 0.5f), waveRange);
+        int affectedTargets = 0;
         for (int i = 0; i < hits.Length; i++)
         {
             GameObject go = hits[i].gameObject;
@@ -42,6 +43,7 @@ public class PoseidonSkill : GodSkillBase
 
             // apply damage
             owner.DealDamage(go, SafeMultiplier(waveDamage));
+            affectedTargets++;
 
             // knockback via rigidbody if available
             Rigidbody2D rb = go.GetComponent<Rigidbody2D>();
@@ -53,6 +55,9 @@ public class PoseidonSkill : GodSkillBase
         }
 
         lastPassiveKnockback = Time.time;
+        Debug.Log(
+            $"Poseidon skilli kullanildi. Origin={origin}, Yon={dir.normalized}, Range={waveRange:0.##}, " +
+            $"Damage={waveDamage:0.##}, HedefSayisi={affectedTargets}");
         return true;
     }
 
@@ -78,6 +83,11 @@ public class PoseidonSkill : GodSkillBase
 
     private void HandleDealtDamage(GameObject target, float applied)
     {
+        if (!IsUnlocked)
+        {
+            return;
+        }
+
         // apply small slow effect by attaching a DoT-like placeholder that doesn't damage but marks the hit
         // since enemies don't expose movement setter, we only apply a brief DoT as placeholder for wet effect
         IDamageable dmg = target.GetComponentInParent<IDamageable>();
@@ -89,6 +99,7 @@ public class PoseidonSkill : GodSkillBase
             // reuse DoT as non-lethal slow indicator by using tiny DPS
             DoTDebuff newDot = target.AddComponent<DoTDebuff>();
             newDot.Initialize(dmg, 0.1f, slowDuration);
+            Debug.Log($"Poseidon pasifi slow uyguladi. Hedef={target.name}, Sure={slowDuration:0.##}sn");
         }
     }
 }

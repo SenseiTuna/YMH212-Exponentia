@@ -14,7 +14,7 @@ public class SpartanEnemy : EnemyMechanics
 
     private float nextShootTime;
 
-    private void Reset()
+    protected override void Reset()
     {
         ApplyDefaultSetup(
             "Spartan",

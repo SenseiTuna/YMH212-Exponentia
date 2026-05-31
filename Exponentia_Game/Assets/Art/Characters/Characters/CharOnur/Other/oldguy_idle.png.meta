@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: c63dbf7f9bf8c8e468bf1f2a261a3423
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7783649810093364802
+    second: oldguy_idle_0
+  - first:
+      213: 4423362603828353114
+    second: oldguy_idle_1
+  - first:
+      213: 2115040695245424220
+    second: oldguy_idle_2
+  - first:
+      213: -5247614139823284135
+    second: oldguy_idle_3
+  - first:
+      213: 9064650859733670186
+    second: oldguy_idle_4
+  - first:
+      213: -1766049125117848855
+    second: oldguy_idle_5
+  - first:
+      213: -4026130972471766523
+    second: oldguy_idle_6
+  - first:
+      213: -6444770066803399982
+    second: oldguy_idle_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: oldguy_idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 470
+        width: 363
+        height: 417
+      alignment: 9
+      pivot: {x: 0.62955135, y: 0.6177902}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb9295dbcbbeaf390800000000000000
+      internalID: -7783649810093364802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldguy_idle_1
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 470
+        width: 278
+        height: 404
+      alignment: 9
+      pivot: {x: 0.51629484, y: 0.6372779}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a589fe92ad0f26d30800000000000000
+      internalID: 4423362603828353114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldguy_idle_2
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 470
+        width: 319
+        height: 405
+      alignment: 9
+      pivot: {x: 0.59435153, y: 0.6379018}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c56499d6e422a5d10800000000000000
+      internalID: 2115040695245424220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldguy_idle_3
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 470
+        width: 441
+        height: 417
+      alignment: 9
+      pivot: {x: 0.3957273, y: 0.61721426}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 950248d2ebabc27b0800000000000000
+      internalID: -5247614139823284135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldguy_idle_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 363
+        height: 435
+      alignment: 9
+      pivot: {x: 0.64078057, y: 0.6698647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a295d5b2eeb1ccd70800000000000000
+      internalID: 9064650859733670186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldguy_idle_5
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 31
+        width: 310
+        height: 406
+      alignment: 9
+      pivot: {x: 0.5857491, y: 0.6415232}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e216797dabbd77e0800000000000000
+      internalID: -1766049125117848855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldguy_idle_6
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 31
+        width: 318
+        height: 406
+      alignment: 9
+      pivot: {x: 0.5865985, y: 0.64164126}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5025f9e363f4028c0800000000000000
+      internalID: -4026130972471766523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldguy_idle_7
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 31
+        width: 315
+        height: 406
+      alignment: 9
+      pivot: {x: 0.59543765, y: 0.6414737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d2ec1525c39f86a0800000000000000
+      internalID: -6444770066803399982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4ab1e2f03ae4f88409766191e4e38c67
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      oldguy_idle_0: -7783649810093364802
+      oldguy_idle_1: 4423362603828353114
+      oldguy_idle_2: 2115040695245424220
+      oldguy_idle_3: -5247614139823284135
+      oldguy_idle_4: 9064650859733670186
+      oldguy_idle_5: -1766049125117848855
+      oldguy_idle_6: -4026130972471766523
+      oldguy_idle_7: -6444770066803399982
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

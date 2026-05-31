@@ -17,7 +17,7 @@ public class CoralSpitterEnemy : EnemyMechanics
 
     private float nextShootTime;
 
-    private void Reset()
+    protected override void Reset()
     {
         ApplyDefaultSetup(
             "Coral Spitter",

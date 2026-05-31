@@ -1,0 +1,691 @@
+fileFormatVersion: 2
+guid: 80e7457c6d1ba13438112c1904ac436c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9129908927556650073
+    second: cosmic_wandere_death_0
+  - first:
+      213: 3269417321819894175
+    second: cosmic_wandere_death_1
+  - first:
+      213: 1894353810867214977
+    second: cosmic_wandere_death_2
+  - first:
+      213: -8606261656805269037
+    second: cosmic_wandere_death_3
+  - first:
+      213: -5339426925938984034
+    second: cosmic_wandere_death_4
+  - first:
+      213: 3054960611654109056
+    second: cosmic_wandere_death_5
+  - first:
+      213: 7354795766756811301
+    second: cosmic_wandere_death_6
+  - first:
+      213: -3957604800331760936
+    second: cosmic_wandere_death_7
+  - first:
+      213: -7739566349120225341
+    second: cosmic_wandere_death_8
+  - first:
+      213: 1555470207741391809
+    second: cosmic_wandere_death_9
+  - first:
+      213: -3893655647765198608
+    second: cosmic_wandere_death_10
+  - first:
+      213: -3340140696654853395
+    second: cosmic_wandere_death_11
+  - first:
+      213: 681750792132384226
+    second: cosmic_wandere_death_12
+  - first:
+      213: -7527859657771717831
+    second: cosmic_wandere_death_13
+  - first:
+      213: 6388796066852183809
+    second: cosmic_wandere_death_14
+  - first:
+      213: -8432103745901484780
+    second: cosmic_wandere_death_15
+  - first:
+      213: 8426907186059411934
+    second: cosmic_wandere_death_16
+  - first:
+      213: -3184548317536154498
+    second: cosmic_wandere_death_17
+  - first:
+      213: 8850950105620070018
+    second: cosmic_wandere_death_18
+  - first:
+      213: 4636176587183977894
+    second: cosmic_wandere_death_19
+  - first:
+      213: -4997840918207307408
+    second: cosmic_wandere_death_20
+  - first:
+      213: -8833911716050027527
+    second: cosmic_wandere_death_21
+  - first:
+      213: 3181799532749106624
+    second: cosmic_wandere_death_22
+  - first:
+      213: -8578547217655655838
+    second: cosmic_wandere_death_23
+  - first:
+      213: 85630436163495338
+    second: cosmic_wandere_death_24
+  - first:
+      213: -3703993806914409241
+    second: cosmic_wandere_death_25
+  - first:
+      213: 1281534180659354496
+    second: cosmic_wandere_death_26
+  - first:
+      213: -6075464664928597042
+    second: cosmic_wandere_death_27
+  - first:
+      213: -8983323206962048817
+    second: cosmic_wandere_death_28
+  - first:
+      213: -8898532738467051086
+    second: cosmic_wandere_death_29
+  - first:
+      213: 1067264607325327564
+    second: cosmic_wandere_death_30
+  - first:
+      213: 9014709973606802143
+    second: cosmic_wandere_death_31
+  - first:
+      213: -3856331687204139445
+    second: cosmic_wandere_death_32
+  - first:
+      213: 7142706089525278254
+    second: cosmic_wandere_death_33
+  - first:
+      213: 8987897803713481583
+    second: cosmic_wandere_death_34
+  - first:
+      213: -6041052489397727514
+    second: cosmic_wandere_death_35
+  - first:
+      213: -713653903517699761
+    second: cosmic_wandere_death_36
+  - first:
+      213: -6471235650395142548
+    second: cosmic_wandere_death_37
+  - first:
+      213: 6065025990534013378
+    second: cosmic_wandere_death_38
+  - first:
+      213: 8898680960778061875
+    second: cosmic_wandere_death_39
+  - first:
+      213: -8163783580900260765
+    second: cosmic_wandere_death_40
+  - first:
+      213: 6529267468247509191
+    second: cosmic_wandere_death_41
+  - first:
+      213: -8533502406476938087
+    second: cosmic_wandere_death_42
+  - first:
+      213: -6759420445071633600
+    second: cosmic_wandere_death_43
+  - first:
+      213: -1370800595655833176
+    second: cosmic_wandere_death_44
+  - first:
+      213: -7320223102884740511
+    second: cosmic_wandere_death_45
+  - first:
+      213: -7773425421472403741
+    second: cosmic_wandere_death_46
+  - first:
+      213: -2776616368399963719
+    second: cosmic_wandere_death_47
+  - first:
+      213: 5797071727003067001
+    second: cosmic_wandere_death_48
+  - first:
+      213: 3865022213793447455
+    second: cosmic_wandere_death_49
+  - first:
+      213: 5603240115495220444
+    second: cosmic_wandere_death_50
+  - first:
+      213: -5568573597598318102
+    second: cosmic_wandere_death_51
+  - first:
+      213: 7539266679582435523
+    second: cosmic_wandere_death_52
+  - first:
+      213: 4811957958668433458
+    second: cosmic_wandere_death_53
+  - first:
+      213: -4680389991364692039
+    second: cosmic_wandere_death_54
+  - first:
+      213: 5237876140440123034
+    second: cosmic_wandere_death_55
+  - first:
+      213: 1883008175860554898
+    second: cosmic_wandere_death_56
+  - first:
+      213: -7628979486668891757
+    second: cosmic_wandere_death_57
+  - first:
+      213: -3426939757215860526
+    second: cosmic_wandere_death_58
+  - first:
+      213: -8546038723491378455
+    second: cosmic_wandere_death_59
+  - first:
+      213: -3417997390244710992
+    second: cosmic_wandere_death_60
+  - first:
+      213: -4326497946609323375
+    second: cosmic_wandere_death_61
+  - first:
+      213: -2382824399849176675
+    second: cosmic_wandere_death_62
+  - first:
+      213: -4130118704380246782
+    second: cosmic_wandere_death_63
+  - first:
+      213: -1273310802227901948
+    second: cosmic_wandere_death_64
+  - first:
+      213: 8354226940375006728
+    second: cosmic_wandere_death_65
+  - first:
+      213: -9021586255218991639
+    second: cosmic_wandere_death_66
+  - first:
+      213: 5759530288654553568
+    second: cosmic_wandere_death_67
+  - first:
+      213: 6095633941964750488
+    second: cosmic_wandere_death_68
+  - first:
+      213: -2136666978091521624
+    second: cosmic_wandere_death_69
+  - first:
+      213: 3490749293966146977
+    second: cosmic_wandere_death_70
+  - first:
+      213: -7044816284419066855
+    second: cosmic_wandere_death_71
+  - first:
+      213: 1878285145905456042
+    second: cosmic_wandere_death_72
+  - first:
+      213: -8713546703636260404
+    second: cosmic_wandere_death_73
+  - first:
+      213: 6130200599753242269
+    second: cosmic_wandere_death_74
+  - first:
+      213: -4634308295957515751
+    second: cosmic_wandere_death_75
+  - first:
+      213: -8843423933824741416
+    second: cosmic_wandere_death_76
+  - first:
+      213: 3716560009580140676
+    second: cosmic_wandere_death_77
+  - first:
+      213: 5777489986957405701
+    second: cosmic_wandere_death_78
+  - first:
+      213: 1099403408286984980
+    second: cosmic_wandere_death_79
+  - first:
+      213: 4776366157330348004
+    second: cosmic_wandere_death_80
+  - first:
+      213: -1350356470364470254
+    second: cosmic_wandere_death_81
+  - first:
+      213: 1540890990732089190
+    second: cosmic_wandere_death_82
+  - first:
+      213: 8964348768992331233
+    second: cosmic_wandere_death_83
+  - first:
+      213: -2257147483709534065
+    second: cosmic_wandere_death_84
+  - first:
+      213: 4139711163078547498
+    second: cosmic_wandere_death_85
+  - first:
+      213: -4181520840475426062
+    second: cosmic_wandere_death_86
+  - first:
+      213: 8092136214538847377
+    second: cosmic_wandere_death_87
+  - first:
+      213: -854219670865170584
+    second: cosmic_wandere_death_88
+  - first:
+      213: -8578544941834915631
+    second: cosmic_wandere_death_89
+  - first:
+      213: -5226865752418498277
+    second: cosmic_wandere_death_90
+  - first:
+      213: -3751163563916596107
+    second: cosmic_wandere_death_91
+  - first:
+      213: 5276246848604704221
+    second: cosmic_wandere_death_92
+  - first:
+      213: 1854881406573909130
+    second: cosmic_wandere_death_93
+  - first:
+      213: -8010227723304565235
+    second: cosmic_wandere_death_94
+  - first:
+      213: 4148965046158900706
+    second: cosmic_wandere_death_95
+  - first:
+      213: 6800610659265150263
+    second: cosmic_wandere_death_96
+  - first:
+      213: 2406487341378513089
+    second: cosmic_wandere_death_97
+  - first:
+      213: -4856527104066294477
+    second: cosmic_wandere_death_98
+  - first:
+      213: 4459427079386257843
+    second: cosmic_wandere_death_99
+  - first:
+      213: -8069437232906693255
+    second: cosmic_wandere_death_100
+  - first:
+      213: -2527231842264537943
+    second: cosmic_wandere_death_101
+  - first:
+      213: 440857849430996477
+    second: cosmic_wandere_death_102
+  - first:
+      213: -7630687829507546888
+    second: cosmic_wandere_death_103
+  - first:
+      213: -3228051817701141718
+    second: cosmic_wandere_death_104
+  - first:
+      213: -2589759038544345858
+    second: cosmic_wandere_death_105
+  - first:
+      213: 7531134740218268006
+    second: cosmic_wandere_death_106
+  - first:
+      213: 4070956899098461757
+    second: cosmic_wandere_death_107
+  - first:
+      213: 6992098432990718831
+    second: cosmic_wandere_death_108
+  - first:
+      213: -3292781598954931305
+    second: cosmic_wandere_death_109
+  - first:
+      213: -4018318362930582635
+    second: cosmic_wandere_death_110
+  - first:
+      213: -389570136594039023
+    second: cosmic_wandere_death_111
+  - first:
+      213: -5123589619689831819
+    second: cosmic_wandere_death_112
+  - first:
+      213: 2639974315266901926
+    second: cosmic_wandere_death_113
+  - first:
+      213: 6241527743196814060
+    second: cosmic_wandere_death_114
+  - first:
+      213: -7101176691089153297
+    second: cosmic_wandere_death_115
+  - first:
+      213: 9159012386265100343
+    second: cosmic_wandere_death_116
+  - first:
+      213: -5164116235443453391
+    second: cosmic_wandere_death_117
+  - first:
+      213: 8576582802377763597
+    second: cosmic_wandere_death_118
+  - first:
+      213: -7548208888392212337
+    second: cosmic_wandere_death_119
+  - first:
+      213: 8709492273354739867
+    second: cosmic_wandere_death_120
+  - first:
+      213: 3187459937469836740
+    second: cosmic_wandere_death_121
+  - first:
+      213: -3734908540874639783
+    second: cosmic_wandere_death_122
+  - first:
+      213: -1759444054266815250
+    second: cosmic_wandere_death_123
+  - first:
+      213: -29269952650504348
+    second: cosmic_wandere_death_124
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cosmic_wandere_death_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 444
+        width: 443
+        height: 443
+      alignment: 9
+      pivot: {x: 0.5310132, y: 0.6391786}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9548eaa1cc3f3be70800000000000000
+      internalID: 9129908927556650073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic_wandere_death_1
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 444
+        width: 443
+        height: 443
+      alignment: 9
+      pivot: {x: 0.48802456, y: 0.64543164}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9175996bbd4f5d20800000000000000
+      internalID: 3269417321819894175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic_wandere_death_2
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 444
+        width: 443
+        height: 443
+      alignment: 9
+      pivot: {x: 0.48901367, y: 0.6445026}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18ad5a711c81a4a10800000000000000
+      internalID: 1894353810867214977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic_wandere_death_3
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 444
+        width: 443
+        height: 443
+      alignment: 9
+      pivot: {x: 0.4855122, y: 0.6439183}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d1ae0efe9a609880800000000000000
+      internalID: -8606261656805269037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic_wandere_death_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 443
+        height: 443
+      alignment: 9
+      pivot: {x: 0.4993896, y: 0.61698127}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9b3047108b86e5b0800000000000000
+      internalID: -5339426925938984034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic_wandere_death_5
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 1
+        width: 443
+        height: 443
+      alignment: 9
+      pivot: {x: 0.45658362, y: 0.60490876}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 087047c8d76656a20800000000000000
+      internalID: 3054960611654109056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic_wandere_death_6
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 1
+        width: 443
+        height: 443
+      alignment: 9
+      pivot: {x: 0.4265977, y: 0.6075861}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 522261158cb711660800000000000000
+      internalID: 7354795766756811301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic_wandere_death_7
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 1
+        width: 443
+        height: 443
+      alignment: 9
+      pivot: {x: 0.45263258, y: 0.60377675}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8da38d20763c319c0800000000000000
+      internalID: -3957604800331760936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 591f7678b01108a4aaa6c804ce7c4c6d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":2.0},"gridSpriteSize":{"x":443.0,"y":443.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5310131907463074,"y":0.6391785740852356},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      cosmic_wandere_death_0: 9129908927556650073
+      cosmic_wandere_death_1: 3269417321819894175
+      cosmic_wandere_death_2: 1894353810867214977
+      cosmic_wandere_death_3: -8606261656805269037
+      cosmic_wandere_death_4: -5339426925938984034
+      cosmic_wandere_death_5: 3054960611654109056
+      cosmic_wandere_death_6: 7354795766756811301
+      cosmic_wandere_death_7: -3957604800331760936
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

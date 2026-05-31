@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: 400157a79221b324ebc1d3aeebb8cf53
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2524463642747898678
+    second: arkhe_red_laser_prep_0
+  - first:
+      213: 6155982301852893594
+    second: arkhe_red_laser_prep_1
+  - first:
+      213: -2142741502178330404
+    second: arkhe_red_laser_prep_2
+  - first:
+      213: -6048505433767200298
+    second: arkhe_red_laser_prep_3
+  - first:
+      213: 2790944586627787915
+    second: arkhe_red_laser_prep_4
+  - first:
+      213: 3085152641318027958
+    second: arkhe_red_laser_prep_5
+  - first:
+      213: -5387226498529290298
+    second: arkhe_red_laser_prep_6
+  - first:
+      213: 4727257306806466561
+    second: arkhe_red_laser_prep_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: arkhe_red_laser_prep_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 451
+        width: 405
+        height: 436
+      alignment: 9
+      pivot: {x: 0.5357591, y: 0.45421284}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac47f9d21bd47fcd0800000000000000
+      internalID: -2524463642747898678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_red_laser_prep_1
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 21
+        width: 377
+        height: 432
+      alignment: 9
+      pivot: {x: 0.4800318, y: 0.4490097}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a918889a9417e6550800000000000000
+      internalID: 6155982301852893594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_red_laser_prep_2
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 450
+        width: 360
+        height: 412
+      alignment: 9
+      pivot: {x: 0.40000373, y: 0.4828755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd87c2dd4f37342e0800000000000000
+      internalID: -2142741502178330404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_red_laser_prep_3
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 451
+        width: 333
+        height: 420
+      alignment: 9
+      pivot: {x: 0.38442105, y: 0.48336777}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d93946ba546f0ca0800000000000000
+      internalID: -6048505433767200298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_red_laser_prep_4
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 453
+        width: 402
+        height: 434
+      alignment: 9
+      pivot: {x: 0.46027887, y: 0.42614704}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8cafb1805d6bb620800000000000000
+      internalID: 2790944586627787915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_red_laser_prep_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 419
+        height: 452
+      alignment: 9
+      pivot: {x: 0.58952373, y: 0.47786546}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b28e9f3bf9a0da20800000000000000
+      internalID: 3085152641318027958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_red_laser_prep_6
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 21
+        width: 366
+        height: 408
+      alignment: 9
+      pivot: {x: 0.42893907, y: 0.50237423}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c71796da0abc35b0800000000000000
+      internalID: -5387226498529290298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arkhe_red_laser_prep_7
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 0
+        width: 409
+        height: 394
+      alignment: 9
+      pivot: {x: 0.36186564, y: 0.5659731}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 108b11679779a9140800000000000000
+      internalID: 4727257306806466561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7715ee9cff79c9e44a357a9ddaca8cf1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      arkhe_red_laser_prep_0: -2524463642747898678
+      arkhe_red_laser_prep_1: 6155982301852893594
+      arkhe_red_laser_prep_2: -2142741502178330404
+      arkhe_red_laser_prep_3: -6048505433767200298
+      arkhe_red_laser_prep_4: 2790944586627787915
+      arkhe_red_laser_prep_5: 3085152641318027958
+      arkhe_red_laser_prep_6: -5387226498529290298
+      arkhe_red_laser_prep_7: 4727257306806466561
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -24,7 +24,7 @@ namespace Exponentia.UI
         [SerializeField] private CharacterSelectionSlot[] slots;
 
         [Header("Scene Flow")]
-        [SerializeField] private string dungeonSceneName = "Test_Dungeon";
+        [SerializeField] private string dungeonSceneName = "Dungeon";
         [SerializeField] private bool loadSceneImmediately = true;
 
         [Header("Navigation")]

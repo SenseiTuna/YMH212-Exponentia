@@ -4,6 +4,8 @@ public class AnvilGuardianEnemy : EnemyMechanics
 {
     [Header("Anvil Reflection")]
     [SerializeField] private float reflectRadius = 1.2f;
+    [SerializeField] private bool useHitboxForReflection = true;
+    [SerializeField] private float reflectHitboxPadding = 0.1f;
     [SerializeField] private float reflectedProjectileDamage = 12f;
     [SerializeField] private float reflectedProjectileSpeed = 8f;
     [SerializeField] private float reflectedProjectileLifeTime = 2.2f;
@@ -21,8 +23,15 @@ public class AnvilGuardianEnemy : EnemyMechanics
     [SerializeField] private Color hammerColor = new Color(0.8f, 0.8f, 0.8f);
 
     private float nextHammerTime;
+    private Collider2D reflectCollider;
 
-    private void Reset()
+    protected override void Awake()
+    {
+        base.Awake();
+        reflectCollider = GetComponent<Collider2D>();
+    }
+
+    protected override void Reset()
     {
         ApplyDefaultSetup(
             "Anvil Guardian",
@@ -39,7 +48,6 @@ public class AnvilGuardianEnemy : EnemyMechanics
     protected override void Update()
     {
         base.Update();
-        ReflectIncomingProjectiles();
 
         if (!IsAlive || PlayerTarget == null || Time.time < nextHammerTime)
         {
@@ -69,36 +77,75 @@ public class AnvilGuardianEnemy : EnemyMechanics
             hammerProjectileSize);
     }
 
-    private void ReflectIncomingProjectiles()
+    public bool TryReflectPlayerProjectile(PlayerProjectile playerProjectile, Collider2D projectileCollider)
     {
-        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, reflectRadius);
-        for (int i = 0; i < hits.Length; i++)
+        if (!IsAlive || playerProjectile == null)
         {
-            PlayerProjectile playerProjectile = hits[i].GetComponent<PlayerProjectile>();
-            if (playerProjectile == null)
-            {
-                continue;
-            }
-
-            Vector2 reflectDirection = ((Vector2)playerProjectile.transform.position - (Vector2)transform.position).normalized;
-            if (reflectDirection.sqrMagnitude <= 0.001f)
-            {
-                reflectDirection = GetDirectionToPlayer();
-            }
-
-            reflectDirection = Quaternion.Euler(0f, 0f, Random.Range(-randomReflectAngle, randomReflectAngle)) * reflectDirection;
-
-            SpawnEnemyProjectile(
-                "ReflectedHammerShard",
-                playerProjectile.transform.position,
-                reflectDirection,
-                reflectedProjectileSpeed,
-                reflectedProjectileDamage,
-                reflectedProjectileLifeTime,
-                hammerColor,
-                reflectedProjectileSize);
-
-            Destroy(playerProjectile.gameObject);
+            return false;
         }
+
+        if (reflectCollider == null)
+        {
+            reflectCollider = GetComponent<Collider2D>();
+        }
+
+        if (useHitboxForReflection && reflectCollider != null)
+        {
+            if (projectileCollider == null)
+            {
+                projectileCollider = playerProjectile.GetComponent<Collider2D>();
+            }
+
+            if (projectileCollider == null)
+            {
+                return false;
+            }
+
+            ColliderDistance2D distance = reflectCollider.Distance(projectileCollider);
+            if (!distance.isOverlapped && distance.distance > reflectHitboxPadding)
+            {
+                return false;
+            }
+
+            Vector2 reflectOrigin = reflectCollider.ClosestPoint(playerProjectile.transform.position);
+            ReflectProjectile(playerProjectile, reflectOrigin);
+            return true;
+        }
+
+        if (Vector2.Distance(transform.position, playerProjectile.transform.position) > reflectRadius)
+        {
+            return false;
+        }
+
+        ReflectProjectile(playerProjectile, transform.position);
+        return true;
+    }
+
+    private void ReflectProjectile(PlayerProjectile playerProjectile, Vector2 reflectOrigin)
+    {
+        if (playerProjectile == null)
+        {
+            return;
+        }
+
+        Vector2 reflectDirection = ((Vector2)playerProjectile.transform.position - reflectOrigin).normalized;
+        if (reflectDirection.sqrMagnitude <= 0.001f)
+        {
+            reflectDirection = GetDirectionToPlayer();
+        }
+
+        reflectDirection = Quaternion.Euler(0f, 0f, Random.Range(-randomReflectAngle, randomReflectAngle)) * reflectDirection;
+
+        SpawnEnemyProjectile(
+            "ReflectedHammerShard",
+            playerProjectile.transform.position,
+            reflectDirection,
+            reflectedProjectileSpeed,
+            reflectedProjectileDamage,
+            reflectedProjectileLifeTime,
+            hammerColor,
+            reflectedProjectileSize);
+
+        Destroy(playerProjectile.gameObject);
     }
 }
